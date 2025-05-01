@@ -1,0 +1,6 @@
+Scrap Page interface definition
+
+interface {
+    searchProduct = async (search: string);
+    getProducts = async ();
+}
