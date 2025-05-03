@@ -8,14 +8,14 @@ import { saveProductsToFile } from '../utils/fileManager';
 puppeteer.use(StealthPlugin());
 
 export const webpage: Page = {
-    name: 'Picslab',
-    id: 'picslab',
-    url: 'https://picslabstore.cl',
-    dbPort: 3000
+    name: 'David and Joseph',
+    id: 'davidandjoseph',
+    url: 'https://davidandjoseph.cl/index.php?route=product/search&search=&description=true',
+    dbPort: 3001
 }
 
 const searchProduct = async (search: string) => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36');
@@ -49,7 +49,7 @@ const searchProduct = async (search: string) => {
 }
 
 export const getProducts = async () => {
-    const baseUrl = 'https://picslabstore.cl/search?q=&page=';
+    const baseUrl = 'https://davidandjoseph.cl/index.php?route=product/search&search=&description=true&page=';
     let currentPage = 1;
     const allProducts: Product[] = [];
 
@@ -69,16 +69,18 @@ export const getProducts = async () => {
 
             const products = await page.evaluate(() => {
                 const items: Product[] = [];
-                const productBlocks = document.querySelectorAll('article.product-block');
+                const productBlocks = document.querySelectorAll('.product-layout');
 
                 productBlocks.forEach(block => {
-                    const name = (block.querySelector('.product-block__name') as HTMLElement)?.innerText.trim() || null;
-                    const link = (block.querySelector('.product-block__anchor') as HTMLAnchorElement)?.href || null;
-                    const price = (block.querySelector('.product-block__price') as HTMLElement)?.innerText.replace(/\n/g, '').trim() || null;
-                    const outOfStock = null;
-                    const image = (block.querySelector('img.product-block__image') as HTMLImageElement)?.src || null;
-                    const brand = (block.querySelector('.product-block__brand') as HTMLElement)?.innerText.trim() || null;
-                    const sku = (block.querySelector('.product-block__sku') as HTMLElement)?.innerText.trim() || null;
+                    const name = (block.querySelector('.name a') as HTMLElement)?.innerText.trim() || null;
+                    const link = (block.querySelector('.name a') as HTMLAnchorElement)?.href || null;
+                    const price = (block.querySelector('.price-normal') as HTMLElement)?.innerText.trim().replace("CL$", "$")
+                        || (block.querySelector('.price-new') as HTMLElement)?.innerText.trim().replace("CL$", "$")
+                        || null;
+                    const outOfStock = block.classList.contains('out-of-stock');
+                    const image = (block.querySelector('.img-first') as HTMLImageElement)?.src || null;
+                    const brand = (block.querySelector('.stat-1 a') as HTMLElement)?.innerText.trim() || null;
+                    const sku = (block.querySelector('.stat-2 span:nth-child(2)') as HTMLElement)?.innerText.trim() || null;
 
                     items.push({
                         name,
@@ -103,6 +105,7 @@ export const getProducts = async () => {
 
             await delay(2);
         } catch (error: any) {
+            console.error(`Error navigating to ${url}:`, error);
             if (error.message.includes('429')) {
                 console.log('HTTP 429 encountered. Retrying with backoff...');
                 await delay(5 * currentPage);
@@ -119,4 +122,4 @@ export const getProducts = async () => {
     saveProductsToFile(allProducts, webpage.id);
 
     await browser.close();
-};
+}

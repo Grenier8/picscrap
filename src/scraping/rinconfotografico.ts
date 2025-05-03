@@ -8,10 +8,10 @@ import { saveProductsToFile } from '../utils/fileManager';
 puppeteer.use(StealthPlugin());
 
 export const webpage: Page = {
-    name: 'Picslab',
-    id: 'picslab',
-    url: 'https://picslabstore.cl',
-    dbPort: 3000
+    name: 'Rincon Fotografico',
+    id: 'rinconfotografico',
+    url: 'https://rinconfotografico.cl',
+    dbPort: 3002
 }
 
 const searchProduct = async (search: string) => {
@@ -49,7 +49,7 @@ const searchProduct = async (search: string) => {
 }
 
 export const getProducts = async () => {
-    const baseUrl = 'https://picslabstore.cl/search?q=&page=';
+    const baseUrl = 'https://rinconfotografico.cl/search?q=&page=';
     let currentPage = 1;
     const allProducts: Product[] = [];
 
@@ -69,16 +69,29 @@ export const getProducts = async () => {
 
             const products = await page.evaluate(() => {
                 const items: Product[] = [];
-                const productBlocks = document.querySelectorAll('article.product-block');
+                const productBlocks = document.querySelectorAll('.product-block');
 
                 productBlocks.forEach(block => {
+                    //     const name = node.querySelector('.product-block__name')?.innerText.trim() || '';
+                    //     const link = node.querySelector('.product-block__anchor')?.getAttribute('href') || '';
+                    //     const brand = node.querySelector('.product-block__brand')?.innerText.trim() || '';
+                    //     const sku = node.querySelector('.sku')?.innerText.trim() || '';
+                    //     const priceText = node.querySelector('.price_method_block_price')?.textContent || '';
+                    //     const inStock = node.querySelector('.product-block__input')?.getAttribute('data-stock') !== '0';
+
+                    //     // Extraer número del precio y convertir a float
+                    //     const priceMatch = priceText.replace(/\./g, '').match(/\d+/g);
+                    //     const price = priceMatch ? parseInt(priceMatch.join('')) : null;
+
                     const name = (block.querySelector('.product-block__name') as HTMLElement)?.innerText.trim() || null;
+                    console.log(name);
+
                     const link = (block.querySelector('.product-block__anchor') as HTMLAnchorElement)?.href || null;
-                    const price = (block.querySelector('.product-block__price') as HTMLElement)?.innerText.replace(/\n/g, '').trim() || null;
-                    const outOfStock = null;
+                    const price = (block.querySelector('.price_method_block_price') as HTMLElement)?.childNodes[0]?.textContent?.trim() || null;
+                    const outOfStock = (block.querySelector('.product-block__input')?.getAttribute('data-stock') !== '0') || null;
                     const image = (block.querySelector('img.product-block__image') as HTMLImageElement)?.src || null;
                     const brand = (block.querySelector('.product-block__brand') as HTMLElement)?.innerText.trim() || null;
-                    const sku = (block.querySelector('.product-block__sku') as HTMLElement)?.innerText.trim() || null;
+                    const sku = (block.querySelector('.sku') as HTMLElement)?.innerText.trim() || null;
 
                     items.push({
                         name,
@@ -88,7 +101,7 @@ export const getProducts = async () => {
                         image,
                         brand,
                         sku,
-                    });
+                    } as Product);
                 });
 
                 return items;
@@ -103,6 +116,7 @@ export const getProducts = async () => {
 
             await delay(2);
         } catch (error: any) {
+            console.error(`Error navigating to ${url}:`, error);
             if (error.message.includes('429')) {
                 console.log('HTTP 429 encountered. Retrying with backoff...');
                 await delay(5 * currentPage);
