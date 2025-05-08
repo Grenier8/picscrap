@@ -10,7 +10,7 @@ puppeteer.use(StealthPlugin());
 export const webpage: Page = {
     name: 'David and Joseph',
     id: 'davidandjoseph',
-    url: 'https://davidandjoseph.cl/index.php?route=product/search&search=&description=true',
+    url: 'https://davidandjoseph.cl',
     dbPort: 3001
 }
 
@@ -20,7 +20,7 @@ const searchProduct = async (search: string) => {
 
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36');
 
-    await page.goto(`https://davidandjoseph.cl/index.php?route=product/search&search=&description=true`);
+    await page.goto(`${webpage.url}/index.php?route=product/search&search=&description=true`);
 
     await page.screenshot({ path: '1.png' });
 

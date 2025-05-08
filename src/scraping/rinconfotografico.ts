@@ -49,7 +49,7 @@ const searchProduct = async (search: string) => {
 }
 
 export const getProducts = async () => {
-    const baseUrl = 'https://rinconfotografico.cl/search?q=&page=';
+    const baseUrl = `${webpage.url}/search?q=&page=`;
     let currentPage = 1;
     const allProducts: Product[] = [];
 
