@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "sku": "CL30",
+      "name": "Accsoon Cable USB-C a Lightning (30 cm)",
+      "link": "",
+      "price": 0,
+      "outOfStock": null,
+      "image": "",
+      "brand": "ACCSOON"
+    },
+    {
+      "sku": "AA-01",
+      "name": "Adaptador Accsoon de Zapata Fria con Hilo de 1/4",
+      "link": "",
+      "price": 0,
+      "outOfStock": null,
+      "image": "",
+      "brand": "ACCSOON"
+    },
+    {
+      "sku": "ACC32",
+      "name": "Adaptador de Montura Accsoon V-Lock / V-Mount",
+      "link": "",
+      "price": 0,
+      "outOfStock": null,
+      "image": "",
+      "brand": "ACCSOON"
+    }
+  ]
+}

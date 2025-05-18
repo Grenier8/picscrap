@@ -1,59 +1,22 @@
 import puppeteer from "puppeteer-extra";
 import fs from "fs";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import { Page, Product } from "../interfaces";
+import { Webpage, ProductScrap, Brand, ProductDB } from "../interfaces";
 import delay from "../utils/delay";
 import { saveProductsToFile } from "../utils/fileManager";
+import { getWebpageById } from "../api/webpages";
+import { upsertProducts } from "../api/products";
 
 puppeteer.use(StealthPlugin());
 
-export const webpage: Page = {
-  name: "Picslab",
-  id: "picslab",
-  url: "https://picslabstore.cl",
-  dbPort: 3001,
-};
-
-const searchProduct = async (search: string) => {
-  const browser = await puppeteer.launch({ headless: false });
-  const page = await browser.newPage();
-
-  await page.setUserAgent(
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
-  );
-
-  await page.goto(
-    `https://davidandjoseph.cl/index.php?route=product/search&search=&description=true`
-  );
-
-  await page.screenshot({ path: "1.png" });
-
-  await page.type('input[name="search"]', search);
-
-  await page.screenshot({ path: "2.png" });
-  await page.click('button[class="search-button"]');
-
-  // await page.waitForSelector('h1[class="title page-title"]', {});
-
-  // await page.waitForSelector('img', { visible: true });
-
-  await page.screenshot({ path: "3.png" });
-
-  const data = await page.evaluate(() => {
-    const images = document.querySelectorAll("img");
-    const urls = Array.from(images).map((img) => img.src);
-    return urls;
-  });
-
-  await browser.close();
-  console.log(data);
-  return data;
-};
+const webpageId = 2;
 
 export const getProducts = async () => {
+  const webpage = await getWebpageById(webpageId);
+
   const baseUrl = `${webpage.url}/search?q=&page=`;
-  let currentPage = 1;
-  const allProducts: Product[] = [];
+  let currentPage = 26;
+  const allProducts: ProductScrap[] = [];
 
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
@@ -70,11 +33,11 @@ export const getProducts = async () => {
       await page.goto(url, { waitUntil: "networkidle2" });
 
       await page.screenshot({
-        path: `scans/${webpage.id}/page-${currentPage}.png`,
+        path: `scans/${webpage.name}/page-${currentPage}.png`,
       });
 
       const products = await page.evaluate(() => {
-        const items: Product[] = [];
+        const items: ProductScrap[] = [];
         const productBlocks = document.querySelectorAll(
           "article.product-block"
         );
@@ -116,12 +79,21 @@ export const getProducts = async () => {
           items.push({
             name,
             link,
-            price,
+            price: price
+              ? parseFloat(
+                  price
+                    .replace(/\n/g, "")
+                    .replace(/,/g, "")
+                    .replace(/\./g, "")
+                    .replace(/\$/g, "")
+                    .trim()
+                )
+              : null,
             outOfStock,
             image,
-            brand,
+            brand: brand?.toUpperCase(),
             sku,
-          });
+          } as ProductScrap);
         });
 
         return items;
@@ -131,7 +103,12 @@ export const getProducts = async () => {
         break;
       }
 
-      allProducts.push(...products);
+      const productsWithWebpage = products.map((product) => ({
+        ...product,
+        webpage: webpage.url,
+      }));
+
+      allProducts.push(...productsWithWebpage);
       currentPage++;
 
       await delay(2);
@@ -150,6 +127,19 @@ export const getProducts = async () => {
   console.log("All products obtained: ", allProducts.length);
 
   saveProductsToFile(allProducts, webpage.id);
+
+  await upsertProducts(
+    allProducts.map(
+      (product) =>
+        ({
+          ...product,
+          webpage: webpage,
+          brand: {
+            name: product.brand,
+          } as Brand,
+        } as ProductDB)
+    )
+  );
 
   await browser.close();
 };

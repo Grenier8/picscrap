@@ -1,23 +1,60 @@
-export interface Product {
-    name: string | null;
-    link: string | null;
-    price: string | null;
-    outOfStock: boolean | null;
-    image: string | null;
-    brand: string | null;
-    sku: string | null;
+export interface ProductDB {
+  name: string;
+  sku: string;
+  link: string;
+  price: number;
+  webpage: Webpage;
+  outOfStock: boolean | null;
+  image: string;
+  brand: Brand;
 }
-export interface Page {
-    name: string;
-    id: string;
-    url: string;
-    dbPort: number;
+
+export interface ProductScrap {
+  name: string;
+  sku: string;
+  link: string;
+  price: number;
+  webpage: string;
+  outOfStock: boolean | null;
+  image: string;
+  brand: string;
+}
+
+export interface Brand {
+  name: string;
+}
+
+export interface Webpage {
+  id: number;
+  name: string;
+  url: string;
+}
+
+export interface BaseProductDB {
+  name: string;
+  link: string;
+  price: number;
+  outOfStock: boolean | null;
+  image: string;
+  brand: Brand;
+  sku: string;
+  products: ProductDB[];
+}
+
+export interface BaseProductScrap {
+  name: string;
+  link: string;
+  price: number;
+  outOfStock: boolean | null;
+  image: string;
+  brand: string;
+  sku: string;
 }
 
 export interface FindProductsBetweenPagesResults {
-    status: string;
-    totalProducts: number;
-    foundProducts: number;
-    notFoundProducts: Product[];
-    date: string;
+  status: string;
+  totalProducts: number;
+  foundProducts: number;
+  notFoundProducts: ProductDB[];
+  date: string;
 }
