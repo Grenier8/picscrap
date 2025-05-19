@@ -3,10 +3,11 @@ export interface ProductDB {
   sku: string;
   link: string;
   price: number;
-  webpage: Webpage;
+  Webpage: Webpage;
   outOfStock: boolean | null;
   image: string;
-  brand: Brand;
+  Brand: Brand;
+  BaseProduct?: BaseProductDB;
 }
 
 export interface ProductScrap {
@@ -28,17 +29,17 @@ export interface Webpage {
   id: number;
   name: string;
   url: string;
+  isBasePage: boolean;
 }
 
 export interface BaseProductDB {
   name: string;
-  link: string;
+  link: string | null;
   price: number;
   outOfStock: boolean | null;
-  image: string;
-  brand: Brand;
+  image: string | null;
+  Brand: Brand;
   sku: string;
-  products: ProductDB[];
 }
 
 export interface BaseProductScrap {

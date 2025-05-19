@@ -1,8 +1,12 @@
 import { BaseProductDB, ProductDB } from "../interfaces";
 import prisma from "../utils/prisma";
 
-export async function getBaseProducts() {
-  const baseProducts = await prisma.baseProduct.findMany();
+export async function getBaseProducts(): Promise<BaseProductDB[]> {
+  const baseProducts = await prisma.baseProduct.findMany({
+    include: {
+      Brand: true,
+    },
+  });
   return baseProducts;
 }
 
@@ -26,26 +30,34 @@ export async function upsertBaseProducts(products: BaseProductDB[]) {
         sku: product.sku,
         Brand: {
           connectOrCreate: {
-            where: { name: product.brand.name },
-            create: { name: product.brand.name },
+            where: { name: product.Brand.name ?? "UNKNOWN" },
+            create: { name: product.Brand.name ?? "UNKNOWN" },
           },
         },
       },
     });
   }
+  console.log("Base products upserted");
 }
 
-export async function updateBaseProducts(products: ProductDB[]) {
-  await prisma.baseProduct.updateMany({
-    data: products.map((product) => ({
-      ...product,
-      name: product.name || "",
-      link: product.link || "",
-      price: product.price || 0,
-      outOfStock: product.outOfStock || false,
-      image: product.image || "",
-      brand: product.brand || "",
-      sku: product.sku || "",
-    })),
+export async function getBaseProductById(id: number): Promise<BaseProductDB> {
+  const baseProduct = await prisma.baseProduct.findUnique({
+    where: { id },
+    include: { Brand: true },
   });
+  if (!baseProduct) {
+    throw new Error(`Base product with id ${id} not found`);
+  }
+  return baseProduct;
+}
+
+export async function getBaseProductBySku(sku: string): Promise<BaseProductDB> {
+  const baseProduct = await prisma.baseProduct.findUnique({
+    where: { sku },
+    include: { Brand: true },
+  });
+  if (!baseProduct) {
+    throw new Error(`Base product with sku ${sku} not found`);
+  }
+  return baseProduct;
 }

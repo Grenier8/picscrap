@@ -1,5 +1,7 @@
-import { BaseProductDB, ProductDB } from "../interfaces";
+import { BaseProductDB, Brand, ProductDB } from "../interfaces";
 import prisma from "../utils/prisma";
+import { getBaseProductBySku } from "./base-products";
+import { getBrandById, getBrandByName } from "./brands";
 
 export async function getProducts() {
   const products = await prisma.product.findMany();
@@ -8,9 +10,20 @@ export async function getProducts() {
 
 export async function upsertProducts(products: ProductDB[]) {
   for (const product of products) {
+    let baseProductBrand: Brand | null = null;
+    const brandExists =
+      product.Brand && (await getBrandByName(product.Brand?.name));
+    if (!brandExists) {
+      const baseProduct = await getBaseProductBySku(product.sku);
+      if (!baseProduct) {
+        throw new Error(`Base product with sku ${product.sku} not found`);
+      }
+      baseProductBrand = baseProduct.Brand;
+    }
+
     await prisma.product.upsert({
       where: {
-        sku_webpageId: { sku: product.sku, webpageId: product.webpage.id },
+        sku_webpageId: { sku: product.sku, webpageId: product.Webpage.id },
       },
       update: {
         name: product.name,
@@ -27,13 +40,10 @@ export async function upsertProducts(products: ProductDB[]) {
         image: product.image,
         sku: product.sku,
         Brand: {
-          connectOrCreate: {
-            where: { name: product.brand.name },
-            create: { name: product.brand.name },
-          },
+          connect: { name: baseProductBrand?.name ?? "UNKNOWN" },
         },
         Webpage: {
-          connect: { url: product.webpage.url },
+          connect: { url: product.Webpage.url },
         },
         BaseProduct: {
           connect: { sku: product.sku },
@@ -41,19 +51,5 @@ export async function upsertProducts(products: ProductDB[]) {
       },
     });
   }
-}
-
-export async function updateProducts(products: ProductDB[]) {
-  await prisma.product.updateMany({
-    data: products.map((product) => ({
-      ...product,
-      name: product.name || "",
-      link: product.link || "",
-      price: product.price || 0,
-      outOfStock: product.outOfStock || false,
-      image: product.image || "",
-      brand: product.brand || "",
-      sku: product.sku || "",
-    })),
-  });
+  console.log("Products upserted");
 }

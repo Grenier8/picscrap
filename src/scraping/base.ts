@@ -4,7 +4,7 @@ import { csvToJson } from "../utils/csvUtils";
 import { saveProductsToFile } from "../utils/fileManager";
 
 export async function loadBaseProducts() {
-  const baseProducts = await csvToJson("./csv/picslab-products-2.csv");
+  const baseProducts = await csvToJson("./csv/picslab-products.csv");
 
   saveProductsToFile(baseProducts, 0);
 
@@ -13,7 +13,7 @@ export async function loadBaseProducts() {
       (product) =>
         ({
           ...product,
-          brand: {
+          Brand: {
             name: product.brand?.toUpperCase(),
           } as Brand,
         } as BaseProductDB)

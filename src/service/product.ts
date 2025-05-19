@@ -1,9 +1,7 @@
-import { Page, ProductDB } from "../interfaces";
+import { Webpage, ProductDB } from "../interfaces";
 
-export const getProducts = async (page: Page): Promise<ProductDB[]> => {
-  const fetchedProducts = await fetch(
-    `http://localhost:${page.dbPort}/products`
-  );
+export const getProducts = async (page: Webpage): Promise<ProductDB[]> => {
+  const fetchedProducts = await fetch(`http://localhost:${page.id}/products`);
   const products = (await fetchedProducts.json()) as ProductDB[];
 
   return products;
