@@ -20,10 +20,10 @@ export async function scrapAllPages() {
     //   webpages.find((w) => w.name === "David and Joseph")!
     // ),
     // new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
-    new RincónFotográficoScraper(
-      webpages.find((w) => w.name === "Rincón Fotográfico")!
-    ),
-    // new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
+    // new RincónFotográficoScraper(
+    //   webpages.find((w) => w.name === "Rincón Fotográfico")!
+    // ),
+    new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
   ];
 
   const baseScrapers = scrapers.filter((s) => s.webpage.isBasePage);
@@ -46,9 +46,7 @@ export async function scrapAllPages() {
 
   const updatedBaseProducts: BaseProductDB[] = await getBaseProducts();
   for (const scraper of nonBaseScrapers) {
-    const products = await scraper.getProductsBySku(
-      updatedBaseProducts.map((b) => b.sku)
-    );
+    const products = await scraper.getProductsBySimilarity(updatedBaseProducts);
     allProducts.push(...products);
   }
 
@@ -59,6 +57,9 @@ export async function scrapAllPages() {
           ...product,
           Webpage: webpages.find((w) => w.url === product.webpage),
           Brand: { name: product.brand },
+          BaseProduct: updatedBaseProducts.find(
+            (bp) => bp.sku === product.baseProductSku
+          ),
         } as ProductDB)
     )
   );

@@ -1,4 +1,4 @@
-import { BaseProductDB, ProductDB } from "../interfaces";
+import { BaseProductDB } from "../interfaces";
 import prisma from "../utils/prisma";
 
 export async function getBaseProducts(): Promise<BaseProductDB[]> {

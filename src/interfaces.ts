@@ -16,6 +16,7 @@ export interface ProductScrap {
   link: string;
   price: number;
   webpage: string;
+  baseProductSku: string;
   outOfStock: boolean | null;
   image: string;
   brand: string;
