@@ -1,0 +1,87 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BaseProduct {
+  id          Int       @id @default(autoincrement())
+  name        String
+  sku         String    @unique
+  description String?
+  price       Float
+  link        String?
+  image       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  outOfStock  Boolean?
+  brandId     Int
+  Brand       Brand     @relation(fields: [brandId], references: [id])
+  Product     Product[]
+}
+
+model Brand {
+  id          Int           @id @default(autoincrement())
+  name        String        @unique
+  description String?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  BaseProduct BaseProduct[]
+  Product     Product[]
+}
+
+model Product {
+  id            Int          @id @default(autoincrement())
+  name          String
+  sku           String
+  brandId       Int
+  description   String?
+  price         Float
+  link          String?
+  image         String?
+  webpageId     Int
+  baseProductId Int?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  outOfStock    Boolean?
+  BaseProduct   BaseProduct? @relation(fields: [baseProductId], references: [id])
+  Brand         Brand        @relation(fields: [brandId], references: [id])
+  Webpage       Webpage      @relation(fields: [webpageId], references: [id])
+
+  @@unique([sku, webpageId])
+}
+
+model Role {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  User        User[]
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  roleId    Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  fullname  String
+  Role      Role     @relation(fields: [roleId], references: [id])
+}
+
+model Webpage {
+  id          Int       @id @default(autoincrement())
+  name        String
+  url         String    @unique
+  description String?
+  isBasePage  Boolean
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  Product     Product[]
+}
