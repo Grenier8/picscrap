@@ -19,11 +19,11 @@ export async function scrapAllPages() {
     // new DavidAndJosephScraper(
     //   webpages.find((w) => w.name === "David and Joseph")!
     // ),
-    // new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
+    new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
     // new RincónFotográficoScraper(
     //   webpages.find((w) => w.name === "Rincón Fotográfico")!
-    // ),
-    new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
+    // // ),
+    // new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
   ];
 
   const baseScrapers = scrapers.filter((s) => s.webpage.isBasePage);
@@ -33,7 +33,7 @@ export async function scrapAllPages() {
   const newBaseProducts: BaseProductDB[] = [];
   for (const scraper of baseScrapers) {
     const products = await scraper.getAllProducts();
-    allProducts.push(...products);
+    // allProducts.push(...products);
 
     newBaseProducts.push(
       ...products.map(

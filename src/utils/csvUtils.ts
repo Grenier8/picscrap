@@ -22,13 +22,13 @@ export function csvToJson(filePath: string): Promise<BaseProductScrap[]> {
       .on("data", (row) => {
         // Only pick the required columns
         const obj: BaseProductScrap = {
-          sku: row["CODIGO SKU"],
+          sku: row["CODIGO SKU"].toUpperCase(),
           name: row["PRODUCTO"],
           link: "",
           price: 0,
           outOfStock: null,
           image: "",
-          brand: row["CATEGORIA"],
+          brand: row["CATEGORIA"].toUpperCase(),
         };
         records.push(obj);
       })

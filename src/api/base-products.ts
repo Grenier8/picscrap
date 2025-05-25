@@ -17,14 +17,14 @@ export async function upsertBaseProducts(products: BaseProductDB[]) {
       update: {
         name: product.name,
         link: product.link,
-        price: product.price,
+        ...(product.price !== null ? { price: product.price } : {}),
         outOfStock: product.outOfStock,
         image: product.image,
       },
       create: {
         name: product.name,
         link: product.link,
-        price: product.price,
+        price: product.price ?? 0,
         outOfStock: product.outOfStock,
         image: product.image,
         sku: product.sku,
