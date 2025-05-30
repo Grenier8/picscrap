@@ -1,4 +1,8 @@
-import { BaseProductDB, BaseProductScrap, ProductScrap } from "../interfaces";
+import {
+  BaseProductDB,
+  BaseProductScrap,
+  ProductScrap,
+} from "../../interfaces";
 import natural from "natural";
 
 export function isSameProduct(p1: ProductScrap, p2: BaseProductDB) {
@@ -45,4 +49,8 @@ export function getBestMatch(
   // );
 
   return bestMatch;
+}
+
+export function getStringSimilarity(str1: string, str2: string): number {
+  return natural.JaroWinklerDistance(str1, str2);
 }

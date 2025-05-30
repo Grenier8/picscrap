@@ -16,13 +16,13 @@ export async function scrapAllPages() {
   console.log("Webpages obtained: ", webpages.length);
 
   const scrapers: Scraper[] = [
-    // new DavidAndJosephScraper(
-    //   webpages.find((w) => w.name === "David and Joseph")!
-    // ),
-    new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
+    new DavidAndJosephScraper(
+      webpages.find((w) => w.name === "David and Joseph")!
+    ),
+    // new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
     // new RincónFotográficoScraper(
     //   webpages.find((w) => w.name === "Rincón Fotográfico")!
-    // // ),
+    // ),
     // new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
   ];
 
@@ -32,7 +32,10 @@ export async function scrapAllPages() {
   const allProducts: ProductScrap[] = [];
   const newBaseProducts: BaseProductDB[] = [];
   for (const scraper of baseScrapers) {
+    const start = Date.now();
     const products = await scraper.getAllProducts();
+    const elapsed = ((Date.now() - start) / 1000).toFixed(2);
+    console.log(`Base scraper ${scraper.webpage.name} finished in ${elapsed}s`);
     // allProducts.push(...products);
 
     newBaseProducts.push(
@@ -42,11 +45,15 @@ export async function scrapAllPages() {
       )
     );
   }
+
   await upsertBaseProducts(newBaseProducts);
 
   const updatedBaseProducts: BaseProductDB[] = await getBaseProducts();
   for (const scraper of nonBaseScrapers) {
+    const start = Date.now();
     const products = await scraper.getProductsBySimilarity(updatedBaseProducts);
+    const elapsed = ((Date.now() - start) / 1000).toFixed(2);
+    console.log(`Scraper ${scraper.webpage.name} finished in ${elapsed}s`);
     allProducts.push(...products);
   }
 
