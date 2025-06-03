@@ -1,0 +1,46 @@
+{
+  "baseProducts": [
+    {
+      "sku": "TS128GSDC300S",
+      "name": "Tarjeta de Memoria SD Transcend 128GB 300S UHS-I",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59187016/resize/306/306?1737061291"
+    },
+    {
+      "sku": "TS160GCFE860",
+      "name": "Tarjeta CFexpress Tipo B Transcend 160GB",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62178931/resize/306/306?1743800664"
+    },
+    {
+      "sku": "TS64GSDC700S",
+      "name": "Tarjeta de Memoria SD Transcend 64GB 700S UHS-II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59187737/resize/306/306?1737062686"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "TS240GESD220C",
+      "name": "TRANSCEND 240GB DISCO PORTABLE SSD TLC USB 3.1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TRANSCEND/TS240GESD220C-2-250x250.jpg"
+    },
+    {
+      "sku": "TS256GESD400K",
+      "name": "TRANSCEND 256GB DISCO SSD PORTÁTIL USB 3.0 ESD400",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TRANSCEND/TS256GESD400K-250x250.jpg"
+    },
+    {
+      "sku": "TS32GDPB52P",
+      "name": "TRANSCEND CÁMARA CORPORAL DRIVEPRO BODY 52P",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TRANSCEND/TS32GDPB52P-250x250.jpg"
+    },
+    {
+      "sku": "TS0GSJ25S3",
+      "name": "TRANSCEND CARCASA DISCO DURO / DISCO SÓLIDO 2.5” CON PUERTO USB 3.0 (UASP)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TRANSCEND/TS0GSJ25S3-250x250.jpg"
+    },
+    {
+      "sku": "TS128GUSDU1",
+      "name": "TRANSCEND MICROSDXC 128GB PREMIUM CLASS 10 60MB/S 400X",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TRANSCEND/TS128G-250x250.jpg"
+    }
+  ]
+}

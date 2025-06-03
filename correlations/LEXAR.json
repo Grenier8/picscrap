@@ -1,0 +1,171 @@
+{
+  "baseProducts": [
+    {
+      "sku": "LX20003",
+      "name": "Tarjeta de Memoria SD Lexar 64GB 800x PRO UHS-I SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47291908/resize/306/306?1712154978"
+    },
+    {
+      "sku": "LX20007",
+      "name": "Tarjeta de Memoria SD Lexar 256GB Silver Pro UHS-II SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49086812/resize/306/306?1716588906"
+    },
+    {
+      "sku": "LX20008",
+      "name": "Tarjeta de Memoria SD Lexar 64GB Gold UHS-II SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62148833/resize/306/306?1743783156"
+    },
+    {
+      "sku": "SD40045",
+      "name": "Tarjeta de Memoria Micro SD Lexar 64GB 1066x UHS-I",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30772689/resize/306/306?1673355529"
+    },
+    {
+      "sku": "LX40003",
+      "name": "Tarjeta CFexpress Tipo A Lexar 80GB Serie GOLD",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62174629/resize/306/306?1743789319"
+    },
+    {
+      "sku": "SD40025",
+      "name": "Tarjeta de Memoria SD Lexar 256GB 1667x UHS-II SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47291623/resize/306/306?1712154428"
+    },
+    {
+      "sku": "SD40063",
+      "name": "Tarjeta de Memoria SD Lexar 64GB 2000x UHS-II SDXC V90",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49087841/resize/306/306?1716591690"
+    },
+    {
+      "sku": "LX40004",
+      "name": "Tarjeta CFexpress Tipo A Lexar 160GB Serie GOLD",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62174755/resize/306/306?1743789840"
+    },
+    {
+      "sku": "LX20001",
+      "name": "Tarjeta de Memoria SD Lexar 128GB 800x PRO UHS-I SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47292404/resize/306/306?1712155452"
+    },
+    {
+      "sku": "LX20005",
+      "name": "Tarjeta de Memoria SD Lexar 128GB Silver Pro UHS-II SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49086749/resize/306/306?1716588730"
+    },
+    {
+      "sku": "SD40068",
+      "name": "Tarjeta de Memoria Micro SD Lexar 128GB SILVER PLUS UHS-I",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58995924/resize/306/306?1736538968"
+    },
+    {
+      "sku": "SD40066",
+      "name": "Tarjeta de Memoria Micro SD Lexar 64GB SILVER PLUS UHS-I",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58996236/resize/306/306?1736539908"
+    },
+    {
+      "sku": "LX20009",
+      "name": "Tarjeta de Memoria SD Lexar 128GB Gold UHS-II SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62172862/resize/306/306?1743784590"
+    },
+    {
+      "sku": "LX40001",
+      "name": "Lector Lexar Multi-Card 2 en 1 USB 3.0",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63400507/resize/306/306?1747148479"
+    },
+    {
+      "sku": "SD40013",
+      "name": "Tarjeta de Memoria SD Lexar 64GB 1667x UHS-II SDXC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30091014/resize/306/306?1670446804"
+    },
+    {
+      "sku": "SD40064",
+      "name": "Tarjeta de Memoria SD Lexar 128GB 2000x UHS-II SDXC V90",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49087779/resize/306/306?1716591470"
+    },
+    {
+      "sku": "SD40040",
+      "name": "Tarjeta de Memoria Micro SD Lexar 512GB PLAY UHS-I",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50051343/resize/306/306?1719245952"
+    },
+    {
+      "sku": "LX10003",
+      "name": "Tarjeta de Memoria Micro SD Lexar 256GB 633X UHS-I",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63446356/resize/306/306?1747242400"
+    },
+    {
+      "sku": "LX40005",
+      "name": "Tarjeta CFexpress Tipo A Lexar 320GB Serie GOLD",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62175887/resize/306/306?1743792615"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "LMS1066512G-BNANU",
+      "name": "LEXAR MICROSDXC 512GB UHS-I TARJETA DE MEMORIA V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LMS1066512G-BNANU-250x250.jpg"
+    },
+    {
+      "sku": "LSD1667256G-B2NNU",
+      "name": "LEXAR PACK 2 SDXC 256GB V60 4K UHS-II U3 LECTURA 250MBS / 120MBS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD1667256G-B2NNU-250x250.jpg"
+    },
+    {
+      "sku": "LMSSIPL256G-B2ANU",
+      "name": "LEXAR PACK 2 TARJETAS MICROSDXC 256GB SILVER PLUS UHS-I",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LMSSIPL256G-B2ANU-250x250h.jpg"
+    },
+    {
+      "sku": "LSD0800032G",
+      "name": "LEXAR SDHC 32GB UHS-I / U1 LECTURA 120MB/S ESCRITURA 10MB/S V10",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LESD80032-250x250.jpeg"
+    },
+    {
+      "sku": "LSD0800064G",
+      "name": "LEXAR SDHC 64GB UHS-I / U1 LECTURA 120MB/S ESCRITURA 30MB/S V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD0800064G-250x250.jpeg"
+    },
+    {
+      "sku": "LSD1066128G",
+      "name": "LEXAR SDXC 128GB V30 UHS-I U3 LECTURA 160MBS / 120MBS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD1066128G-250x250.jpg"
+    },
+    {
+      "sku": "LSD128CBNA1667",
+      "name": "LEXAR SDXC 128GB V60 4K UHS-II U3 LECTURA 250MB/S / 90MBS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD128CBNA1667-250x250.jpg"
+    },
+    {
+      "sku": "LSD256CBNA1667",
+      "name": "LEXAR SDXC 256GB V60 4K UHS-II U3 LECTURA 250MBS / 120MBS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD256CBNA1667.-250x250.jpg"
+    },
+    {
+      "sku": "LSD64GCBNA1667",
+      "name": "LEXAR SDXC 64GB V60 4K UHS-II U3 LECTURA 250MB/S / 90MBS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD64GCBNA1667-250x250.jpg"
+    },
+    {
+      "sku": "LSD64GCBNA16672",
+      "name": "LEXAR SDXC PACK 2 - 64GB V60 4K UHS-II U3 LECTURA 250MB/S / 120MBS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD64GCBNA16672new-250x250.jpg"
+    },
+    {
+      "sku": "LSD128CBNA16672",
+      "name": "LEXAR SDXC PACK DE 2 128GB V60 UHS-II U3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSD128CBNA16672-250x250.jpg"
+    },
+    {
+      "sku": "LSDSIPR128G-B2NNU",
+      "name": "LEXAR SDXC PACK DE 2 128GB V60 UHS-II U3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSDSIPR128G-B2NNU-250x250.jpg"
+    },
+    {
+      "sku": "LSL400X001T-RNBNU",
+      "name": "LEXAR SSD PROFESSIONAL GO USB 3.2 GEN 2 DE 1TB (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSL400X001T-RNBNU-250x250.jpg"
+    },
+    {
+      "sku": "LSL400X001T-RNSNU",
+      "name": "LEXAR SSD PROFESSIONAL GO USB 3.2 GEN 2 DE 1TB (SILVER)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/LSL400X001T-RNSNU-250x250.png"
+    }
+  ]
+}

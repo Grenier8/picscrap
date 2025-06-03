@@ -1,0 +1,62 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "KH26P",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TSL08AS2CSH",
+        "secondSKU": "TSL08AS2CSH"
+      },
+      {
+        "baseSKU": "TAC008ABR0E",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "T560N",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "KH25PC",
+        "secondSKU": "KH25PC"
+      },
+      {
+        "baseSKU": "KH25P",
+        "secondSKU": "KH25P"
+      },
+      {
+        "baseSKU": "KH26PC",
+        "secondSKU": "KH26PC"
+      },
+      {
+        "baseSKU": "C08D9B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ELEMENTS20",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "T891",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "T980EX",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TAC008AP0",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "C08D6B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "A2883FS4PRO",
+        "secondSKU": "A2883FS4PRO"
+      }
+    ]
+  }
+}

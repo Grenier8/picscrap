@@ -1,0 +1,42 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "STRF1000800",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "STHA10000800",
+        "secondSKU": "STHA10000800"
+      },
+      {
+        "baseSKU": "STFR4000800",
+        "secondSKU": "STFR4000800"
+      },
+      {
+        "baseSKU": "STFR1000800",
+        "secondSKU": "STFR1000800"
+      },
+      {
+        "baseSKU": "LAC9000298",
+        "secondSKU": "LAC9000298"
+      },
+      {
+        "baseSKU": "STFR2000800",
+        "secondSKU": "STFR2000800"
+      },
+      {
+        "baseSKU": "LAC9000633",
+        "secondSKU": "LAC9000633"
+      },
+      {
+        "baseSKU": "STHS10000800",
+        "secondSKU": "STHS10000800"
+      },
+      {
+        "baseSKU": "STFR5000800",
+        "secondSKU": "STFR5000800"
+      }
+    ]
+  }
+}

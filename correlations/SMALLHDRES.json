@@ -1,0 +1,14 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "MON-CINE-7/RF",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MON-CINE-7",
+        "secondSKU": null
+      }
+    ]
+  }
+}

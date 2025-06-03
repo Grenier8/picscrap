@@ -1,0 +1,166 @@
+{
+  "baseProducts": [
+    {
+      "sku": "STRF1000800",
+      "name": "Disco Duro Externo Lacie 1Tb Rugged",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/33481773/resize/306/306?1680028874"
+    },
+    {
+      "sku": "STHA10000800",
+      "name": "LACIE 10TB D2 DESKTOP PROFESSIONAL USB",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/37783728/resize/306/306?1689777473"
+    },
+    {
+      "sku": "STFR4000800",
+      "name": "Disco Duro Externo LaCie 4TB Rugged USB-C 3.2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30174495/resize/306/306?1670858114"
+    },
+    {
+      "sku": "STFR1000800",
+      "name": "LACIE 1TB RUGGED USB 3.1 TIPO C",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/35889022/resize/306/306?1685473923"
+    },
+    {
+      "sku": "LAC9000298",
+      "name": "DISCO EXTERNO LACIE 2TB RUGGED MINI - USB 3.0",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30173973/resize/306/306?1670857006"
+    },
+    {
+      "sku": "STFR2000800",
+      "name": "Disco Duro Externo LaCie 2TB Rugged USB-C 3.2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31359554/resize/306/306?1675273051"
+    },
+    {
+      "sku": "LAC9000633",
+      "name": "DISCO EXTERNO LACIE 4TB RUGGED MINI - USB 3.0",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/33481345/resize/306/306?1680027799"
+    },
+    {
+      "sku": "STHS10000800",
+      "name": "LACIE DISCO DE 10TB 1BIG DOCK THUNDERBOLT 3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/37783824/resize/306/306?1689777740"
+    },
+    {
+      "sku": "STFR5000800",
+      "name": "Disco Duro LaCie 5TB Rugged USB 3.1 Gen 1 Tipo-C",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42612487/resize/306/306?1700861198"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "STHA10000800",
+      "name": "LACIE 10TB D2 DESKTOP PROFESSIONAL USB 3.1 TIPO-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHA6000800-250x250.jpeg"
+    },
+    {
+      "sku": "STHA14000800",
+      "name": "LACIE 14TB D2 DESKTOP PROFESSIONAL USB 3.1 TIPO-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHA6000800-250x250.jpeg"
+    },
+    {
+      "sku": "STHJ16000800",
+      "name": "LACIE 16TB 2BIG USB 3.1 TYPE-C RAID 4K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHJ16000800-250x250.jpg"
+    },
+    {
+      "sku": "LAC301558",
+      "name": "LACIE 1TB MOBILE MINI RUGGED USB 3.0",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/LAC90002982-250x250.jpg"
+    },
+    {
+      "sku": "STFR1000800",
+      "name": "LACIE 1TB RUGGED USB 3.1 TIPO C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STFR2000800-250x250.jpg"
+    },
+    {
+      "sku": "STHJ28000800",
+      "name": "LACIE 28TB 2BIG THUNDERBOLT 3 RAID 4K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHJ28000800new-250x250.jpg"
+    },
+    {
+      "sku": "STLG28000400",
+      "name": "LACIE 28TB 2BIG THUNDERBOLT 3 RAID 4K (V2)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STLG28000400-250x250.jpeg"
+    },
+    {
+      "sku": "STLR2000400",
+      "name": "LACIE 2TB MOBILE DRIVE SECURE PUERTO USB-C 3.2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STLR20004003-250x250.png"
+    },
+    {
+      "sku": "LAC9000298",
+      "name": "LACIE 2TB MOBILE MINI RUGGED USB 3.0",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/LAC90002982-250x250.jpg"
+    },
+    {
+      "sku": "STFR2000800",
+      "name": "LACIE 2TB RUGGED USB 3.1 TIPO C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STFR2000800-250x250.jpg"
+    },
+    {
+      "sku": "STHA4000800",
+      "name": "LACIE 4TB D2 DESKTOP PROFESSIONAL USB 3.1 TIPO-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHA4000800-250x250.jpg"
+    },
+    {
+      "sku": "LAC9000633",
+      "name": "LACIE 4TB MOBILE MINI RUGGED USB 3.0 / USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/LAC90002982-250x250.jpg"
+    },
+    {
+      "sku": "STHG4000400",
+      "name": "LACIE 4TB MOVIL DISCO USB 3.1 TIPO-C PARA MAC O PC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHG4000400-250x250.jpg"
+    },
+    {
+      "sku": "STFR4000800",
+      "name": "LACIE 4TB RUGGED USB 3.1 TIPO C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STFR2000800-250x250.jpg"
+    },
+    {
+      "sku": "STFR5000800",
+      "name": "LACIE 5TB RUGGED USB 3.1 TIPO C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STFR2000800-250x250.jpg"
+    },
+    {
+      "sku": "STHJ8000800",
+      "name": "LACIE 8TB 2BIG USB 3.1 TYPE-C RAID 4K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHJ16000800-250x250.jpg"
+    },
+    {
+      "sku": "STHA8000800",
+      "name": "LACIE 8TB D2 DESKTOP PROFESSIONAL USB 3.1 TIPO-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHA6000800-250x250.jpeg"
+    },
+    {
+      "sku": "STHS10000800",
+      "name": "LACIE DISCO DE 10TB 1BIG DOCK THUNDERBOLT 3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STHS10000800-250x250.jpeg"
+    },
+    {
+      "sku": "STMF1000400",
+      "name": "LACIE SSD 1TB MINI RUGGED USB 3.2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STMF500400-250x250.jpg"
+    },
+    {
+      "sku": "STKS1000400",
+      "name": "LACIE SSD 1TB PORTABLE USB 3.1 HASTA 1030 MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STKS1000400-250x250.jpeg"
+    },
+    {
+      "sku": "STMF2000400",
+      "name": "LACIE SSD 2TB MINI RUGGED USB 3.2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STMF500400-250x250.jpg"
+    },
+    {
+      "sku": "STMF500400",
+      "name": "LACIE SSD 500GB MINI RUGGED USB 3.2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STMF500400-250x250.jpg"
+    },
+    {
+      "sku": "STKS500400",
+      "name": "LACIE SSD 500GB PORTABLE USB 3.1 HASTA 1030 MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LACIE/STKS1000400-250x250.jpeg"
+    }
+  ]
+}

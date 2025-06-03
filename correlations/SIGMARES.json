@@ -1,0 +1,198 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "SG20195",
+        "secondSKU": "210-101"
+      },
+      {
+        "baseSKU": "SG20258",
+        "secondSKU": "592965"
+      },
+      {
+        "baseSKU": "SG20294",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20297",
+        "secondSKU": "316965"
+      },
+      {
+        "baseSKU": "SG20251",
+        "secondSKU": "750965"
+      },
+      {
+        "baseSKU": "SG20273",
+        "secondSKU": "206965"
+      },
+      {
+        "baseSKU": "SG20231",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20302",
+        "secondSKU": "636965"
+      },
+      {
+        "baseSKU": "SG20304",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20196",
+        "secondSKU": "210-306"
+      },
+      {
+        "baseSKU": "SG20306",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20225",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20213",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20194",
+        "secondSKU": "340-101"
+      },
+      {
+        "baseSKU": "SG20279",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20245",
+        "secondSKU": "57A965"
+      },
+      {
+        "baseSKU": "SG20253",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20254",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20271",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20218",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20264",
+        "secondSKU": "585965"
+      },
+      {
+        "baseSKU": "SG20261",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20236",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20250",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20235",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20269",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20288",
+        "secondSKU": "315965"
+      },
+      {
+        "baseSKU": "SG20296",
+        "secondSKU": "591965"
+      },
+      {
+        "baseSKU": "SG20298",
+        "secondSKU": "57A965"
+      },
+      {
+        "baseSKU": "SG20301",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20305",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20307",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20207",
+        "secondSKU": "745-101"
+      },
+      {
+        "baseSKU": "SG20242",
+        "secondSKU": "213965"
+      },
+      {
+        "baseSKU": "SG20260",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20224",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20255",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20214",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20179",
+        "secondSKU": "340-306"
+      },
+      {
+        "baseSKU": "SG20241",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20270",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "69M966",
+        "secondSKU": "WZQ968"
+      },
+      {
+        "baseSKU": "SG20234",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20256",
+        "secondSKU": "340-101"
+      },
+      {
+        "baseSKU": "SG20299",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20303",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20399",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SG20275",
+        "secondSKU": null
+      }
+    ]
+  }
+}

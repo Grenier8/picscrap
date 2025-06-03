@@ -1,0 +1,10 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "520-125",
+        "secondSKU": "520-125"
+      }
+    ]
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "baseProducts": [
+    {
+      "sku": "SDI12G50MTS",
+      "name": "CABLE SDI 12G 50MTS",
+      "image": ""
+    },
+    {
+      "sku": "CAL55CUHD50MTS",
+      "name": "Cable BNC Canare 12G-SDI UHD 4K - 50m",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58977405/resize/306/306?1736517164"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "DJ L4CFB SDI-DIN 45CM",
+      "name": "CANARE L4CFB 3G/HD-SDI CABLE BNC A DIN A 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJ%20L4CFB%20SDI-DIN%2045CM-250x250.jpg"
+    },
+    {
+      "sku": "161U",
+      "name": "CANARE 161U PATCH PANEL DE RACK (VACÍO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/161U-250x250.jpeg"
+    },
+    {
+      "sku": "161U-BJRK",
+      "name": "CANARE 161U-BJRK PATCH PANEL DE RACK CON 16 BNC 12G-SDI 4K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/161U-BJRK-250x250.jpg"
+    },
+    {
+      "sku": "161U-BJRUK",
+      "name": "CANARE 161U-BJRUK PATCH PANEL DE RACK CON 16 BNC 12G-SDI 4K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/161U-BJRUK-250x250.jpg"
+    },
+    {
+      "sku": "322U-BJRUK",
+      "name": "CANARE 322U-BJRUK PATCH PANEL DE RACK CON 32 BNC 12G-SDI 4K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/322U-BJRUK-250x250.jpg"
+    },
+    {
+      "sku": "BCJ-JK",
+      "name": "CANARE BCJ-JK CONECTOR COPLA BNC 75OHM 12G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCJ-JK-250x250.jpg"
+    },
+    {
+      "sku": "BCJ-JRUK",
+      "name": "CANARE BCJ-JRUK CONECTOR PARA EMPOTRAR BNC 75 OHM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCJ-JRUK-250x250.jpg"
+    },
+    {
+      "sku": "BCJ-VWP",
+      "name": "CANARE BCJ-VWP VIDEO PATCH PLUG A BNC JACK ADAPTADOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCJ-VWP-250x250.jpg"
+    },
+    {
+      "sku": "BCP-B25HD",
+      "name": "CANARE BCP-B25HD CONECTOR BNC 75OHM PARA CABLE CANARE L-2.5CHD LOW LOSS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-B25HD-250x250.jpeg"
+    },
+    {
+      "sku": "BCP-B31F",
+      "name": "CANARE BCP-B31F CONECTOR BNC 75OHM PARA CABLE CANARE L-3CFW SUPER LOW LOSS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-B51F-250x250.jpg"
+    },
+    {
+      "sku": "BCP-B45HW",
+      "name": "CANARE BCP-B45HW CONECTOR BNC 75OHM PARA CABLE CANARE L-4.5CHWS SUPER LOW LOSS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-B45HW-250x250.jpg"
+    },
+    {
+      "sku": "BCP-B4F",
+      "name": "CANARE BCP-B4F CONECTOR 3GHZ 75 OHM PARA CABLE CANARE L-4CFB / V-4CFB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-B4F-250x250.jpg"
+    },
+    {
+      "sku": "BCP-B51F",
+      "name": "CANARE BCP-B51F CONECTOR BNC 75OHM PARA CABLE CANARE L-5CFW SUPER LOW LOSS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-B51F-250x250.jpg"
+    },
+    {
+      "sku": "BCP-C4F",
+      "name": "CANARE BCP-C4F CONECTOR 3GHZ 75 OHM PARA CABLE CANARE L-4CFB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-C4f-250x250.jpg"
+    },
+    {
+      "sku": "BCP-D33UHD",
+      "name": "CANARE BCP-D33UHD CONECTOR 12G-SDI 4K UHD 75OHM PARA CABLE CANARE L-3.3CUHD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-D55UHD-250x250.jpg"
+    },
+    {
+      "sku": "BCP-D55UHD",
+      "name": "CANARE BCP-D55UHD CONECTOR 12G-SDI 4K UHD 75OHM PARA CABLE CANARE L-5.5CUHD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-D55UHD-250x250.jpg"
+    },
+    {
+      "sku": "BCP-LD25HD",
+      "name": "CANARE BCP-LD25HD CONECTOR EN ANGULO BNC 75OHM 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BCP-LD25HD2-250x250.png"
+    },
+    {
+      "sku": "BJ-JRUD",
+      "name": "CANARE BJ-JRUD CONECTOR PARA EMPOTRAR BNC 50 OHM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BJ-JRUD-250x250.jpg"
+    },
+    {
+      "sku": "BP-C31",
+      "name": "CANARE BP-C31 50 OHM BNC CRIMP PLUGS CONECTOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/BP-C31-250x250.jpg"
+    },
+    {
+      "sku": "CAL33MB003",
+      "name": "CANARE CABLE 90CM MICRO RG59 12G-SDI / UHD 4K MICRO BNC A BNC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CAL33MB001-250x250.jpg"
+    },
+    {
+      "sku": "CAL33MB001",
+      "name": "CANARE CABLE MICRO RG59 12G-SDI / UHD 4K MICRO BNC A BNC DE 30CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CAL33MB001-250x250.jpg"
+    },
+    {
+      "sku": "DCP-C25HD",
+      "name": "CANARE DCP-C25HD CONECTOR 75 OHM DIN 1.0/2.3 PARA CABLE CANARE L-2.5CHD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DCP-C4F-250x250.jpg"
+    },
+    {
+      "sku": "DCP-C4F",
+      "name": "CANARE DCP-C4F CONECTOR 75 OHM DIN 1.0/2.3 PARA CABLE CANARE L-4CFB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DCP-C4F-250x250.jpg"
+    },
+    {
+      "sku": "F-09",
+      "name": "CANARE F-09 CONECTOR RCA PARA CABLE DE AUDIO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/F09-250x250.jpg"
+    },
+    {
+      "sku": "CB04BK",
+      "name": "CANARE FUNDA CB04 PARA CABLE DE VÍDEO RG59 (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CB04-250x250.jpeg"
+    },
+    {
+      "sku": "HBCP-D25HDA",
+      "name": "CANARE HBCP-D25HDA CONECTOR MICRO BNC 75OHM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/HBCP-D25HDA-250x250.jpeg"
+    },
+    {
+      "sku": "DJCABLE SDI-10M CANARE",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE BNC 10 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-10M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-20M CANARE",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE BNC 20 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-20M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-30M CANARE",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE BNC 30 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-30M-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L2.5CHD-30CM",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE BNC 30CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CAL2.5CHDBM2-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L2.5CHD-45CM",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE BNC 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CAL2.5CHDBM2-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-DIN-DIN1023 CANARE",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE CON 1.0/2.3 DIN 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE%20SDI-DIN1023-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-DIN1023 CANARE",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE CON 1.0/2.3 DIN A BNC 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CAL2.5CHDB1-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-2.5CHD-90+DIN1023 CANARE",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE CON 1.0/2.3 DIN A BNC 90CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJKITS/DJCABLE-SDI-L-3CFW-60+DIN1023-CANARE-250x250.jpg"
+    },
+    {
+      "sku": "D25CHDBJ01.5F",
+      "name": "CANARE L-2.5CHD 3G/HD-SDI CABLE CON 1.0/2.3 DIN A BNC HEMBRA 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/CAL2.5CHDB1new-250x250w.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-50M CANARE",
+      "name": "CANARE L-2.5CHD CABLE SDI LOW LOSS 3G-SDI 50 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B25CHDB025F-250x250.jpeg"
+    },
+    {
+      "sku": "B25CHDB025F",
+      "name": "CANARE L-2.5CHD CABLE SDI LOW LOSS 3G-SDI 7.62 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B25CHDB025F-250x250.jpeg"
+    },
+    {
+      "sku": "L-2.5CHD 300M",
+      "name": "CANARE L-2.5CHD DIGITAL VIDEO CABLE COAXIAL LOW LOSS 3G-SDI 300MTS FLEXIBLE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-2.5CHD2-250x250.jpg"
+    },
+    {
+      "sku": "L-2T2S",
+      "name": "CANARE L-2T2S CABLE MICRÓFONO PAR TRENZADO 200M BLK",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-2T2-250x250.jpg"
+    },
+    {
+      "sku": "B33CUHDB01.5F",
+      "name": "CANARE L-3.3CUHD 12G-SDI 4K UHD BNC CABLE 45CM NEGRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B33CUHDB01-250x250.jpeg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-3CFW-1.5",
+      "name": "CANARE L-3CFW 3G/HD-SDI CABLE BNC 1.5MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE-SDI-L-3CFW-45-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-3CFW-20M",
+      "name": "CANARE L-3CFW 3G/HD-SDI CABLE BNC 20 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-20M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-3CFW-30M",
+      "name": "CANARE L-3CFW 3G/HD-SDI CABLE BNC 30 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE%20SDI-L-3CFW-30M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-3CFW-45",
+      "name": "CANARE L-3CFW 3G/HD-SDI CABLE BNC 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE-SDI-L-3CFW-45-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-3CFW-50M",
+      "name": "CANARE L-3CFW 3G/HD-SDI CABLE BNC 50 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE%20SDI-L-3CFW-50M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-3CFW-90",
+      "name": "CANARE L-3CFW 3G/HD-SDI CABLE BNC 90CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE-SDI-L-3CFW-45-250x250.jpg"
+    },
+    {
+      "sku": "B16B006F-BLACK",
+      "name": "CANARE L-3CFW CABLE SDI CORTO COAXIAL FLEXIBLE 1.82MTS NEGRO 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B003F-250x250.jpeg"
+    },
+    {
+      "sku": "B16B006F",
+      "name": "CANARE L-3CFW CABLE SDI CORTO COAXIAL FLEXIBLE 1.82MTS ROJO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B006F-250x250h.jpeg"
+    },
+    {
+      "sku": "B16B003F",
+      "name": "CANARE L-3CFW CABLE SDI CORTO COAXIAL FLEXIBLE 90CM NEGRO 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B003F-250x250.jpeg"
+    },
+    {
+      "sku": "L-3CFW-300M",
+      "name": "CANARE L-3CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 300MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-3CFW-250x250.jpg"
+    },
+    {
+      "sku": "B16B002F-RED",
+      "name": "CANARE L-3CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 60CM 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B002F-RED-250x250.jpg"
+    },
+    {
+      "sku": "B16B025F-BLUE",
+      "name": "CANARE L-3CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 7.65MTS 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B025F-BLUE-250x250.jpg"
+    },
+    {
+      "sku": "B16B003F-GREEN",
+      "name": "CANARE L-3CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 90CM 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B003F-GREEN-250x250.jpg"
+    },
+    {
+      "sku": "B16B001F-RED",
+      "name": "CANARE L-3CFW DIGITAL VIDEO CABLE CORTO COAXIAL FLEXIBLE 30CM 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B16B002F-RED-250x250.jpg"
+    },
+    {
+      "sku": "L-3D2W",
+      "name": "CANARE L-3D2W 50 OHM BNC CABLE COAXIAL EN COLOR GRIS 200 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/l-3d2w-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L4.5CHWS-10M",
+      "name": "CANARE L-4.5CHWS 3G/HD-SDI 4K CABLE BNC 10 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-10M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-4.5CHWS 1M",
+      "name": "CANARE L-4.5CHWS 3G/HD-SDI 4K CABLE BNC 1MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJKITS/DJCABLE-SDI-4.5CHWS-90-CANARE-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L4.5CHWS-20M",
+      "name": "CANARE L-4.5CHWS 3G/HD-SDI 4K CABLE BNC 20 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-20M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE L-4.5CHWS-30M CANARE",
+      "name": "CANARE L-4.5CHWS 3G/HD-SDI 4K CABLE BNC 30 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-30M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-4.5CHWS 45 CANARE",
+      "name": "CANARE L-4.5CHWS 3G/HD-SDI 4K CABLE BNC 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJKITS/DJCABLE-SDI-4.5CHWS-90-CANARE-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE L-4.5CHWS-50M CANARE",
+      "name": "CANARE L-4.5CHWS 3G/HD-SDI 4K CABLE BNC 50 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4.5chws-50M-250x250.jpg"
+    },
+    {
+      "sku": "L-4.5CHWS-300M",
+      "name": "CANARE L-4.5CHWS DIGITAL VIDEO CABLE COAXIAL LOW LOSS 3G-SDI 300MTS FLEXIBLE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4.5CHWS-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-10M",
+      "name": "CANARE L-4CFB 10 METROS DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-10M-250x250.jpg"
+    },
+    {
+      "sku": "DJCABLE SDI-L-4CFB-45+DIN1023 CANARE",
+      "name": "CANARE L-4CFB 12G/HD-SDI CABLE CON 1.0/2.3 DIN A BNC 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE-SDI-L-4CFB-45+DIN1023-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-20M",
+      "name": "CANARE L-4CFB 20 METROS DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-20M-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-30M",
+      "name": "CANARE L-4CFB 30 METROS DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-30M-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-50M",
+      "name": "CANARE L-4CFB 50 METROS DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-50M-250x250.jpeg"
+    },
+    {
+      "sku": "L-4CFB-60M",
+      "name": "CANARE L-4CFB 60 METROS DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-60M-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-95CM",
+      "name": "CANARE L-4CFB CABLE 90CM DIGITAL VIDEO COAXIAL LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-45cm-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-45CM",
+      "name": "CANARE L-4CFB CORTO 45CM DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-45cm-250x250.jpg"
+    },
+    {
+      "sku": "L-4CFB-300M",
+      "name": "CANARE L-4CFB DIGITAL VIDEO CABLE COAXIALE LOW LOSS 3G-SDI 300MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-250x250.jpg"
+    },
+    {
+      "sku": "L-4E6S-100",
+      "name": "CANARE L-4E6S-100 CABLE DE MICRÓFONO STAR QUAD 100 METROS NEGRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4E6S-250x250.jpg"
+    },
+    {
+      "sku": "B55CUHDB003F",
+      "name": "CANARE L-5.5CUHD 12G-SDI 4K UHD BNC CABLE 90CM NEGRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/B55CUHDB003F-250x250.png"
+    },
+    {
+      "sku": "DJ-L5CFW-45CM",
+      "name": "CANARE L-5CFW 12G SDI CABLE BNC 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE-SDI-L-3CFW-45-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L5CFW-90CM",
+      "name": "CANARE L-5CFW 12G SDI CABLE BNC 90CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJCABLE-SDI-L-3CFW-45-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-300M",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 300MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-5CFW-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-300M-RED",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 300MTS ROJO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-5CFW-300M-RED-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-METRO-BLUE",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE POR METRO AZUL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-5CFW-METRO-BLUE.-250x250.jpg"
+    },
+    {
+      "sku": "L3.3CUHD-20M",
+      "name": "CANARE L3.3CUHD 20MTS DIGITAL VIDEO CABLE COAXIAL ULTRA LOW LOSS 12G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L3.3CUHD-20M-250x250.jpeg"
+    },
+    {
+      "sku": "DJ-L3.3CUHD-50M",
+      "name": "CANARE L3.3CUHD CABLE COAXIAL ULTRA LOW LOSS 12G-SDI 50MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/DJ-L3.3CUHD-50M1-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L3.3CUHD-45CM",
+      "name": "CANARE L3.3CUHD CABLE CORTO COAXIAL ULTRA 12G-SDI 45CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L3.3CUHD-30M-250x250.jpg"
+    },
+    {
+      "sku": "DJ-L3.3CUHD-90CM",
+      "name": "CANARE L3.3CUHD CABLE CORTO COAXIAL ULTRA 12G-SDI 90CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L3.3CUHD-30M-250x250.jpg"
+    },
+    {
+      "sku": "L3.3CUHD-100M",
+      "name": "CANARE L3.3CUHD DIGITAL VIDEO CABLE COAXIAL ULTRA LOW LOSS 12G-SDI 100MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/_L-5.5CUHDnew-250x250.jpg"
+    },
+    {
+      "sku": "L3.3CUHD-300M",
+      "name": "CANARE L3.3CUHD DIGITAL VIDEO CABLE COAXIAL ULTRA LOW LOSS 12G-SDI 300MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/_L-5.5CUHDnew-250x250.jpg"
+    },
+    {
+      "sku": "L3.3CUHD-30M",
+      "name": "CANARE L3.3CUHD DIGITAL VIDEO CABLE COAXIAL ULTRA LOW LOSS 12G-SDI 30MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-30M-250x250.jpg"
+    },
+    {
+      "sku": "L5.5CUHD-100M",
+      "name": "CANARE L5.5CUHD DIGITAL VIDEO CABLE COAXIALE ULTRA LOW LOSS 12G-SDI 100MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/_L-5.5CUHDnew-250x250.jpg"
+    },
+    {
+      "sku": "L5.5CUHD-2M",
+      "name": "CANARE L5.5CUHD DIGITAL VIDEO CABLE COAXIALE ULTRA LOW LOSS 12G-SDI 2MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-50M-250x250.jpeg"
+    },
+    {
+      "sku": "MBCP-C4F",
+      "name": "CANARE MBCP-C4F CONECTOR SLIM 3GHZ 75 OHM PARA CABLE CANARE L-4CFB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/MBCP-C4F-250x250.jpg"
+    },
+    {
+      "sku": "R300",
+      "name": "CANARE REEL R300 PARA ALMACENAR CABLES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/R3002-250x250.jpg"
+    },
+    {
+      "sku": "TC-1",
+      "name": "CANARE TC-1 HANDHELD CRIMP TOOL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/TC1-250x250.jpg"
+    },
+    {
+      "sku": "TS100U",
+      "name": "CANARE TS100U PELACABLES COAXIAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/TS-100U-250x250.jpg"
+    },
+    {
+      "sku": "SA-PLATE43",
+      "name": "PLACA DE PARED PARA CONECTOR DE EMPOTRAR BNC 75 OHM SEISMIC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/SA-PLATE43-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-10M",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 10MTS 12G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-10M-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-20M",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 20MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-20M-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-30M",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 30MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-4CFB-30M-250x250.jpg"
+    },
+    {
+      "sku": "L-5CFW-50M",
+      "name": "CANARE L-5CFW DIGITAL VIDEO CABLE COAXIAL FLEXIBLE 50MTS 12G",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANARE/L-5CFW-50M1-250x250.jpg"
+    }
+  ]
+}

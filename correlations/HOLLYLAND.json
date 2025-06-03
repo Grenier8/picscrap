@@ -1,0 +1,461 @@
+{
+  "baseProducts": [
+    {
+      "sku": "HL-MARS M1 ENHANCED",
+      "name": "Monitor Transceiver Hollyland Mars M1 Enhanced 5.5\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62537240/resize/306/306?1744748575"
+    },
+    {
+      "sku": "HL-MARS M1",
+      "name": "Monitor Transceiver Hollyland Mars M1 5.5\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/33202843/resize/306/306?1679060191"
+    },
+    {
+      "sku": "MARS-4K",
+      "name": "Sistema de Transmisión de Vídeo Hollyland Mars 4K",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41074200/resize/306/306?1697642314"
+    },
+    {
+      "sku": "PYRO H",
+      "name": "Sistema de Transmisión de Vídeo Hollyland PYRO H",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50534338/resize/306/306?1720564817"
+    },
+    {
+      "sku": "PYRO S",
+      "name": "Sistema de Transmisión de Vídeo Hollyland PYRO S",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53423840/resize/306/306?1726497519"
+    },
+    {
+      "sku": "LARKM2S-COMBO",
+      "name": "Micrófono Inalámbrico Hollyland LARK M2S - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59671317/resize/306/306?1738273222"
+    },
+    {
+      "sku": "HL-LARK C1 IOS",
+      "name": "Micrófono Inalámbrico Hollyland LARK C1 Duo - Lightning",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53425075/resize/306/306?1726500583"
+    },
+    {
+      "sku": "MARS-400SPRO",
+      "name": "Transmisor de Video Hollyland Mars 400S PRO SDI/HDMI",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30142108/resize/306/306?1670625088"
+    },
+    {
+      "sku": "HL-CARRY CASE M4",
+      "name": "Hollyland - Funda de transporte para Mars 400S/Mars 400",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30132977/resize/306/306?1670614654"
+    },
+    {
+      "sku": "HL-MARS300-PRO-ENHANCED",
+      "name": "Sistema de Transmisión de Video Hollyland Mars 300 PRO HDMI Enhanced",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46784630/resize/306/306?1711113001"
+    },
+    {
+      "sku": "LARKMAXDB",
+      "name": "Micrófono Inalámbrico Hollyland LARK MAX Duo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46496192/resize/306/306?1710446276"
+    },
+    {
+      "sku": "HL-MARS 400S PRO II",
+      "name": "Sistema de Transmisión de Vídeo Hollyland Mars 400S PRO II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50324342/resize/306/306?1720019846"
+    },
+    {
+      "sku": "HL-SOLIDCOM C1-4S",
+      "name": "Sistema de Intercom Hollyland Solidcom C1-4S - 4 usuarios",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50520804/resize/306/306?1720546026"
+    },
+    {
+      "sku": "HL-VENUSLIV V2",
+      "name": "Hollyland VenusLiv V2 All-in-One Live Streaming Camera",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61722982/resize/306/306?1742915508"
+    },
+    {
+      "sku": "HL-SOLIDCOM-SE-6S",
+      "name": "Sistema de Intercom Hollyland Solidcom SE - 6 usuarios",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63322542/resize/306/306?1746812065"
+    },
+    {
+      "sku": "LARK-M1-DUO",
+      "name": "Micrófono Inalámbrico Hollyland LARK M1 DUO - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30132623/resize/306/306?1670613874"
+    },
+    {
+      "sku": "SOLIDCOMC1-4SPRO",
+      "name": "Sistema Intercom Hollyland Solidcom C1 Pro-4S - 4 usuarios",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46496624/resize/306/306?1710446821"
+    },
+    {
+      "sku": "LARKC1DMB",
+      "name": "Micrófono Inalámbrico Hollyland LARK C1 Duo - USB C",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46500480/resize/306/306?1710452071"
+    },
+    {
+      "sku": "HL-LARK M2 COMBO",
+      "name": "Micrófono Inalámbrico Hollyland LARK M2 - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48081773/resize/306/306?1714425062"
+    },
+    {
+      "sku": "HL-SOLIDCOM-SE-4S",
+      "name": "Sistema de Intercom Hollyland Solidcom SE - 4 usuarios",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53424532/resize/306/306?1729198840"
+    },
+    {
+      "sku": "SOLIDCOM-C1-PRO6S",
+      "name": "Sistema de intercom Hollyland Solidcom C1 Pro - 6 usuarios",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56968334/resize/306/306?1731436494"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "HL-DC2.1",
+      "name": "HOLLYLAND ADAPTADOR 2,1 V CC PARA MARS 300/400/400S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-DC2.1%20POWER%20ADAPTER-250x250.jpeg"
+    },
+    {
+      "sku": "HL-LOLLIPOP ANTENNA",
+      "name": "HOLLYLAND ANTENA LOLLIPOP PARA SERIE MARS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LOLLIPOP-250x250.jpg"
+    },
+    {
+      "sku": "HL-C1-BAT",
+      "name": "HOLLYLAND BATERÍA RECARGABLE PARA SOLIDCOM C1 (PRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-C1-BAT-250x250.png"
+    },
+    {
+      "sku": "HL-BAT770",
+      "name": "HOLLYLAND BATERÍA RECARGABLE PARA SOLIDCOM SE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-BAT770-250x250.jpg"
+    },
+    {
+      "sku": "HL-D-TAP",
+      "name": "HOLLYLAND CABLE D TAP A BARREL 2,1MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-D-TAP-250x250.jpg"
+    },
+    {
+      "sku": "HL-HD03",
+      "name": "HOLLYLAND CABLE HDMI A HDMI 4K@60 CORTO DE 40CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-HD03-250x250h.png"
+    },
+    {
+      "sku": "HL-HDMI-MICRO",
+      "name": "HOLLYLAND CABLE MICRO HDMI A HDMI 4K@60 CORTO DE 40CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-HDMI-MICRO-250x250h.png"
+    },
+    {
+      "sku": "HL-CTL01",
+      "name": "HOLLYLAND CABLE USB-C A LIGHTNING DE 30CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-CTL01-250x250.jpeg"
+    },
+    {
+      "sku": "HL-CTC01",
+      "name": "HOLLYLAND CABLE USB-C DE 30CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-CTC01-250x250.jpeg"
+    },
+    {
+      "sku": "HL-DC01",
+      "name": "HOLLYLAND CARGADOR DOBLE CON USB-C PARA BATERÍAS SERIE L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-DC01-250x250h.png"
+    },
+    {
+      "sku": "HL-COSMO-C1",
+      "name": "HOLLYLAND COSMO C1 TRANSMISOR/RECEPTOR SDI/HDMI 1080P60 HASTA 300 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HLCOSMOC1-250x250.jpg"
+    },
+    {
+      "sku": "HL-COSMO-C2-1TX-1RX",
+      "name": "HOLLYLAND COSMO C2 KIT 1 TRANSMISOR A 1 RECEPTOR 1080P60",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-COSMOC2-250x250.jpg"
+    },
+    {
+      "sku": "HL-COSMO-C2-2TX-1RX",
+      "name": "HOLLYLAND COSMO C2 KIT 2 TRANSMISORES A 1 RECEPTOR 1080P60",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-COSMOC22TX1RX2-250x250.jpg"
+    },
+    {
+      "sku": "HL-ETHERNET",
+      "name": "HOLLYLAND ETHERNET A CABLE XLR DUAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-ETHERNET-250x250.jpeg"
+    },
+    {
+      "sku": "HL-PYRO 7",
+      "name": "HOLLYLAND HL- PYRO 7 MONITOR 7\" INALAMBRICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-%20PYRO%207-250x250.jpg"
+    },
+    {
+      "sku": "HL-PYRO7KIT",
+      "name": "HOLLYLAND HL-PYRO 7 KIT 2 MONITORES 7\" INALAMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-PYRO7KIT-250x250.jpg"
+    },
+    {
+      "sku": "MONITOR CAGE-G",
+      "name": "HOLLYLAND JAULA DE MONITOR CON EMPUÑADURAS 5\" A 9\" (GOLD MOUNT)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/3MONITOR%20CAGE-G-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARKC1SOLO-IPHONE-B",
+      "name": "HOLLYLAND LARK C1 MICRÓFONO INALÁMBRICO PARA IOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARKC1SOLO-IPHONE-B4-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARK-M1-DUO",
+      "name": "HOLLYLAND LARK M1 DUO SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARK%20M1DUO6new-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARK M1 SOLO",
+      "name": "HOLLYLAND LARK M1 SISTEMA DE 1 MICRÓFONO INALÁMBRICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARK-M1-SOLO-250x250.jpeg"
+    },
+    {
+      "sku": "HL-LARK-M2-COMBO",
+      "name": "HOLLYLAND LARK M2 COMBO SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LarkM2Combo-250x250w.png"
+    },
+    {
+      "sku": "LARKM2TRANSMITTER",
+      "name": "HOLLYLAND LARK M2 MICRÓFONO (REPUESTO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARKM2TRANSMITTER-250x250.jpg"
+    },
+    {
+      "sku": "LARK M2 USB-C RECEIVER",
+      "name": "HOLLYLAND LARK M2 RECEPTOR INALÁMBRICO CON CONECTOR USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARK%20M2%20USB-C%20RECEIVER-250x250.jpeg"
+    },
+    {
+      "sku": "HL-LARK-M2S-COMBO",
+      "name": "HOLLYLAND LARK M2S COMBO SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARKM2SCOMBO-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARK M2S ULTIMATE COMBO",
+      "name": "HOLLYLAND LARK M2S ULTIMATE SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARKM2SULTIMATECOMBO-250x250.jpg"
+    },
+    {
+      "sku": "LARK MAX CHARGING CASE (BLACK)",
+      "name": "HOLLYLAND LARK MAX ESTUCHE DE CARGA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARKMAXCHARGINGCASE(BLACK)-250x250.jpeg"
+    },
+    {
+      "sku": "LARK MAX DUO (BLACK)",
+      "name": "HOLLYLAND LARK MAX SISTEMA DE 2 MICRÓFONOS OMNI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARK-MAX-DUO-250x250w.png"
+    },
+    {
+      "sku": "LARK MAX SOLO (BLACK)",
+      "name": "HOLLYLAND LARK MAX SOLO SISTEMA INALÁMBRICO 1 MIC OMNI 2.4 DIGITAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARKMAXSOLOBLACK-250x250.jpeg"
+    },
+    {
+      "sku": "LARK MAX TRANSMITTER (BLACK)",
+      "name": "HOLLYLAND LARK MAX TRANSMISOR INALÁMBRICO OMNI 2.4 DIGITAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARKMAXTRANSMITTER(BLACK)%20-250x250.jpeg"
+    },
+    {
+      "sku": "MARS-400SPROII",
+      "name": "HOLLYLAND MARS 400SPRO II INALAMBRICO 1080P60 150 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-MARS-400SPROII-250x250.jpeg"
+    },
+    {
+      "sku": "HL-MARS 4K TX",
+      "name": "HOLLYLAND MARS 4K HDMI / 3G-SDI TRANSMISOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-MARS4KTX-250x250.jpeg"
+    },
+    {
+      "sku": "MARS-4K",
+      "name": "HOLLYLAND MARS 4K HDMI / 3G-SDI TRANSMISOR/RECEPTOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/MARS4K-250x250.jpg"
+    },
+    {
+      "sku": "HL-MARS M1 ENHANCED",
+      "name": "HOLLYLAND MARS M1 ENHANCED MONITOR 5.5\" INALAMBRICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/M1ENHANCED-250x250.jpeg"
+    },
+    {
+      "sku": "MARS-400SPRO-RX",
+      "name": "HOLLYLAND MARS RECEPTOR 400SPRO 3G-SDI/HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/MARS-400SPRO-RX-250x250.jpg"
+    },
+    {
+      "sku": "PYRO-H RX",
+      "name": "HOLLYLAND PYRO-H RECEPTOR DE VIDEO INALÁMBRICO 4K HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/PYRO-H%20RX-250x250.jpeg"
+    },
+    {
+      "sku": "PYRO-H",
+      "name": "HOLLYLAND PYRO-H SISTEMA VIDEO INALÁMBRICO 4K HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/PYRO-H-250x250.jpeg"
+    },
+    {
+      "sku": "PYRO-S",
+      "name": "HOLLYLAND PYRO-S SISTEMA VIDEO INALÁMBRICO SDI 3G / 4K HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/PYRO-S-250x250.jpeg"
+    },
+    {
+      "sku": "TALLY LIGHT-4S",
+      "name": "HOLLYLAND SISTEMA TALLY LIGHT INALÁMBRICO (KIT 4 LUCES)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/TALLYLIGHT-4S-250x250.jpeg"
+    },
+    {
+      "sku": "HL-C1-SH03",
+      "name": "HOLLYLAND SOLIDCOM C1 CON CABLE HEASET PARA HUB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-C1-SH03-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1-HUB",
+      "name": "HOLLYLAND SOLIDCOM C1 HUB BASE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOSA/C1-HUB-250x250.jpeg"
+    },
+    {
+      "sku": "HL-C1-CH04",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO CARGADOR PARA 4 BATERIAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-C1-CH04-250x250.jpg"
+    },
+    {
+      "sku": "C1PRO-DH02",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO DOBLE WIRELESS INTERCOM REMOTE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/C1PRO-DH02-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1PRO-ROAMING-HUB20S-VM",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO ROAMING 20 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOM%20C1PRO-ROAMING-HUB20S-VM-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1PRO-3S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO WIRELESS INTERCOM 3 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMC1PRO3S-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1PRO-4S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO WIRELESS INTERCOM 4 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMC1PRO-4S-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1PRO-6S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO WIRELESS INTERCOM 6 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOM-C1PRO-6S-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1PRO-8S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO WIRELESS INTERCOM 8 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/%20SOLIDCOMC1PRO-8S-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1PRO-REMOTE",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO WIRELESS INTERCOM REMOTE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOM-C1PRO-REMOTE-250x250h.png"
+    },
+    {
+      "sku": "SOLIDCOM C1 PRO-HUB4S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO-HUB4S WIRELESS INTERCOM 5 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMC1PRO-HUB4S-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1 PRO-HUB6S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO-HUB6S WIRELESS INTERCOM 7 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMC1PRO-HUB6Snew-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM C1 PRO-HUB8S",
+      "name": "HOLLYLAND SOLIDCOM C1 PRO-HUB8S WIRELESS INTERCOM 9 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMC1PRO-HUB8S-250x250.jpg"
+    },
+    {
+      "sku": "HL-C1-SH02",
+      "name": "HOLLYLAND SOLIDCOM C1 WIRELESS HEASET REMOTE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/07%20(1)-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1-2S",
+      "name": "HOLLYLAND SOLIDCOM C1 WIRELESS INTERCOM 2 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-SOLIDCOMC1-2S-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1-3S",
+      "name": "HOLLYLAND SOLIDCOM C1 WIRELESS INTERCOM 3 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMC1-3S-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1-4S",
+      "name": "HOLLYLAND SOLIDCOM C1 WIRELESS INTERCOM 4 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/4-Person%20Headset%20System-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1-6S",
+      "name": "HOLLYLAND SOLIDCOM C1 WIRELESS INTERCOM 6 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-SOLIDCOMC1-6S-250x250.jpg"
+    },
+    {
+      "sku": "SOLIDCOM C1-HUB8S",
+      "name": "HOLLYLAND SOLIDCOM C8S WIRELESS INTERCOM 9 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOM%20C1-HUB8S-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM M1-8B",
+      "name": "HOLLYLAND SOLIDCOM M1 WIRELESS INTERCOM 8 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOM%20M1-8B-250x250.jpg"
+    },
+    {
+      "sku": "HL-C1-SC03",
+      "name": "HOLLYLAND SOLIDCOM MALETA DE TRANSPORTE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-C1-SC03-250x250.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM SE-4S",
+      "name": "HOLLYLAND SOLIDCOM SE WIRELESS INTERCOM 4 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOM%20SE-4S-250x250w.png"
+    },
+    {
+      "sku": "SOLIDCOM SE-6S",
+      "name": "HOLLYLAND SOLIDCOM SE WIRELESS INTERCOM 6 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMSE-6S-250x250h.jpeg"
+    },
+    {
+      "sku": "SOLIDCOM SE-8S",
+      "name": "HOLLYLAND SOLIDCOM SE WIRELESS INTERCOM 8 USUARIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/SOLIDCOMSE-8S-250x250w.jpg"
+    },
+    {
+      "sku": "HL-COSMOC2TX",
+      "name": "HOLLYLAND TRANSMISOR COSMO C2 HDMI/SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-COSMOC2TX-250x250.jpeg"
+    },
+    {
+      "sku": "HL-VENUSLIV V2",
+      "name": "HOLLYLAND VENUSLIV V2 CÁMARA DE TRANSMISIÓN EN VIVO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-VENUSLIVV2-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARKC1DUO-IPHONE-B",
+      "name": "HOLLYLAND LARK C1 DUO MICRÓFONOS INALÁMBRICOS PARA IOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARKC1DUO-IPHONE-B-250x250.jpeg"
+    },
+    {
+      "sku": "HL-LARK-M2-CAMERA",
+      "name": "HOLLYLAND LARK M2 CAMERA SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARK-M2-CameraNEW-250x250.png"
+    },
+    {
+      "sku": "HL-LARK-M2-LIGHTNING-BLACK",
+      "name": "HOLLYLAND LARK M2 LIGHTNING KIT 2 MIC INALÁMBRICOS (NEGROS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARK-M2-LIGHTNING-BLACK-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARK-M2-USB-C",
+      "name": "HOLLYLAND LARK M2 USB-C KIT 2 MIC INALÁMBRICOS (NEGROS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARKM2USB-C-BLACK-250x250.jpg"
+    },
+    {
+      "sku": "HL-LARK-M2-USB-C-WHITE",
+      "name": "HOLLYLAND LARK M2 USB-C SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/HL-LARK-M2-USB-C-WHITE-250x250.jpeg"
+    },
+    {
+      "sku": "LARK M2 LIGHTNING",
+      "name": "HOLLYLAND LARK M2 RECEPTOR INALÁMBRICO CON CONECTOR LIGHTNING",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/HOLLYLAND/LARKM2LIGHTNING-250x250.jpg"
+    }
+  ]
+}

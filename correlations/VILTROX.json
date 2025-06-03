@@ -1,0 +1,141 @@
+{
+  "baseProducts": [
+    {
+      "sku": "AF 35/1.2 FE",
+      "name": "Lente Viltrox AF 35mm f/1.2 LAB FE - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63157315/resize/306/306?1746484811"
+    },
+    {
+      "sku": "AF 33/1.4 E",
+      "name": "Lente Viltrox AF 33mm f/1.4 - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45656014/resize/306/306?1708349816"
+    },
+    {
+      "sku": "VL-200 BI-2",
+      "name": "Kit 2 Luces Led Viltrox VL-200T Bi-Color",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47542752/resize/306/306?1712695045"
+    },
+    {
+      "sku": "AF 33/1.4 XF",
+      "name": "Lente Viltrox AF 33mm f/1.4 - Fuji X",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45656218/resize/306/306?1708350675"
+    },
+    {
+      "sku": "VINPF970",
+      "name": "Batería Viltrox NP-F970 - 6600mAh",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61700426/resize/306/306?1742828168"
+    },
+    {
+      "sku": "EF-EOS M",
+      "name": "Adaptador de Montura Viltrox EF-EOS M - Canon EF a M",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63620500/resize/306/306?1747769092"
+    },
+    {
+      "sku": "EF-NEX IV",
+      "name": "Adaptador de Montura Viltrox EF-NEX IV - Canon EF a Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45694717/resize/306/306?1708454889"
+    },
+    {
+      "sku": "AF13518E",
+      "name": "Lente Viltrox AF 135mm f/1.8 LAB FE - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63183303/resize/306/306?1746546143"
+    },
+    {
+      "sku": "AF 16/1.8 FE",
+      "name": "Lente Viltrox AF 16mm f/1.8 FE - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63186545/resize/306/306?1746546884"
+    },
+    {
+      "sku": "AF 50/2.0 FE",
+      "name": "Lente Viltrox AF 50mm f/2 Air FE - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63188399/resize/306/306?1746547811"
+    },
+    {
+      "sku": "AF 20/2.8 FE",
+      "name": "Lente Viltrox AF 20mm f/2.8 - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63197077/resize/306/306?1746559120"
+    },
+    {
+      "sku": "AF2845E",
+      "name": "Lente Viltrox AF 28mm f/4.5 FE - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63197932/resize/306/306?1746560409"
+    },
+    {
+      "sku": "AF 13/1.4 E",
+      "name": "Lente Viltrox AF 13mm f/1.4 XF - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63205509/resize/306/306?1746563394"
+    },
+    {
+      "sku": "AF 27/1.2 E",
+      "name": "Lente Viltrox 27mm f/1.2 Pro - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63206195/resize/306/306?1746564379"
+    },
+    {
+      "sku": "AF 75/1.2 E",
+      "name": "Lente Viltrox 75mm f/1.2 AF - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63208390/resize/306/306?1746565371"
+    },
+    {
+      "sku": "AF 85/1.8 II FE",
+      "name": "Lente Viltrox AF 85mm f/1.8 FE II - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63211596/resize/306/306?1746566034"
+    },
+    {
+      "sku": "VL-60 BI-2",
+      "name": "Kit Doble de Panel LED Viltrox VL-D60T - Bicolor",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48851695/resize/306/306?1715898569"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "EF-EOS M",
+      "name": "VILTROX ADAPTADOR DE LENTES EF / EF-S A EF-M",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/EF-EOSM-250x250.jpeg"
+    },
+    {
+      "sku": "EF-E II",
+      "name": "VILTROX ADAPTADOR EF-E II 0.71 EF A MONTURA SONY E-MOUNT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/EF-EII-250x250.jpeg"
+    },
+    {
+      "sku": "EF-L PRO",
+      "name": "VILTROX ADAPTADOR LENTES EF A MONTURA L (LEICA)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/EF-L%20PRO-250x250.jpeg"
+    },
+    {
+      "sku": "EF-M1",
+      "name": "VILTROX ADAPTADOR LENTES EF A MONTURA MICRO 4/3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/EF-M1-250x250.jpeg"
+    },
+    {
+      "sku": "EF-NEX IV",
+      "name": "VILTROX ADAPTADOR LENTES EF A MONTURA SONY E-MOUNT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/EFNEXIVnew-250x250h.png"
+    },
+    {
+      "sku": "NP-F970V",
+      "name": "VILTROX NP-F970 BATERÍA F970 SERIE L (USB-C)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/NP-F970-250x250.jpg"
+    },
+    {
+      "sku": "NINJA300",
+      "name": "WEEYLITE LUZ LED BI COLOR NINJA300 80W CRI DE 95",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/Ninja300-250x250.jpg"
+    },
+    {
+      "sku": "VP-90",
+      "name": "WEEYLITE VP-90 SOFTBOX PARABÓLICO 90CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/VP-90-250x250.jpg"
+    },
+    {
+      "sku": "L-132T",
+      "name": "VILTROX L132T LUZ LED PARA CAMARA BI-COLOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/L-132T-250x250.jpg"
+    },
+    {
+      "sku": "VL-200T-K",
+      "name": "VILTROX VL-200T LUZ PANEL LED CON STAND",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/VILTROX/VL-200T-Knew1-250x250h.png"
+    }
+  ]
+}

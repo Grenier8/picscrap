@@ -1,0 +1,90 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "636-416",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "637-732",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "637-523",
+        "secondSKU": "637-523"
+      },
+      {
+        "baseSKU": "636-415",
+        "secondSKU": "636-415"
+      },
+      {
+        "baseSKU": "637-756",
+        "secondSKU": "637-756"
+      },
+      {
+        "baseSKU": "637-754",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "637-735",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "636-414",
+        "secondSKU": "636-414"
+      },
+      {
+        "baseSKU": "636-424",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "637-525",
+        "secondSKU": "637-525"
+      },
+      {
+        "baseSKU": "637-758",
+        "secondSKU": "637-758"
+      },
+      {
+        "baseSKU": "637-733",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "637-730",
+        "secondSKU": "637-730"
+      },
+      {
+        "baseSKU": "637-738",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "636-423",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "637-736",
+        "secondSKU": "637-736"
+      },
+      {
+        "baseSKU": "637-524",
+        "secondSKU": "637-524"
+      },
+      {
+        "baseSKU": "636-331",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "636-442",
+        "secondSKU": "636-442"
+      },
+      {
+        "baseSKU": "636-321",
+        "secondSKU": "636-321"
+      },
+      {
+        "baseSKU": "636-440",
+        "secondSKU": "636-440"
+      }
+    ]
+  }
+}

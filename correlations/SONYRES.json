@@ -1,0 +1,314 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "LCS-BBK",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7RM3A/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ZV-1",
+        "secondSKU": "ZV-1/BC"
+      },
+      {
+        "baseSKU": "ILCE-7CL/SQ",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7RM4A/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-9/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "DLC-HX10",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7M4",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NP-FZ100",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7CR/S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE7C/S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7M3K/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7CM2/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-9M3/BQ",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-6100Y/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MDR-7506",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "BP-U70",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-6100L/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NP-FW50",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7CM2L/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-1M2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-6700",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7SM3/B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL24F14GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL35F14Z",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL35F18",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "DSCRX10M4B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILCE-7SM2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILME-FX30B",
+        "secondSKU": "ILME-FX30B"
+      },
+      {
+        "baseSKU": "SEL24105G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL1224GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL20F18G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MRW-S1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL35F18F",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL55210",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL50F12GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL11F18",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SELP1020G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ZV-E10M2/BQ",
+        "secondSKU": "ZV-E10M2B"
+      },
+      {
+        "baseSKU": "MRW-G2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL400800G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL40F25G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL20F28",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL24240",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL100F28GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SELP18110G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL18200",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL400F28GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL18135",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ILME-FX30",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "BC-QZ1",
+        "secondSKU": "BC-QZ1"
+      },
+      {
+        "baseSKU": "SEL15F14G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL2450G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL2870GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "PXW-Z90V",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CEA-G160T",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL20TC",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL90M28G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL85F14GM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL85F14GM2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "HXR-NX800",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SELP1650",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "FDR-AX53",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL70200G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL50M28",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL1670Z",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ECM-W2BT",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL50F25G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SELP28135G",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SEL70200GM2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CEB-G960T",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "GP-VR100",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MRWG1/T1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ECM-XYST1M",
+        "secondSKU": "ECM-XYST1M"
+      },
+      {
+        "baseSKU": "SEL70200G2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ECM-M1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ECM-W3",
+        "secondSKU": null
+      }
+    ]
+  }
+}

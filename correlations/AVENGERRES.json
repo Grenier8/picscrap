@@ -1,0 +1,22 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "I650B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "I1031",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "A2018L",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "I750B",
+        "secondSKU": null
+      }
+    ]
+  }
+}

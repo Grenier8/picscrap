@@ -1,0 +1,86 @@
+{
+  "baseProducts": [
+    {
+      "sku": "BM5 IV WR",
+      "name": "Monitor PORTKEYS BM5IV WR 5.5\" Touchscreen - HDMI/SDI",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58213236/resize/306/306?1733931314"
+    },
+    {
+      "sku": "BD1",
+      "name": "Dummy Battery PORTKEYS BD1 - NP-F Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58214331/resize/306/306?1733933973"
+    },
+    {
+      "sku": "BM5 IV",
+      "name": "Monitor PORTKEYS BM5IV 5.5\" Touchscreen - HDMI/SDI",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58212934/resize/306/306?1733930686"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "BM5 IV",
+      "name": "PORTKEYS BM5 IV MONITOR 5.5\" HDMI/SDI 2000NIT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/BM5IV-250x250.jpg"
+    },
+    {
+      "sku": "BM5 IV WR",
+      "name": "PORTKEYS BM5 IV WR MONITOR 5.5\" HDMI/SDI 2000NIT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/BM5IV-250x250.jpg"
+    },
+    {
+      "sku": "BM5 DTAP POWER CABLE",
+      "name": "PORTKEYS CABLE D-TAP DE ENERGIA PARA LOCKING 4-PIN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/BM5DTAP-250x250.jpg"
+    },
+    {
+      "sku": "8K-HDMI-30CM",
+      "name": "PORTKEYS CABLE HDMI A HDMI DE 30CM 8K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/8K-HDMI-30CM-250x250.jpg"
+    },
+    {
+      "sku": "HDV1",
+      "name": "PORTKEYS HDMI SPLITTER PASIVO DE 1 HDMI A 2 HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/HDV1-250x250.jpg"
+    },
+    {
+      "sku": "HS8",
+      "name": "PORTKEYS HS8 MONITOR 8\" 4K HDMI / 3G-SDI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/HS8-250x250.jpg"
+    },
+    {
+      "sku": "LEYE III",
+      "name": "PORTKEYS LEYE III VISOR ELECTRÓNICO LCD 4K HDMI DE 2,4\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/LEYEIII-250x250.jpeg"
+    },
+    {
+      "sku": "LH5P II",
+      "name": "PORTKEYS LH5P II MONITOR 5.5\" 4K 2200NIT CON CONTROL DE CÁMARA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/LH5PII-250x250.jpeg"
+    },
+    {
+      "sku": "LH7PB",
+      "name": "PORTKEYS LH7PB MONITOR 7\" HIGH-BRIGHT HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/LH7PB-250x250.jpeg"
+    },
+    {
+      "sku": "PT5 II",
+      "name": "PORTKEYS PT5 II MONITOR 5\" 4K 500NITS TÁCTIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/PT5II-250x250.jpeg"
+    },
+    {
+      "sku": "PT5 III",
+      "name": "PORTKEYS PT5 III MONITOR 5\" 4K 800NITS TÁCTIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/PT5III-250x250.jpg"
+    },
+    {
+      "sku": "PT6",
+      "name": "PORTKEYS PT6 MONITOR 5.2\" 4K 600 NITS TÁCTIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/PT6-250x250.jpeg"
+    },
+    {
+      "sku": "PMH-1",
+      "name": "PORTKEYS VESA MONITOR BRACKET PARA SUJETAR MONITORES HASTA 8KG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/PORTKEYS/PMH-1-250x250.jpg"
+    }
+  ]
+}

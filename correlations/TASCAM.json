@@ -1,0 +1,181 @@
+{
+  "baseProducts": [
+    {
+      "sku": "TH-02",
+      "name": "Audífonos Tascam TH-02 Studio",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39587642/resize/306/306?1694448253"
+    },
+    {
+      "sku": "310320160805",
+      "name": "Grabadora de Campo Multipista TASCAM DR-60D MKII",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47312344/resize/306/306?1712177367"
+    },
+    {
+      "sku": "MIXCAST4",
+      "name": "Consola de Grabación TASCAM Mixcast 4",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46914042/resize/306/306?1711463568"
+    },
+    {
+      "sku": "310320160825",
+      "name": "Tascam TH02 - Audífono cerrado",
+      "image": ""
+    },
+    {
+      "sku": "DR-40X",
+      "name": "Grabadora Portátil Tascam DR-40X",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58962109/resize/306/306?1736451457"
+    },
+    {
+      "sku": "TM-80",
+      "name": "Micrófono Condensador TASCAM TM-80 - Cardioide",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62028339/resize/306/306?1743615851"
+    },
+    {
+      "sku": "DR-05X",
+      "name": "Grabadora Portátil Tascam DR-05X",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46716061/resize/306/306?1710880629"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "MH-8",
+      "name": "TASCAM AMPLIFICADOR DE AUDÍFONOS 8 CANALES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/MH-8-250x250.jpeg"
+    },
+    {
+      "sku": "TH-02",
+      "name": "TASCAM AUDÍFONO DE ESTUDIO TH-02",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/TH-02-B-250x250.jpg"
+    },
+    {
+      "sku": "TH-05",
+      "name": "TASCAM AUDÍFONO DE ESTUDIO TH-05",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/TH-02-B-250x250.jpg"
+    },
+    {
+      "sku": "TH-07",
+      "name": "TASCAM AUDÍFONO MONITOR DE ESTUDIO TH-07",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/IKAN/TH-07-250x250.jpeg"
+    },
+    {
+      "sku": "CS-PCAS20",
+      "name": "TASCAM BOLSO DE TRASPORTE DE MIXCAST 4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/CS-PCAS20-250x250.jpg"
+    },
+    {
+      "sku": "CA-XLR2D-C",
+      "name": "TASCAM CA-XLR2D-C KIT ADAPTADOR DE MICRÓFONO XLR PARA CÁMARAS CANON",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/CA-XLR2D-C-250x250.jpeg"
+    },
+    {
+      "sku": "DR-05X",
+      "name": "TASCAM DR-05X GRABADOR DE AUDIO PORTÁTIL DE 2 ENTRADAS / 2 PISTAS CON MICRÓFONO ESTÉREO INTEGRADO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/DR-05X-250x250.jpg"
+    },
+    {
+      "sku": "DR-07X",
+      "name": "TASCAM DR-07X GRABADOR DE AUDIO PORTÁTIL 2 ENTRADAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/DR-07X-250x250.jpg"
+    },
+    {
+      "sku": "DR-10L",
+      "name": "TASCAM DR-10L GRABADORA DE AUDIO DIGITAL TASCAM CON MICRÓFONO LAVALIER",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/DR-10L-250x250.jpg"
+    },
+    {
+      "sku": "DR-10L PRO",
+      "name": "TASCAM DR-10L PRO GRABADOR AUDIO 32-BIT CON LAVALIER",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/DR-10LPRO-250x250.jpeg"
+    },
+    {
+      "sku": "DR10X",
+      "name": "TASCAM DR-10X PLUG ON MICRO GRABADOR PCM CON CONECTOR XLR",
+      "image": "https://davidandjoseph.cl/image/cache/data/RODE/dr10x-250x250.jpg"
+    },
+    {
+      "sku": "DR-40X",
+      "name": "TASCAM DR-40X GRABADOR PORTÁTIL 4 TRACKS 2 XLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/DR-40X-250x250.jpg"
+    },
+    {
+      "sku": "DR-60DMKII",
+      "name": "TASCAM DR-60D MKII GRABADOR PORTÁTIL 4 CANALES PARA DSLR (NUEVA VERSIÓN)",
+      "image": "https://davidandjoseph.cl/image/cache/data/TASCAM/DR60MKII-250x250.jpg"
+    },
+    {
+      "sku": "DR-70D",
+      "name": "TASCAM DR-70D GRABADOR PORTÁTIL 4 CANALES PARA DSLR (4 XLR)",
+      "image": "https://davidandjoseph.cl/image/cache/data/TASCAM/dr70d-250x250.jpg"
+    },
+    {
+      "sku": "IXZ",
+      "name": "TASCAM IXZ - MIC / GUITAR INTERFAZ PARA DISPOSITIVOS IOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/IXZ-250x250.jpg"
+    },
+    {
+      "sku": "MIXCAST 4",
+      "name": "TASCAM MIXCAST 4 PODCAST MEZCLADOR, GRABADOR E INTERFAZ DE AUDIO USB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/MIXCAST%204-250x250.jpg"
+    },
+    {
+      "sku": "MODEL12",
+      "name": "TASCAM MODEL 12 MEZCLADOR DE PRODUCCIÓN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/MODEL12-250x250.jpg"
+    },
+    {
+      "sku": "MODEL16",
+      "name": "TASCAM MODEL 16 MEZCLADOR DE PRODUCCIÓN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/MODEL16-250x250.jpeg"
+    },
+    {
+      "sku": "PORTACAPTURE X6",
+      "name": "TASCAM PORTACAPTURE X6 GRABADOR DE AUDIO PORTÁTIL DE 32 BITS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/PORTACAPTUREX6-250x250.jpg"
+    },
+    {
+      "sku": "PORTACAPTURE X8",
+      "name": "TASCAM PORTACAPTURE X8 GRABADOR 6 ENTRADAS / 8 PISTAS / 32 BITS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/PORTACAPTUREX8-250x250.jpg"
+    },
+    {
+      "sku": "PS-P520E",
+      "name": "TASCAM PS-P520E POWER AC ADAPTER PARA GRABADORES DE AUDIO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/ps-p520enew-250x250.jpg"
+    },
+    {
+      "sku": "SERIE102I",
+      "name": "TASCAM SERIE 102I INTERFAZ USB 2.0 ANALÓGICO / DIGITAL: 10 ENTRADAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/SERIE102I-250x250.jpg"
+    },
+    {
+      "sku": "TM-180",
+      "name": "TASCAM TM-180 STUDIO CONDENSER MICROPHONE CON SHOCKMOUNT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/TM-180-250x250.jpg"
+    },
+    {
+      "sku": "TM-250U",
+      "name": "TASCAM TM-250U MICRÓFONO CONDENSADOR SUPER CARDIOIDE USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/TM-250U-250x250.jpeg"
+    },
+    {
+      "sku": "TM-95GN",
+      "name": "TASCAM TM-95GN MICRÓFONO DE CONDENSADOR CUELLO DE CISNE PARA SOBREMESA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/TM-95GN5-250x250.jpg"
+    },
+    {
+      "sku": "TM-80",
+      "name": "TASCAM TM80 STUDIO CONDENSER MICROPHONE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/TM-80-250x250.jpg"
+    },
+    {
+      "sku": "US-1X2HR",
+      "name": "TASCAM US-1X2HR INTERFAZ PARA PODCASTS Y STREAMING EN DIRECTO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TASCAM/US-1X2HR-250x250h.jpeg"
+    },
+    {
+      "sku": "WS11",
+      "name": "TASCAM WS11 PARAVIENTO PARA GRABADORES TASCAM DR",
+      "image": "https://davidandjoseph.cl/image/cache/data/TASCAM/WS11-250x250.jpg"
+    }
+  ]
+}

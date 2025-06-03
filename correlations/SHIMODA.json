@@ -1,0 +1,46 @@
+{
+  "baseProducts": [
+    {
+      "sku": "520-125",
+      "name": "Mochila Shimoda Action X30 V2 Starter Kit 30L",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60373706/resize/306/306?1740084491"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "520-125",
+      "name": "SHIMODA ACTION X30 V2 BACKPACK MOCHILA ADVENTURE STARTER KIT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SHIMODA/520-122-250x250.jpg"
+    },
+    {
+      "sku": "520-139",
+      "name": "SHIMODA ACTION X50 V2 NUEVA MOCHILA ADVENTURE (BLACK)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SHIMODA/520-139-250x250.jpeg"
+    },
+    {
+      "sku": "520-144",
+      "name": "SHIMODA ACTION X70 V2 BACKPACK XL MOCHILA ADVENTURE (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SHIMODA/520-144-250x250.jpeg"
+    },
+    {
+      "sku": "520-223",
+      "name": "SHIMODA BOLSO INTERNO CON DIVISORES PARA CÁMARAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SHIMODA/520-223-250x250.jpg"
+    },
+    {
+      "sku": "520-113",
+      "name": "SHIMODA DESIGNS MALETA DV ROLLER (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/TENBA/520-113-250x250.jpg"
+    },
+    {
+      "sku": "520-156",
+      "name": "SHIMODA EXPLORE V2 30L MOCHILA PHOTO STARTER KIT (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SHIMODA/520-156-250x250.jpeg"
+    },
+    {
+      "sku": "520-184",
+      "name": "SHIMODA URBAN EXPLORE 30L MOCHILA (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SHIMODA/520-184-250x250.jpg"
+    }
+  ]
+}

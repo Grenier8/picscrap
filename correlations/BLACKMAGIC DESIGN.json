@@ -1,0 +1,126 @@
+{
+  "baseProducts": [
+    {
+      "sku": "CONVBDC/SDI/HDMI12G/P",
+      "name": "Micro Convertidor Blackmagic Bidireccional SDI/HDMI 12G - Con Fuente de Poder",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58978208/resize/306/306?1736520176"
+    },
+    {
+      "sku": "CONVCMIC/HS03G",
+      "name": "Micro Convertidor Blackmagic - HDMI a SDI 3G",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41071153/resize/306/306?1697636715"
+    },
+    {
+      "sku": "BDLKULSDMAREC3G",
+      "name": "Capturadora Blackmagic Design UltraStudio 3G",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46492955/resize/306/306?1710443675"
+    },
+    {
+      "sku": "SWATEMMINI",
+      "name": "Switcher Blackmagic Design Atem Mini Hdmi",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30127801/resize/306/306?1670606424"
+    },
+    {
+      "sku": "DV/RESSTUD",
+      "name": "Licencia Blackmagic Design DaVinci Resolve Studio 18",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45929200/resize/306/306?1709069044"
+    },
+    {
+      "sku": "SWATEMMINIBPR",
+      "name": "Switcher Blackmagic Design ATEM Mini Pro HDMI",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47280633/resize/306/306?1712104652"
+    },
+    {
+      "sku": "SWATEMMINICEXTISO",
+      "name": "Switcher Blackmagic Design ATEM Mini Extreme ISO",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50324632/resize/306/306?1720020950"
+    },
+    {
+      "sku": "SWPANELAA1ME10",
+      "name": "Switcher Blackmagic Design ATEM Micro Live Stream Panel",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58438082/resize/306/306?1734451128"
+    },
+    {
+      "sku": "CONVCMIC/SH03G",
+      "name": "Micro Convertidor Blackmagic - SDI a HDMI 3G",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41071259/resize/306/306?1697637010"
+    },
+    {
+      "sku": "CONVBDC/SDI/HDMI03G",
+      "name": "Micro Convertidor Blackmagic Bidireccional - SDI/HDMI 3G",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45523214/resize/306/306?1707863409"
+    },
+    {
+      "sku": "CONVBDC/SDI/HDMI03G/PS",
+      "name": "Micro Convertidor Blackmagic Bidireccional SDI/HDMI 3G - Con Fuente de Poder",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53289755/resize/306/306?1726267520"
+    },
+    {
+      "sku": "CINECAMCPYXD60LFEF",
+      "name": "Cámara Cinema Blackmagic Design PYXIS 6K - Montura Canon EF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/55853757/resize/306/306?1730151337"
+    },
+    {
+      "sku": "CINECAMPOCHDEF06P",
+      "name": "Cámara Blackmagic Pocket 6k Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30087811/resize/306/306?1670442030"
+    },
+    {
+      "sku": "SWATEMMINIBPRISO",
+      "name": "Switcher Blackmagic Design ATEM Mini Pro ISO HDMI",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45608211/resize/306/306?1708115433"
+    },
+    {
+      "sku": "SWATEMMINICEXT",
+      "name": "Switcher Blackmagic Design ATEM Mini Extreme",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46180846/resize/306/306?1709733824"
+    },
+    {
+      "sku": "CONVCMIC/HS03G/WPSU",
+      "name": "Micro Convertidor Blackmagic HDMI to SDI 3G - Con Fuente de Poder",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46767438/resize/306/306?1711055628"
+    },
+    {
+      "sku": "CINECAMCPYXA60LFL",
+      "name": "Cámara Cinema Blackmagic Design PYXIS 6K - Montura Leica L",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58437698/resize/306/306?1734449999"
+    },
+    {
+      "sku": "SWATEMTVSTC/K4K8",
+      "name": "Switcher Blackmagic Design ATEM Television Studio 4K8",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58977861/resize/306/306?1736518835"
+    },
+    {
+      "sku": "HYPERD/ST/DG4P",
+      "name": "Grabador Blackmagic Design HyperDeck Studio 4K Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58978577/resize/306/306?1736521120"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "SWATEMSCN2/1ME1/HD",
+      "name": "BLACKMAGIC DESIGN ATEM 1 M/E CONSTELLATION HD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BLACKMAGICDESIGN/SWATEMSCN4-1ME-HD-250x250.jpg"
+    },
+    {
+      "sku": "BMD-HYPERD/PTS4K",
+      "name": "BLACKMAGIC DESIGN HYPERDECK SHUTTLE 4K PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BLACKMAGICDESIGN/BLHDS4KP2-250x250.jpg"
+    },
+    {
+      "sku": "BMD-HYPERD/PTSHD",
+      "name": "BLACKMAGIC DESIGN HYPERDECK SHUTTLE HD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BLACKMAGICDESIGN/BMD-HYPERD_PTSHDnew-250x250.jpg"
+    },
+    {
+      "sku": "DV/RES/AAAPNLMIC/EN",
+      "name": "BLACKMAGIC DESIGN DAVINCI RESOLVE MICRO COLOR PANEL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BLACKMAGICDESIGN/DV:RES:AAAPNLMIC:EN-250x250.jpeg"
+    },
+    {
+      "sku": "CONVCMIC/HS12G",
+      "name": "BLACKMAGIC DESIGN MICRO CONVERTIDOR 12G DE HDMI A SDI (2)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BLACKMAGICDESIGN/CONVCMICHS12GN-250x250.jpg"
+    }
+  ]
+}

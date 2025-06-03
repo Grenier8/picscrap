@@ -1,0 +1,506 @@
+{
+  "baseProducts": [
+    {
+      "sku": "TT350N",
+      "name": "Flash Godox TT350 TTL HSS - Nikon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58466537/resize/306/306?1734528308"
+    },
+    {
+      "sku": "CB-12",
+      "name": "Estuche Godox para AD600pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58360227/resize/306/306?1734199410"
+    },
+    {
+      "sku": "GF14B",
+      "name": "Barndoors Godox GF14B para Fresnel Knowled",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60060260/resize/306/306?1739295524"
+    },
+    {
+      "sku": "AC400",
+      "name": "Adaptador de Corriente AC Godox para AD400Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58206428/resize/306/306?1733893156"
+    },
+    {
+      "sku": "VB20",
+      "name": "Batería Godox VB20 - para Flash V350",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58430716/resize/306/306?1734435019"
+    },
+    {
+      "sku": "MS300V",
+      "name": "Flash de Estudio Godox MS300V - 300W",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56007693/resize/306/306?1730380911"
+    },
+    {
+      "sku": "DP600IIIV",
+      "name": "Flash de Estudio Godox DP600III-V",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56015864/resize/306/306?1730393653"
+    },
+    {
+      "sku": "AD-AB",
+      "name": "Anillo Adaptador Godox para AD300pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31147579/resize/306/306?1730420011"
+    },
+    {
+      "sku": "AD-B2",
+      "name": "Cabezal Doble Godox - para AD200",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58417928/resize/306/306?1734403194"
+    },
+    {
+      "sku": "WB300P",
+      "name": "Batería Godox para AD300pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56167768/resize/306/306?1730639001"
+    },
+    {
+      "sku": "WB26",
+      "name": "Batería Li-Ion Godox WB26 para AD600Pro - 28.8V / 2600mAh",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58238315/resize/306/306?1733959843"
+    },
+    {
+      "sku": "TT350F",
+      "name": "Flash Godox TT350 TTL HSS - Fuji",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58466485/resize/306/306?1734528177"
+    },
+    {
+      "sku": "AD600BM",
+      "name": "Flash Godox AD600BM - HSS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31148054/resize/306/306?1674582169"
+    },
+    {
+      "sku": "QT1200IIIM",
+      "name": "Flash de Estudio Godox QT1200IIIM - HSS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56015756/resize/306/306?1730392973"
+    },
+    {
+      "sku": "WB100",
+      "name": "Batería Godox WB100 para AD100pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56036785/resize/306/306?1730417241"
+    },
+    {
+      "sku": "H400P",
+      "name": "Extensión de Cabezal Godox H400P para AD400Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58206596/resize/306/306?1733894020"
+    },
+    {
+      "sku": "VB30",
+      "name": "Batería Godox VB30 - para V1Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58371170/resize/306/306?1734222546"
+    },
+    {
+      "sku": "VC26",
+      "name": "Cargador USB Godox VC26 - para Flash V1 & AD100pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58371360/resize/306/306?1734224217"
+    },
+    {
+      "sku": "C29",
+      "name": "Cargador Godox para AD200 / AD200Pro / AD300Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58416193/resize/306/306?1734401419"
+    },
+    {
+      "sku": "UC20",
+      "name": "Cargador USB Godox para Flashes V350",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58465937/resize/306/306?1734526057"
+    },
+    {
+      "sku": "BDR-W55",
+      "name": "Beauty Dish Pro Godox Blanco 55cm - Montura Bowens",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58521745/resize/306/306?1734729364"
+    },
+    {
+      "sku": "AD400PRO",
+      "name": "Flash Godox AD400Pro - TTL & HSS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46195903/resize/306/306?1709760761"
+    },
+    {
+      "sku": "TT560II",
+      "name": "Flash Godox TT560 II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58421781/resize/306/306?1739997045"
+    },
+    {
+      "sku": "V1N",
+      "name": "Flash Godox V1 TTL - para Nikon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170849/resize/306/306?1674670173"
+    },
+    {
+      "sku": "AD-S9",
+      "name": "Mini Snoot Godox AD-S9 para AD200pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58467546/resize/306/306?1734532558"
+    },
+    {
+      "sku": "MS300-F",
+      "name": "Kit Flash de Estudio Godox MS300 - 2 x 300W",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56007733/resize/306/306?1730381377"
+    },
+    {
+      "sku": "X1RC",
+      "name": "Receptor Godox X1R - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170093/resize/306/306?1674668267"
+    },
+    {
+      "sku": "SB-FW120",
+      "name": "OCTABOX GODOX 120CM CON GRILLA - MONTURA BOWENS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30824657/resize/306/306?1673530378"
+    },
+    {
+      "sku": "FC16",
+      "name": "Kit Trigger Godox FC16",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58476613/resize/306/306?1734552278"
+    },
+    {
+      "sku": "V860IIIS",
+      "name": "Flash Godox V860IIIS TTL Para Sony a batería",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41370774/resize/306/306?1698240936"
+    },
+    {
+      "sku": "V1PRO N",
+      "name": "Flash Godox V1Pro N - para Nikon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58371111/resize/306/306?1734222255"
+    },
+    {
+      "sku": "RFT-07-120180",
+      "name": "Reflector 5 en 1 Godox RFT-07 - 120x180cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58514670/resize/306/306?1734703187"
+    },
+    {
+      "sku": "TT600",
+      "name": "Flash Godox TT600",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31147185/resize/306/306?1674580458"
+    },
+    {
+      "sku": "V350C",
+      "name": "Flash Godox V350 TTL HSS - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31168876/resize/306/306?1674665112"
+    },
+    {
+      "sku": "V350N",
+      "name": "Flash Godox V350 TTL HSS - Nikon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31168960/resize/306/306?1674665324"
+    },
+    {
+      "sku": "V850III",
+      "name": "Flash Godox V850III - HSS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56016740/resize/306/306?1730397442"
+    },
+    {
+      "sku": "EE-OG-908337",
+      "name": "OCTABOX GODOX 140 MONTURA BOWENS",
+      "image": ""
+    },
+    {
+      "sku": "AK-R1",
+      "name": "Kit Accesorios Godox AK-R1 - para Flashes Round Head",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31147535/resize/306/306?1674581180"
+    },
+    {
+      "sku": "BD-10",
+      "name": "Kit Barndoor Godox para AD300pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56167915/resize/306/306?1730640201"
+    },
+    {
+      "sku": "AD-S65W",
+      "name": "Octabox Parabólico AD-S65W Montura Godox Blanco - 65cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58209641/resize/306/306?1733917681"
+    },
+    {
+      "sku": "V1PRO C",
+      "name": "Flash Godox V1Pro C - para Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58371076/resize/306/306?1734221927"
+    },
+    {
+      "sku": "AD-S11",
+      "name": "Kit de Filtros Godox AD-S11 para AD200",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58467769/resize/306/306?1734533555"
+    },
+    {
+      "sku": "AD-S13",
+      "name": "Light Boom Portatil Godox AD-S13 para Flashes",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58468036/resize/306/306?1734534484"
+    },
+    {
+      "sku": "LDX50BI",
+      "name": "Panel LED Godox LDX50Bi - Bi-Color",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58472975/resize/306/306?1734543291"
+    },
+    {
+      "sku": "QR-P120",
+      "name": "Octabox Parabólico Godox QR-P120 Armado Rápido 120cm - Bowens",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58502539/resize/306/306?1734642163"
+    },
+    {
+      "sku": "LST80",
+      "name": "PhotoBox Godox LST80 para Fotografía de Productos - 80x80cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58514230/resize/306/306?1734701015"
+    },
+    {
+      "sku": "LEDP260C",
+      "name": "Panel LED Godox LEDP260C - Bi-Color",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60055944/resize/306/306?1739283154"
+    },
+    {
+      "sku": "V100C",
+      "name": "Flash Godox V100 - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60057544/resize/306/306?1739288044"
+    },
+    {
+      "sku": "AK-R16",
+      "name": "Kit de Geles Godox AK-R16 Para Round Head",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60061622/resize/306/306?1739299686"
+    },
+    {
+      "sku": "CB-06",
+      "name": "Maleta de Transporte Godox CB-06",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58530866/resize/306/306?1734790309"
+    },
+    {
+      "sku": "X2TS",
+      "name": "Trigger Godox X2T - Sony",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58419143/resize/306/306?1734404454"
+    },
+    {
+      "sku": "TL30",
+      "name": "Tubo Led Rgb Godox Tl30 30 Cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30138105/resize/306/306?1670621622"
+    },
+    {
+      "sku": "ML150II",
+      "name": "Ring Flash Macro Godox ML-150 II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58466768/resize/306/306?1734529037"
+    },
+    {
+      "sku": "X3C",
+      "name": "Trigger Touchscreen Godox X3-C TTL - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58475482/resize/306/306?1734549705"
+    },
+    {
+      "sku": "X3S",
+      "name": "Trigger Touchscreen Godox X3-S TTL - Sony",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58475730/resize/306/306?1734550307"
+    },
+    {
+      "sku": "XPROF",
+      "name": "Trigger Controlador Godox Xprof Fujifilm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30177595/resize/306/306?1670862763"
+    },
+    {
+      "sku": "RFT-10-80120",
+      "name": "Reflector 7 en 1 Godox RFT-10 - 80x120cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58519556/resize/306/306?1734720297"
+    },
+    {
+      "sku": "TL-B2",
+      "name": "SUJETADOR GODOX TL-B2 PARA 2 TUBOS LED TL60",
+      "image": ""
+    },
+    {
+      "sku": "BS04",
+      "name": "Soporte de Fondo Godox BS-04",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58530075/resize/306/306?1734788380"
+    },
+    {
+      "sku": "X2TC",
+      "name": "Trigger Godox X2T - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58419184/resize/306/306?1734404554"
+    },
+    {
+      "sku": "SGGV6060",
+      "name": "Softbox Godox 60x60cm con Grilla + Adaptador S2 para Flash",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58481000/resize/306/306?1734561951"
+    },
+    {
+      "sku": "X2TF",
+      "name": "Trigger Godox X2T - Fuji",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58419280/resize/306/306?1734404840"
+    },
+    {
+      "sku": "MF-R76",
+      "name": "Ring Flash Godox MF-R76 - Macro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56016787/resize/306/306?1730397805"
+    },
+    {
+      "sku": "UBL-085S",
+      "name": "Sombrilla Godox UBL-085S Plateada - 85cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58206198/resize/306/306?1733891674"
+    },
+    {
+      "sku": "X3F",
+      "name": "Trigger Touchscreen Godox X3-F TTL - Fuji",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58476293/resize/306/306?1734551449"
+    },
+    {
+      "sku": "RFT-10-110",
+      "name": "Reflector 7 en 1 Godox RFT-10 - 110cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58519371/resize/306/306?1734719346"
+    },
+    {
+      "sku": "B-3W",
+      "name": "Soporte de Fondos Godox para Pared - Con Cadenas",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58530230/resize/306/306?1734789804"
+    },
+    {
+      "sku": "XPROC",
+      "name": "Trigger Controlador Godox XproC - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30136610/resize/306/306?1670619819"
+    },
+    {
+      "sku": "V860IIS",
+      "name": "Flash Godox V860IIS TTL - Sony",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60056932/resize/306/306?1739286431"
+    },
+    {
+      "sku": "AD300PRO",
+      "name": "Flash Godox AD300pro - TTL & HSS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46161545/resize/306/306?1709655367"
+    },
+    {
+      "sku": "S2",
+      "name": "Adaptador Godox S2 - Montura Bowens",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30140737/resize/306/306?1670624050"
+    },
+    {
+      "sku": "AD-BW",
+      "name": "Adaptador Montura Bowens Godox AD-BW",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31147194/resize/306/306?1674580461"
+    },
+    {
+      "sku": "H200R",
+      "name": "Cabezal Godox H200R Round Head - para AD200 & AD200Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58371667/resize/306/306?1734227251"
+    },
+    {
+      "sku": "WB29",
+      "name": "Batería Li-Ion Godox WB-29 - para AD200",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31148119/resize/306/306?1674582283"
+    },
+    {
+      "sku": "WB400P",
+      "name": "Bateria Li-Ion Godox para AD400Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31148115/resize/306/306?1674582279"
+    },
+    {
+      "sku": "TT350C",
+      "name": "Flash Godox TT350 TTL HSS - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58466506/resize/306/306?1734528211"
+    },
+    {
+      "sku": "TT350S",
+      "name": "Flash Godox TT350 TTL HSS - Sony",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58466584/resize/306/306?1734528366"
+    },
+    {
+      "sku": "V1C",
+      "name": "Flash Godox V1 TTL - para Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170812/resize/306/306?1711494262"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "C30BI",
+      "name": "GODOX C30BI LUZ LED PORTÁTIL LITEMONS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/C30BI-250x250.jpg"
+    },
+    {
+      "sku": "SL60IIBI-K2",
+      "name": "GODOX KIT 2 LED SL60IIBI BICOLOR CON SOFTBOX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SL60IIBI-K2-250x250.jpg"
+    },
+    {
+      "sku": "SL150III-KIT",
+      "name": "GODOX KIT 2 LUCES SL150III LED BICOLOR CON SOFTBOX Y STAND",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SL150III-KIT-250x250.jpg"
+    },
+    {
+      "sku": "LR150B",
+      "name": "GODOX LR150 RING LIGHT 18\" BI-COLOR LED",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/LR150B-250x250.jpg"
+    },
+    {
+      "sku": "MA5R BLACK",
+      "name": "GODOX MA5R LUZ LED RGB Y POWERBANK (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/MA5RBLACK-250x250.jpg"
+    },
+    {
+      "sku": "ML-CS30",
+      "name": "GODOX ML-CS30 SOFTBOX PARA LED ML100BI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/ML-CS30-250x250.jpg"
+    },
+    {
+      "sku": "ML100BI",
+      "name": "GODOX ML100BI BI-COLOR LED LIGHT PORTATIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/ML100BI2-250x250.jpg"
+    },
+    {
+      "sku": "ML100BI-KIT1",
+      "name": "GODOX ML100BI KIT BI-COLOR LED LIGHT PORTATIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/ML100BI-KIT1-250x250.jpg"
+    },
+    {
+      "sku": "ML100R",
+      "name": "GODOX ML100R LED LIGHT PORTATIL RGB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/ML100R-250x250.jpg"
+    },
+    {
+      "sku": "P260C PRO",
+      "name": "GODOX P260C PRO BI-COLOR LED LIGHT PANEL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/P260CPRO-250x250.jpg"
+    },
+    {
+      "sku": "S85T",
+      "name": "GODOX S85T SOFTBOX TIPO PARAGUAS 33,5\" / 85CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/S85T-250x250.jpg"
+    },
+    {
+      "sku": "SL100BI",
+      "name": "GODOX SL100BI LUZ LED BICOLOR 100WATTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SL100BI-250x250.jpg"
+    },
+    {
+      "sku": "SL200IIIBI",
+      "name": "GODOX SL200IIIBI LUZ LED BICOLOR 200WATTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SL200IIIBI-250x250.jpg"
+    },
+    {
+      "sku": "SL300IIIBI",
+      "name": "GODOX SL300IIIBI LUZ LED BICOLOR 300WATTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SL300IIIBI-250x250.jpg"
+    },
+    {
+      "sku": "SL60IIBI",
+      "name": "GODOX SL60IIBI LUZ LED BICOLOR COMPACTO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SL60IIBI4-250x250.jpg"
+    },
+    {
+      "sku": "TL60-K2",
+      "name": "GODOX TL60 KIT DE 2 TUBOS LED RGB DE 76CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/TL60-K2new-250x250.jpg"
+    },
+    {
+      "sku": "AD200PROII",
+      "name": "GODOX AD200PROII FLASH TTL POCKET 200W",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/AD200PROII2-250x250.jpg"
+    },
+    {
+      "sku": "MS300V",
+      "name": "GODOX MS300V FLASH DE ESTUDIO MONOLIGHT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/MS300V-250x250.jpg"
+    },
+    {
+      "sku": "SK400IIV-E",
+      "name": "GODOX SK400II FLASH DE ESTUDIO EN KIT DE 2 LUCES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/SK400IIV-E-250x250.jpg"
+    },
+    {
+      "sku": "TT350S",
+      "name": "GODOX TT350S FLASH MINI TTL THINKLITE PARA SONY",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/TT350S-250x250.jpg"
+    },
+    {
+      "sku": "V100 S",
+      "name": "GODOX V100 S FLASH PORTÁTIL PARA SONY",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/V100S-250x250.jpg"
+    },
+    {
+      "sku": "V1PRO C",
+      "name": "GODOX V1PRO FLASH PARA CANON",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/GODOX/V1PROC-250x250.jpg"
+    }
+  ]
+}

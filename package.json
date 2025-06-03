@@ -17,11 +17,15 @@
     "csv-parse": "^5.6.0",
     "dotenv": "^16.5.0",
     "fs": "^0.0.1-security",
+    "fuse.js": "^7.1.0",
     "image-hash": "^5.3.2",
     "natural": "^8.0.1",
     "nodemon": "^3.1.10",
+    "openai": "^5.0.2",
     "p-limit": "^6.2.0",
     "picscrap": "file:",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
     "prisma": "^6.8.2",
     "puppeteer": "^24.7.2",
     "puppeteer-core": "^24.7.2",
@@ -31,6 +35,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
+    "@types/string-similarity": "^4.0.2",
     "json-server": "^1.0.0-beta.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"

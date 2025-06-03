@@ -4,6 +4,8 @@ import {
   ProductScrap,
 } from "../../interfaces";
 import natural from "natural";
+import Fuse from "fuse.js";
+import stringSimilarity from "string-similarity";
 
 export function isSameProduct(p1: ProductScrap, p2: BaseProductDB) {
   const nameSimilarity = natural.JaroWinklerDistance(p1.name, p2.name);
@@ -51,6 +53,31 @@ export function getBestMatch(
   return bestMatch;
 }
 
-export function getStringSimilarity(str1: string, str2: string): number {
+export function getStringSimilarityJaroWinkler(
+  str1: string,
+  str2: string
+): number {
   return natural.JaroWinklerDistance(str1, str2);
+}
+
+export function getStringSimilarityDiceCoefficient(
+  str1: string,
+  str2: string
+): number {
+  return natural.DiceCoefficient(str1, str2);
+}
+
+// export function getStringSimilarity(str1: string, str2: string): number {
+//   const fuse = new Fuse([str1], { includeScore: true, threshold: 0.4 });
+
+//   const result = fuse.search(str2);
+//   console.log(result);
+
+//   return result[0]?.score ?? 0;
+// }
+
+export function getStringSimilarity(str1: string, str2: string): number {
+  const similarity = stringSimilarity.compareTwoStrings(str1, str2);
+  console.log(similarity); // entre 0 y 1
+  return similarity;
 }

@@ -30,15 +30,15 @@ export async function compareImageHashes(
     return 0;
   }
   try {
-    const hash1 = await getImageHash(path1, 16, true); // true = phash
-    const hash2 = await getImageHash(path2, 16, true);
+    const hash1 = await getImageHash(path1, 16, false); // true = phash
+    const hash2 = await getImageHash(path2, 16, false);
 
     const distance = hammingDistance(hash1, hash2);
     const similarity = 1 - distance / hash1.length;
     return similarity;
   } catch (error) {
     console.error("Error comparing images:", error);
-    throw error;
+    return 0;
   }
 }
 
@@ -49,14 +49,14 @@ export async function findMostSimilarImage(
   if (paths.length === 0) return null;
 
   try {
-    const mainHash = await getImageHash(mainPath, 16, true);
+    const mainHash = await getImageHash(mainPath, 16, false);
 
     let bestMatch: string | null = null;
     let lowestDistance = Number.MAX_SAFE_INTEGER;
 
     for (const path of paths) {
       try {
-        const hash = await getImageHash(path, 16, true);
+        const hash = await getImageHash(path, 16, false);
         const distance = hammingDistance(mainHash, hash);
 
         if (distance < lowestDistance) {
@@ -83,4 +83,14 @@ export async function getImageSimilarity(
     return 0;
   }
   return await compareImageHashes(path1, path2);
+}
+
+export function getFastImageSimilarity(imgA: string, imgB: string): number {
+  if (!imgA || !imgB) return 0;
+  // Placeholder: compare base64 length difference, normalized
+  const lenA = imgA.length;
+  const lenB = imgB.length;
+  const diff = Math.abs(lenA - lenB);
+  const maxLen = Math.max(lenA, lenB);
+  return maxLen === 0 ? 0 : 1 - diff / maxLen;
 }

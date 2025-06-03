@@ -1,0 +1,86 @@
+{
+  "baseProducts": [
+    {
+      "sku": "VE1028AFFE",
+      "name": "Lente Venus Optics Laowa 10mm f/2.8 Zero-D - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51708406/resize/306/306?1723838236"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "VE1228CEF",
+      "name": "VENUS OPTICS LAOWA 12MM F/2.8 ZERO-D CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1228CEF-250x250.jpg"
+    },
+    {
+      "sku": "VE1229CC",
+      "name": "VENUS OPTICS LAOWA 12MM T2.9 ZERO-D CINE LENS (CANON EF)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1229CC-250x250.jpg"
+    },
+    {
+      "sku": "VE1440C",
+      "name": "VENUS OPTICS LAOWA 14MM F/4 ZERO-D CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1440C-250x250w.jpg"
+    },
+    {
+      "sku": "VE1718MFT",
+      "name": "VENUS OPTICS LAOWA 17MM F / 1.8 MFT PARA MICRO 4/3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1718MFT-250x250.jpg"
+    },
+    {
+      "sku": "VE2414PL",
+      "name": "VENUS OPTICS LAOWA 24MM F/14 PARA PL (VERSION CINE-MOD)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE2414CC-250x250.jpg"
+    },
+    {
+      "sku": "VE2414CE",
+      "name": "VENUS OPTICS LAOWA 24MM F/14 PARA SONY E CINE MOD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE2414FE-250x250.jpg"
+    },
+    {
+      "sku": "VE2414CC",
+      "name": "VENUS OPTICS LAOWA 24MM F/14 PROBE LENS PARA CANON EF (VERSION CINE-MOD)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE2414CC-250x250.jpg"
+    },
+    {
+      "sku": "VE2414FE",
+      "name": "VENUS OPTICS LAOWA 24MM F/14 PROBE LENS PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE2414FE-250x250.jpg"
+    },
+    {
+      "sku": "VE2414P-FE",
+      "name": "VENUS OPTICS LAOWA 24MM T14-40 FULL FRAME 2X PERIPROBE CINE LENS (E MOUNT)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE2414FE-250x250.jpg"
+    },
+    {
+      "sku": "VE928MFT",
+      "name": "VENUS OPTICS LAOWA 9MM F / 2.8 ZERO D PARA MICRO 4/3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE928MFT-250x250.jpg"
+    },
+    {
+      "sku": "VE1028AFFE",
+      "name": "VENUS OPTICS LAOWA LENTE 10MM T2.8 PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1028AFFE-250x250.jpg"
+    },
+    {
+      "sku": "VE929RFC",
+      "name": "VENUS OPTICS LAOWA LENTE 9MM T2,9 ZERO D CINE RF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE929RFC-250x250.jpg"
+    },
+    {
+      "sku": "VE1521RFC",
+      "name": "VENUS OPTICS LAOWA PRIME 15MM T2.1 ZERO-D CINE LENS (RF)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1521RFC-250x250.jpg"
+    },
+    {
+      "sku": "VE1521SFEC",
+      "name": "VENUS OPTICS LAOWA PRIME 15MM T2.1 ZERO-D CINE LENS (SONY E)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE1521SFEC3-250x250.jpg"
+    },
+    {
+      "sku": "VE2528SFE",
+      "name": "VENUS OPTICS LAOWA ULTRA MACRO 25MM F/2.8 2.5-5X (SONY E)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LAOWA/VE2528SFE-250x250.jpeg"
+    }
+  ]
+}

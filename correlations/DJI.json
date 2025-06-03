@@ -1,0 +1,506 @@
+{
+  "baseProducts": [
+    {
+      "sku": "1000008431",
+      "name": "Cámara DJI Osmo Pocket 3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58184433/resize/306/306?1733837083"
+    },
+    {
+      "sku": "1000008951",
+      "name": "Batería de Vuelo Inteligente para DJI Neo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58516501/resize/306/306?1734709767"
+    },
+    {
+      "sku": "1000003961",
+      "name": "DJI Mavic 3 Battery Charging Hub",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36400689/resize/306/306?1686690884"
+    },
+    {
+      "sku": "1000003963",
+      "name": "DJI Mavic 3 ND Filters Set (ND64/128/256/512)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36454633/resize/306/306?1686850264"
+    },
+    {
+      "sku": "1000009048",
+      "name": "Drone DJI Flip - RC2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59113904/resize/306/306?1737121969"
+    },
+    {
+      "sku": "1000009047",
+      "name": "Drone DJI Flip",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59113806/resize/306/306?1737122047"
+    },
+    {
+      "sku": "1000003959",
+      "name": "DJI Mavic 3 Low-Noise Propellers (Pair)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36455352/resize/306/306?1686851826"
+    },
+    {
+      "sku": "1000009053",
+      "name": "Adaptador Lightning para DJI Mic Mini",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58516173/resize/306/306?1734708447"
+    },
+    {
+      "sku": "1000008366",
+      "name": "Cámara DJI Osmo Action 4 - Standard Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38338846/resize/306/306?1691508705"
+    },
+    {
+      "sku": "1000009046",
+      "name": "Drone DJI Flip - Fly More Combo (DJI RC 2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59113862/resize/306/306?1736951425"
+    },
+    {
+      "sku": "1000008068",
+      "name": "Drone DJI Air 3 Fly More Combo (DJI RC-N2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43276553/resize/306/306?1705509442"
+    },
+    {
+      "sku": "E-DR-963319",
+      "name": "DJI RS2",
+      "image": ""
+    },
+    {
+      "sku": "1000008472",
+      "name": "Batería de Vuelo Inteligente DJI para Drones Mini 3 / Mini 4",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45685768/resize/306/306?1708436706"
+    },
+    {
+      "sku": "1000004439",
+      "name": "Control DJI RC Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53425903/resize/306/306?1726502641"
+    },
+    {
+      "sku": "1000008659",
+      "name": "Estabilizador DJI RS4 Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62594557/resize/306/306?1744917761"
+    },
+    {
+      "sku": "1000005292",
+      "name": "Estabilizador de Celular DJI Osmo Mobile 6 - Negro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36218385/resize/306/306?1686321842"
+    },
+    {
+      "sku": "1000004580",
+      "name": "Estabilizador DJI RS3 Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36221499/resize/306/306?1709302749"
+    },
+    {
+      "sku": "1000005294",
+      "name": "Estabilizador de Celular DJI Osmo Mobile SE",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38476606/resize/306/306?1712633126"
+    },
+    {
+      "sku": "1000008960",
+      "name": "Drone DJI Mini 4K",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/55491813/resize/306/306?1730296249"
+    },
+    {
+      "sku": "1000008370",
+      "name": "Drone DJI Mavic 3 Pro - Fly More Combo (DJI RC)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38710869/resize/306/306?1694186078"
+    },
+    {
+      "sku": "1000009019",
+      "name": "Micrófono Inalámbrico DJI Mic Mini - Single",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/57612821/resize/306/306?1732635953"
+    },
+    {
+      "sku": "1000009003",
+      "name": "Drone DJI Neo - Fly More Motion Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58614110/resize/306/306?1735249239"
+    },
+    {
+      "sku": "1000008362",
+      "name": "Hélices DJI para Air 3 Low-Noise (x2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42876245/resize/306/306?1701354369"
+    },
+    {
+      "sku": "1000004579",
+      "name": "Estabilizador DJI RS3 - Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44265380/resize/306/306?1704920818"
+    },
+    {
+      "sku": "1000008660",
+      "name": "Estabilizador DJI RS4 Pro - Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59475058/resize/306/306?1737744985"
+    },
+    {
+      "sku": "1000005309",
+      "name": "Montura de Pecho DJI Osmo Action Biking Kit",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44833934/resize/306/306?1706212555"
+    },
+    {
+      "sku": "1000007169",
+      "name": "Drone DJI Mini 2 SE - Fly More Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45034495/resize/306/306?1706537893"
+    },
+    {
+      "sku": "1000008028",
+      "name": "Drone DJI Mavic 3 Pro Fly More Combo - (DJI RC PRO)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47547353/resize/306/306?1712703317"
+    },
+    {
+      "sku": "1000008684",
+      "name": "Sistema DJI Focus Pro - Creator Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48659685/resize/306/306?1715379871"
+    },
+    {
+      "sku": "1000008658",
+      "name": "Estabilizador DJI RS4 - Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58710041/resize/306/306?1735568140"
+    },
+    {
+      "sku": "1000008927",
+      "name": "Drone DJI Mini 3 Fly More Combo (DJI RC)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62595778/resize/306/306?1744921484"
+    },
+    {
+      "sku": "1000006804",
+      "name": "Estabilizador DJI RS3 Mini",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58847849/resize/306/306?1736171178"
+    },
+    {
+      "sku": "1000008584",
+      "name": "Micrófono Inalámbrico DJI Mic 2 - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62594292/resize/306/306?1744916992"
+    },
+    {
+      "sku": "1000009063",
+      "name": "Estabilizador DJI RS4 Mini - Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60359305/resize/306/306?1740061211"
+    },
+    {
+      "sku": "1000009061",
+      "name": "Estabilizador DJI Osmo Mobile 7P",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60281130/resize/306/306?1739884710"
+    },
+    {
+      "sku": "1000009062",
+      "name": "Estabilizador DJI RS4 Mini",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60359266/resize/306/306?1740059520"
+    },
+    {
+      "sku": "1000009060",
+      "name": "Estabilizador DJI Osmo Mobile 7",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60281484/resize/306/306?1739885469"
+    },
+    {
+      "sku": "1000009018",
+      "name": "Micrófono Inalámbrico DJI Mic Mini - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/57612757/resize/306/306?1732635813"
+    },
+    {
+      "sku": "1000008987",
+      "name": "Dji Mini 4K - Fly More Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/57506375/resize/306/306?1732300271"
+    },
+    {
+      "sku": "1000008653",
+      "name": "Drone DJI Avata 2 Fly More Combo - (Tres Baterías)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58185559/resize/306/306?1733840166"
+    },
+    {
+      "sku": "1000008944",
+      "name": "Drone DJI Neo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58211664/resize/306/306?1733927031"
+    },
+    {
+      "sku": "1000008612",
+      "name": "Micrófono DJI Lavalier Mic 2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58516891/resize/306/306?1734710677"
+    },
+    {
+      "sku": "1000008976",
+      "name": "Cámara DJI Osmo Action 5 Pro - Standard Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58629095/resize/306/306?1735304767"
+    },
+    {
+      "sku": "1000008983",
+      "name": "Drone DJI Air 3S - Fly More Combo (DJI RC 2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59159310/resize/306/306?1736977800"
+    },
+    {
+      "sku": "1000009050",
+      "name": "Batería de Vuelo Inteligente para DJI Flip",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61739715/resize/306/306?1742937978"
+    },
+    {
+      "sku": "1000008586",
+      "name": "Micrófono Inalámbrico DJI Mic 2 - Transmisor (Shadow Black)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62595536/resize/306/306?1744920742"
+    },
+    {
+      "sku": "1000008657",
+      "name": "Estabilizador DJI RS4",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63074230/resize/306/306?1746205988"
+    },
+    {
+      "sku": "1000009073",
+      "name": "Drone DJI Mavic 4 Pro - Fly More Combo (DJI RC 2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63400744/resize/306/306?1747148905"
+    },
+    {
+      "sku": "1000009074",
+      "name": "Drone DJI Mavic 4 Pro - Creator Combo (DJI RC Pro 2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63401710/resize/306/306?1747150438"
+    },
+    {
+      "sku": "1000008584X",
+      "name": "Micrófono Inalámbrico DJI Mic 2 - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44511853/resize/306/306?1705440886"
+    },
+    {
+      "sku": "1000005889",
+      "name": "Drone DJI Mavic 3 Classic (DJI RC)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36220975/resize/306/306?1686322164"
+    },
+    {
+      "sku": "1000007995",
+      "name": "Drone DJI Mini 3 (DJI RC)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36221953/resize/306/306?1686321988"
+    },
+    {
+      "sku": "1000008652",
+      "name": "Drone DJI Avata 2 Fly More Combo - (Una Batería)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47466449/resize/306/306?1712439733"
+    },
+    {
+      "sku": "1000008027",
+      "name": "Drone DJI Mavic 3 Pro (DJI RC)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36272683/resize/306/306?1686342394"
+    },
+    {
+      "sku": "1000004447",
+      "name": "DJI Mavic 3 Intelligent Flight Battery",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36400891/resize/306/306?1686691246"
+    },
+    {
+      "sku": "1000003960",
+      "name": "DJI Mavic 3 Cargador de auto 65W",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36454813/resize/306/306?1686850759"
+    },
+    {
+      "sku": "1000007994",
+      "name": "Drone DJI Mini 3 (DJI RC-N1)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38022505/resize/306/306?1692389698"
+    },
+    {
+      "sku": "1000008367",
+      "name": "Cámara DJI Osmo Action 4 - Adventure Combo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38337881/resize/306/306?1708524551"
+    },
+    {
+      "sku": "1000008059",
+      "name": "Estabilizador de Celular DJI Osmo Mobile 6 - Gris",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38476919/resize/306/306?1692045659"
+    },
+    {
+      "sku": "1000008067",
+      "name": "Drone DJI Air 3 (DJI RC-N2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38871613/resize/306/306?1693000069"
+    },
+    {
+      "sku": "1000008389",
+      "name": "Drone DJI Mini 4 Pro (DJI RC 2)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40217794/resize/306/306?1695736394"
+    },
+    {
+      "sku": "1000008363",
+      "name": "Batería de vuelo inteligente DJI Air 3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42875858/resize/306/306?1701353578"
+    },
+    {
+      "sku": "6941565965455",
+      "name": "Hub de carga batería DJI Air 3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42876466/resize/306/306?1701354924"
+    },
+    {
+      "sku": "1000004566",
+      "name": "Batería Plus de Vuelo Inteligente para Drone DJI Mini 3 Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43996666/resize/306/306?1704236615"
+    },
+    {
+      "sku": "1000008585",
+      "name": "Micrófono Inalámbrico DJI Mic 2 - Single",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44642965/resize/306/306?1705677197"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "CP.MA.00000740.01",
+      "name": "DJI MINI 4 PRO + FLY MORE COMBO PLUS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/DJI-Mini4-Pro-Fly-250x250.jpeg"
+    },
+    {
+      "sku": "CP.MA.00000732.01",
+      "name": "DJI MINI 4 PRO + RC2 CONTROLLER",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.MA.00000732.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.FP.00000218.03",
+      "name": "DJI NEO + MOTION 4K@30 FLY MORE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.FP.00000218.03-250x250h.jpg"
+    },
+    {
+      "sku": "CP.FP.00000184.01",
+      "name": "DJI NEO DRONE 4K@30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.FP.00000184.01-250x250.jpg"
+    },
+    {
+      "sku": "CP.FP.00000218.02",
+      "name": "DJI NEO DRONE 4K@30 FLY MORE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.FP.00000218.02-250x250.jpg"
+    },
+    {
+      "sku": "CP.OS.00000378.01",
+      "name": "DJI OSMO ACTION 5 PRO CAMERA AVENTURA COMBO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.OS.00000377.01-250x250.jpg"
+    },
+    {
+      "sku": "CP.OS.00000377.01",
+      "name": "DJI OSMO ACTION 5 PRO CAMERA STANDARD COMBO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.OS.00000377.01-250x250.jpg"
+    },
+    {
+      "sku": "1000009060",
+      "name": "DJI OSMO MOBILE 7 SMARTPHONE GIMBAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/1000009060-250x250.jpg"
+    },
+    {
+      "sku": "1000009061",
+      "name": "DJI OSMO MOBILE 7P SMARTPHONE GIMBAL CON SEGUIMIENTO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/1000009061-250x250.jpg"
+    },
+    {
+      "sku": "CP.OS.00000301.01",
+      "name": "DJI OSMO POCKET 3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.OS.00000301.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.OS.00000302.01",
+      "name": "DJI OSMO POCKET 3 CREATOR COMBO DJI MIC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.OS.00000302.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.EN.00000424.01",
+      "name": "DJI POWER ADAPTER DE 100W USB-C (DOBLE)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.EN.00000424.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.MA.00000428.01",
+      "name": "DJI POWER ADAPTER DE 65W USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.MA.00000428.01-250x250.jpg"
+    },
+    {
+      "sku": "CP.MA.00000426.01",
+      "name": "DJI POWER CAR ADAPTER 65W USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.MA.00000426.01-250x250.jpg"
+    },
+    {
+      "sku": "CP.RN.00000176.01",
+      "name": "DJI RONIN 2 ESTABILIZADOR CINEMATOGRÁFICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.ZM.00000008.02-250x250.jpg"
+    },
+    {
+      "sku": "CP.RN.00000186.01",
+      "name": "DJI RONIN 4D HANDGRIP COMBO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/DJIGrip3-250x250.jpg"
+    },
+    {
+      "sku": "CP.RN.00000176.01",
+      "name": "DJI RONIN 4D KIT DE CÁMARA DE CINE DE 4 EJES 6K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000176.01-250x250.jpg"
+    },
+    {
+      "sku": "CP.RN.00000217.01",
+      "name": "DJI RS3 COMBO GIMBAL HASTA 3KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000217.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.RN.00000294.01",
+      "name": "DJI RS3 MINI GIMBAL HASTA 2KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/DJIRS3mini-250x250.jpeg"
+    },
+    {
+      "sku": "CP.RN.00000344.01",
+      "name": "DJI RS4 COMBO GIMBAL HASTA 3KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000344.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.RN.00000343.01",
+      "name": "DJI RS4 GIMBAL HASTA 3KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000343.01-250x250.jpeg"
+    },
+    {
+      "sku": "1000009063",
+      "name": "DJI RS4 MINI COMBO GIMBAL HASTA 2KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000443.021-250x250.png"
+    },
+    {
+      "sku": "1000009062",
+      "name": "DJI RS4 MINI GIMBAL HASTA 2KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000442.021-250x250.png"
+    },
+    {
+      "sku": "CP.RN.00000346.01",
+      "name": "DJI RS4 PRO COMBO GIMBAL HASTA 4.5KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000346.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.RN.00000345.01",
+      "name": "DJI RS4 PRO GIMBAL HASTA 4.5KGS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000345.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.RN.00000397.02",
+      "name": "DJI SDR TRANSMISSION COMBO TRANSMISOR + RECEPTOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000397.02-250x250.jpg"
+    },
+    {
+      "sku": "DJI-SDR-BAT",
+      "name": "DJI SDR TRANSMISSION COMBO TRANSMISOR + RECEPTOR + BATERIAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/SDRkit4-250x250h.png"
+    },
+    {
+      "sku": "CP.RN.00000209.01",
+      "name": "DJI TRANSMISSION KIT DE TRANSMISOR Y MONITOR 7\" RX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000209.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.RN.00000192.01",
+      "name": "DJI UNIDAD DE MONTURA PARA LENTE ZENMUSE X9 (MONTURA E)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RN.00000192.01-250x250.jpeg"
+    },
+    {
+      "sku": "CP.MA.00000406.02",
+      "name": "DJI CONTROL REMOTO RC PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.MA.00000406.02-250x250.jpg"
+    },
+    {
+      "sku": "CP.RC.00000024.01",
+      "name": "DJI FPV REMOTE CONTROLLER 3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.RC.00000024.01-250x250.jpg"
+    },
+    {
+      "sku": "CP.MA.00000554.02",
+      "name": "DJI DRONE MAVIC 3 CLASSIC CON CONTROL REMOTO RC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/CP.MA.00000554.02-250x250.jpeg"
+    },
+    {
+      "sku": "CP.MA.00000662.01",
+      "name": "DJI MAVIC 3 PRO FLY MORE & DJI RC PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/Mavic3ProRCPRO-250x250.jpeg"
+    },
+    {
+      "sku": "MINI 2 SE FLY MORE",
+      "name": "DJI MAVIC MINI 2 SE FLY MORE 2.7K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/DJI-Mini-2-SE-front-250x250.jpg"
+    },
+    {
+      "sku": "CP.MA.00000787.02",
+      "name": "DJI MINI 4K CON CONTROL RC-N1 REMOTE CONTROLLER",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/DJI/DJIMini4K-250x250.jpg"
+    }
+  ]
+}

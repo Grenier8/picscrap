@@ -1,0 +1,41 @@
+{
+  "baseProducts": [
+    {
+      "sku": "I650B",
+      "name": "Bandera de Corte Avenger I650B - 18X24''",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62540994/resize/306/306?1744755918"
+    },
+    {
+      "sku": "I1031",
+      "name": "Bandera Avenger Floppy Cutter I1031 - 48x48\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62541147/resize/306/306?1744756326"
+    },
+    {
+      "sku": "A2018L",
+      "name": "C-Stand Avenger A2018L - Pata Ajustable",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51490525/resize/306/306?1723072732"
+    },
+    {
+      "sku": "I750B",
+      "name": "Bandera de Corte Avenger I750B - 24''X36''",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62541095/resize/306/306?1744756144"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "A3058CS",
+      "name": "AVENGER A3058CS TRÍPODE OVERHEAD STAND 58 CON RUEDAS 2MTS A 5.80MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/AVENGER/A3058CS-250x250.jpg"
+    },
+    {
+      "sku": "E390",
+      "name": "AVENGER E390 TVMP ADAPTADOR YOKE HEMBRA 5/8\"",
+      "image": "https://davidandjoseph.cl/image/cache/data/AVENGER/E390-250x250.jpg"
+    },
+    {
+      "sku": "C500",
+      "name": "AVENGER PELICAN GAFFER GRIP CLAMP CON 2 PINS DE 5/8\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/AVENGER/C500-250x250.jpg"
+    }
+  ]
+}

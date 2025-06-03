@@ -1,0 +1,14 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "SAV-C6",
+        "secondSKU": "SAV-C6"
+      },
+      {
+        "baseSKU": "SAV-C4",
+        "secondSKU": "SAV-C4"
+      }
+    ]
+  }
+}

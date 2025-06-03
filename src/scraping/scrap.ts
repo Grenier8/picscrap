@@ -1,8 +1,9 @@
 import { getWebpages } from "../api/webpages";
 import { Webpage, ProductScrap, BaseProductDB, ProductDB } from "../interfaces";
 import { upsertBaseProducts } from "../api/base-products";
-import { upsertProducts } from "../api/products";
+import { deleteAndUpsertProducts, upsertProducts } from "../api/products";
 import { getBaseProducts } from "../api/base-products";
+// import { getBaseProducts } from "../service/product";
 import { Scraper } from "./scraper";
 import { PicslabScraper } from "./picslabScraper";
 import { AperturaScraper } from "./aperturaScraper";
@@ -48,28 +49,32 @@ export async function scrapAllPages() {
 
   await upsertBaseProducts(newBaseProducts);
 
-  const updatedBaseProducts: BaseProductDB[] = await getBaseProducts();
+  const baseProducts = await getBaseProducts();
+  // const updatedBaseProducts: BaseProductDB[] = baseProducts.map(
+  //   (bp) => ({ ...bp, Brand: { name: bp.brand } } as BaseProductDB)
+  // );
+  const updatedBaseProducts = baseProducts;
   for (const scraper of nonBaseScrapers) {
     const start = Date.now();
-    const products = await scraper.getProductsBySimilarity(updatedBaseProducts);
+    const products = await scraper.getProductsWithOpenAI(updatedBaseProducts);
     const elapsed = ((Date.now() - start) / 1000).toFixed(2);
     console.log(`Scraper ${scraper.webpage.name} finished in ${elapsed}s`);
     allProducts.push(...products);
   }
 
-  await upsertProducts(
-    allProducts.map(
-      (product) =>
-        ({
-          ...product,
-          Webpage: webpages.find((w) => w.url === product.webpage),
-          Brand: { name: product.brand },
-          BaseProduct: updatedBaseProducts.find(
-            (bp) => bp.sku === product.baseProductSku
-          ),
-        } as ProductDB)
-    )
-  );
+  // await upsertProducts(
+  //   allProducts.map(
+  //     (product) =>
+  //       ({
+  //         ...product,
+  //         Webpage: webpages.find((w) => w.url === product.webpage),
+  //         Brand: { name: product.brand },
+  //         BaseProduct: updatedBaseProducts.find(
+  //           (bp) => bp.sku === product.baseProductSku
+  //         ),
+  //       } as ProductDB)
+  //   )
+  // );
 
   console.log("Ended scraping");
 }

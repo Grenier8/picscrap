@@ -1,0 +1,346 @@
+{
+  "baseProducts": [
+    {
+      "sku": "MVH502AH",
+      "name": "Cabezal de Video Profesional Manfrotto 502AH",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/57754170/resize/306/306?1732891901"
+    },
+    {
+      "sku": "MPMXPROA4",
+      "name": "Monópode de Aluminio Manfrotto XPRO Monopod+",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/35163822/resize/306/306?1684134547"
+    },
+    {
+      "sku": "MK290DUA3-3W",
+      "name": "Trípode de Aluminio Manfrotto 290 Dual - Cabezal de Tres Vías",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45434894/resize/306/306?1707692540"
+    },
+    {
+      "sku": "1314B",
+      "name": "Soporte de Fondo Manfrotto 1314",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43756794/resize/306/306?1703085397"
+    },
+    {
+      "sku": "MMELMIIA5RD",
+      "name": "Monopod de Aluminio Manfrotto Element MII - Rojo",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50293115/resize/306/306?1719934335"
+    },
+    {
+      "sku": "MLLC1201K",
+      "name": "Kit Manfrotto Medium Pro Scrim All-in-One - 1 x 2 Metros",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/54265128/resize/306/306?1727993383"
+    },
+    {
+      "sku": "T-TV-712113",
+      "name": "Trípode Video Manfrotto 546GB con Cabezal 502HD",
+      "image": ""
+    },
+    {
+      "sku": "T-TV-199637",
+      "name": "Trípode Video Manfrotto 546GB con Cabezal 504HD",
+      "image": ""
+    },
+    {
+      "sku": "MVK500AM",
+      "name": "Trípode de Video Manfrotto MVK500AM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46929230/resize/306/306?1711492751"
+    },
+    {
+      "sku": "MVK504XTWINFA",
+      "name": "Trípode Manfrotto Kit Cabezal 504X con Trípode de 645 FAST Aluminum",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41080841/resize/306/306?1697651204"
+    },
+    {
+      "sku": "MKBFRLA4BK-3W",
+      "name": "Trípode Manfrotto Befree 3-Way Live Advanced",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46762970/resize/306/306?1711047556"
+    },
+    {
+      "sku": "MK290LTA3-V",
+      "name": "Trípode de Aluminio Manfrotto MK290LTA3-V - Cabezal Fluido",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63613350/resize/306/306?1747754955"
+    },
+    {
+      "sku": "MKBFRTA4BK-BH",
+      "name": "Trípode de Aluminio Manfrotto MKBFRTA4BK-BH",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63680848/resize/306/306?1747927334"
+    },
+    {
+      "sku": "MS050M4-Q5",
+      "name": "Placa Manfrotto Q5 L-Bracket",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63681244/resize/306/306?1747928164"
+    },
+    {
+      "sku": "MTPIXI-B",
+      "name": "Mini Trípode Manfrotto PIXI - Black",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63801449/resize/306/306?1748270234"
+    },
+    {
+      "sku": "MB MA3-BP-H",
+      "name": "Mochila Manfrotto Advanced Hybrid M - 15L",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63680312/resize/306/306?1747926004"
+    },
+    {
+      "sku": "MKELES5BK-BH",
+      "name": "Trípode de Aluminio Manfrotto Element Small Traveler",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45660212/resize/306/306?1708359542"
+    },
+    {
+      "sku": "MLH1HS",
+      "name": "Snap Tilt Head",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30088553/resize/306/306?1670443155"
+    },
+    {
+      "sku": "MKELMII4BK-BH",
+      "name": "TRÍPODE DE VIAJE MANFROTTO ELEMENT MII NEGRO",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30175335/resize/306/306?1670859944"
+    },
+    {
+      "sku": "MVMXPROA4",
+      "name": "Monopode de Video Manfrotto XPRO FLUIDTECH",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46190511/resize/306/306?1709751344"
+    },
+    {
+      "sku": "MVMXPRO500",
+      "name": "Monópode de Video Manfrotto XPRO MVMXPRO500",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46894752/resize/306/306?1711396281"
+    },
+    {
+      "sku": "200LT-PL",
+      "name": "Galleta Manfrotto 200LT-PL",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60121215/resize/306/306?1739468495"
+    },
+    {
+      "sku": "MKBFRLA4BK-BH",
+      "name": "Trípode de Aluminio Manfrotto Befree Advanced Travel 494BH",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/35163599/resize/306/306?1684132247"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "R516,18",
+      "name": "MANFROTTO R516,18 REPUESTO COLLAR PARA MANGO DE PANEO",
+      "image": "https://davidandjoseph.cl/image/cache/data/MANFROTTO/REPUESTOS/R516,18-250x250.jpg"
+    },
+    {
+      "sku": "R516,31",
+      "name": "MANFROTTO R516,31 REPUESTO PERNO PARA BLOQUEAR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R516,31-250x250.jpg"
+    },
+    {
+      "sku": "R519,20",
+      "name": "MANFROTTO R519,20 REPUESTO PARA CABEZAL 519 PLATE BRAKE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/r519-20-250x250.jpg"
+    },
+    {
+      "sku": "R519,35",
+      "name": "MANFROTTO R519,35 REPUESTO PERILLA PARA MANGO DE PANEO 501HLV Y 519LV",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R519,35-250x250.jpg"
+    },
+    {
+      "sku": "R536,04",
+      "name": "MANFROTTO R536,04 REPUESTO AJUSTE ÁNGULO PARA TRIPODES 536",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R536,04-250x250.jpg"
+    },
+    {
+      "sku": "R536,07",
+      "name": "MANFROTTO R536,07 REPUESTO LEVER/PALANCA PARA TRIPODES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R536,07-250x250.jpg"
+    },
+    {
+      "sku": "R545,02",
+      "name": "MANFROTTO R545,02 REPUESTO LEVER/PALANCA PARA TRIPODES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/R545,02.-250x250.jpg"
+    },
+    {
+      "sku": "R545,06",
+      "name": "MANFROTTO R545,06 REPUESTO KIT LEVER/PALANCA PARA TRIPODES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R545,06-250x250h.jpg"
+    },
+    {
+      "sku": "R545,10",
+      "name": "MANFROTTO R545,10 REPUESTO KIT LEVER/PALANCA PARA TRIPODES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R545,10-250x250h.jpg"
+    },
+    {
+      "sku": "R545,18",
+      "name": "MANFROTTO R545,18 REPUESTO AGARRE DE ESTRELLA MEDIA ALTURA PARA TRIPODES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R545,18-250x250h.jpg"
+    },
+    {
+      "sku": "R547,25",
+      "name": "MANFROTTO R547,25 REPUESTO CLIP DE AGARRE DE PATAS",
+      "image": "https://davidandjoseph.cl/image/cache/data/MANFROTTO/REPUESTOS/R547.25-250x250.jpg"
+    },
+    {
+      "sku": "R550,254",
+      "name": "MANFROTTO R550,254 REPUESTO CLAMP PARA MANGO DE PANEO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R550,254-250x250.jpg"
+    },
+    {
+      "sku": "R700,32",
+      "name": "MANFROTTO R700,32 REPUESTO PERILLA PARA BLOQUEAR GALLETA HEAD 701",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R700,32-250x250.jpg"
+    },
+    {
+      "sku": "R701,210",
+      "name": "MANFROTTO R701,210 REPUESTO PERILLA PARA BLOQUEAR TILT HEAD 701HDV",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R701,210-250x250.jpg"
+    },
+    {
+      "sku": "R701,212",
+      "name": "MANFROTTO R701,212 REPUESTO PERILLA PARA BLOQUEAR GALLETA HEAD 701HDV",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R701,212-250x250.jpg"
+    },
+    {
+      "sku": "R804,99",
+      "name": "MANFROTTO R804,99 REPUESTO JUEGO DE PERILLAS PARA BLOQUEAR 804RC2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/REPUESTOS/R804,99-250x250.jpg"
+    },
+    {
+      "sku": "LR1911",
+      "name": "MANFROTTO RAPID FLAG KIT 45 X 60 CM (18 X 24\")",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/LR1911-250x250.jpg"
+    },
+    {
+      "sku": "LR1912",
+      "name": "MANFROTTO RAPID FLAG KIT 90 X 60 CM (36 X 24\")",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/LR1912-250x250.jpg"
+    },
+    {
+      "sku": "LR7206",
+      "name": "MANFROTTO REFLECTOR COLAPSABLE 1.8 X 2 MTS BLANCO / DORADO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/LR7206-250x250.jpeg"
+    },
+    {
+      "sku": "MB PL-RL-TH-TR",
+      "name": "MANFROTTO RL-TH-TR PRO LIGHT TOUGH TRIPOD BAG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/PL-RL-TH-TR-250x250.jpg"
+    },
+    {
+      "sku": "ROUND-PL",
+      "name": "MANFROTTO ROUND-PL GALLETA / PLATE REDONDA PARA COMPACT ACTION",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/ACCESORIOS/R-ROUND-250x250.jpg"
+    },
+    {
+      "sku": "LR83350",
+      "name": "MANFROTTO STUDIOLINK CHROMA KEY VERDE 3 X 3 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/LR83350-250x250.jpeg"
+    },
+    {
+      "sku": "MLTSA3301B",
+      "name": "MANFROTTO TETHERGEAR SOPORTE PARA TABLET DE 9''-13''",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MLTSA3301B-250x250.jpeg"
+    },
+    {
+      "sku": "MKBFRTA4BK-BH",
+      "name": "MANFROTTO TRÍPODE ADVANCED ALUMINIO TWIST LOCK CON CABEZAL 494",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKBFRTA4BK-BH-250x250.jpeg"
+    },
+    {
+      "sku": "MKSCOMPACTADVBK",
+      "name": "MANFROTTO TRÍPODE ADVANCED CON CABEZAL 3W Y AGARRE DE SMARTPHONE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKSCOMPACTADVBK-250x250.jpeg"
+    },
+    {
+      "sku": "MKBFRA4GTXP-BH",
+      "name": "MANFROTTO TRÍPODE BEFREE GT XPRO ALUMINIO HASTA 10KG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKBFRA4GTXPnew-250x250.jpg"
+    },
+    {
+      "sku": "MKBFRC4GTXP-BH",
+      "name": "MANFROTTO TRÍPODE BEFREE GT XPRO CARBONO HASTA 10KG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKBFRC4GTXP-BH-250x250.jpeg"
+    },
+    {
+      "sku": "MKCOMPACTACN-BK",
+      "name": "MANFROTTO TRÍPODE COMPACT ACTION CON CAPACIDAD HASTA 1.5KG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKCOMPACTACTION-250x250.jpg"
+    },
+    {
+      "sku": "MBASECONVR",
+      "name": "MANFROTTO TRIPODE DE ALUMINIO COMPACTO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MBASECONVR-250x250.jpg"
+    },
+    {
+      "sku": "MKELMII4BK-BH",
+      "name": "MANFROTTO TRÍPODE FOTOGRAFÍA ELEMENT MII CON CABEZAL DE BOLA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKELMII4BK-BH-250x250.jpg"
+    },
+    {
+      "sku": "MKBFRTC4GT-BH",
+      "name": "MANFROTTO TRÍPODE PROFESIONAL BEFREE GT CARBON HASTA 10KG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MKBFRTC4GT-BH-250x250.jpg"
+    },
+    {
+      "sku": "MK290XTA3-2W",
+      "name": "MANFROTTO TRÍPODE SERIE 290 CON CABEZAL DE FLUIDO 128RC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/290XTA3-2W-250x250.jpg"
+    },
+    {
+      "sku": "MB MA-BP-GPL",
+      "name": "MANFROTTO MA-BP-GPL MOCHILA ADVANCED GEARPACK L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MBMA-BP-GPL-250x250.jpeg"
+    },
+    {
+      "sku": "MB MA-BP-GPM",
+      "name": "MANFROTTO MA-BP-GPM MOCHILA ADVANCED BACKPACK GEARPACK",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/Bags/MBMA-BP-GPM-250x250.jpg"
+    },
+    {
+      "sku": "MS050M4-Q5",
+      "name": "MANFROTTO SOPORTE Q5 EN L (501PL)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MS050M4-Q5-250x250.jpeg"
+    },
+    {
+      "sku": "MVK612TWINFA",
+      "name": "MANFROTTO KIT NITROTECH 612 CABEZAL VIDEO CON TRÍPODE 645 FAST",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVK612TWINFA-250x250.jpg"
+    },
+    {
+      "sku": "509HD,545GBK",
+      "name": "MANFROTTO 509HD,545GBK CABEZAL 509HD CON TRÍPODE 545GB Y ESTRELLA DE PISO",
+      "image": "https://davidandjoseph.cl/image/cache/data/MANFROTTO/509HD545GBK-250x250.jpg"
+    },
+    {
+      "sku": "MVK608TWINFA",
+      "name": "MANFROTTO KIT FAST NITROTECH 608 CABEZAL VIDEO CON TRÍPODE 645 FAST",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVK608TWINFA-250x250.jpg"
+    },
+    {
+      "sku": "MVH504XAH",
+      "name": "MANFROTTO 504X CABEZAL DE FLUIDO HASTA 12KG CON BASE PLANA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVH504XAH-250x250.jpg"
+    },
+    {
+      "sku": "MVK608TWINGA",
+      "name": "MANFROTTO KIT NITROTECH 608 CABEZAL VIDEO CON TRÍPODE ALUMINO ESTRELLA A PISO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVK608TWINGA-250x250.jpeg"
+    },
+    {
+      "sku": "MVK612TWINMA",
+      "name": "MANFROTTO KIT NITROTECH 612 CABEZAL VIDEO CON TRÍPODE ALUMINO TWIN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/MVK612TWINMAUS-250x250.jpg"
+    },
+    {
+      "sku": "MVK504XTWINFA",
+      "name": "MANFROTTO MVK504XTWINFA KIT DE CABEZAL 504X CON TRÍPODE DE 645 FAST ALUMINUM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVK504XTWINFA-250x250.jpg"
+    },
+    {
+      "sku": "MVK504XTWINGA",
+      "name": "MANFROTTO MVK504XTWINGA KIT DE CABEZAL 504X CON TRÍPODE DE ESTRELLA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVK504XTWINGA-250x250.jpg"
+    },
+    {
+      "sku": "MVK504XTWINGC",
+      "name": "MANFROTTO MVK504XTWINGC KIT DE CABEZAL 504X CON TRÍPODE CARBON",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVK504XTWINGC-250x250.jpeg"
+    },
+    {
+      "sku": "MVH608AH",
+      "name": "MANFROTTO NITROTECH 608 CABEZAL DE VIDEO HASTA 8KG FLAT BASE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/MANFROTTO/MVH608AH2-250x250.jpg"
+    }
+  ]
+}

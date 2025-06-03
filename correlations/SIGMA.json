@@ -1,0 +1,391 @@
+{
+  "baseProducts": [
+    {
+      "sku": "SG20195",
+      "name": "Lente Sigma 18-35mm f/1.8 DC HSM Art - Canon EF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30185502/resize/306/306?1670875891"
+    },
+    {
+      "sku": "SG20258",
+      "name": "Lente Sigma 28-70mm f/2.8 DG DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46718913/resize/306/306?1710887935"
+    },
+    {
+      "sku": "SG20294",
+      "name": "Lente Sigma 10-18mm f/2.8 DC DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43876718/resize/306/306?1703607514"
+    },
+    {
+      "sku": "SG20297",
+      "name": "Lente Sigma 50mm f/1.2 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48078403/resize/306/306?1714415750"
+    },
+    {
+      "sku": "SG20251",
+      "name": "Lente Sigma 100-400mm f/5-6.3 DG DN OS Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48078693/resize/306/306?1714416439"
+    },
+    {
+      "sku": "SG20273",
+      "name": "Lente Sigma 16-28mm f/2.8 DG DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50736577/resize/306/306?1721083566"
+    },
+    {
+      "sku": "SG20231",
+      "name": "Lente Sigma 14Mm Sony F1.8 Art Dg Hsm",
+      "image": ""
+    },
+    {
+      "sku": "SG20302",
+      "name": "Lente Sigma 28-105mm f/2.8 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53146719/resize/306/306?1725999100"
+    },
+    {
+      "sku": "SG20304",
+      "name": "Lente Sigma 30mm f/1.4 DC DN Contemporary - Canon RF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58559172/resize/306/306?1734987850"
+    },
+    {
+      "sku": "SG20196",
+      "name": "Lente Sigma 18-35mm f/1.8 DC HSM Art - Nikon F",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30185188/resize/306/306?1670875127"
+    },
+    {
+      "sku": "SG20306",
+      "name": "Lente Sigma 23mm f/1.4 DC DN Contemporary - Canon RF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59383924/resize/306/306?1737569753"
+    },
+    {
+      "sku": "SG20225",
+      "name": "Lente Sigma 24-70mm f/2.8 DG OS HSM Art - Nikon F",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30185306/resize/306/306?1670875421"
+    },
+    {
+      "sku": "SG20213",
+      "name": "Lente Sigma 30Mm Canon F1.4 Art Dc Hsm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30186858/resize/306/306?1670878732"
+    },
+    {
+      "sku": "SG20194",
+      "name": "Lente Sigma 35mm f/1.4 DG HSM Art - Canon",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30186651/resize/306/306?1670878332"
+    },
+    {
+      "sku": "SG20279",
+      "name": "Lente Sigma 105mm f/2.8 DG DN Macro Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61317621/resize/306/306?1741892101"
+    },
+    {
+      "sku": "SG20245",
+      "name": "Lente Sigma 24-70mm f/2.8 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45115214/resize/306/306?1706796112"
+    },
+    {
+      "sku": "SG20253",
+      "name": "Lente Sigma 35mm f/2 DG DN - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30187215/resize/306/306?1670879441"
+    },
+    {
+      "sku": "SG20254",
+      "name": "Lente Sigma 65mm f/2 DG DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30187123/resize/306/306?1670879301"
+    },
+    {
+      "sku": "SG20271",
+      "name": "Lente Sigma 30mm f/1.4 DC DN Contemporary - Fuji X",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30092194/resize/306/306?1670449270"
+    },
+    {
+      "sku": "SG20218",
+      "name": "Adaptador Sigma Canon Converter MC-11",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30123959/resize/306/306?1670603309"
+    },
+    {
+      "sku": "SG20264",
+      "name": "Lente Sigma 18-50mm f/2.8 DC DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30174576/resize/306/306?1670858289"
+    },
+    {
+      "sku": "SG20261",
+      "name": "LENTE SIGMA 70MM F/2.8 ART MACRO PARA SONY E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30186147/resize/306/306?1670877509"
+    },
+    {
+      "sku": "SG20236",
+      "name": "Lente Sigma 56mm f/1.4 DC DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30123844/resize/306/306?1670603199"
+    },
+    {
+      "sku": "SG20250",
+      "name": "Lente Sigma 85mm f/1.4 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30124864/resize/306/306?1670604211"
+    },
+    {
+      "sku": "SG20235",
+      "name": "Lente Sigma 16mm f/1.4 DC DN Contemporary - Sony",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47272470/resize/306/306?1712087709"
+    },
+    {
+      "sku": "SG20269",
+      "name": "Lente Sigma 56mm f/1.4 DC DN Contemporary - Fuji X",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30117871/resize/306/306?1670600713"
+    },
+    {
+      "sku": "SG20288",
+      "name": "Lente Sigma 50mm f/1.4 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45070806/resize/306/306?1706643386"
+    },
+    {
+      "sku": "SG20296",
+      "name": "Lente Sigma 70-200mm f/2.8 DG DN OS Sports - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45115054/resize/306/306?1706797029"
+    },
+    {
+      "sku": "SG20298",
+      "name": "Lente Sigma 24-70mm f/2.8 DG DN II Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49029973/resize/306/306?1716425763"
+    },
+    {
+      "sku": "SG20301",
+      "name": "Lente Sigma 10-18mm f/2.8 DC DN Contemporary - Canon RF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53786854/resize/306/306?1727271538"
+    },
+    {
+      "sku": "SG20305",
+      "name": "Lente Sigma 56mm f/1.4 DC DN Contemporary - Canon RF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58560848/resize/306/306?1734989415"
+    },
+    {
+      "sku": "SG20307",
+      "name": "Lente Sigma 16mm f/1.4 DC DN Contemporary - Canon RF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59384671/resize/306/306?1737572089"
+    },
+    {
+      "sku": "SG20207",
+      "name": "Lente Sigma 150-600mm f/5-6.3 DG OS HSM Contemporary - Canon EF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46160911/resize/306/306?1709654003"
+    },
+    {
+      "sku": "SG20242",
+      "name": "Lente Sigma 14-24mm f/2.8 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45212972/resize/306/306?1707139273"
+    },
+    {
+      "sku": "SG20260",
+      "name": "Lente Sigma 150-600mm f/5-6.3 DG DN OS Sports - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46606959/resize/306/306?1710769249"
+    },
+    {
+      "sku": "SG20224",
+      "name": "Lente Sigma 24-70mm f/2.8 DG OS HSM Art - Canon EF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43175470/resize/306/306?1743090511"
+    },
+    {
+      "sku": "SG20255",
+      "name": "Lente Sigma 24mm f/3.5 DG DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30187220/resize/306/306?1670879459"
+    },
+    {
+      "sku": "SG20214",
+      "name": "Lente Sigma 30Mm Nikon F1.4 Art Dc Hsm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30186853/resize/306/306?1670878728"
+    },
+    {
+      "sku": "SG20179",
+      "name": "Lente Sigma 35Mm Nikon F1.4 Art Dg Hsm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30186636/resize/306/306?1670878310"
+    },
+    {
+      "sku": "SG20241",
+      "name": "Lente Sigma 45Mm Sony-E Cont. F2.8 Dg Dn",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30186275/resize/306/306?1670877764"
+    },
+    {
+      "sku": "SG20270",
+      "name": "Lente Sigma 16mm f/1.4 DC DN Contemporary - Fuji X",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45214324/resize/306/306?1707142372"
+    },
+    {
+      "sku": "69M966",
+      "name": "Lente Sigma 50-100mm T2 High-Speed Zoom - Canon EF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46464828/resize/306/306?1710427952"
+    },
+    {
+      "sku": "SG20234",
+      "name": "Lente Sigma 30mm f/1.4 DC DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30092003/resize/306/306?1670448769"
+    },
+    {
+      "sku": "SG20256",
+      "name": "Lente Sigma 35mm f/1.4 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30092156/resize/306/306?1670449166"
+    },
+    {
+      "sku": "SG20299",
+      "name": "Lente Sigma 28-45mm f/1.8 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50732064/resize/306/306?1721082298"
+    },
+    {
+      "sku": "SG20303",
+      "name": "Lente Sigma 18-50mm f/2.8 DC DN Contemporary - Canon RF",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/56973789/resize/306/306?1731446232"
+    },
+    {
+      "sku": "SG20399",
+      "name": "Lente Sigma 23mm f/1.4 DC DN Contemporary - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61472247/resize/306/306?1742326915"
+    },
+    {
+      "sku": "SG20275",
+      "name": "Lente Sigma 24mm f/1.4 DG DN Art - Sony E",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46718749/resize/306/306?1710887510"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "745-306",
+      "name": "SIGMA 150-600MM F/5-6.3 DG OS HSM LENTE PARA NIKON F",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/745547-250x250.jpg"
+    },
+    {
+      "sku": "210-101",
+      "name": "SIGMA 18-35MM F/1.8 DC HSM ART LENTE PARA CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/210-101-250x250.jpeg"
+    },
+    {
+      "sku": "210-306",
+      "name": "SIGMA 18-35MM F/1.8 DC HSM ART LENTE PARA NIKON F",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/210-101-250x250.jpeg"
+    },
+    {
+      "sku": "401-101",
+      "name": "SIGMA 24MM F/1.4 DG HSM ART LENTE PARA CÁMARAS CANON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/401-101-01-250x250.jpg"
+    },
+    {
+      "sku": "401-306",
+      "name": "SIGMA 24MM F/1.4 DG HSM ART LENTE PARA CÁMARAS NIKON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/401-101-01-250x250.jpg"
+    },
+    {
+      "sku": "340-101",
+      "name": "SIGMA 35MM F/1.4 DG HSM ART LENTE PARA CÁMARAS CANON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/01-340-101-250x250.jpg"
+    },
+    {
+      "sku": "340-306",
+      "name": "SIGMA 35MM F/1.4 DG HSM ART LENTE PARA CÁMARAS NIKON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/01-340-101-250x250.jpg"
+    },
+    {
+      "sku": "311101",
+      "name": "SIGMA 50MM F/1.4 DG HSM ART LENTE PARA CÁMARAS CANON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/01-311101-250x250.jpg"
+    },
+    {
+      "sku": "311306",
+      "name": "SIGMA 50MM F/1.4 DG HSM ART LENTE PARA CÁMARAS NIKON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/01-311101-250x250.jpg"
+    },
+    {
+      "sku": "589101",
+      "name": "SIGMA 70-200MM F/2.8 EX DG APO OS HSM PARA CANON FULL FRAME",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/589101-01-250x250.jpg"
+    },
+    {
+      "sku": "589306",
+      "name": "SIGMA 70-200MM F/2.8 EX DG APO OS HSM PARA NIKON FULL FRAME",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/589101-01-250x250.jpg"
+    },
+    {
+      "sku": "321954",
+      "name": "SIGMA 85MM F/1.4 DG HSM ART LENTE PARA CÁMARAS CANON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/321954-01-250x250.jpg"
+    },
+    {
+      "sku": "321955",
+      "name": "SIGMA 85MM F/1.4 DG HSM ART LENTE PARA CÁMARAS NIKON FULL FRAME DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/321954-01-250x250.jpg"
+    },
+    {
+      "sku": "89E969",
+      "name": "SIGMA MC-21 ADAPTADOR MONTURA SIGMA EF A CÁMARA CON MONTURA L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/MC-21-250x250.jpeg"
+    },
+    {
+      "sku": "878101",
+      "name": "SIGMA UD-01 USB DOCK PARA LENTES CON MONTURA CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/USBDOCKCANON-250x250.jpg"
+    },
+    {
+      "sku": "750965",
+      "name": "SIGMA 100-400MM F/5-6.3 DG DN OS LENTE CONTEMPORÁNEO PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SENNHEISER/750965-250x250.jpg"
+    },
+    {
+      "sku": "729954",
+      "name": "SIGMA 100-400MM F/5-6.3 DG OS HSM LENTE CONTEMPORANEO PARA CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/729954-250x250.jpg"
+    },
+    {
+      "sku": "205954",
+      "name": "SIGMA 12-24MM F/4 DG HSM ART LENTE PARA CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/205954-250x250.jpg"
+    },
+    {
+      "sku": "213965",
+      "name": "SIGMA 14-24MM F/2.8 DG DN ART LENTE PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/213965-250x250.jpeg"
+    },
+    {
+      "sku": "745-101",
+      "name": "SIGMA 150-600MM F/5-6.3 DG OS HSM CONTEMPORÁNEO LENTE PARA CANON EF",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/745547-250x250.jpg"
+    },
+    {
+      "sku": "585965",
+      "name": "SIGMA 18-50 MM F/2.8 DC DN LENTE PARA SONY E (APS-C)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/585965-250x250.jpeg"
+    },
+    {
+      "sku": "57A965",
+      "name": "SIGMA 24-70MM F/2.8 DG DN II ART LENTE PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/57A965-250x250.jpg"
+    },
+    {
+      "sku": "636965",
+      "name": "SIGMA 28-105MM F/2.8 DG DN LENTE PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/636965-250x250.jpg"
+    },
+    {
+      "sku": "592965",
+      "name": "SIGMA 28-70 MM F/2.8 DG DN PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/592965-250x250.jpeg"
+    },
+    {
+      "sku": "316965",
+      "name": "SIGMA 50MM F/1.2 DG DN ART LENTE PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/316965-250x250.jpeg"
+    },
+    {
+      "sku": "315965",
+      "name": "SIGMA 50MM F/1.4 DG DN ART LENTE PARA CAMARAS SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/315965-250x250.jpg"
+    },
+    {
+      "sku": "591965",
+      "name": "SIGMA 70-200 MM F/2,8 DG DN OS (SONY E)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/5919653-250x250w.png"
+    },
+    {
+      "sku": "WZQ968",
+      "name": "SIGMA KIT LENTES CINE 50-100MM + 18-35MM T2 PL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/WZQ968new-250x250.png"
+    },
+    {
+      "sku": "206965",
+      "name": "SIGMA LENTE GRAN ANGULAR 16-28 MM F/2.8 DG DN PARA SONY E",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SIGMA/206965-250x250.jpeg"
+    }
+  ]
+}

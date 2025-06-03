@@ -1,0 +1,110 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "NIC-ATH-14PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIP-X100-BLK-BLKMIST25",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NISI-X100-UV49HOODCAP-SIL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-85E",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-35PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-14E",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIR-ND1.2-58",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-35E",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-AD-PL-E",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-C5-CINEMA",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NISI-X100V-BLK",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-C5-80CLAMP",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-AD-PL-RF",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIP-X100-SIL-BLKMIST25",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NISI-X100-UV49HOODCAP-BLK",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-50E",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NISI-NS-B-03",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ND64-CPL-77",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-50PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-85PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-KIT-PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-DROP-BLKMIST16",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NISI-X100V-SIL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIR-CLOSEUP-77II",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-25PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "NIC-ATH-25E",
+        "secondSKU": null
+      }
+    ]
+  }
+}

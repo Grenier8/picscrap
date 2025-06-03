@@ -1,0 +1,106 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "A057S",
+        "secondSKU": "AFA057S-700"
+      },
+      {
+        "baseSKU": "A035C",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "A047S",
+        "secondSKU": "A047S"
+      },
+      {
+        "baseSKU": "A025C",
+        "secondSKU": "AFA025C-700"
+      },
+      {
+        "baseSKU": "A056S",
+        "secondSKU": "A056SF"
+      },
+      {
+        "baseSKU": "A036SF",
+        "secondSKU": "A036SF"
+      },
+      {
+        "baseSKU": "AFA056S-700",
+        "secondSKU": "A056SF"
+      },
+      {
+        "baseSKU": "F050S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AFA069S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "A071S",
+        "secondSKU": "A071SF"
+      },
+      {
+        "baseSKU": "F072S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "F053S",
+        "secondSKU": "F053SF"
+      },
+      {
+        "baseSKU": "A063S",
+        "secondSKU": "A063S"
+      },
+      {
+        "baseSKU": "A046S",
+        "secondSKU": "A046SF"
+      },
+      {
+        "baseSKU": "F051S",
+        "secondSKU": "F051SF"
+      },
+      {
+        "baseSKU": "B070S",
+        "secondSKU": "AFB070S-700"
+      },
+      {
+        "baseSKU": "A065S",
+        "secondSKU": "AA065S"
+      },
+      {
+        "baseSKU": "A068S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "B070X",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "A067S",
+        "secondSKU": "A067S"
+      },
+      {
+        "baseSKU": "B061S",
+        "secondSKU": "B061S"
+      },
+      {
+        "baseSKU": "RHAFA022",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "A074S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "B060S",
+        "secondSKU": "AFB060S-700"
+      },
+      {
+        "baseSKU": "A058S",
+        "secondSKU": null
+      }
+    ]
+  }
+}

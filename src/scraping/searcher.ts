@@ -3,14 +3,14 @@ import {
   Webpage,
   ProductDB,
 } from "../interfaces";
-import { getProducts } from "../service/product";
+import { getScrapProducts } from "../service/product";
 
 export const findProductsBetweenPages = async (
   pageFrom: Webpage,
   pageTo: Webpage
 ): Promise<FindProductsBetweenPagesResults> => {
-  const pageFromProducts = await getProducts(pageFrom);
-  const pageToProducts = await getProducts(pageTo);
+  const pageFromProducts = await getScrapProducts(pageFrom);
+  const pageToProducts = await getScrapProducts(pageTo);
 
   const totalProducts = pageFromProducts.length;
   let foundProducts = 0;
@@ -20,7 +20,11 @@ export const findProductsBetweenPages = async (
     if (foundProduct) {
       foundProducts++;
     } else {
-      notFoundProducts.push(product);
+      notFoundProducts.push({
+        ...product,
+        Webpage: pageTo,
+        Brand: { name: product.brand },
+      } as ProductDB);
     }
   }
 

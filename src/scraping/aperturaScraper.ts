@@ -19,79 +19,9 @@ import { Browser, Page } from "puppeteer";
 
 puppeteer.use(StealthPlugin());
 
-export class AperturaScraper implements Scraper {
-  webpage: Webpage;
-
+export class AperturaScraper extends Scraper {
   constructor(webpage: Webpage) {
-    this.webpage = webpage;
-  }
-
-  async getAllProducts(): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
-    await this.setUserAgent(page);
-    const allProducts = await this.scrapeAllPages(browser, page);
-    saveProductsToFile(allProducts, this.webpage.id);
-    await browser.close();
-    console.log(`Ended ${this.webpage.name} scraping`);
-    return allProducts;
-  }
-
-  async getProductsBySku(skus: string[]): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
-    await this.setUserAgent(page);
-    const allProducts = await this.scrapeAllPages(browser, page);
-    console.log("All products obtained: ", allProducts.length);
-
-    const filteredProducts = allProducts.filter((product) =>
-      skus.includes(product.sku)
-    );
-    console.log("Filtered products: ", filteredProducts.length);
-
-    saveProductsToFile(filteredProducts, this.webpage.id);
-    await browser.close();
-    console.log(`Ended ${this.webpage.name} scraping`);
-    return filteredProducts;
-  }
-
-  async getProductsBySimilarity(
-    baseProducts: BaseProductDB[]
-  ): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
-    const browser = await puppeteer.launch({ headless: false });
-    const page = await browser.newPage();
-    await this.setUserAgent(page);
-    const allProducts = await this.scrapeAllPages(browser, page);
-    console.log("All products obtained: ", allProducts.length);
-
-    const filteredProducts: ProductScrap[] = [];
-    for (const baseProduct of baseProducts) {
-      const bestMatch = await getBestMatch(baseProduct, allProducts, {
-        imageWeight: baseProduct.image ? 0.3 : 0,
-      });
-      if (bestMatch) {
-        filteredProducts.push({
-          ...bestMatch,
-          webpage: this.webpage.url,
-          baseProductSku: baseProduct.sku,
-        });
-      }
-    }
-    console.log("Filtered products: ", filteredProducts.length);
-
-    saveProductsToFile(filteredProducts, this.webpage.id);
-    await browser.close();
-    console.log(`Ended ${this.webpage.name} scraping`);
-    return filteredProducts;
-  }
-
-  private async setUserAgent(page: Page) {
-    await page.setUserAgent(
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
-    );
+    super(webpage);
   }
 
   async scrapeAllPages(browser: Browser, page: Page): Promise<ProductScrap[]> {

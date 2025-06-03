@@ -1,0 +1,10 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "CHDHX-131-TH",
+        "secondSKU": "CHDSB-131-RT"
+      }
+    ]
+  }
+}

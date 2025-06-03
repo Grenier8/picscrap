@@ -1,0 +1,98 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "MVH502AH",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MPMXPROA4",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MK290DUA3-3W",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "1314B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MMELMIIA5RD",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MLLC1201K",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "T-TV-712113",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "T-TV-199637",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MVK500AM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MVK504XTWINFA",
+        "secondSKU": "MVK504XTWINFA"
+      },
+      {
+        "baseSKU": "MKBFRLA4BK-3W",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MK290LTA3-V",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MKBFRTA4BK-BH",
+        "secondSKU": "MKBFRTA4BK-BH"
+      },
+      {
+        "baseSKU": "MS050M4-Q5",
+        "secondSKU": "MS050M4-Q5"
+      },
+      {
+        "baseSKU": "MTPIXI-B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MB MA3-BP-H",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MKELES5BK-BH",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MLH1HS",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MKELMII4BK-BH",
+        "secondSKU": "MKELMII4BK-BH"
+      },
+      {
+        "baseSKU": "MVMXPROA4",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MVMXPRO500",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "200LT-PL",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MKBFRLA4BK-BH",
+        "secondSKU": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "baseProducts": [
+    {
+      "sku": "LP37351-PWW",
+      "name": "Mochila Lowepro Flipside 300 AW III - Dark Gray",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30137169/resize/306/306?1670620535"
+    },
+    {
+      "sku": "LP36867-0WW",
+      "name": "Bolsa Lowepro Adventura TLZ 30 II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/34738565/resize/306/306?1723130418"
+    },
+    {
+      "sku": "LP36866",
+      "name": "Bolso Lowepro Adventura SH 100 II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62688669/resize/306/306?1745274213"
+    },
+    {
+      "sku": "LP37352-PWW",
+      "name": "Mochila Lowepro Flipside 400 AW III - Negra",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40366924/resize/306/306?1696272653"
+    },
+    {
+      "sku": "LP37016-PWW",
+      "name": "Mochila Lowepro Flipside Trek BP 450 AW - Gray",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53803486/resize/306/306?1727295226"
+    },
+    {
+      "sku": "LP37015-PWW",
+      "name": "Mochila Lowepro Flipside Trek BP 350 AW - Gray",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/34740465/resize/306/306?1683058593"
+    },
+    {
+      "sku": "LP37451",
+      "name": "Bolso Lowepro Adventura SH 140 III",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62688326/resize/306/306?1745273730"
+    },
+    {
+      "sku": "LP37350-PWW",
+      "name": "Mochila Lowepro Flipside 300 AW III - Black",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63801226/resize/306/306?1748269917"
+    },
+    {
+      "sku": "LP37452-PWW",
+      "name": "Bolso Lowepro Adventura SH 160 III - Black",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63680920/resize/306/306?1747928078"
+    },
+    {
+      "sku": "LP37177-GRL",
+      "name": "Mochila Lowepro ProTactic BP 450 AW II",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45918074/resize/306/306?1709065328"
+    },
+    {
+      "sku": "LP37098-PWW",
+      "name": "Mochila Lowepro Droneguard Bp-200",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30133209/resize/306/306?1670615134"
+    },
+    {
+      "sku": "LP37125-PWW",
+      "name": "Mochila Lowepro Flipside 200 AW II - Black",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/34637047/resize/306/306?1682718060"
+    },
+    {
+      "sku": "LP37345-PWW",
+      "name": "BOLSO LOWEPRO PHOTO ACTIVE TLZ 45 AW NEGRO",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30134388/resize/306/306?1670616773"
+    },
+    {
+      "sku": "LP36892-PWW",
+      "name": "Mochila Lowerpro Tahoe BP150 - Black",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/54017534/resize/306/306?1727661608"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "T1-25",
+      "name": "LOWEL SOMBRILLA PLATEADA TOTA-BRELLA UMBRELLA (SILVER, 27\")",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/T1-25-250x250.jpg"
+    },
+    {
+      "sku": "LP36866",
+      "name": "LOWEPRO ADVENTURA SH 100 II HOLSTER PEQUEÑO PARA CÁMARAS COMPACTAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP36866-250x250.jpg"
+    },
+    {
+      "sku": "LP37450",
+      "name": "LOWEPRO ADVENTURA SH 120 III BOLSO DE HOMBRO PARA CÁMARAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37450-250x250.jpg"
+    },
+    {
+      "sku": "LP37451",
+      "name": "LOWEPRO ADVENTURA SH 140 III BOLSO DE HOMBRO PARA CÁMARAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37451-250x250.jpg"
+    },
+    {
+      "sku": "LP37347",
+      "name": "LOWEPRO BOLSO GEARUP CREATOR BOX M II",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37347-250x250.jpeg"
+    },
+    {
+      "sku": "LP37140",
+      "name": "LOWEPRO BOLSO PARA ACCESORIOS GEARUP (GRIS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37140-250x250.jpeg"
+    },
+    {
+      "sku": "LP37099",
+      "name": "LOWEPRO DRONEGUARD BP 250 MOCHILA PARA DJI DRONE Y ACCESORIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37099-250x250.jpg"
+    },
+    {
+      "sku": "LP37186",
+      "name": "LOWEPRO ESTUCHE GEARUP PARA LLEVAR 20 MEMORIAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37186-250x250.jpeg"
+    },
+    {
+      "sku": "LP37141",
+      "name": "LOWEPRO ESTUCHE GRANDE GEARUP",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37141-250x250.jpeg"
+    },
+    {
+      "sku": "LP37182",
+      "name": "LOWEPRO ESTUCHE PARA BOTELLA PROTACTIC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37131-250x250.jpeg"
+    },
+    {
+      "sku": "LP37333",
+      "name": "LOWEPRO FASTPACK BP 250 AW III MOCHILA / BACKPACK (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP373335-250x250.jpg"
+    },
+    {
+      "sku": "LP37331",
+      "name": "LOWEPRO FASTPACK PRO BP 250 AW III MOCHILA / BACKPACK",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37331-250x250.jpeg"
+    },
+    {
+      "sku": "LP37125",
+      "name": "LOWEPRO FLIPSIDE 200 AW II MOCHILA PARA CÁMARA COMPACTA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37125-250x250.jpg"
+    },
+    {
+      "sku": "LP37015",
+      "name": "LOWEPRO FLIPSIDE TREK BP 350 AW MOCHILA PARA CÁMARA Y TABLET (GRIS / VERDE OSCURO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37015-250x250.jpg"
+    },
+    {
+      "sku": "LP37229",
+      "name": "LOWEPRO FREELINE 350 AW MOCHILA PARA CÁMARA Y ACCESORIOS (GRIS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37229-250x250.jpeg"
+    },
+    {
+      "sku": "LP36287",
+      "name": "LOWEPRO LP36287 PRO PHOTO/VIDEO VEST CHALECO TÉCNICO S&F, L Y XL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP36287-250x250.jpg"
+    },
+    {
+      "sku": "LP37280",
+      "name": "LOWEPRO LP37280 MALETA WHISTLER RL 400 AW II",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37280-250x250.jpg"
+    },
+    {
+      "sku": "LP37137",
+      "name": "LOWEPRO M TREKKER BP150 MOCHILA GREY CORDURA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37137-250x250.jpg"
+    },
+    {
+      "sku": "LP37350",
+      "name": "LOWEPRO MOCHILA FLIPSIDE 300 AW III (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37350-250x250.jpg"
+    },
+    {
+      "sku": "LP37353",
+      "name": "LOWEPRO MOCHILA FLIPSIDE 400 AW III (GRIS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37353-250x250.jpeg"
+    },
+    {
+      "sku": "LP37352",
+      "name": "LOWEPRO MOCHILA FLIPSIDE 400 AW III (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37352-250x250.jpg"
+    },
+    {
+      "sku": "LP37131",
+      "name": "LOWEPRO MOCHILA FLIPSIDE 500 AW II (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37131-250x250.jpg"
+    },
+    {
+      "sku": "LP37342",
+      "name": "LOWEPRO MOCHILA PHOTOSPORT PRO 55L AW III (M-L)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37341-250x250w.jpg"
+    },
+    {
+      "sku": "LP37341",
+      "name": "LOWEPRO MOCHILA PHOTOSPORT PRO 55L AW III (S-M)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37341-250x250w.jpg"
+    },
+    {
+      "sku": "LP37436",
+      "name": "LOWEPRO MOCHILA PHOTOSPORT PRO 70L AW III (S-M)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37436-250x250.jpg"
+    },
+    {
+      "sku": "LP37475",
+      "name": "LOWEPRO MOCHILA PHOTOSPORT X AW 35L (VERDE)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37475-250x250.jpg"
+    },
+    {
+      "sku": "LP37230",
+      "name": "LOWEPRO MOCHILA POWDER BP 500 AW - GRIS/NARANJA 55L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37230-250x250.jpeg"
+    },
+    {
+      "sku": "LP37237",
+      "name": "LOWEPRO MOCHILA TRUCKEE BP 250",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37237n-250x250.jpg"
+    },
+    {
+      "sku": "LP37117",
+      "name": "LOWEPRO NOVA 140 AW II (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37117-250x250.jpg"
+    },
+    {
+      "sku": "LP37119",
+      "name": "LOWEPRO NOVA 160 AW II (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37119-250x250.jpeg"
+    },
+    {
+      "sku": "LP37260",
+      "name": "LOWEPRO PHOTO ACTIVE BP 200 AW (BLACK/GREY) MOCHILA SPORT PARA CÁMARA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37260-250x250.jpg"
+    },
+    {
+      "sku": "LP37268",
+      "name": "LOWEPRO PRO TREKKER BP 350 AW II MOCHILA 24L (GRIS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37268-250x250.jpg"
+    },
+    {
+      "sku": "LP37269",
+      "name": "LOWEPRO PRO TREKKER BP 450 AW II MOCHILA PARA CÁMARA Y COMPUTADORA PORTÁTIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37269-250x250.jpg"
+    },
+    {
+      "sku": "LP37265",
+      "name": "LOWEPRO PROTACTIC BP 300 AW II MOCHILA PROFESIONAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37265n-250x250.jpg"
+    },
+    {
+      "sku": "LP37176",
+      "name": "LOWEPRO PROTACTIC BP 350 AW II MOCHILA PARA CÁMARA Y COMPUTADORA PORTÁTIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37176.-250x250.jpg"
+    },
+    {
+      "sku": "LP37177",
+      "name": "LOWEPRO PROTACTIC BP 450 AW II MOCHILA PARA CÁMARA Y COMPUTADORA PORTÁTIL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37177-250x250.jpg"
+    },
+    {
+      "sku": "LP37266",
+      "name": "LOWEPRO PROTACTIC MG 160 AW II BOLSO DE HOMBRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37266-250x250.jpeg"
+    },
+    {
+      "sku": "LP37335",
+      "name": "LOWEPRO SLINGSHOT SL 250 AW III",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP373356-250x250.jpg"
+    },
+    {
+      "sku": "LP37345",
+      "name": "LOWEPRO TOPLOADER PHOTO ACTIVE TLZ 45 AW",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37345new-250x250.jpg"
+    },
+    {
+      "sku": "LP37346",
+      "name": "LOWEPRO TOPLOADER PHOTO ACTIVE TLZ 50 AW",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37346-250x250.jpg"
+    },
+    {
+      "sku": "LP37226",
+      "name": "LOWEPRO WHISTLER 350 AW II MOCHILA / BACKPACK",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37226new-250x250.jpeg"
+    },
+    {
+      "sku": "LP37185",
+      "name": "LOWEPRO BOLSA DE FILTROS GEARUP 100",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37185-250x250.jpeg"
+    },
+    {
+      "sku": "LP37452",
+      "name": "LOWEPRO BOLSO DE HOMBRO ADVENTURA SH160 III",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37452-250x250.jpg"
+    },
+    {
+      "sku": "LP37139",
+      "name": "LOWEPRO ESTUCHE MEDIANO GEARUP",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37139-250x250.jpeg"
+    },
+    {
+      "sku": "LP37138",
+      "name": "LOWEPRO ESTUCHE MINI GEARUP",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37138-250x250.jpeg"
+    },
+    {
+      "sku": "LP37170",
+      "name": "LOWEPRO FREELINE 350 AW MOCHILA PARA CÁMARA Y ACCESORIOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37170-250x250.jpg"
+    },
+    {
+      "sku": "LP37351",
+      "name": "LOWEPRO MOCHILA FLIPSIDE BP300 AW (GRIS OSCURO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37351n-250x250.jpg"
+    },
+    {
+      "sku": "LP37339",
+      "name": "LOWEPRO MOCHILA PHOTOSPORT BP 15L AW III",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37339-250x250.jpg"
+    },
+    {
+      "sku": "LP37270",
+      "name": "LOWEPRO MOCHILA PRO TREKKER BP 550 AW II 40L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37270-250x250.jpeg"
+    },
+    {
+      "sku": "LP37343",
+      "name": "LOWEPRO OUTDOOR BACKPACK BP 24L AW III (GY)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37343n-250x250.jpg"
+    },
+    {
+      "sku": "LP36958",
+      "name": "LOWEPRO PHOTO HATCHBACK SERIES BP 250 AW II (AZUL MEDIANOCHE / GRIS)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP369582-250x250.jpg"
+    },
+    {
+      "sku": "LP36957",
+      "name": "LOWEPRO PHOTO HATCHBACK SERIES BP 250 AW II (NEGRO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP36957-250x250.jpeg"
+    },
+    {
+      "sku": "LP36892",
+      "name": "LOWEPRO TAHOE BP150 BACKPACK (BLACK)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP36892-250x250.jpg"
+    },
+    {
+      "sku": "LP37056",
+      "name": "LOWEPRO TAHOE BP150 BACKPACK (PIXEL CAMO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37056-250x250.jpg"
+    },
+    {
+      "sku": "LP37459",
+      "name": "LOWEPRO TREKKER LITE BP 150 MOCHILA PARA CÁMARA 18.5L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37459-250x250.jpg"
+    },
+    {
+      "sku": "LP37460",
+      "name": "LOWEPRO TREKKER LITE BP 250 MOCHILA PARA CÁMARA 25L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37460-250x250.jpg"
+    },
+    {
+      "sku": "LP37441",
+      "name": "LOWEPRO ESTUCHE GEARUP PRO L II",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LOWEPRO/LP37441-250x250.jpg"
+    }
+  ]
+}

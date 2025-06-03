@@ -1,0 +1,411 @@
+{
+  "baseProducts": [
+    {
+      "sku": "SAV-C6",
+      "name": "Pinza para Fondo Savage 6\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59069060/resize/306/306?1736802971"
+    },
+    {
+      "sku": "SAV-C4",
+      "name": "Pinza para Fondo Savage 4\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49719549/resize/306/306?1718295268"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "SAV-47-53",
+      "name": "SAVAGE FONDO DE PAPEL \"BABY BLUE\" PARA BACKDROP DE 1,35 X 11 MTS SAV-47-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV47-250x250.jpg"
+    },
+    {
+      "sku": "SAV-47",
+      "name": "SAVAGE FONDO DE PAPEL \"BABY BLUE\" PARA BACKDROP DE 2,72 X 11 MTS SAV-47",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV47-250x250.jpg"
+    },
+    {
+      "sku": "SAV-20-53",
+      "name": "SAVAGE FONDO DE PAPEL \"BLACK\" NEGRO PARA BACKDROP DE 1,35 X 11 MTS SAV-20-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav20-l-250x250.jpg"
+    },
+    {
+      "sku": "SAV-20",
+      "name": "SAVAGE FONDO DE PAPEL \"BLACK\" NEGRO PARA BACKDROP DE 2,72 X 11 MTS SAV-20",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav20-l-250x250.jpg"
+    },
+    {
+      "sku": "SAV-31-53",
+      "name": "SAVAGE FONDO DE PAPEL \"BLUE JAY\" PARA BACKDROP DE 1,35 X 11 MTS SAV-31-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-31-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-31",
+      "name": "SAVAGE FONDO DE PAPEL \"BLUE JAY\" PARA BACKDROP DE 2,72 X 11 MTS SAV-31",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-31-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-41-53",
+      "name": "SAVAGE FONDO DE PAPEL \"BLUE MIST\" PARA BACKDROP DE 1,35 X 11 MTS SAV-41-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-41-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-41",
+      "name": "SAVAGE FONDO DE PAPEL \"BLUE MIST\" PARA BACKDROP DE 2,72 X 11 MTS SAV-41",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-41-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-51-53",
+      "name": "SAVAGE FONDO DE PAPEL \"BONE\" HUESO PARA BACKDROP DE 1,35 X 11 MTS SAV-51",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-51-53-250x250.jpg"
+    },
+    {
+      "sku": "SAV-38",
+      "name": "SAVAGE FONDO DE PAPEL \"CANARY\" PARA BACKDROP DE 2,72 X 11 MTS SAV-38",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV38-250x250.png"
+    },
+    {
+      "sku": "SAV-80-53",
+      "name": "SAVAGE FONDO DE PAPEL \"COCOA\" PARA BACKDROP DE 1,35 X 11 MTS SAV-80-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV80-250x250.jpg"
+    },
+    {
+      "sku": "SAV-80",
+      "name": "SAVAGE FONDO DE PAPEL \"COCOA\" PARA BACKDROP DE 2,72 X 11 MTS SAV-80",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV80-250x250.jpg"
+    },
+    {
+      "sku": "SAV-3",
+      "name": "SAVAGE FONDO DE PAPEL \"CORAL SEAMLESS\" PARA BACKDROP DE 2,72 X 11 MTS SAV-3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV03-250x250.jpg"
+    },
+    {
+      "sku": "SAV-03-53",
+      "name": "SAVAGE FONDO DE PAPEL \"CORAL\" PARA BACKDROP DE 1,35 X 11 MTS SAV-03-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-03-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-06-53",
+      "name": "SAVAGE FONDO DE PAPEL \"CRIMSON\"ROJO CARMESÍ PARA BACKDROP DE 1,35 X 11 MTS SAV-06-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav06-250x250.jpg"
+    },
+    {
+      "sku": "SAV-06",
+      "name": "SAVAGE FONDO DE PAPEL \"CRIMSON\"ROJO CARMESÍ PARA BACKDROP DE 2,72 X 11 MTS SAV-06",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav06-250x250.jpg"
+    },
+    {
+      "sku": "SAV-71-53",
+      "name": "SAVAGE FONDO DE PAPEL \"DEEP YELLOW\" AMARILLO PARA BACKDROP DE 1,35 X 11 MTS SAV-71-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV71-250x250.jpg"
+    },
+    {
+      "sku": "SAV-71",
+      "name": "SAVAGE FONDO DE PAPEL \"DEEP YELLOW\" AMARILLO PARA BACKDROP DE 2,72 X 11 MTS SAV-71",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV71-250x250.jpg"
+    },
+    {
+      "sku": "SAV-19-53",
+      "name": "SAVAGE FONDO DE PAPEL \"EGG NOG\" PARA BACKDROP DE 1,35 X 11 MTS SAV-19-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-19-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-19",
+      "name": "SAVAGE FONDO DE PAPEL \"EGG NOG\" PARA BACKDROP DE 2,72 X 11 MTS SAV-19",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-19-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-18-53",
+      "name": "SAVAGE FONDO DE PAPEL \"EVER GREEN\" PARA BACKDROP DE 1,35 X 11MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-18-250x250.jpg"
+    },
+    {
+      "sku": "SAV-18",
+      "name": "SAVAGE FONDO DE PAPEL \"EVER GREEN\" PARA BACKDROP DE 2,72 X 11 MTS SAV-18",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-18-250x250.jpg"
+    },
+    {
+      "sku": "SAV-56-53",
+      "name": "SAVAGE FONDO DE PAPEL \"FASHION GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS SAV-56",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV056-250x250.jpg"
+    },
+    {
+      "sku": "SAV-56",
+      "name": "SAVAGE FONDO DE PAPEL \"FASHION GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-56",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV056-250x250.jpg"
+    },
+    {
+      "sku": "SAV-92",
+      "name": "SAVAGE FONDO DE PAPEL \"FLAMINGO\" PARA BACKDROP DE 2,72 X 11 MTS SAV-92",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-925-250x250.jpg"
+    },
+    {
+      "sku": "SAV-30-53",
+      "name": "SAVAGE FONDO DE PAPEL \"GULF BLUE\" AZUL GOLFO DE 1,35 X 11MTS SAV-30-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV30-250x250.jpg"
+    },
+    {
+      "sku": "SAV-93-53",
+      "name": "SAVAGE FONDO DE PAPEL \"LIMONADE\" PARA BACKDROP DE 1,35 X 11 MTS SAV-93",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-93-250x250.jpg"
+    },
+    {
+      "sku": "SAV-93",
+      "name": "SAVAGE FONDO DE PAPEL \"LIMONADE\" PARA BACKDROP DE 2,72 X 11 MTS SAV-93",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-93-250x250.jpg"
+    },
+    {
+      "sku": "SAV-40",
+      "name": "SAVAGE FONDO DE PAPEL \"MINT GREEN\" PARA BACKDROP DE 2,72 X 11 MTS SAV-40",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV40-250x250.jpg"
+    },
+    {
+      "sku": "SAV-76-53",
+      "name": "SAVAGE FONDO DE PAPEL \"MOCHA\" PARA BACKDROP DE 1,35 X 11 MTS SAV-76",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV0766-250x250.jpg"
+    },
+    {
+      "sku": "SAV-76",
+      "name": "SAVAGE FONDO DE PAPEL \"MOCHA\" PARA BACKDROP DE 2,72 X 11 MTS SAV-76",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV0766-250x250.jpg"
+    },
+    {
+      "sku": "SAV-34-53",
+      "name": "SAVAGE FONDO DE PAPEL \"OLIVE GREEN\" PARA BACKDROP DE 1,35 X 11 MTS SAV-34",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-34-1-250x250.jpg"
+    },
+    {
+      "sku": "SAV-34",
+      "name": "SAVAGE FONDO DE PAPEL \"OLIVE GREEN\" PARA BACKDROP DE 2,72 X 11 MTS SAV-34",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-34-1-250x250.jpg"
+    },
+    {
+      "sku": "SAV-24-53",
+      "name": "SAVAGE FONDO DE PAPEL \"ORANGE\" NARANJA PARA BACKDROP DE 1,35 X 11 MTS SAV-24-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav24-250x250.jpg"
+    },
+    {
+      "sku": "SAV-24",
+      "name": "SAVAGE FONDO DE PAPEL \"ORANGE\" NARANJA PARA BACKDROP DE 2,72 X 11 MTS SAV-24",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav24-250x250.jpg"
+    },
+    {
+      "sku": "SAV-29-53",
+      "name": "SAVAGE FONDO DE PAPEL \"ORCHID\" ORQUIDEA PARA BACKDROP DE 1,35 X 11 MTS SAV-29-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV29-250x250.jpg"
+    },
+    {
+      "sku": "SAV-29",
+      "name": "SAVAGE FONDO DE PAPEL \"ORCHID\" ORQUIDEA PARA BACKDROP DE 2,72 X 11 MTS SAV-29",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV29-250x250.jpg"
+    },
+    {
+      "sku": "SAV-53-53",
+      "name": "SAVAGE FONDO DE PAPEL \"PECAN\" NUEZ PARA BACKDROP DE 1,35 X 11 MTS SAV-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-53-53-250x250.jpg"
+    },
+    {
+      "sku": "SAV-91-53",
+      "name": "SAVAGE FONDO DE PAPEL \"PLUM\" CIRUELO PARA BACKDROP DE 1,35 X 11 MTS SAV-91-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV91-250x250.jpg"
+    },
+    {
+      "sku": "SAV-91",
+      "name": "SAVAGE FONDO DE PAPEL \"PLUM\" CIRUELO PARA BACKDROP DE 2,72 X 11 MTS SAV-91",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV91-250x250.jpg"
+    },
+    {
+      "sku": "SAV-08-53",
+      "name": "SAVAGE FONDO DE PAPEL \"PRIMARY RED\" ROJO PRIMARIO PARA BACKDROP DE 1,35 X 11 MTS SAV-08-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV08-250x250.jpg"
+    },
+    {
+      "sku": "SAV-08",
+      "name": "SAVAGE FONDO DE PAPEL \"PRIMARY RED\" ROJO PRIMARIO PARA BACKDROP DE 2,72 X 11 MTS SAV-08",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV08-250x250.jpg"
+    },
+    {
+      "sku": "SAV-62-53",
+      "name": "SAVAGE FONDO DE PAPEL \"PURPLE\" PARA BACKDROP DE 1,35 X 11 MTS SAV-62",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-62-250x250.jpg"
+    },
+    {
+      "sku": "SAV-62",
+      "name": "SAVAGE FONDO DE PAPEL \"PURPLE\" PARA BACKDROP DE 2,72 X 11 MTS SAV-62",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-62-250x250.jpg"
+    },
+    {
+      "sku": "SAV-67",
+      "name": "SAVAGE FONDO DE PAPEL \"RUBY\" PARA BACKDROP DE 2,72 X 11 MTS SAV-67",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-67-800x800-250x250.jpg"
+    },
+    {
+      "sku": "SAV-81",
+      "name": "SAVAGE FONDO DE PAPEL \"RUSTIC\" RÚSTICO PARA BACKDROP DE 2,72 X 11 MTS SAV-81",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-81-250x250.jpg"
+    },
+    {
+      "sku": "SAV-2",
+      "name": "SAVAGE FONDO DE PAPEL \"SKY BLUE\" PARA BACKDROP 2,72 X 11 MTS SAV-2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-2-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-74-53",
+      "name": "SAVAGE FONDO DE PAPEL \"SMOKE GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS SAV-74-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV74-250x250.jpg"
+    },
+    {
+      "sku": "SAV-74",
+      "name": "SAVAGE FONDO DE PAPEL \"SMOKE GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-74",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV74-250x250.jpg"
+    },
+    {
+      "sku": "SAV-09-53",
+      "name": "SAVAGE FONDO DE PAPEL \"STONE GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS SAV-09",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV09-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-09",
+      "name": "SAVAGE FONDO DE PAPEL \"STONE GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-09",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV09-53-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-58-53",
+      "name": "SAVAGE FONDO DE PAPEL \"STUDIO BLUE\" CHROMA AZUL PARA BACKDROP DE 1,35 X 11 MTS SAV-58-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav58-250x250.jpg"
+    },
+    {
+      "sku": "SAV-58",
+      "name": "SAVAGE FONDO DE PAPEL \"STUDIO BLUE\" CHROMA AZUL PARA BACKDROP DE 2,72 X 11 MTS SAV-58",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav58-250x250.jpg"
+    },
+    {
+      "sku": "SAV-12-53",
+      "name": "SAVAGE FONDO DE PAPEL \"STUDIO GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS SAV-12",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-12-533-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-12",
+      "name": "SAVAGE FONDO DE PAPEL \"STUDIO GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-12",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-12-533-250x250.jpeg"
+    },
+    {
+      "sku": "SAV-68-53",
+      "name": "SAVAGE FONDO DE PAPEL \"TEAL\" VERDE AZULADO DE 1,35 X 11MTS SAV-68-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/1SAV-68-532n-250x250.jpg"
+    },
+    {
+      "sku": "SAV-46-53",
+      "name": "SAVAGE FONDO DE PAPEL \"TECH GREEN\" CHROMA VERDE PARA BACKDROP DE 1,35 X 11 MTS SAV-46-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav46-250x250.jpg"
+    },
+    {
+      "sku": "SAV-46",
+      "name": "SAVAGE FONDO DE PAPEL \"TECH GREEN\" CHROMA VERDE PARA BACKDROP DE 2,72 X 11 MTS SAV-46",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav46-L-250x250.jpg"
+    },
+    {
+      "sku": "SAV-27",
+      "name": "SAVAGE FONDO DE PAPEL \"THUNDER GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-27",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav27-250x250.jpg"
+    },
+    {
+      "sku": "SAV-75-53",
+      "name": "SAVAGE FONDO DE PAPEL \"TRUE BLUE\" AZUL VERDADERO PARA BACKDROP DE 1,35 X 11 MTS SAV-75-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-756-250x250.jpg"
+    },
+    {
+      "sku": "SAV-75",
+      "name": "SAVAGE FONDO DE PAPEL \"TRUE BLUE\" AZUL VERDADERO PARA BACKDROP DE 2,72 X 11 MTS SAV-75",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-756-250x250.jpg"
+    },
+    {
+      "sku": "SAV-37-53",
+      "name": "SAVAGE FONDO DE PAPEL \"TULIP\" PARA BACKDROP DE 1,35 X 11 MTS SAV-37",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-375-250x250.jpg"
+    },
+    {
+      "sku": "SAV-37",
+      "name": "SAVAGE FONDO DE PAPEL \"TULIP\" PARA BACKDROP DE 2,72 X 11 MTS SAV-37",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-375-250x250.jpg"
+    },
+    {
+      "sku": "SAV-83-53",
+      "name": "SAVAGE FONDO DE PAPEL \"TURQUOISE\" TURQUESA DE 1,35 X 11MTS SAV-83-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV832-250x250.jpg"
+    },
+    {
+      "sku": "SAV-05-53",
+      "name": "SAVAGE FONDO DE PAPEL \"ULTRAMARINE\" AZUL MARINO PARA BACKDROP DE 1,35 X 11 MTS SAV-05-53",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav05-250x250.jpg"
+    },
+    {
+      "sku": "SAV-05",
+      "name": "SAVAGE FONDO DE PAPEL \"ULTRAMARINE\" AZUL MARINO PARA BACKDROP DE 2,72 X 11 MTS SAV-05",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav05-250x250.jpg"
+    },
+    {
+      "sku": "SAV-1-53",
+      "name": "SAVAGE FONDO DE PAPEL BLANCO \"SUPER WHITE\" PARA BACKDROP DE 1,35 X 11 MTS SAV-1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav1-250x250.jpg"
+    },
+    {
+      "sku": "SAV-1",
+      "name": "SAVAGE FONDO DE PAPEL BLANCO \"SUPER WHITE\" PARA BACKDROP DE 2,72 X 11 MTS SAV-1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav1-l-250x250.jpg"
+    },
+    {
+      "sku": "SAV-C4",
+      "name": "SAVAGE MINI PINZA DE AGARRE PONY CLAMP MINI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/C4-250x250.jpg"
+    },
+    {
+      "sku": "SAV-C6",
+      "name": "SAVAGE PINZA DE AGARRE PONY CLAMP 6\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/C4-250x250.jpg"
+    },
+    {
+      "sku": "55418",
+      "name": "SAVAGE TRANS-LUM HEAVYWEIGHT 1,52 X 5,50 MTS (2 STOP)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/55418-250x250.jpg"
+    },
+    {
+      "sku": "36018",
+      "name": "SAVAGE TRANS-LUM LIGTHWEIGHT 1,52 X 5,50 MTS (3/4 STOP)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/36018-250x250.jpg"
+    },
+    {
+      "sku": "46018",
+      "name": "SAVAGE TRANS-LUM MEDIUMWEIGHT 1,52 X 5,50 MTS (1.5 STOP)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/36018-250x250.jpg"
+    },
+    {
+      "sku": "SAV-60-53",
+      "name": "SAVAGE FONDO DE PAPEL \"FOCUS GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS SAV-60",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-60-250x250.jpg"
+    },
+    {
+      "sku": "SAV-60",
+      "name": "SAVAGE FONDO DE PAPEL \"FOCUS GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-60",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-60-250x250.jpg"
+    },
+    {
+      "sku": "SAV-57-53",
+      "name": "SAVAGE FONDO DE PAPEL \"GRAY TINT\" TOQUE GRIS PARA BACKDROP DE 1,35 X 11 MTS SAV-57",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV57-53-250x250.jpg"
+    },
+    {
+      "sku": "SAV-57",
+      "name": "SAVAGE FONDO DE PAPEL \"GRAY TINT\" TOQUE GRIS PARA BACKDROP DE 2,72 X 11 MTS SAV-57",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV57-53-250x250.jpg"
+    },
+    {
+      "sku": "SAV-61-53",
+      "name": "SAVAGE FONDO DE PAPEL \"TV GRAY\" GRIS TV PARA BACKDROP DE 1,35 X 11 MTS SAV-61",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV61-53-250x250.jpg"
+    },
+    {
+      "sku": "SAV-61",
+      "name": "SAVAGE FONDO DE PAPEL \"TV GRAY\" GRIS TV PARA BACKDROP DE 2,72 X 11 MTS SAV-61",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV61-53-250x250.jpg"
+    }
+  ]
+}

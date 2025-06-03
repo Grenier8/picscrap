@@ -1,0 +1,114 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "UL-1764",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-R004",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2120",
+        "secondSKU": "UL-2120"
+      },
+      {
+        "baseSKU": "UL-2502B",
+        "secondSKU": "UL-2502B"
+      },
+      {
+        "baseSKU": "UL-2349",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-T082",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-3279",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2052",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2883",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-C072GBB1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-B009GBB1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-1907",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2806",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-1601",
+        "secondSKU": "UL-1601"
+      },
+      {
+        "baseSKU": "UL-2907",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2660",
+        "secondSKU": "UL-2660"
+      },
+      {
+        "baseSKU": "UL-2028",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MT-58",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2104",
+        "secondSKU": "UL-2104"
+      },
+      {
+        "baseSKU": "UL-2885",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2294",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-3197",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-E004GBA1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2495",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-2775",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-T050CNB1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UL-T089GBB1",
+        "secondSKU": null
+      }
+    ]
+  }
+}

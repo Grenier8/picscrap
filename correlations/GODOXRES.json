@@ -1,0 +1,318 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "TT350N",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CB-12",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "GF14B",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AC400",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "VB20",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MS300V",
+        "secondSKU": "MS300V"
+      },
+      {
+        "baseSKU": "DP600IIIV",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD-AB",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD-B2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "WB300P",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "WB26",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TT350F",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD600BM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "QT1200IIIM",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "WB100",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "H400P",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "VB30",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "VC26",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "C29",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UC20",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "BDR-W55",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD400PRO",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TT560II",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V1N",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD-S9",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MS300-F",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X1RC",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SB-FW120",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "FC16",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V860IIIS",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V1PRO N",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "RFT-07-120180",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TT600",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V350C",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V350N",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V850III",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "EE-OG-908337",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AK-R1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "BD-10",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD-S65W",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V1PRO C",
+        "secondSKU": "V1PRO C"
+      },
+      {
+        "baseSKU": "AD-S11",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD-S13",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "LDX50BI",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "QR-P120",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "LST80",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "LEDP260C",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V100C",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AK-R16",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CB-06",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X2TS",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TL30",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "ML150II",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X3C",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X3S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "XPROF",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "RFT-10-80120",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TL-B2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "BS04",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X2TC",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "SGGV6060",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X2TF",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "MF-R76",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "UBL-085S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "X3F",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "RFT-10-110",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "B-3W",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "XPROC",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V860IIS",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD300PRO",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "S2",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "AD-BW",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "H200R",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "WB29",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "WB400P",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TT350C",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TT350S",
+        "secondSKU": "TT350S"
+      },
+      {
+        "baseSKU": "V1C",
+        "secondSKU": null
+      }
+    ]
+  }
+}

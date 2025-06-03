@@ -1,0 +1,21 @@
+{
+  "baseProducts": [
+    {
+      "sku": "V110030RU000",
+      "name": "Cámara Olympus OM Tough TG-7",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50128182/resize/306/306?1719438397"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "V314070BU000",
+      "name": "OLYMPUS LENTE M.ZUIKO DIGITAL ED 14-42MM F/3.5-5.6 EZ",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/OLYMPUS/V314070BU000-250x250.jpg"
+    },
+    {
+      "sku": "V314090BU000",
+      "name": "OLYMPUS LENTE MICRO 4/3 M.ZUIKO DIGITAL ED 12-45MM F/4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/OLYMPUS/V314090BU000-250x250.jpg"
+    }
+  ]
+}

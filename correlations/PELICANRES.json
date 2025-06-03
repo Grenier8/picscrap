@@ -1,0 +1,30 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "VCV525WD",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "V550WD",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "PEL-IM2950",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "PELV525",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "PEL V300",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "PEL V100C",
+        "secondSKU": null
+      }
+    ]
+  }
+}

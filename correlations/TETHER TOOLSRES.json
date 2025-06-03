@@ -1,0 +1,42 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "JS020",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CUC3215-ORG",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CU8015",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CUC3215-BLK",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CU5454",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CUC15-BLK",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CUC15-ORG",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CUC10-ORG",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CUC15RT-ORG",
+        "secondSKU": null
+      }
+    ]
+  }
+}

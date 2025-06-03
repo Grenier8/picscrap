@@ -1,0 +1,176 @@
+{
+  "baseProducts": [
+    {
+      "sku": "WITALK-WT5S",
+      "name": "Sistema de Intercom Saramonic WiTalk 5 Usuarios - Audífonos Simples",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36970575/resize/306/306?1687972015"
+    },
+    {
+      "sku": "WITALK-CB",
+      "name": "CARGADOR PARA 10 BATERÍAS WITALK-CB",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41380619/resize/306/306?1698253372"
+    },
+    {
+      "sku": "WITALK-HUB",
+      "name": "HUB de expansión Saramonic para sistemas WiTalk",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/55876403/resize/306/306?1730311326"
+    },
+    {
+      "sku": "HUB6D",
+      "name": "SISTEMA INTERCOM EARTEC HUB6D ULTRALITE Y HUB CON HEADSET PARA 6 USUARIOS (EU)",
+      "image": ""
+    },
+    {
+      "sku": "BLINK500B2",
+      "name": "Microfono Inalambrico Saramonic Blink500 B2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30141581/resize/306/306?1670624609"
+    },
+    {
+      "sku": "WITALK-WT3D",
+      "name": "Sistema de Intercom Saramonic WiTalk 3 Usuarios - Audífonos Dobles",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59056773/resize/306/306?1736775355"
+    },
+    {
+      "sku": "WITALK-LINK",
+      "name": "Cable Link Saramonic para sistemas WiTalk",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/55955540/resize/306/306?1730325414"
+    },
+    {
+      "sku": "BLINK500B2+",
+      "name": "Micrófono Inalámbrico Saramonic Blink 500 B2+ - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62688913/resize/306/306?1745274531"
+    },
+    {
+      "sku": "WITALKBP",
+      "name": "BATERÍAS RECARGABLES DE LITIO PARA SISTEMAS WITALK SARAMONIC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36966779/resize/306/306?1687966027"
+    },
+    {
+      "sku": "WITALK-WT3S",
+      "name": "Sistema de Intercom Saramonic WiTalk 3 Usuarios - Audífonos Simples",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36967228/resize/306/306?1687967392"
+    },
+    {
+      "sku": "WITALKWT5D",
+      "name": "Sistema de Intercom Saramonic WiTalk 5 Usuarios - Audífonos Dobles",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36970882/resize/306/306?1687972257"
+    },
+    {
+      "sku": "BLINK500PROXB4",
+      "name": "Micrófono Inalámbrico Saramonic Blink 500 ProX - Lightning",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46890920/resize/306/306?1711389474"
+    },
+    {
+      "sku": "WITALK-WT9S",
+      "name": "Sistema de Intercom Saramonic WiTalk 9 Usuarios - Audífonos Simples",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/55875204/resize/306/306?1730304565"
+    },
+    {
+      "sku": "WITALK-WT4D",
+      "name": "Sistema de Intercom Saramonic WiTalk 4 Usuarios - Audífonos Dobles",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59056915/resize/306/306?1736775919"
+    },
+    {
+      "sku": "BLINK500PROXB2",
+      "name": "Micrófono Inalámbrico Saramonic Blink 500 ProX - Dual",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30141530/resize/306/306?1693414481"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "BLINK500PROHM",
+      "name": "SARAMONIC AGARRE DE MANO PARA EL BLINK 500 PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500PROHM-250x250.jpg"
+    },
+    {
+      "sku": "BLINK100B2",
+      "name": "SARAMONIC BLINK 100 B2 SISTEMA DE 2 MICRÓFONOS INALÁMBRICOS CON 3.5MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/Blink100B2-250x250.jpeg"
+    },
+    {
+      "sku": "BLINK500B1",
+      "name": "SARAMONIC BLINK 500 B1 SISTEMA DE MICRÓFONO LAVALIER INALÁMBRICO PARA DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500B1%20copy-250x250.jpg"
+    },
+    {
+      "sku": "BLINK500B2",
+      "name": "SARAMONIC BLINK 500 B2 SISTEMA DE 2 MICRÓFONOS LAVALIER INALÁMBRICOS PARA DSLR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500B22new-250x250w.jpg"
+    },
+    {
+      "sku": "BLINK500B4",
+      "name": "SARAMONIC BLINK 500 B4 SISTEMA DE 2 MICRÓFONOS LAVALIER INALÁMBRICOS PARA LIGHTNING IOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500B4new-250x250.jpg"
+    },
+    {
+      "sku": "BLINK500B5",
+      "name": "SARAMONIC BLINK 500 B5 SISTEMA DE MICRÓFONO LAVALIER INALÁMBRICO PARA USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500B5-250x250.jpg"
+    },
+    {
+      "sku": "BLINK500B6",
+      "name": "SARAMONIC BLINK 500 B6 SISTEMA DE 2 MICRÓFONOS LAVALIER INALÁMBRICO PARA USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500B6-250x250.jpg"
+    },
+    {
+      "sku": "BLINK500PROXB2",
+      "name": "SARAMONIC BLINK 500 PRO X B2 2 MICRÓFONOS LAVALIER INALÁMBRICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/BLINK500PROXB2-250x250.jpeg"
+    },
+    {
+      "sku": "LAVMICRO+DC",
+      "name": "SARAMONIC LAVMICRO + MICRÓFONO LAVALIER PARA IOS, ANDROID Y MAC O PC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/LavMicroDC-250x250.jpg"
+    },
+    {
+      "sku": "LAVMICRO2M",
+      "name": "SARAMONIC LAVMICRO 2M MICRÓFONO LAVALIER PARA DSRL, MIRRORLESS, VIDEOCÁMARAS, SMARTPHONES Y TABLETS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/lavmicro2/LAVMICRO2M-01-250x250.jpg"
+    },
+    {
+      "sku": "LAVMICRO",
+      "name": "SARAMONIC LAVMICRO MICRÓFONO LAVALIER PARA DSRL, MIRRORLESS, VIDEOCÁMARAS, SMARTPHONES Y TABLETS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/LAVMICRO2-250x250.jpg"
+    },
+    {
+      "sku": "SMARTRIG +",
+      "name": "SARAMONIC SMARTRIG + MIXER DE AUDIO 2 XLR PARA DSLR Y SMARTPHONES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/smartrigplus-250x250.jpg"
+    },
+    {
+      "sku": "SMARTRIG II",
+      "name": "SARAMONIC SMARTRIG II ADAPTADOR DE AUDIO XLR / PLUG 1/4\" PARA SMARTPHONES CON 3.5MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/SMARTRIGII-250x250.jpg"
+    },
+    {
+      "sku": "SMARTRIG+UC",
+      "name": "SARAMONIC SMARTRIG+UC INTERFACE DE AUDIO 2 XLR PARA DISPOSITIVOS USB TIPO C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/SMARTRIG+UC-250x250.jpg"
+    },
+    {
+      "sku": "SR-AX107",
+      "name": "SARAMONIC SR-AX107 MIXER 2 XLR A 3.5MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/SR-AX107-250x250.jpg"
+    },
+    {
+      "sku": "SR-BSP1",
+      "name": "SARAMONIC SR-BSP1 SOPORTE SMARTPHONE CON ASA Y ZAPATA DE MONTAJE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/SR-BSP12-250x250.jpg"
+    },
+    {
+      "sku": "SR-ULM10",
+      "name": "SARAMONIC ULM10 MICRÓFONO LAVALIER CON CONECTOR USB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/SR-ULM10-250x250.jpg"
+    },
+    {
+      "sku": "UWMIC9TX9",
+      "name": "SARAMONIC UW MIC09 TX9 TRANSMISOR INALÁMBRICO CON LAVALIER OMNI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/UWmic9TX9-250x250.jpg"
+    },
+    {
+      "sku": "MQ-DHA",
+      "name": "SOPORTE MQ-DHA DOBLE ZAPATA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SARAMONIC/MQ-DHAnew-250x250.jpg"
+    }
+  ]
+}

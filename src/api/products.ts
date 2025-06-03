@@ -1,4 +1,4 @@
-import { BaseProductDB, Brand, ProductDB } from "../interfaces";
+import { BaseProductDB, Brand, ProductDB, Webpage } from "../interfaces";
 import prisma from "../utils/prisma";
 import { getBaseProductBySku } from "./base-products";
 import { getBrandById, getBrandByName } from "./brands";
@@ -6,6 +6,33 @@ import { getBrandById, getBrandByName } from "./brands";
 export async function getProducts() {
   const products = await prisma.product.findMany();
   return products;
+}
+
+export async function getProductsByWebpageAndBrand(
+  webpage: Webpage,
+  brand: Brand
+) {
+  const products = await prisma.product.findMany({
+    where: {
+      webpageId: webpage.id,
+      brandId: brand.id,
+    },
+  });
+  return products;
+}
+
+export async function deleteAndUpsertProducts(products: ProductDB[]) {
+  await prisma.product.deleteMany({
+    where: {
+      webpageId: {
+        in: products.map((p) => p.Webpage.id),
+      },
+      sku: {
+        notIn: products.map((p) => p.sku),
+      },
+    },
+  });
+  await upsertProducts(products);
 }
 
 export async function upsertProducts(products: ProductDB[]) {

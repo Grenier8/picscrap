@@ -1,0 +1,18 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "TS128GSDC300S",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TS160GCFE860",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "TS64GSDC700S",
+        "secondSKU": null
+      }
+    ]
+  }
+}

@@ -23,6 +23,7 @@ export interface ProductScrap {
 }
 
 export interface Brand {
+  id?: number;
   name: string;
 }
 
@@ -59,4 +60,24 @@ export interface FindProductsBetweenPagesResults {
   foundProducts: number;
   notFoundProducts: ProductDB[];
   date: string;
+}
+
+export interface AssistantProduct {
+  sku: string;
+  name: string;
+  image: string;
+}
+
+export interface AssistantCorrelation {
+  baseSKU: string;
+  secondarySKU: string;
+}
+
+export interface AssistantRequest {
+  baseProducts: AssistantProduct[];
+  secondaryProducts: AssistantProduct[];
+}
+
+export interface AssistantResponse {
+  correlation: AssistantCorrelation[];
 }

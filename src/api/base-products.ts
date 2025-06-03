@@ -1,8 +1,24 @@
-import { BaseProductDB } from "../interfaces";
+import { BaseProductDB, Brand } from "../interfaces";
 import prisma from "../utils/prisma";
 
 export async function getBaseProducts(): Promise<BaseProductDB[]> {
   const baseProducts = await prisma.baseProduct.findMany({
+    include: {
+      Brand: true,
+    },
+  });
+  return baseProducts;
+}
+
+export async function getBaseProductsByBrand(
+  brand: Brand
+): Promise<BaseProductDB[]> {
+  const baseProducts = await prisma.baseProduct.findMany({
+    where: {
+      Brand: {
+        id: brand.id,
+      },
+    },
     include: {
       Brand: true,
     },

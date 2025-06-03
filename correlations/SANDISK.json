@@ -1,0 +1,251 @@
+{
+  "baseProducts": [
+    {
+      "sku": "SDSSDE61-1T00-G25",
+      "name": "SANDISK SSD 1TB EXTREME PORTABLE V2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36175105/resize/306/306?1686155471"
+    },
+    {
+      "sku": "SDSQXCU-064G",
+      "name": "Micro SD Sandisk Extreme PRO 64gb",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40723504/resize/306/306?1697037633"
+    },
+    {
+      "sku": "SDSDXXU-064G",
+      "name": "SANDISK SD EXTREME PRO 64GB",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40725247/resize/306/306?1697039910"
+    },
+    {
+      "sku": "SDSQXCD-128G",
+      "name": "Micro SD Sandisk Extreme PRO 128gb",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40722385/resize/306/306?1697036524"
+    },
+    {
+      "sku": "SDSQXCD-256G",
+      "name": "Micro SD Sandisk Extreme PRO 256GB",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40723243/resize/306/306?1697037435"
+    },
+    {
+      "sku": "SDSDXXU-128G",
+      "name": "SANDISK SD EXTREME PRO 128GB",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40725317/resize/306/306?1697040088"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "‎ OWCS3D7P6G960",
+      "name": "OWC 1TB MERCURY EXTREME PRO 6G SATA III 2.5 \"SSD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/OWCS3D7P6G480-250x250.jpg"
+    },
+    {
+      "sku": "‎OWCS3D7P6G480",
+      "name": "OWC 480GB MERCURY EXTREME PRO 6G SATA III 2.5 \"SSD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/OWCS3D7P6G480-250x250.jpg"
+    },
+    {
+      "sku": "SDCFE-128G-ANCNN",
+      "name": "SANDISK CFEXPRESS 128 GB TIPO B EXTREME PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDCFE-128G-ANCNN-250x250.jpg"
+    },
+    {
+      "sku": "SDCFE-256G-ANCNN",
+      "name": "SANDISK CFEXPRESS 256 GB TIPO B EXTREME PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDCFE-256G-ANCNN-250x250.jpeg"
+    },
+    {
+      "sku": "SDCFE-064G-ANCNN",
+      "name": "SANDISK CFEXPRESS 64 GB TIPO B EXTREME PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDCFE-064G-ANCNN-250x250.jpg"
+    },
+    {
+      "sku": "SDCFXPS-064G-A46",
+      "name": "SANDISK EXTREME PRO TARJETA COMPACT FLASH VPG-65 DE 64GB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDCFXPS-064G-A46-250x250.jpg"
+    },
+    {
+      "sku": "SDDR-F451-ANGEN",
+      "name": "SANDISK LECTOR CFEXPRESS TIPO B",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDDR-F451-ANGEN2-250x250.jpg"
+    },
+    {
+      "sku": "SDPR1F8-0000-GBAND",
+      "name": "SANDISK LECTOR PROFESSIONAL CFEXPRESS TIPO B",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPR1F8-0000-GBAND-250x250.jpg"
+    },
+    {
+      "sku": "SDSQXAA-128G-AN6MA",
+      "name": "SANDISK MICROSDXC 128GB EXTREME UHS-I TARJETA DE MEMORIA V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSQXA1-128G-250x250.jpeg"
+    },
+    {
+      "sku": "SDSQXAV-256G",
+      "name": "SANDISK MICROSDXC 256GB EXTREME UHS-I TARJETA DE MEMORIA V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSQXA1-256G-250x250.jpg"
+    },
+    {
+      "sku": "SDSQXAV-512G",
+      "name": "SANDISK MICROSDXC 512GB EXTREME UHS-I TARJETA DE MEMORIA V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSQXAV-512G-250x250.jpeg"
+    },
+    {
+      "sku": "SDSQXA2-064G-GN6MA",
+      "name": "SANDISK MICROSDXC 64GB EXTREME UHS-I TARJETA DE MEMORIA V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSQXA2-064G-GN6MA-250x250.jpg"
+    },
+    {
+      "sku": "SDSQXAH-064G",
+      "name": "SANDISK MICROSDXC 64GB EXTREME UHS-I TARJETA DE MEMORIA V30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSQXAH-064G-250x250.jpeg"
+    },
+    {
+      "sku": "SDPCVN4-256G-GNANN",
+      "name": "SANDISK PRO-CINEMA CFEXPRESS 256GB VPG400 TIPO B",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPCVN4-256G-GNANN-250x250.jpeg"
+    },
+    {
+      "sku": "SDPM1NS-001T-GBAND",
+      "name": "SANDISK PROFESSIONAL 1TB PRO-BLADE SSD MAG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPM1NS-002T-GBAND-250x250.jpeg"
+    },
+    {
+      "sku": "SDPM2NB-001T-GBAND",
+      "name": "SANDISK PROFESSIONAL 1TB PRO-BLADE SSD TRANSPORT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPM2NB-002T-GBAND-250x250.jpg"
+    },
+    {
+      "sku": "SDPS31H-002T-GBCND",
+      "name": "SANDISK PROFESSIONAL 2TB PRO G40 SSD THUNDERBOLT 3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPS31H-002T-GBCND-250x250.jpeg"
+    },
+    {
+      "sku": "SDPM1NS-002T-GBAND",
+      "name": "SANDISK PROFESSIONAL 2TB PRO-BLADE SSD MAG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPM1NS-002T-GBAND-250x250.jpeg"
+    },
+    {
+      "sku": "SDPM2NB-002T-GBAND",
+      "name": "SANDISK PROFESSIONAL 2TB PRO-BLADE SSD TRANSPORT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPM2NB-002T-GBAND-250x250.jpg"
+    },
+    {
+      "sku": "SDPM1NS-004T-GBAND",
+      "name": "SANDISK PROFESSIONAL 4TB PRO-BLADE SSD MAG",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPM1NS-002T-GBAND-250x250.jpeg"
+    },
+    {
+      "sku": "SDPM34F-0000-GBABD",
+      "name": "SANDISK PROFESSIONAL PRO-BLADE STATION",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPM34F-0000-GBABD-250x250.jpeg"
+    },
+    {
+      "sku": "SDPR3A8-0000-GBAND",
+      "name": "SANDISK PROFESSIONAL PRO-READER LECTOR DE TARJETAS MÚLTIPLES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPR3A8-0000-GBAND-250x250.jpeg"
+    },
+    {
+      "sku": "SDPR5A8-0000-GBAND",
+      "name": "SANDISK PROFESSIONAL PRO-READER LECTOR DE TARJETAS SD Y MICROSD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDPR5A8-0000-GBAND-250x250.jpeg"
+    },
+    {
+      "sku": "SDSDXDK-128G",
+      "name": "SANDISK SDHC EXTREME PRO 128GB UHS-II V90 300 MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXDK-128G-250x250.jpeg"
+    },
+    {
+      "sku": "SDSDXDK-064G",
+      "name": "SANDISK SDHC EXTREME PRO 64GB UHS-II V90 300 MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LEXAR/SDSDXDK-064G-250x250.jpeg"
+    },
+    {
+      "sku": "SDSDUNC-064G",
+      "name": "SANDISK SDHC ULTRA 64GB CLASS 10 UHS-1 120MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDUNC-064G-250x250.jpg"
+    },
+    {
+      "sku": "SDSDXXD-128G",
+      "name": "SANDISK SDHC/SDXC EXTREME PRO 128GB V30 90MB/S / 200MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXXD-128G-250x250.jpeg"
+    },
+    {
+      "sku": "SDSDXXD-1T00",
+      "name": "SANDISK SDHC/SDXC EXTREME PRO 1TB CLASS 10 UHS-1 U3 140MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXXD-1T00-250x250.jpeg"
+    },
+    {
+      "sku": "SDSDXXD-256G-ANCIN",
+      "name": "SANDISK SDHC/SDXC EXTREME PRO 256 GB CLASS 10 UHS-1 U3 200MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXXD-256G--ANCIN-250x250.jpg"
+    },
+    {
+      "sku": "SDSDXXG-032G",
+      "name": "SANDISK SDHC/SDXC EXTREME PRO 32GB CLASS 10 U3 UHS-1 95MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXXG032GGN4IN-250x250.jpg"
+    },
+    {
+      "sku": "SDSDXXY-512G",
+      "name": "SANDISK SDHC/SDXC EXTREME PRO 512 GB CLASS 10 UHS-1 U3 95MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXXY-512G-250x250.jpg"
+    },
+    {
+      "sku": "SDSDXXU-064G-ANCIN",
+      "name": "SANDISK SDHC/SDXC EXTREME PRO 64GB UHS-1 U3 V30 200/90MB/S",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSDXXU-064G-ANCIN-250x250.jpeg"
+    },
+    {
+      "sku": "SDSSDE61-1T00-G25",
+      "name": "SANDISK SSD 1TB EXTREME PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE61-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE81-1T00-G25",
+      "name": "SANDISK SSD 1TB EXTREME PRO PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE81-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE61-2T00-G25",
+      "name": "SANDISK SSD 2TB EXTREME PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE61-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE81-2T00-G25",
+      "name": "SANDISK SSD 2TB EXTREME PRO PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE81-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE82-2T00-G25",
+      "name": "SANDISK SSD 2TB EXTREME PRO USB4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE82-4T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE61-4T00-G25",
+      "name": "SANDISK SSD 4TB EXTREME PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE61-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE81-4T00-G25",
+      "name": "SANDISK SSD 4TB EXTREME PRO PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE81-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE82-4T00-G25",
+      "name": "SANDISK SSD 4TB EXTREME PRO USB4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE82-4T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDE61-500G-G25",
+      "name": "SANDISK SSD 500GB EXTREME PORTABLE V2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDE61-1T00-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDH3-1T00-G25",
+      "name": "SANDISK ULTRA 1TB SOLID STATE DISCO SSD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDH3-500G-G25-250x250.jpg"
+    },
+    {
+      "sku": "SDSSDH3-500G-G25",
+      "name": "SANDISK ULTRA 500GB SOLID STATE DISCO SSD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SANDISK/SDSSDH3-500G-G25-250x250.jpg"
+    }
+  ]
+}

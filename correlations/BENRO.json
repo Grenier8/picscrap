@@ -1,0 +1,141 @@
+{
+  "baseProducts": [
+    {
+      "sku": "KH26P",
+      "name": "Trípode de Video Benro KH26P",
+      "image": ""
+    },
+    {
+      "sku": "TSL08AS2CSH",
+      "name": "Trípode de Video Benro SLIM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30172351/resize/306/306?1670853303"
+    },
+    {
+      "sku": "TAC008ABR0E",
+      "name": "Trípode de Aluminio Benro Active - Cabezal de Bola",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45086439/resize/306/306?1706676484"
+    },
+    {
+      "sku": "T560N",
+      "name": "Trípode de Aluminio Benro T560 - Cabezal de Tres Vías",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45086667/resize/306/306?1706679722"
+    },
+    {
+      "sku": "KH25PC",
+      "name": "Trípode de Video Benro KH25PC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58197206/resize/306/306?1733866952"
+    },
+    {
+      "sku": "KH25P",
+      "name": "Trípode de Video Benro KH25P",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45153230/resize/306/306?1706909363"
+    },
+    {
+      "sku": "KH26PC",
+      "name": "Trípode de Video Benro KH26PC",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47717417/resize/306/306?1713290054"
+    },
+    {
+      "sku": "C08D9B",
+      "name": "Slider Benro MoveOver8B de Fibra de Carbono - 90cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58195857/resize/306/306?1733863849"
+    },
+    {
+      "sku": "ELEMENTS20",
+      "name": "BOLSO DE HOMBRO BENRO ELEMENT S20",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/36249971/resize/306/306?1686319426"
+    },
+    {
+      "sku": "T891",
+      "name": "Trípode de Aluminio Benro T891 - Híbrido con Cabezal Fluido",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45086559/resize/306/306?1706678187"
+    },
+    {
+      "sku": "T980EX",
+      "name": "Trípode de Aluminio Benro T980 - Híbrido con Cabezal Fluido",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45086655/resize/306/306?1706679086"
+    },
+    {
+      "sku": "TAC008AP0",
+      "name": "Trípode de Aluminio Benro Active - Cabezal de Tres Vías",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45088597/resize/306/306?1706706057"
+    },
+    {
+      "sku": "C08D6B",
+      "name": "Slider Benro MoveOver8B de Fibra de Carbono - 60cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58195013/resize/306/306?1733861578"
+    },
+    {
+      "sku": "A2883FS4PRO",
+      "name": "Trípode de Video Benro A2883F - Cabezal Fluido S4Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58196494/resize/306/306?1733865241"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "A1573FS2",
+      "name": "BENRO A1573 TRIPODE DE VIDEO CON CABEZAL FLUIDO S2 2,5KG CAP.",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/A1573FS2-250x250.jpg"
+    },
+    {
+      "sku": "A1883FS2C",
+      "name": "BENRO A1883F TRIPODE DE VIDEO CON CABEZAL FLUIDO S2 2,5KG CAP.",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/A1883FS2C-250x250.jpg"
+    },
+    {
+      "sku": "A2883FS4PRO",
+      "name": "BENRO A2883F TRIPODE DE VIDEO CON CABEZAL FLUIDO S4 PRO 4KG CAP.",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/A2883FS4PRO-250x250.jpg"
+    },
+    {
+      "sku": "A573TBS6PRO",
+      "name": "BENRO A573T TRIPODE DUAL-TUBE & S6PRO FLUID HEAD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/A573TBS6PRO-250x250.jpg"
+    },
+    {
+      "sku": "DL06",
+      "name": "BENRO DL06 DOLLY PARA TRÍPODE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/DL06-250x250.jpeg"
+    },
+    {
+      "sku": "KH25P",
+      "name": "BENRO KH25P TRIPODE VIDEO CAP. 5KG / 156 CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/KH25P-250x250.jpeg"
+    },
+    {
+      "sku": "KH25PC",
+      "name": "BENRO KH25PC TRIPODE VIDEO CAP. 5KG / 156 CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/KH25PC-250x250.jpeg"
+    },
+    {
+      "sku": "KH26PC",
+      "name": "BENRO KH26PC TRIPODE VIDEO CAP. 6KG / 184.5 CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/KH26PC-250x250.jpeg"
+    },
+    {
+      "sku": "TSL08AS2CSH",
+      "name": "BENRO SLIM TRIPODE DE VIDEO CON CABEZAL FLUIDO 2,5KG CAP.",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/TSL08AS2CSH-250x250.jpg"
+    },
+    {
+      "sku": "T560",
+      "name": "BENRO T560 TRÍPODE CON CABEZAL DE FOTOGRAFÍA COMPACTO HASTA 1,39MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/T560-250x250.jpg"
+    },
+    {
+      "sku": "A1573FS2PRO",
+      "name": "BENRO TRIPODE DE VIDEO CON CABEZAL FLUIDO S2 PRO 2,5KG CAP.",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/A1573FS2-250x250.jpg"
+    },
+    {
+      "sku": "A3883TS6PRO",
+      "name": "BENRO A3883T TRIPODE COMPACTO TRAVEL & S6PRO FLUID HEAD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/A3883TS6PRO-250x250.jpg"
+    },
+    {
+      "sku": "S2PRO",
+      "name": "BENRO S2PRO CABEZAL DE VIDEO DE FLUIDO CON 2.5KG CAP.",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BENRO/S2PRO-250x250.jpg"
+    }
+  ]
+}

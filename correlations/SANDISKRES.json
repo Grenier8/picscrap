@@ -1,0 +1,30 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "SDSSDE61-1T00-G25",
+        "secondSKU": "SDSSDE61-1T00-G25"
+      },
+      {
+        "baseSKU": "SDSQXCU-064G",
+        "secondSKU": "SDSQXA2-064G-GN6MA"
+      },
+      {
+        "baseSKU": "SDSDXXU-064G",
+        "secondSKU": "SDSDXXU-064G-ANCIN"
+      },
+      {
+        "baseSKU": "SDSQXCD-128G",
+        "secondSKU": "SDSQXAA-128G-AN6MA"
+      },
+      {
+        "baseSKU": "SDSQXCD-256G",
+        "secondSKU": "SDSQXAV-256G"
+      },
+      {
+        "baseSKU": "SDSDXXU-128G",
+        "secondSKU": "SDSDXDK-128G"
+      }
+    ]
+  }
+}

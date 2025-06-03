@@ -1,0 +1,376 @@
+{
+  "baseProducts": [
+    {
+      "sku": "CINAQBT/A",
+      "name": "Batería Insta360 para X3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/35132507/resize/306/306?1683914118"
+    },
+    {
+      "sku": "CINGBTH/B",
+      "name": "Kit Insta360 Bullet Time - Trípode y Palo Selfie",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39716483/resize/306/306?1694638656"
+    },
+    {
+      "sku": "CINCHUX/A",
+      "name": "Insta360 kit de montura de casco",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39741659/resize/306/306?1694712909"
+    },
+    {
+      "sku": "CINSBAQB",
+      "name": "Cobertor de Lente Insta360 para X3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/34206585/resize/306/306?1681755456"
+    },
+    {
+      "sku": "CINSAAJA",
+      "name": "Cámara de Acción Insta360 ACE 8K Pro",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45600830/resize/306/306?1708100880"
+    },
+    {
+      "sku": "CINSBAVE",
+      "name": "Adaptador de Hilo Insta360 3-Prong Mount",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50337707/resize/306/306?1720054933"
+    },
+    {
+      "sku": "CINSBAXA",
+      "name": "Cámara de Acción Insta360 ACE 6K",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45601117/resize/306/306?1708101384"
+    },
+    {
+      "sku": "CINSAAVY",
+      "name": "Kit de Monturas Insta360 para Motocicletas",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47504012/resize/306/306?1712609770"
+    },
+    {
+      "sku": "CINSTAV/E",
+      "name": "Arnés de Pecho Insta360 para Cámara de Acción",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50333100/resize/306/306?1720041083"
+    },
+    {
+      "sku": "CINSPHD/F",
+      "name": "Insta360 Palo Selfie 1 m",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/32413201/resize/306/306?1677170052"
+    },
+    {
+      "sku": "CINRSGP/D",
+      "name": "Cámara Insta360 ONE RS 1-Inch 360",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40179360/resize/306/306?1695666795"
+    },
+    {
+      "sku": "CINSAAQ/B",
+      "name": "Cámara 360° Insta360 X3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47282995/resize/306/306?1712119528"
+    },
+    {
+      "sku": "CINSTAHA",
+      "name": "Cobertor de Lente Insta360 para ONE RS 1-Inch",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45725612/resize/306/306?1708551449"
+    },
+    {
+      "sku": "CINSABMA",
+      "name": "Cámara 360° Insta360 X4 - 8K 30fps",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49794188/resize/306/306?1718414702"
+    },
+    {
+      "sku": "CINSAAVV",
+      "name": "Selfie Stick Invisible Insta360 Action - Fibra de Carbono",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50349899/resize/306/306?1720107591"
+    },
+    {
+      "sku": "CINSAAHA_X501",
+      "name": "Cámara 360° Insta360 X5 - 8K 30fps",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63234508/resize/306/306?1746632445"
+    },
+    {
+      "sku": "CINSBAQE",
+      "name": "Insta360 Protectores de lentes adhesivos para X3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30171211/resize/306/306?1670850021"
+    },
+    {
+      "sku": "CINSAAVF",
+      "name": "Palo Selfie Invisible INSTA360 - 114 cm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30776027/resize/306/306?1673364639"
+    },
+    {
+      "sku": "GO2WATER",
+      "name": "Insta360 carcasa de buceo para X3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/32413517/resize/306/306?1677171020"
+    },
+    {
+      "sku": "DINEESS/B",
+      "name": "Palo Selfie Extendido Insta360 3mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39736964/resize/306/306?1694707912"
+    },
+    {
+      "sku": "DINMBBN/A",
+      "name": "kit de soporte para motocicleta Insta360",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40719521/resize/306/306?1697031276"
+    },
+    {
+      "sku": "CINSTAW/A",
+      "name": "Cámara 360º para Drone Insta360 Sphere",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47282938/resize/306/306?1712118596"
+    },
+    {
+      "sku": "CINSTAVG",
+      "name": "Montura Insta360 para Manillar de Moto & Bicicleta",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47491059/resize/306/306?1712590116"
+    },
+    {
+      "sku": "CINX2CB/G",
+      "name": "Selfie Stick Insta360 2 en 1 - Trípode y Palo Selfie",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50331991/resize/306/306?1720038191"
+    },
+    {
+      "sku": "CINSABKA_GO306",
+      "name": "Cámara de Acción Insta360 GO 3",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39715668/resize/306/306?1694637562"
+    },
+    {
+      "sku": "DINMBBD/B",
+      "name": "Insta360 Motorcycle U-Bolt Mount (Standard Version)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/38792448/resize/306/306?1692909037"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "CINTYAV/A",
+      "name": "INSTA360 ADAPTADOR DE MICRÓFONO PARA ONE RS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINTYAVA-250x250.jpeg"
+    },
+    {
+      "sku": "CINSBAQ/A",
+      "name": "INSTA360 ADAPTADOR DE MICRÓFONO PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBAQ:A-250x250.jpeg"
+    },
+    {
+      "sku": "CINTEFB/A",
+      "name": "INSTA360 BASE VERTICAL PARA ONE RS 360 DE 1\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINTEFB:A-250x250.jpeg"
+    },
+    {
+      "sku": "CINAQBT/A",
+      "name": "INSTA360 BATERÍA RECARGABLE 1800 MAH PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINAQBT:A-250x250.jpeg"
+    },
+    {
+      "sku": "CINSBBMA",
+      "name": "INSTA360 BATERÍA RECARGABLE 2290 MAH PARA X4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBBMA-250x250.jpg"
+    },
+    {
+      "sku": "CINGBTH/B",
+      "name": "INSTA360 BULLET TIME",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINGBTH-B-250x250.jpg"
+    },
+    {
+      "sku": "CINX2CB/C",
+      "name": "INSTA360 CABLE BULLET TIME PARA ONE X2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINX2CB:C-250x250.jpg"
+    },
+    {
+      "sku": "CINSBBBC",
+      "name": "INSTA360 CABLE USB-C A USB-C DE 15CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBBBC-250x250.jpeg"
+    },
+    {
+      "sku": "CINSBBBB",
+      "name": "INSTA360 CABLE USB-C LIGHTNING MFI PARA IPHONE 15CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBBBB-250x250.jpeg"
+    },
+    {
+      "sku": "CINSTAW/A",
+      "name": "INSTA360 CÁMARA SPHERE INVISIBLE PARA DRONES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSTAWA-250x250.jpeg"
+    },
+    {
+      "sku": "CINORBC/A",
+      "name": "INSTA360 CENTRO DE CARGA RÁPIDA PARA ONE R Y ONE RS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINORBC_A-250x250.jpg"
+    },
+    {
+      "sku": "CINSAAQ/A",
+      "name": "INSTA360 CENTRO DE CARGA RÁPIDA PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAQ:A-250x250.jpeg"
+    },
+    {
+      "sku": "CINSTAV/E",
+      "name": "INSTA360 CORREA DE PECHO INSTA360 PARA CÁMARAS DE ACCIÓN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSTAV:E-250x250.jpeg"
+    },
+    {
+      "sku": "CING2CB/K",
+      "name": "INSTA360 DIVE CASE PARA GO2 ESTUCHE DE BUCEO HASTA 45 METROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/Go2Water-250x250.jpg"
+    },
+    {
+      "sku": "CINRSBT/B",
+      "name": "INSTA360 ESTUCHE DE BUCEO PARA ONE RS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINRSBT:B-250x250.jpeg"
+    },
+    {
+      "sku": "CINSBAQC",
+      "name": "INSTA360 ESTUCHE DE BUCEO PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBAQC-250x250.jpeg"
+    },
+    {
+      "sku": "DINEESS/A",
+      "name": "INSTA360 EXTENDED STICK 58 A 300 CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/DINEESS-250x250.jpeg"
+    },
+    {
+      "sku": "DINEESS/B",
+      "name": "INSTA360 EXTENDED STICK FIBRA DE 36 A 300 CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/DINEESS_B-250x250.jpg"
+    },
+    {
+      "sku": "CINSBBMK",
+      "name": "INSTA360 FUNDA DE LENTE PARA INSTA360 X4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBBMK-250x250.jpg"
+    },
+    {
+      "sku": "CING2XX",
+      "name": "INSTA360 GO 2 \"ACTION CAMERA\" MAS PEQUEÑA DEL MUNDO!",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CING2XX:A-250x250.jpg"
+    },
+    {
+      "sku": "CINSAAVY",
+      "name": "INSTA360 KIT AGARRE PARA MOTOCICLETAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAVY-250x250.jpeg"
+    },
+    {
+      "sku": "DINMBBNA",
+      "name": "INSTA360 KIT DE MONTAJE PARA MOTOCICLETAS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/DINMBBNA006-250x250.jpg"
+    },
+    {
+      "sku": "CINSBAQF",
+      "name": "INSTA360 MARCO / FRAME PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBAQF-250x250.jpeg"
+    },
+    {
+      "sku": "CINORAH",
+      "name": "INSTA360 MODULO CENTRAL ONE R",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINORAH-250x250.jpg"
+    },
+    {
+      "sku": "CINSAAVZ",
+      "name": "INSTA360 MONTAJE CON PERNO EN U PARA MOTOCICLETA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAVZ-250x250.jpeg"
+    },
+    {
+      "sku": "CINORSC/E",
+      "name": "INSTA360 MONTURA DE ZAPATA PARA ONE RS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINORSC:E-250x250.jpeg"
+    },
+    {
+      "sku": "CINAKGP/D",
+      "name": "INSTA360 ONE R CÁMARA VR 360° 4K \"ACTION CAMERA SINGLE EDITION",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINAKGP:D-250x250.jpeg"
+    },
+    {
+      "sku": "CINORCC/A",
+      "name": "INSTA360 ONE R LENTE DUAL 360 MOD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINORCC-250x250.jpg"
+    },
+    {
+      "sku": "CINRSGP/A",
+      "name": "INSTA360 ONE RS CÁMARA VR 360° 4K ACTION TWIN EDITION",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINRSGPA-250x250.jpeg"
+    },
+    {
+      "sku": "CINRSGP/D",
+      "name": "INSTA360 ONE RS 1-INCH 360 CÁMARA CON SENSOR DE 1PULGADA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINRSGPD-250x250.jpeg"
+    },
+    {
+      "sku": "CINSAAQ/B",
+      "name": "INSTA360 ONE X3 DOBLE LENTE DE 5.7K 72MP",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAQ:B%20-250x250.jpeg"
+    },
+    {
+      "sku": "CINSABMA",
+      "name": "INSTA360 ONE X4 CAMARA 360 GRADOS EN 8K30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSABMA7-250x250.jpg"
+    },
+    {
+      "sku": "CINSAAHA-X501",
+      "name": "INSTA360 ONE X5 CAMARA 360 GRADOS EN 8K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAHA-X501-250x250.jpg"
+    },
+    {
+      "sku": "CINSPHD/F",
+      "name": "INSTA360 POWER SELFIE STICK PARA CÁMARA DE ACCIÓN ONE X",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSPHDF-250x250.jpg"
+    },
+    {
+      "sku": "CINSBAQD",
+      "name": "INSTA360 PROTECTOR DE PANTALLA PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBAQD-250x250.jpg"
+    },
+    {
+      "sku": "CINSBBME",
+      "name": "INSTA360 PROTECTORES DE LENTE PARA INSTA360 X4",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBBME-250x250.jpg"
+    },
+    {
+      "sku": "CINX2CB/G",
+      "name": "INSTA360 SELFIE STICK INVISIBLE 2 EN 1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINX2CB:G-250x250.jpeg"
+    },
+    {
+      "sku": "CINSAAVF",
+      "name": "INSTA360 SELFIE STICK INVISIBLE DE 114CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAVF.-250x250.jpeg"
+    },
+    {
+      "sku": "CINSTAV/C",
+      "name": "INSTA360 SISTEMA DE AGARRE PARA MOCHILA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSTAV:C-250x250.jpeg"
+    },
+    {
+      "sku": "CINORSC/D",
+      "name": "INSTA360 SOPORTE DE MONTAJE PARA CÁMARA ONE RS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINORSC:D-250x250.jpeg"
+    },
+    {
+      "sku": "CINSTAH/D",
+      "name": "INSTA360 SOPORTE ONE RS PARA RODE WIRELESS GO & GO II",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSTAH:D-250x250.jpeg"
+    },
+    {
+      "sku": "CINSTAV/G",
+      "name": "INSTA360 SOPORTE PARA MANILLAR DE BICICLETA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSTAV_G-250x250w.png"
+    },
+    {
+      "sku": "CINFSSF/A",
+      "name": "INSTA360 STICKY LENS GUARD PARA ONE RS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINFSSF:A-250x250.jpeg"
+    },
+    {
+      "sku": "CINSBAQE",
+      "name": "INSTA360 STICKY LENS GUARD PARA X3",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSBAQE-250x250.jpeg"
+    },
+    {
+      "sku": "CINSTAH/A",
+      "name": "INSTA360 TAPA DE LENTE ONE RS 360 DE 1 PULGADA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSTAH:A-250x250.jpeg"
+    },
+    {
+      "sku": "DPWAREX/A",
+      "name": "INSTA360 THE BACK BAR SISTEMA DE AGARRE A CINTURA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/DPWAREX-250x250.jpeg"
+    },
+    {
+      "sku": "CINSAAJA_ACE",
+      "name": "INSTA360 ACE CÁMARA DE ACCIÓN 4K A 120 FPS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAJA_ACE-250x250.png"
+    },
+    {
+      "sku": "CINSAAJA_ACEPRO01",
+      "name": "INSTA360 ACE PRO CÁMARA DE ACCIÓN 8K",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/INSTA360/CINSAAJAACEPRO01-250x250.jpg"
+    }
+  ]
+}

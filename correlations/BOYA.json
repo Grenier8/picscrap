@@ -1,0 +1,281 @@
+{
+  "baseProducts": [
+    {
+      "sku": "BY-T120",
+      "name": "Filtro de Espuma Boya BY-T120 para Micrófonos",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60935685/resize/306/306?1741104223"
+    },
+    {
+      "sku": "BY-K3",
+      "name": "Cable Boya BY-K3 Macho Lightning - Hembra TRRS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43681271/resize/306/306?1702906266"
+    },
+    {
+      "sku": "BY-WS1000",
+      "name": "CORTAVIENTO BOYA BY-WS1000 - PROFESIONAL ZEPELLIN",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170652/resize/306/306?1674669539"
+    },
+    {
+      "sku": "BY-BA20",
+      "name": "Boya BY-BA20 Brazo Para Suspensión de Micrófono",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39470823/resize/306/306?1694109516"
+    },
+    {
+      "sku": "BY-K1",
+      "name": "Cable Boya BY-K1 Macho Lightning - Macho TRS 3.5mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43682181/resize/306/306?1702908527"
+    },
+    {
+      "sku": "BY-MM1",
+      "name": "Boya BY-MM1 Micrófono Compacto Cardioide",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39472213/resize/306/306?1694110773"
+    },
+    {
+      "sku": "XLR-C1",
+      "name": "Cable XLR Boya XLR-C1 - 1 metros",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51287962/resize/306/306?1722441077"
+    },
+    {
+      "sku": "BY-K2",
+      "name": "Cable Boya BY-K2 Macho USB-C - Macho TRS 3.5mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43682274/resize/306/306?1702908766"
+    },
+    {
+      "sku": "BY-V2",
+      "name": "Boya BY-V2 Micrófono Inalámbrico Doble Ultra Compacto Y Portable 2.4GHz Conector Lightning",
+      "image": ""
+    },
+    {
+      "sku": "BY-XM6-HM",
+      "name": "Adaptador de Mano Boya BY-XM6-HM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45450387/resize/306/306?1707755677"
+    },
+    {
+      "sku": "XLR-C8",
+      "name": "Cable XLR Boya XLR-C8 - 8 metros",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47745925/resize/306/306?1713368934"
+    },
+    {
+      "sku": "BY-WM4PRO-K1",
+      "name": "Micrófono Inalámbrico Boya BY-WM4 Pro K1",
+      "image": ""
+    },
+    {
+      "sku": "BY-PM700",
+      "name": "MICRÓFONO DE ESCRITORIO USB BOYA PM700 - MULTIPATRÓN",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31164814/resize/306/306?1674655396"
+    },
+    {
+      "sku": "BY-BM3031",
+      "name": "MICRÓFONO SHOTGUN BOYA BY-BM3031",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31164881/resize/306/306?1674655615"
+    },
+    {
+      "sku": "BY-WM4PRO-K2",
+      "name": "SISTEMA INALÁMBRICO LAVALIER BOYA WM4 PRO-K2 DUAL",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31165703/resize/306/306?1674657454"
+    },
+    {
+      "sku": "BY-WM8PRO-K1",
+      "name": "SISTEMA INALÁMBRICO LAVALIER BOYA WM8 PRO-K1",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170188/resize/306/306?1674668491"
+    },
+    {
+      "sku": "BY-VM600",
+      "name": "MICRÓFONO SHOTGUN BOYA BY-VM600",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170343/resize/306/306?1674668858"
+    },
+    {
+      "sku": "BY-BM6060",
+      "name": "SHOTGUN SUPERCARDIOIDE BOYA BY-BM6060 - XLR",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170433/resize/306/306?1674669048"
+    },
+    {
+      "sku": "BY-BM3011",
+      "name": "SHOTGUN BOYA BY-BM3011 PARA CÁMARAS Y SMARTPHONE",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170555/resize/306/306?1674669343"
+    },
+    {
+      "sku": "BY-M800",
+      "name": "MICRÓFONO CONDENSADOR BOYA BY-M800 - CARDIOIDE XLR",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31181759/resize/306/306?1674736211"
+    },
+    {
+      "sku": "BY-XM6-K1",
+      "name": "Micrófono Inalámbrico Single Boya BY-XM6-K1",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43680688/resize/306/306?1702904900"
+    },
+    {
+      "sku": "BY-V10",
+      "name": "Micrófono Inalámbrico Boya BY-V10 - Sistema Ultra compacto Para Android",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43685955/resize/306/306?1702913642"
+    },
+    {
+      "sku": "BY-XM6-K4",
+      "name": "Kit de Micrófono Inalámbrico Dual Boya BY-XM6-K4 - Para iPhone",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44078497/resize/306/306?1704463817"
+    },
+    {
+      "sku": "BY-V20",
+      "name": "Micrófono Inalámbrico Boya BY-V20 - USB C",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46896991/resize/306/306?1711401495"
+    },
+    {
+      "sku": "BY-WM3T2-D1",
+      "name": "Micrófono Inalámbrico Boya BY-WM3T2-D1 - Lightning",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50159045/resize/306/306?1719528566"
+    },
+    {
+      "sku": "3.5MALE-XLR-FEMALE",
+      "name": "Cable Boya Macho 3.5mm - Hembra XLR",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31164900/resize/306/306?1674655688"
+    },
+    {
+      "sku": "XLR-C3",
+      "name": "Cable XLR Boya XLR-C3 - 3 metros",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58316498/resize/306/306?1734099706"
+    },
+    {
+      "sku": "35C-XLRPRO",
+      "name": "Adaptador de 3.5mm a XLR Pro - Boya",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40726593/resize/306/306?1697042644"
+    },
+    {
+      "sku": "BY-K4",
+      "name": "Cable Boya BY-K4 Macho USB-C - Hembra TRRS",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43681492/resize/306/306?1702907004"
+    },
+    {
+      "sku": "BY-T160",
+      "name": "Filtro de Espuma Boya BY-T160 para Micrófonos",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60935857/resize/306/306?1741104504"
+    },
+    {
+      "sku": "BY-VG380",
+      "name": "KIT SOPORTE DE TELÉFONO, TRÍPODE BOYA BY-VG380 Y MICRÓFONO",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31164737/resize/306/306?1674655158"
+    },
+    {
+      "sku": "BY-PM500W",
+      "name": "MICRÓFONO INALÁMBRICO DE ESCRITORIO BOYA BY-PM500W USB-A Y USB-C",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31165042/resize/306/306?1674656099"
+    },
+    {
+      "sku": "BY-BCA6",
+      "name": "CABLE DE MICRÓFONO CON PREAMPLIFICADOR BOYA BCA6 XLR A 3.5MM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31165095/resize/306/306?1674656263"
+    },
+    {
+      "sku": "BY-AM1",
+      "name": "INTERFAZ DE AUDIO BOYA BY-AM1 CON PHANTOM - 2 CANALES",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31165185/resize/306/306?1674656448"
+    },
+    {
+      "sku": "BY-WM8PRO-K2",
+      "name": "SISTEMA INALÁMBRICO LAVALIER BOYA WM8 PRO-K2 DUAL",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31165741/resize/306/306?1674657561"
+    },
+    {
+      "sku": "BY-BM2021",
+      "name": "SHOTGUN CARDIOIDE BOYA BY-BM2021 PARA CÁMARAS Y SMARTPHONE",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170232/resize/306/306?1674668650"
+    },
+    {
+      "sku": "BY-M1DM",
+      "name": "MICRÓFONO LAVALIER DUAL BOYA M1DM SMARTPHONES Y CÁMARAS 4M",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170382/resize/306/306?1674668935"
+    },
+    {
+      "sku": "BY-XM6-S1",
+      "name": "SISTEMA DE MICRÓFONO INALÁMBRICO BOYA BY-XM6-S1 - SINGLE",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170511/resize/306/306?1674669253"
+    },
+    {
+      "sku": "BY-XM6-S2",
+      "name": "SISTEMA DE MICRÓFONO INALÁMBRICO BOYA BY-XM6-S2 - DUAL",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31170689/resize/306/306?1674669679"
+    },
+    {
+      "sku": "164990",
+      "name": "MICRÓFONO DE ESTUDIO BOYA BY-PM700PRO USB Y XLR",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31181792/resize/306/306?1674736405"
+    },
+    {
+      "sku": "BY-M1",
+      "name": "Boya BY-M1 MICRÓFONO LAVALIER OMNIDIRECCIONAL",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39470696/resize/306/306?1694109215"
+    },
+    {
+      "sku": "BY-GM18CB",
+      "name": "Boya BY-GM18CB Micrófono Tipo Cuello de Ganso",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39471772/resize/306/306?1694109787"
+    },
+    {
+      "sku": "BY-M1PRO",
+      "name": "Boya By-M1 PRO Micrófono lavalier con salida de audífonos",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/39471929/resize/306/306?1694110143"
+    },
+    {
+      "sku": "BY-XM6-K2",
+      "name": "Kit de Micrófono Inalámbrico Dual Boya BY-XM6-K2",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43584980/resize/306/306?1702672164"
+    },
+    {
+      "sku": "BY-M1PROII",
+      "name": "Micrófono Lavalier Boya BY-M1 Pro II - con Salida de Audífonos",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43682627/resize/306/306?1702909374"
+    },
+    {
+      "sku": "BY-CIP2",
+      "name": "Cable Boya BY-CIP2 - Adaptador TRS A TRRS de 3.5mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43690074/resize/306/306?1702918972"
+    },
+    {
+      "sku": "BY-WM3T-D2",
+      "name": "Micrófono Lavalier Inalámbrico Boya BY-WM3T-D2 Mini - Lightning",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45986505/resize/306/306?1709219249"
+    },
+    {
+      "sku": "BY-BA30",
+      "name": "Brazo Articulado para Micrófono Boya BY-BA30",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49293772/resize/306/306?1717126288"
+    },
+    {
+      "sku": "BY-BOYALINK A1",
+      "name": "Micrófono Inalámbrico BoyaLink - A1",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51277531/resize/306/306?1722380551"
+    },
+    {
+      "sku": "BY-C04",
+      "name": "Soporte Para Micrófonos Boya BY-C04 - para Cañas",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60935904/resize/306/306?1741104672"
+    },
+    {
+      "sku": "XLR-C5",
+      "name": "Cable XLR Boya XLR-C5 - 5 metros",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/33137785/resize/306/306?1678886582"
+    },
+    {
+      "sku": "BY-V1",
+      "name": "Micrófono Inalámbrico Boya BY-V1 - Sistema Ultra compacto Para iPhone",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43684404/resize/306/306?1702911311"
+    },
+    {
+      "sku": "BY-BOYALINK",
+      "name": "Micrófono Inalámbrico Dual BoyaLink - Sistema All in One",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43586019/resize/306/306?1702675666"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "BY-K2",
+      "name": "BOYA BY-K2 ADAPTADOR 3.5MM DE TRS A USB-C",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BOYA/BY-K2-250x250.jpg"
+    },
+    {
+      "sku": "BY-K5",
+      "name": "BOYA BY-K5 USB-C DE 90 GRADOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BOYA/BY-K5-250x250.jpeg"
+    }
+  ]
+}

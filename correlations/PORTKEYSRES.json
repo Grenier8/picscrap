@@ -1,0 +1,18 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "BM5 IV WR",
+        "secondSKU": "BM5 IV WR"
+      },
+      {
+        "baseSKU": "BD1",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "BM5 IV",
+        "secondSKU": "BM5 IV"
+      }
+    ]
+  }
+}

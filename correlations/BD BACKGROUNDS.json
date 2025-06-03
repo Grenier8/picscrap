@@ -1,0 +1,236 @@
+{
+  "baseProducts": [
+    {
+      "sku": "BD117A1",
+      "name": "Fondo de Papel BD Pastel Pink - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45031369/resize/306/306?1706535479"
+    },
+    {
+      "sku": "BD129A7",
+      "name": "Fondo de Papel BD Super White - 2.18 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59184306/resize/306/306?1737054877"
+    },
+    {
+      "sku": "BD111A1",
+      "name": "Fondo de Papel BD Flametone - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45031396/resize/306/306?1706535586"
+    },
+    {
+      "sku": "BD116A1",
+      "name": "Fondo de Papel BD Natural - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47918181/resize/306/306?1713882732"
+    },
+    {
+      "sku": "BD103A1",
+      "name": "Fondo de Papel BD Blue Heaven - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48884861/resize/306/306?1715985230"
+    },
+    {
+      "sku": "BD163A1",
+      "name": "Fondo de Papel BD Hot Pink - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45031333/resize/306/306?1706535340"
+    },
+    {
+      "sku": "BD101A2",
+      "name": "Fondo de Papel BD Black - 1.32 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45783261/resize/306/306?1708720738"
+    },
+    {
+      "sku": "BD101A7",
+      "name": "Fondo de Papel BD Black - 2.18 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62372966/resize/306/306?1744314055"
+    },
+    {
+      "sku": "BD129A1",
+      "name": "Fondo de Papel BD Super White - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46621107/resize/306/306?1710775907"
+    },
+    {
+      "sku": "BD129A2",
+      "name": "Fondo de Papel BD Super White - 1.32 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45783004/resize/306/306?1708720345"
+    },
+    {
+      "sku": "BD101A1",
+      "name": "Fondo de Papel BD Black - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46621216/resize/306/306?1710776053"
+    },
+    {
+      "sku": "BD112A7",
+      "name": "Fondo de Papel BD Graystone - 2.18 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/52460129/resize/306/306?1725292821"
+    },
+    {
+      "sku": "BD112A2",
+      "name": "Fondo de Papel BD Graystone - 1.32 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45783224/resize/306/306?1708720605"
+    },
+    {
+      "sku": "BD132A1",
+      "name": "Fondo de Papel BD Veri Green - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46621471/resize/306/306?1710776543"
+    },
+    {
+      "sku": "BD112A1",
+      "name": "Fondo de Papel BD Graystone - 2.72 X 11 mts",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48884776/resize/306/306?1715984732"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "BD-170-A1",
+      "name": "BD FONDO DE PAPEL \"STONE GRAY\" GRIS ROLLO DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BD%20Backgrounds/BD-170-A1-250x250h.jpg"
+    },
+    {
+      "sku": "BD107A1",
+      "name": "BD FONDO DE PAPEL \"DAFFODIL\" PARA BACKDROP DE 2,72 X 11 MTS CANARIO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV38-250x250.png"
+    },
+    {
+      "sku": "P11111",
+      "name": "BD BACKGROUNDS 1.35 FONDO DE PAPEL BLANCO \"SUPER WHITE\" PARA BACKDROP DE 1,35 X 11 MTS NO.129",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav1-l-250x250.jpg"
+    },
+    {
+      "sku": "P11202",
+      "name": "BD BACKGROUNDS FONDO DE PAPEL BLANCO \"SUPER WHITE\" 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav1-l-250x250.jpg"
+    },
+    {
+      "sku": "P11226",
+      "name": "BD 2.72 FONDO DE PAPEL NEGRO PARA BACKDROP DE 2,72 X 11 MTS P11226",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LASTOLITE/LP9020-250x250.jpg"
+    },
+    {
+      "sku": "P11302",
+      "name": "BD BACKGROUNDS 2.18 FONDO DE PAPEL BLANCO \"SUPER WHITE\" PARA BACKDROP DE 2,18 X 11 MTS BD-129-A-7",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav1-l-250x250.jpg"
+    },
+    {
+      "sku": "BD234A2",
+      "name": "BD FONDO DE PAPEL \"CACTUS\" PARA BACKDROP DE 1,32 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-34-1-250x250.jpg"
+    },
+    {
+      "sku": "P11303",
+      "name": "BD 2.18 FONDO DE PAPEL NEGRO PARA BACKDROP DE 2,18 X 11 MTS P11303",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LASTOLITE/LP9020-250x250.jpg"
+    },
+    {
+      "sku": "P11225",
+      "name": "BD FONDO DE PAPEL \"VERI GREEN\" CHROMA VERDE PARA BACKDROP DE 2,72 X 11 MTS BD-132-A1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav46-L-250x250.jpg"
+    },
+    {
+      "sku": "P11135",
+      "name": "BD 1.32 FONDO DE PAPEL NEGRO PARA BACKDROP DE 1,32 X 11 MTS P11135",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LASTOLITE/LP9020-250x250.jpg"
+    },
+    {
+      "sku": "BD169A1",
+      "name": "BD FONDO DE PAPEL \"MARIGOLD\" AMARILLO PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV71-250x250.jpg"
+    },
+    {
+      "sku": "BD121A1",
+      "name": "BD FONDO DE PAPEL \"PONGEE\" BEIGE DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/BD%20Backgrounds/BD121A1-250x250w.jpeg"
+    },
+    {
+      "sku": "BD131A2",
+      "name": "BD FONDO DE PAPEL \"THUNDER GRAY\" GRIS PARA BACKDROP DE 1,32 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav27-250x250.jpg"
+    },
+    {
+      "sku": "BD131A1",
+      "name": "BD FONDO DE PAPEL \"THUNDER GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav27-250x250.jpg"
+    },
+    {
+      "sku": "BD117A1",
+      "name": "BD FONDO DE PAPEL \"PASTEL PINK\" PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-03-53-250x250.jpeg"
+    },
+    {
+      "sku": "BD153A1",
+      "name": "BD FONDO DE PAPEL \"PHOTO GRAY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-12-533-250x250.jpeg"
+    },
+    {
+      "sku": "BD234A1",
+      "name": "BD FONDO DE PAPEL \"CACTUS\" PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-34-1-250x250.jpg"
+    },
+    {
+      "sku": "BD117A2",
+      "name": "BD FONDO DE PAPEL \"PASTEL PINK\" PARA BACKDROP DE 1,35 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-03-53-250x250.jpeg"
+    },
+    {
+      "sku": "BD112A1",
+      "name": "BD FONDO DE PAPEL \"GRAYSTONE\" GRIS PIEDRA PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV056-250x250.jpg"
+    },
+    {
+      "sku": "BD276A1",
+      "name": "BD FONDO DE PAPEL \"LATTE\" PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV0766-250x250.jpg"
+    },
+    {
+      "sku": "BD159A2",
+      "name": "BD FONDO DE PAPEL \"STORM GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/159A2-250x250.jpg"
+    },
+    {
+      "sku": "BD163A2",
+      "name": "BD FONDO DE PAPEL \"HOT PINK\" PARA BACKDROP DE 1,32 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-375-250x250.jpg"
+    },
+    {
+      "sku": "BD127A2",
+      "name": "BD FONDO DE PAPEL \"SILVER GRAY\" GRIS PARA BACKDROP DE 1,35 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/BD127A23-250x250.jpeg"
+    },
+    {
+      "sku": "124A1",
+      "name": "BD FONDO DE PAPEL \"RED BACKGROUND\" ROJO PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LASTOLITE/1244-250x250.jpg"
+    },
+    {
+      "sku": "BD163A1",
+      "name": "BD FONDO DE PAPEL \"HOT PINK\" PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-372-250x250.jpg"
+    },
+    {
+      "sku": "P11134",
+      "name": "BD FONDO DE PAPEL \"VERI GREEN\" CHROMA VERDE PARA BACKDROP DE 1,32 X 11 MTS P11134",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/01-sav46-L-250x250.jpg"
+    },
+    {
+      "sku": "124A2",
+      "name": "BD FONDO DE PAPEL \"RED BACKGROUND\" ROJO PARA BACKDROP DE 1,32 X 11 MTS P11143",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/LASTOLITE/1244-250x250.jpg"
+    },
+    {
+      "sku": "BD111A1",
+      "name": "BD FONDO DE PAPEL \"FLAMETONE\" ROJO DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV08-250x250.jpg"
+    },
+    {
+      "sku": "BD112A7",
+      "name": "BD FONDO DE PAPEL \"GRAYSTONE\" GRIS PIEDRA PARA BACKDROP DE 2,18 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV056-250x250.jpg"
+    },
+    {
+      "sku": "BD119A1",
+      "name": "BD FONDO DE PAPEL \"PLAZA GREY\" GRIS PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV-60-250x250.jpg"
+    },
+    {
+      "sku": "BD191A1",
+      "name": "BD FONDO DE PAPEL \"BOYSENBERRY\" CIRUELO PARA BACKDROP DE 2,72 X 11 MTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SAVAGE/SAV91-250x250.jpg"
+    }
+  ]
+}

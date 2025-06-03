@@ -1,0 +1,14 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "SDI12G50MTS",
+        "secondSKU": null
+      },
+      {
+        "baseSKU": "CAL55CUHD50MTS",
+        "secondSKU": "DJ-L3.3CUHD-50M"
+      }
+    ]
+  }
+}

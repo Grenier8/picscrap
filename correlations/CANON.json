@@ -1,0 +1,506 @@
+{
+  "baseProducts": [
+    {
+      "sku": "3616C016",
+      "name": "Cámara DSLR Canon EOS 90D + Lente 18-135mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44642142/resize/306/306?1705676031"
+    },
+    {
+      "sku": "9967B002",
+      "name": "Batería Canon LP-E17",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42602928/resize/306/306?1700843248"
+    },
+    {
+      "sku": "0868C002",
+      "name": "Batería Canon BP-A30",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45394346/resize/306/306?1707497749"
+    },
+    {
+      "sku": "6537C001",
+      "name": "Batería Canon LP-E6P",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51479417/resize/306/306?1723048426"
+    },
+    {
+      "sku": "6760B002",
+      "name": "Batería Canon LP-E12",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30190512/resize/306/306?1670889894"
+    },
+    {
+      "sku": "6388C002",
+      "name": "Cámara Cinema Canon EOS C400 6K Full-Frame",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60020480/resize/306/306?1739217979"
+    },
+    {
+      "sku": "6390C001",
+      "name": "Cámara Canon PowerShot V1",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61997647/resize/306/306?1743533281"
+    },
+    {
+      "sku": "2628C022",
+      "name": "Cámara Canon EOS Rebel T100 - Premium Kit",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/49315704/resize/306/306?1717188832"
+    },
+    {
+      "sku": "1169C002",
+      "name": "Batería Canon LP-E19",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45220116/resize/306/306?1707149169"
+    },
+    {
+      "sku": "8597B002",
+      "name": "Batería Canon BP-820",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48557665/resize/306/306?1715377393"
+    },
+    {
+      "sku": "1897C002",
+      "name": "Cámara DSLR Canon EOS 6D Mark II - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51143799/resize/306/306?1722031605"
+    },
+    {
+      "sku": "6098B003",
+      "name": "Adaptador de Montura Canon EF-EOS M",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53137850/resize/306/306?1725975308"
+    },
+    {
+      "sku": "3680C003",
+      "name": "Lente Canon RF 24-70mm f/2.8 L IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58406564/resize/306/306?1734382767"
+    },
+    {
+      "sku": "9968B001",
+      "name": "Cargador Canon LC-E17",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59410769/resize/306/306?1737642294"
+    },
+    {
+      "sku": "6907C003",
+      "name": "Lente Canon RF 24mm f/1.4 L VCM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59468621/resize/306/306?1737729850"
+    },
+    {
+      "sku": "5803C002",
+      "name": "Cámara Mirrorless Canon EOS R8 - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42596817/resize/306/306?1700833411"
+    },
+    {
+      "sku": "5331C016",
+      "name": "Cámara Mirrorless Canon EOS R10 + Lente 18-150mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42601148/resize/306/306?1700840819"
+    },
+    {
+      "sku": "6895C012",
+      "name": "Cámara Mirrorless Canon EOS R50V + Lente 14-30mm",
+      "image": ""
+    },
+    {
+      "sku": "1620C003",
+      "name": "Lente Canon EF-S 18-55mm f/4-5.6 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61219656/resize/306/306?1741711900"
+    },
+    {
+      "sku": "3453C002",
+      "name": "Cámara DSLR Canon EOS Rebel SL3 + Lente 18-55mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46768611/resize/306/306?1711058205"
+    },
+    {
+      "sku": "3554B003",
+      "name": "Lente Canon EF 100mm f/2.8L Macro IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/63019910/resize/306/306?1745962530"
+    },
+    {
+      "sku": "2963C003",
+      "name": "Lente Canon RF 24-105mm f/4 L IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30163559/resize/306/306?1670792081"
+    },
+    {
+      "sku": "4147C014",
+      "name": "Cámara Mirrorless Canon EOS R5 + Lente 24-105mm USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45054501/resize/306/306?1706582978"
+    },
+    {
+      "sku": "6473A002",
+      "name": "Lente Canon EF 75-300mm f/4-5.6 III",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42601699/resize/306/306?1700841558"
+    },
+    {
+      "sku": "5137C002",
+      "name": "Cámara Mirrorless Canon EOS R7 - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30772523/resize/306/306?1673354649"
+    },
+    {
+      "sku": "6052C012",
+      "name": "Cámara Mirrorless Canon EOS R100 + Lente 18-45mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/40227338/resize/306/306?1695751841"
+    },
+    {
+      "sku": "9524B003",
+      "name": "Lente Canon EF 100-400mm f/4.5-5.6L IS II USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46893107/resize/306/306?1711393026"
+    },
+    {
+      "sku": "3249C011",
+      "name": "Flash Canon Speedlite EL-100",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48337042/resize/306/306?1715095238"
+    },
+    {
+      "sku": "4111C003",
+      "name": "Lente Canon RF 24-105mm f/4-7.1 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59473107/resize/306/306?1737740859"
+    },
+    {
+      "sku": "5666C012",
+      "name": "Cámara Mirrorless Canon EOS R6 Mark II + Lente 24-105mm USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50518868/resize/306/306?1720541231"
+    },
+    {
+      "sku": "5051C003",
+      "name": "Lente Canon RF 16mm f/2.8 STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45347630/resize/306/306?1707426937"
+    },
+    {
+      "sku": "5668C003",
+      "name": "Lente Canon RF 24mm f/1.8 Macro IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42602440/resize/306/306?1700842412"
+    },
+    {
+      "sku": "5775C003",
+      "name": "Lente Canon RF 15-30mm f/4.5-6.3 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50254770/resize/306/306?1719855811"
+    },
+    {
+      "sku": "3348B001",
+      "name": "Cargador Canon LC-E6",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59380127/resize/306/306?1737560833"
+    },
+    {
+      "sku": "3380C012",
+      "name": "Cámara Mirrorless Canon EOS RP + Lente 24-105mm f/4L",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42596464/resize/306/306?1709043922"
+    },
+    {
+      "sku": "5803C037",
+      "name": "Cámara Mirrorless Canon EOS R8 - Content Creator Kit",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51233628/resize/306/306?1722264917"
+    },
+    {
+      "sku": "4514C003",
+      "name": "Lente Canon RF 100mm f/2.8 L Macro IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/52307666/resize/306/306?1724945838"
+    },
+    {
+      "sku": "4857C003",
+      "name": "Lente Canon RF 14-35mm f/4 L IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/52308250/resize/306/306?1724946942"
+    },
+    {
+      "sku": "5109B001",
+      "name": "Cargador Canon LC-E10",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53427242/resize/306/306?1726507749"
+    },
+    {
+      "sku": "4601V144",
+      "name": "Kit Navideño Canon EOS R8 + Lente 24-50mm (Flash de Regalo)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58521065/resize/306/306?1734725549"
+    },
+    {
+      "sku": "5734C002",
+      "name": "Videocámara Canon Vixia HF G70 UHD 4K",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44769217/resize/306/306?1706100677"
+    },
+    {
+      "sku": "6908C003",
+      "name": "Lente Canon RF 50mm f/1.4 L VCM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59469327/resize/306/306?1737731481"
+    },
+    {
+      "sku": "6594C003",
+      "name": "Lente Canon RF 70-200mm f/2.8 L IS USM Z",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59535740/resize/306/306?1737990168"
+    },
+    {
+      "sku": "4234C003",
+      "name": "Lente Canon RF 85mm f/2 Macro IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58867520/resize/306/306?1736198447"
+    },
+    {
+      "sku": "6128C003",
+      "name": "Lente Canon RF 28mm f/2.8 STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/55608798/resize/306/306?1729798713"
+    },
+    {
+      "sku": "4318C003",
+      "name": "Lente Canon RF 70-200mm f/4 L IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44010411/resize/306/306?1704303027"
+    },
+    {
+      "sku": "3792C003",
+      "name": "Lente Canon RF 70-200mm f/2.8 L IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/34285808/resize/306/306?1681920360"
+    },
+    {
+      "sku": "5076C002",
+      "name": "Videocámara Canon XF605 UHD 4K HDR",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45143424/resize/306/306?1706886041"
+    },
+    {
+      "sku": "5733C002",
+      "name": "Videocámara Canon XA60 UHD 4K",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45517128/resize/306/306?1707853541"
+    },
+    {
+      "sku": "5736C002",
+      "name": "Videocámara Canon XA70 UHD 4K",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/52291568/resize/306/306?1724878749"
+    },
+    {
+      "sku": "6536C003",
+      "name": "Cámara Mirrorless Canon EOS R5 Mark II - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51477920/resize/306/306?1723045107"
+    },
+    {
+      "sku": "5137C009",
+      "name": "Cámara Mirrorless Canon EOS R7 + Lente 18-150mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45500674/resize/306/306?1707846460"
+    },
+    {
+      "sku": "5811C022",
+      "name": "Cámara Mirrorless Canon EOS R50 - Premium Kit",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/46789140/resize/306/306?1711119441"
+    },
+    {
+      "sku": "5811C012",
+      "name": "Cámara Mirrorless Canon EOS R50 + Lente 18-45mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/35131482/resize/306/306?1683912151"
+    },
+    {
+      "sku": "5666C019",
+      "name": "Cámara Mirrorless Canon EOS R6 Mark II + Lente 24-105mm STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/41019706/resize/306/306?1697553488"
+    },
+    {
+      "sku": "4515C003",
+      "name": "Lente Canon RF 50mm f/1.8 STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30160354/resize/306/306?1670769233"
+    },
+    {
+      "sku": "2971C003AA",
+      "name": "Adaptador de Montura Canon EF-EOS R",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30176277/resize/306/306?1670860732"
+    },
+    {
+      "sku": "9519B003",
+      "name": "Lente Canon EF-S 10-18mm f/4.5-5.6 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42602100/resize/306/306?1700841827"
+    },
+    {
+      "sku": "2973C003",
+      "name": "Lente Canon RF 35mm f/1.8 Macro IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/61003282/resize/306/306?1741201213"
+    },
+    {
+      "sku": "0570C003",
+      "name": "Lente Canon EF 50mm f/1.8 STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43983106/resize/306/306?1704206148"
+    },
+    {
+      "sku": "5050C003",
+      "name": "Lente Canon RF 100-400mm f/5.6-8 IS USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45059004/resize/306/306?1706622651"
+    },
+    {
+      "sku": "0870C002",
+      "name": "Batería Canon BP-A60",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45219753/resize/306/306?1707148376"
+    },
+    {
+      "sku": "5108B002",
+      "name": "Batería Canon LP-E10",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/47945461/resize/306/306?1713973957"
+    },
+    {
+      "sku": "6262C003",
+      "name": "Lente Canon RF-S 10-18mm f/4.5-6.3 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/51482734/resize/306/306?1723052073"
+    },
+    {
+      "sku": "6389C002",
+      "name": "Cámara Cinema Canon EOS C80 6K Full-Frame - (A PEDIDO)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53446044/resize/306/306?1726581657"
+    },
+    {
+      "sku": "3637C001",
+      "name": "Cámara Compacta Canon PowerShot G7 X Mark III",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58551681/resize/306/306?1734962652"
+    },
+    {
+      "sku": "5824C003",
+      "name": "Lente Canon RF-S 55-210mm f/5-7.1 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58609465/resize/306/306?1735240137"
+    },
+    {
+      "sku": "6535C003",
+      "name": "Lente Canon RF 28-70mm f/2.8 IS STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/58866376/resize/306/306?1736195427"
+    },
+    {
+      "sku": "5331C002",
+      "name": "Cámara Mirrorles Canon EOS R10 - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/42597359/resize/306/306?1700834611"
+    },
+    {
+      "sku": "2727C002",
+      "name": "Cámara Canon EOS Rebel T7 + Lente 18-55mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45037750/resize/306/306?1706543211"
+    },
+    {
+      "sku": "4895C003",
+      "name": "Cámara Mirrorless Canon EOS R3 - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/31500630/resize/306/306?1675454063"
+    },
+    {
+      "sku": "3616C002",
+      "name": "Cámara DSLR Canon EOS 90D - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48084726/resize/306/306?1714431795"
+    },
+    {
+      "sku": "2628C003",
+      "name": "Cámara Canon EOS Rebel T100 + Lente 18-55mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44839589/resize/306/306?1706226851"
+    },
+    {
+      "sku": "3380C002",
+      "name": "Cámara Mirrorless Canon EOS RP - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30088582/resize/306/306?1670443222"
+    },
+    {
+      "sku": "2965C003",
+      "name": "Lente Canon RF 28-70mm f/2 L USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30160258/resize/306/306?1670768604"
+    },
+    {
+      "sku": "2959C003",
+      "name": "Lente Canon RF 50mm f/1.2 L USM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59469483/resize/306/306?1737731814"
+    },
+    {
+      "sku": "4132C002",
+      "name": "Batería Canon LP-E6NH",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30167235/resize/306/306?1670811134"
+    },
+    {
+      "sku": "9522B003",
+      "name": "Lente Canon EF-S 24mm f/2.8 STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45074452/resize/306/306?1706652047"
+    },
+    {
+      "sku": "4507C002",
+      "name": "Cámara Canon Cinema EOS C70 - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43793648/resize/306/306?1703169836"
+    },
+    {
+      "sku": "4082C022",
+      "name": "Cámara Mirrorless Canon EOS R6 + Lente 24-105mm STM",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43794248/resize/306/306?1709044444"
+    },
+    {
+      "sku": "3829C002",
+      "name": "Cámara Canon EOS-1D X Mark III - Body",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45054186/resize/306/306?1706580905"
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "DR-E6",
+      "name": "CANON DR-E6 DC COUPLER PARA CANON CON LP-E6",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/3352B001-250x250.jpg"
+    },
+    {
+      "sku": "8266B001AA",
+      "name": "CANON E-55II TAPA DE LENTE \"LENS CAP\" 55MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/8266B001-250x250.jpg"
+    },
+    {
+      "sku": "5673B001",
+      "name": "CANON E-58II TAPA DE LENTE \"LENS CAP\" 58MM",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/Repuestos/E58II-250x250.jpg"
+    },
+    {
+      "sku": "6316B001",
+      "name": "CANON E-67II TAPA DE LENTE \"LENS CAP\" 67MM",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/Repuestos/E67II-250x250.jpg"
+    },
+    {
+      "sku": "6318B001",
+      "name": "CANON E-77II TAPA DE LENTE \"LENS CAP\" 77MM",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/Repuestos/E77II-250x250.jpg"
+    },
+    {
+      "sku": "0570C003",
+      "name": "CANON EF 50MM F/1.8 STM LENTE",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/50MMSTM-250x250.jpg"
+    },
+    {
+      "sku": "2637A001",
+      "name": "CANON ET-60 PARASOL \"LENS HOOD\" PARA EF 75-300 MM F / 4-5.6 III Y OTROS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/ET60-250x250.jpg"
+    },
+    {
+      "sku": "ET-65B",
+      "name": "CANON ET-65B PARASOL \"LENS HOOD\" PARA 70-300MM F/4.5-5.6 DO-IS Y F/4-5.6 IS USM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/Repuestos/ET-65B-250x250.jpg"
+    },
+    {
+      "sku": "EW-73B",
+      "name": "CANON EW-73B PARASOL \"LENS HOOD\" PARA EF-S 18-135MM",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/EW73B-250x250.jpg"
+    },
+    {
+      "sku": "EW-83M",
+      "name": "CANON EW-83M PARASOL \"LENS HOOD\" PARA EF 24-105MM F/3.5-5.6 IS STM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/9530B001-250x250.jpg"
+    },
+    {
+      "sku": "LC-E12",
+      "name": "CANON LC-E12 CARGADOR PARA BATERÍA LP-E12",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/LC-E12-250x250.jpg"
+    },
+    {
+      "sku": "3348B001",
+      "name": "CANON LC-E6 CARGADOR PARA BATERÍAS",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/LC-E6CANON-250x250.jpg"
+    },
+    {
+      "sku": "2515A004",
+      "name": "CANON LENTE 50MM 1.4 STANDARD EF 50MM F/1.4 USM",
+      "image": "https://davidandjoseph.cl/image/cache/data/CANON/50mm14-250x250.jpg"
+    },
+    {
+      "sku": "3682C003AA",
+      "name": "CANON LENTE RF 15-35 MM F/2.8 L IS USM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/3682C003AA-250x250.jpeg"
+    },
+    {
+      "sku": "2965C003AA",
+      "name": "CANON LENTE RF 28-70M F/2L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/2965C002-250x250.jpeg"
+    },
+    {
+      "sku": "6535C003AA",
+      "name": "CANON LENTE RF 28-70MM F/2.8 IS STM LENS (CANON RF)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/6535C003AA-250x250.jpg"
+    },
+    {
+      "sku": "2962C001",
+      "name": "CANON TAPA DE ATRAS DEL LENTE RF DUST CAP \"REAR LENS CAP\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/2962C001-250x250h.jpg"
+    },
+    {
+      "sku": "3443C003",
+      "name": "CANON ADAPTADOR EF-EOS R CON FILTRO ND VARIABLE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/3443C002-250x250.jpg"
+    },
+    {
+      "sku": "6536C002",
+      "name": "CANON EOS R5 MARK II MIRRORLESS BODY (SOLO CUERPO)",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/CANON/6536C002-250x250.jpg"
+    }
+  ]
+}
