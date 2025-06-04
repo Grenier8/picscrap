@@ -66,6 +66,7 @@ export interface AssistantProduct {
   sku: string;
   name: string;
   image: string;
+  bestMatch?: AssistantProduct | null;
 }
 
 export interface AssistantCorrelation {

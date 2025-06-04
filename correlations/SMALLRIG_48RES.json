@@ -1,0 +1,130 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "3531B",
+        "secondarySKU": "3531"
+      },
+      {
+        "baseSKU": "4017",
+        "secondarySKU": "4017"
+      },
+      {
+        "baseSKU": "3660",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3538B",
+        "secondarySKU": "3538B"
+      },
+      {
+        "baseSKU": "3959",
+        "secondarySKU": "3959"
+      },
+      {
+        "baseSKU": "3575",
+        "secondarySKU": "3575"
+      },
+      {
+        "baseSKU": "3357",
+        "secondarySKU": "3357"
+      },
+      {
+        "baseSKU": "2791",
+        "secondarySKU": "4299"
+      },
+      {
+        "baseSKU": "4770",
+        "secondarySKU": "4183"
+      },
+      {
+        "baseSKU": "4600",
+        "secondarySKU": "4600"
+      },
+      {
+        "baseSKU": "4815",
+        "secondarySKU": "4815"
+      },
+      {
+        "baseSKU": "4538",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4483",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4487",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4861",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4505",
+        "secondarySKU": "4505"
+      },
+      {
+        "baseSKU": "2797",
+        "secondarySKU": "2797"
+      },
+      {
+        "baseSKU": "4634",
+        "secondarySKU": "4634"
+      },
+      {
+        "baseSKU": "4771",
+        "secondarySKU": "4771"
+      },
+      {
+        "baseSKU": "4685",
+        "secondarySKU": "4685"
+      },
+      {
+        "baseSKU": "4851",
+        "secondarySKU": "4850"
+      },
+      {
+        "baseSKU": "5323",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3755B",
+        "secondarySKU": "3755B"
+      },
+      {
+        "baseSKU": "2906",
+        "secondarySKU": "2906"
+      },
+      {
+        "baseSKU": "3765",
+        "secondarySKU": "3765"
+      },
+      {
+        "baseSKU": "828",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3757B",
+        "secondarySKU": "3757B"
+      },
+      {
+        "baseSKU": "1124",
+        "secondarySKU": "1124"
+      },
+      {
+        "baseSKU": "4183",
+        "secondarySKU": "4183"
+      },
+      {
+        "baseSKU": "1872",
+        "secondarySKU": "1872"
+      },
+      {
+        "baseSKU": "4630",
+        "secondarySKU": "4630"
+      }
+    ]
+  }
+}

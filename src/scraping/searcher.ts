@@ -3,14 +3,14 @@ import {
   Webpage,
   ProductDB,
 } from "../interfaces";
-import { getScrapProducts } from "../service/product";
+import { getScrapProductsJSON } from "../service/product";
 
 export const findProductsBetweenPages = async (
   pageFrom: Webpage,
   pageTo: Webpage
 ): Promise<FindProductsBetweenPagesResults> => {
-  const pageFromProducts = await getScrapProducts(pageFrom);
-  const pageToProducts = await getScrapProducts(pageTo);
+  const pageFromProducts = await getScrapProductsJSON(pageFrom);
+  const pageToProducts = await getScrapProductsJSON(pageTo);
 
   const totalProducts = pageFromProducts.length;
   let foundProducts = 0;

@@ -10,16 +10,18 @@ import {
 } from "../interfaces";
 import {
   saveAssistantProductsToFile,
+  saveConversationToFile,
   saveCorrelationsToFile,
   saveProductsToFile,
 } from "../utils/fileManager";
-import { getScrapProducts } from "../service/product";
+import { getScrapProductsJSON } from "../service/product";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
 import OpenAiService from "../service/openAi";
 
 export abstract class Scraper {
   webpage: Webpage;
   openAiService: OpenAiService;
+  conversation: { role: "user" | "assistant"; content: string }[] = [];
 
   constructor(webpage: Webpage) {
     this.webpage = webpage;
@@ -67,7 +69,7 @@ export abstract class Scraper {
     const page = await browser.newPage();
     await this.setUserAgent(page);
     // const allProducts = await this.scrapeAllPages(browser, page);
-    const allProducts = await getScrapProducts(this.webpage);
+    const allProducts = await getScrapProductsJSON(this.webpage);
     console.log("All products obtained: ", allProducts.length);
     saveProductsToFile(allProducts, this.webpage.id);
 
@@ -105,7 +107,7 @@ export abstract class Scraper {
     // const browser = await puppeteer.launch({ headless: true });
     // const page = await browser.newPage();
     // await this.setUserAgent(page);
-    const allProducts = await getScrapProducts(this.webpage);
+    const allProducts = await getScrapProductsJSON(this.webpage);
     console.log("All products obtained: ", allProducts.length);
     saveProductsToFile(allProducts, this.webpage.id);
 
@@ -129,108 +131,144 @@ export abstract class Scraper {
         secondaryProductsByBrand.length
       );
 
-      // Track which SKUs have been matched
-      const matchedBaseSKUs = new Set<string>();
-      const matchedSecondarySKUs = new Set<string>();
-
-      let remainingBase = [...baseProductsByBrand];
-      let remainingSecondary = [...secondaryProductsByBrand];
-
-      while (remainingBase.length > 0 && remainingSecondary.length > 0) {
-        // Take up to MAX_PRODUCTS, split equally if possible
-        const baseBatchCount = Math.min(
-          Math.floor(MAX_PRODUCTS / 2),
-          remainingBase.length
+      // Nuevo: Por cada batch de base, recorre todos los secondary en batches
+      let count = 1;
+      const BASE_BATCH_SIZE = Math.floor(MAX_PRODUCTS / 2);
+      const SECONDARY_BATCH_SIZE = MAX_PRODUCTS - BASE_BATCH_SIZE;
+      for (
+        let baseIndex = 0;
+        baseIndex < baseProductsByBrand.length;
+        baseIndex += BASE_BATCH_SIZE
+      ) {
+        const baseBatch = baseProductsByBrand.slice(
+          baseIndex,
+          baseIndex + BASE_BATCH_SIZE
         );
-        const secondaryBatchCount = Math.min(
-          MAX_PRODUCTS - baseBatchCount,
-          remainingSecondary.length
-        );
-
-        const baseBatch = remainingBase.slice(0, baseBatchCount);
-        const secondaryBatch = remainingSecondary.slice(0, secondaryBatchCount);
 
         const baseProductsRequest: AssistantProduct[] = baseBatch.map(
           (product) => ({
             sku: product.sku,
             name: product.name,
             image: product.image || "",
+            bestMatch: null,
           })
         );
-        const productsRequest: AssistantProduct[] = secondaryBatch.map(
-          (product) => ({
-            sku: product.sku,
-            name: product.name,
-            image: product.image || "",
-          })
-        );
-        saveAssistantProductsToFile(
-          baseProductsRequest,
-          productsRequest,
-          brand.name
-        );
-
-        const openAiRequest = {
-          baseProducts: baseProductsRequest,
-          secondaryProducts: productsRequest,
-        } as AssistantRequest;
-        console.log("openAiRequest", openAiRequest);
-
-        const response = await this.openAiService.callAssistant(
-          JSON.stringify(openAiRequest)
-        );
-        const openAiResponse = JSON.parse(response) as AssistantResponse;
-        console.log("openAiResponse", openAiResponse);
-
-        let matchesFound = false;
-        for (const correlation of openAiResponse.correlation) {
-          if (!correlation.secondarySKU) continue;
-          const baseProduct = baseBatch.find(
-            (product) => product.sku === correlation.baseSKU
+        for (
+          let secondaryIndex = 0;
+          secondaryIndex < secondaryProductsByBrand.length;
+          secondaryIndex += SECONDARY_BATCH_SIZE
+        ) {
+          const secondaryBatch = secondaryProductsByBrand.slice(
+            secondaryIndex,
+            secondaryIndex + SECONDARY_BATCH_SIZE
           );
-          const secondaryProduct = secondaryBatch.find(
-            (product) => product.sku === correlation.secondarySKU
+
+          const secondaryProductsRequest: AssistantProduct[] =
+            secondaryBatch.map((product) => ({
+              sku: product.sku,
+              name: product.name,
+              image: product.image || "",
+            }));
+          saveAssistantProductsToFile(
+            baseProductsRequest,
+            secondaryProductsRequest,
+            brand.name + "_" + count
           );
-          if (baseProduct && secondaryProduct) {
-            const baseProductObj = baseProductsByBrand.find(
-              (bp) => bp.sku === baseProduct.sku
+
+          const openAiRequest = {
+            baseProducts: baseProductsRequest,
+            secondaryProducts: secondaryProductsRequest,
+          } as AssistantRequest;
+          console.log("openAiRequest Base", openAiRequest.baseProducts.length);
+          console.log(
+            "openAiRequest Products",
+            openAiRequest.secondaryProducts.length
+          );
+
+          // Store the outgoing user message
+          this.conversation.push({
+            role: "user",
+            content: JSON.stringify(openAiRequest),
+          });
+          const response = await this.openAiService.callAssistant(
+            JSON.stringify(openAiRequest)
+          );
+          console.log("openAiResponse", response);
+          // Store the assistant's response
+          this.conversation.push({ role: "assistant", content: response });
+          const openAiResponse = JSON.parse(response) as AssistantResponse;
+          console.log(
+            "openAiResponse total",
+            openAiResponse.correlation.length
+          );
+          console.log(
+            "openAiResponse BaseFound",
+            openAiResponse.correlation.filter((c) => c.secondarySKU).length
+          );
+          saveConversationToFile(this.conversation, `conversation_${count}`);
+
+          openAiResponse.correlation
+            .filter((c) => c.secondarySKU)
+            .forEach((c) => {
+              const baseProduct = baseProductsRequest.find(
+                (product) => product.sku === c.baseSKU
+              );
+              if (
+                !baseProduct?.bestMatch ||
+                baseProduct.bestMatch.sku !== c.secondarySKU
+              ) {
+                const secondaryProduct = secondaryProductsRequest.find(
+                  (product) => product.sku === c.secondarySKU
+                );
+                if (baseProduct) {
+                  baseProduct.bestMatch = {
+                    sku: c.secondarySKU,
+                    name: secondaryProduct?.name || "",
+                    image: secondaryProduct?.image || "",
+                  };
+                }
+              }
+            });
+
+          for (const correlation of openAiResponse.correlation) {
+            if (!correlation.secondarySKU) continue;
+            const baseProduct = baseBatch.find(
+              (product) => product.sku === correlation.baseSKU
             );
-            const secondaryProductObj = secondaryProductsByBrand.find(
-              (sp) => sp.sku === secondaryProduct.sku
+            const secondaryProduct = secondaryBatch.find(
+              (product) => product.sku === correlation.secondarySKU
             );
-            if (baseProductObj && secondaryProductObj) {
+            if (baseProduct && secondaryProduct) {
               filteredProducts.push({
-                ...secondaryProductObj,
+                ...secondaryProduct,
                 webpage: this.webpage.url,
-                baseProductSku: baseProductObj.sku,
+                baseProductSku: baseProduct.sku,
               });
-              matchedBaseSKUs.add(baseProductObj.sku);
-              matchedSecondarySKUs.add(secondaryProductObj.sku);
-              matchesFound = true;
             }
           }
+
+          saveCorrelationsToFile(openAiResponse, brand.name + "_" + count);
+          count++;
+
+          // (Índices avanzan automáticamente en los bucles for)
         }
-
-        saveCorrelationsToFile(openAiResponse, brand.name);
-
-        // Filter matched from future batches
-        remainingBase = remainingBase.filter(
-          (product) => !matchedBaseSKUs.has(product.sku)
-        );
-        remainingSecondary = remainingSecondary.filter(
-          (product) => !matchedSecondarySKUs.has(product.sku)
-        );
-
-        // If no matches found, just advance the secondary window,
-        // but since we always remove matched secondaries, just repeat
-        if (!matchesFound) {
-          // To avoid infinite loop, advance the window by removing first N secondary
-          // (those that didn't match anything)
-          remainingSecondary = remainingSecondary.slice(secondaryBatchCount);
-        }
+        baseProductsRequest.forEach((product) => {
+          if (product.bestMatch) {
+            const secondaryProduct = allProducts.find(
+              (secondaryProduct) =>
+                secondaryProduct.sku === product.bestMatch?.sku
+            );
+            if (secondaryProduct) {
+              filteredProducts.push({
+                ...secondaryProduct,
+                webpage: this.webpage.url,
+                baseProductSku: product.sku,
+              });
+            }
+          }
+        });
       }
     }
-
     console.log(
       `Filtered products: ${filteredProducts.length} of ${allProducts.length}`
     );

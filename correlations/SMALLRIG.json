@@ -253,24 +253,254 @@
   ],
   "secondaryProducts": [
     {
-      "sku": "3579",
-      "name": "SMALLRIG VB50 MINI BATERÍA V-MOUNT 50W/H 14.8V",
-      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/35792-250x250.jpeg"
+      "sku": "3203B",
+      "name": "SMALLRIG 3203 PLACA V-MOUNT PARA RODS 15MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3203B-250x250.jpeg"
     },
     {
-      "sku": "4871",
-      "name": "SMALLRIG VB50 MINI BATERÍA V-MOUNT 50W/H 14.8V (NARANJA)",
-      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4871-250x250.jpg"
+      "sku": "3204B",
+      "name": "SMALLRIG 3204 PLACA V-MOUNT PARA RODS 15MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3204B-250x250.jpg"
     },
     {
-      "sku": "4872",
-      "name": "SMALLRIG VB50 MINI BATERÍA V-MOUNT 50W/H 14.8V (VERDE)",
-      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4872-250x250.jpg"
+      "sku": "3206",
+      "name": "SMALLRIG 3206 SUN HOOD A7S III / 7C / ZV-1 / FX3 / FX30",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3206-250x250.jpg"
     },
     {
-      "sku": "2725",
-      "name": "SMALLRIG 2725 CAGE PARA VIDEO ASSIST 5\" 12G-SDI/HDMI BMD",
-      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/2725-250x250.jpg"
+      "sku": "3212B",
+      "name": "SMALLRIG 3212 SONY A7C CAGE / JAULA CON ASA LATERAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3212B-250x250.jpeg"
+    },
+    {
+      "sku": "3233B",
+      "name": "SMALLRIG 3233 BLACK CAGE PARA CANON EOS R5 O R6",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3233B-250x250.jpg"
+    },
+    {
+      "sku": "3237",
+      "name": "SMALLRIG 3237 SONY A7S III HALF CAGE / JAULA CON AGARRE PRO & CLAMP HDMI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3237-250x250.jpg"
+    },
+    {
+      "sku": "3238",
+      "name": "SMALLRIG 3238 BRAZO MINI MAGIC ARM CON RÓTULA UNIVERSAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3238-250x250.jpg"
+    },
+    {
+      "sku": "3242",
+      "name": "SMALLRIG 3242 LÁMPARA LED PORTÁTIL Y PLEGABLE CON AGARRE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3242-250x250.jpeg"
+    },
+    {
+      "sku": "3246",
+      "name": "SMALLRIG 3246 CABLE CON BATERÍA DUMMY (FALSA) NP-W235",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3246-250x250.jpg"
+    },
+    {
+      "sku": "3248",
+      "name": "SMALLRIG 3248 CABLE CON BATERÍA DUMMY (FALSA) BLF19",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3248-250x250.jpg"
+    },
+    {
+      "sku": "3250",
+      "name": "SMALLRIG 3250 CABLE ADAPTADOR DJI RS2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3250-250x250.jpg"
+    },
+    {
+      "sku": "3251",
+      "name": "SMALLRIG 3251 PLACA ENERGIA POWER PARA DJI RS2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3251-250x250.jpg"
+    },
+    {
+      "sku": "3259",
+      "name": "SMALLRIG 3259 CABEZAL DE FLUIDO COMPACTO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3259-250x250.jpg"
+    },
+    {
+      "sku": "3260",
+      "name": "SMALLRIG 3260 AGARRE GIRATORIO LADO IZQUIERDO CON SISTEMA NATO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3260-250x250w.jpg"
+    },
+    {
+      "sku": "3266",
+      "name": "SMALLRIG 3266 CABLE D TAP A USB-C PARA MOTOR DE ENFOQUE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3266-250x250.jpeg"
+    },
+    {
+      "sku": "3271",
+      "name": "SMALLRIG 3271 ABRAZADERA DE CABLE HDMI/USB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/32712-250x250.jpeg"
+    },
+    {
+      "sku": "3272",
+      "name": "SMALLRIG 3272 SOPORTE DE AGARRE SAMSUNG T5/T7 SHIELD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3272-250x250.jpg"
+    },
+    {
+      "sku": "3273",
+      "name": "SMALLRIG 3273 HOOD PARA POCKET 6K PRO BLACKMAGIC DESIGN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3273-250x250.jpg"
+    },
+    {
+      "sku": "3274",
+      "name": "SMALLRIG 3274 PROTECTOR PANTALLA POCKET 6K PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3274-250x250.jpg"
+    },
+    {
+      "sku": "3276",
+      "name": "SMALLRIG 3276 ABRAZADERA ROD 12/15MM CAGE 6K PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3276-250x250.jpg"
+    },
+    {
+      "sku": "3286",
+      "name": "SMALLRIG 3286 LED COMPACTA P96 VIDEO LIGHT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3286-250x250.jpg"
+    },
+    {
+      "sku": "3289",
+      "name": "SMALLRIG 3289 ADAPTADOR HDMI Y USB-C PARA BMPCC 6K PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3289-250x250.jpeg"
+    },
+    {
+      "sku": "3290",
+      "name": "SMALLRIG 3290 MAGNETIC LED VIDEO LIGHT RGB",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3290-250x250.jpg"
+    },
+    {
+      "sku": "3291",
+      "name": "SMALLRIG 3291 Φ62.5-Φ64.5 ANILLO DE ENGRANAJE DE ENFOQUE CONTINUO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3292-250x250.jpg"
+    },
+    {
+      "sku": "3292",
+      "name": "SMALLRIG 3292 Φ66-Φ68 ANILLO DE ENGRANAJE DE ENFOQUE CONTINUO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3292-250x250.jpg"
+    },
+    {
+      "sku": "3293",
+      "name": "SMALLRIG 3293 Φ72-Φ74 ANILLO DE ENGRANAJE DE ENFOQUE CONTINUO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3293-250x250.jpeg"
+    },
+    {
+      "sku": "3294",
+      "name": "SMALLRIG 3294 Φ75-Φ77 ANILLO DE ENGRANAJE DE ENFOQUE CONTINUO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3294-250x250.jpeg"
+    },
+    {
+      "sku": "3295",
+      "name": "SMALLRIG 3295 Φ78-Φ80 ANILLO DE ENGRANAJE DE ENFOQUE CONTINUO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3295-250x250.jpg"
+    },
+    {
+      "sku": "3296",
+      "name": "SMALLRIG 3296 Φ81-Φ83 ANILLO DE ENGRANAJE DE ENFOQUE CONTINUO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3296-250x250.jpeg"
+    },
+    {
+      "sku": "3299B",
+      "name": "SMALLRIG 3299 PROKIT BLACKMAGIC DESIGN POCKET 6K PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/32993-250x250.jpeg"
+    },
+    {
+      "sku": "3319",
+      "name": "SMALLRIG 3319 BANDEJA DE FILTRO 4 X 5,65 PARA MINI MATTE BOX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3319-250x250.jpg"
+    },
+    {
+      "sku": "3320",
+      "name": "SMALLRIG 3320 BANDEJA DE FILTRO 4 X 4 PARA MINI MATTE BOX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3320-250x250.jpg"
+    },
+    {
+      "sku": "3357",
+      "name": "SMALLRIG 3357 BASE UNIVERSAL PARA RODS 15MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3357-250x250.jpeg"
+    },
+    {
+      "sku": "3375",
+      "name": "SMALLRIG 3375 TRÍPODE STICK SELFIE PORTÁTIL SIMORR ST20",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3375-250x250.jpg"
+    },
+    {
+      "sku": "3383",
+      "name": "SMALLRIG 3383 KIT DE 5 ANILLOS (Φ52 / 55/58/62 / 86-95MM) MINI MATTE BOX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3383-250x250.jpeg"
+    },
+    {
+      "sku": "3405",
+      "name": "SMALLRIG 3405 LED ULTRACOMPACTA 3 WATTS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3405-250x250.jpg"
+    },
+    {
+      "sku": "3411",
+      "name": "SMALLRIG 3411 SOPORTE DE RODS PARA MATEBOX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3411-250x250.jpeg"
+    },
+    {
+      "sku": "3448",
+      "name": "SMALLRIG 3448 CASE PROTECTOR PARA ATOMOS NINJA V",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3448-250x250.jpg"
+    },
+    {
+      "sku": "3454",
+      "name": "SMALLRIG 3454 CASE PROTECTOR PARA ATOMOS SHINOBI 7\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3454-250x250.jpg"
+    },
+    {
+      "sku": "3455",
+      "name": "SMALLRIG 3455 PROTECTOR DE PANTALLA PARA ATOMOS SHINOBI 7\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3455-250x250.jpg"
+    },
+    {
+      "sku": "3456",
+      "name": "SMALLRIG 3456 CASE KIT PARA ATOMOS SHINOBI 7\"",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3456-250x250.jpeg"
+    },
+    {
+      "sku": "3457B",
+      "name": "SMALLRIG 3457 CABEZAL DE FLUIDO LIGERO PARA VIAJES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3457-250x250.jpg"
+    },
+    {
+      "sku": "3458",
+      "name": "SMALLRIG 3458 ANILLO ADAPTADOR 77 A 114MM PARA MATTEBOX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3458-250x250.jpg"
+    },
+    {
+      "sku": "3461",
+      "name": "SMALLRIG 3461 PROTECTOR DE PANTALLA PANASONIC LUMIX GH6",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3461-250x250h.jpg"
+    },
+    {
+      "sku": "3463",
+      "name": "SMALLRIG 3463 ANILLO DE ABRAZADERA 114-95MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3463-250x250.jpg"
+    },
+    {
+      "sku": "3467",
+      "name": "SMALLRIG 3467 MICRÓFONO LAVALIER L20",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3467-250x250.jpg"
+    },
+    {
+      "sku": "3469",
+      "name": "SMALLRIG 3469 KIT LED ULTRACOMPACTA 3 PACK",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3469-250x250.jpeg"
+    },
+    {
+      "sku": "3478",
+      "name": "SMALLRIG 3478 PLACA BASE PARA SSD M.2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3478-250x250.jpeg"
+    },
+    {
+      "sku": "3489B",
+      "name": "SMALLRIG 3489 VIBE P96L RGB VIDEO LIGHT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3489-250x250h.jpg"
+    },
+    {
+      "sku": "3499",
+      "name": "SMALLRIG 3499 PLATE DE AGARRE V-LOCK CON BRAZO A RODS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3499-250x250.jpg"
     }
   ]
 }

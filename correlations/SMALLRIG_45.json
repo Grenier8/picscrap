@@ -1,0 +1,494 @@
+{
+  "baseProducts": [
+    {
+      "sku": "3531B",
+      "name": "Cage SmallRig para Sony ZV-E10 | 3531B",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/43898716/resize/306/306?1703703673",
+      "bestMatch": {
+        "sku": "3531",
+        "name": "SMALLRIG 3531 CAGE PARA SONY ZV-E10",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3531-250x250.jpg"
+      }
+    },
+    {
+      "sku": "4017",
+      "name": "Empuñadura lateral SmallRig de bloqueo rápido tipo NATO - SmallRig 4017",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44088192/resize/306/306?1704480911",
+      "bestMatch": null
+    },
+    {
+      "sku": "3660",
+      "name": "L-Bracket Smallrig para Sony A7IV / A7SIII / A1 - 3660",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/45221979/resize/306/306?1707153995",
+      "bestMatch": null
+    },
+    {
+      "sku": "3538B",
+      "name": "Cage SmallRig con Grip Lateral para Sony ZV-E10 | 3538B",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/48085367/resize/306/306?1714434240",
+      "bestMatch": {
+        "sku": "3538B",
+        "name": "SMALLRIG 3538 CAGE PARA SONY ZV-E10 CON EMPUÑADURA",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3538-250x250.jpeg"
+      }
+    },
+    {
+      "sku": "3959",
+      "name": "Brazo Mágico SmallRig con Rosette 11\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50123753/resize/306/306?1719430852",
+      "bestMatch": null
+    },
+    {
+      "sku": "3575",
+      "name": "Matte Box SmallRig Mini Lite | 3575",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/50489114/resize/306/306?1720474679",
+      "bestMatch": {
+        "sku": "3575",
+        "name": "SMALLRIG 3575 MINI MATTEBOX LITE",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3575-250x250.jpg"
+      }
+    },
+    {
+      "sku": "3357",
+      "name": "Baseplate Universal SmallRig para Rods 15mm",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/53140005/resize/306/306?1725981299",
+      "bestMatch": {
+        "sku": "3357",
+        "name": "SMALLRIG 3357 BASE UNIVERSAL PARA RODS 15MM",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3357-250x250.jpeg"
+      }
+    },
+    {
+      "sku": "2791",
+      "name": "Cage universal para smartphones SmallRig - SmallRig 2791",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/59834959/resize/306/306?1738697115",
+      "bestMatch": {
+        "sku": "2791B",
+        "name": "SMALLRIG 2791 JAULA UNIVERSAL PARA SMARTPHONES",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/2791B-250x250.jpg"
+      }
+    },
+    {
+      "sku": "4770",
+      "name": "Cage SmallRig HawkLock Kit para Sony FX3 & FX30",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60085343/resize/306/306?1739368116",
+      "bestMatch": null
+    },
+    {
+      "sku": "4600",
+      "name": "Clamp SmallRig para Power Bank con Montura de Zapata",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60086502/resize/306/306?1739371634",
+      "bestMatch": {
+        "sku": "2790",
+        "name": "SMALLRIG 2790 SOPORTE CLAMP PARA POWER BANK",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/2790-250x250.jpg"
+      }
+    },
+    {
+      "sku": "4815",
+      "name": "Sistema de Enfriamiento SmallRig para Camaras",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60091665/resize/306/306?1739385337",
+      "bestMatch": null
+    },
+    {
+      "sku": "4538",
+      "name": "Kit Cage SmallRig HawkLock para Sony A7Rv | A7iv | A7Siii",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60094387/resize/306/306?1739391407",
+      "bestMatch": null
+    },
+    {
+      "sku": "4483",
+      "name": "Empuñadura Superior SmallRig HawkLock H21 Quick Release",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60094766/resize/306/306?1739392429",
+      "bestMatch": null
+    },
+    {
+      "sku": "4487",
+      "name": "Soporte de Monitor SmallRig HawkLock H21 Quick Release",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60111979/resize/306/306?1739456537",
+      "bestMatch": null
+    },
+    {
+      "sku": "4861",
+      "name": "SmallRig Super Clamp",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60115371/resize/306/306?1739459790",
+      "bestMatch": null
+    },
+    {
+      "sku": "4505",
+      "name": "Placa de Montura SmallRig V-Mount",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60195174/resize/306/306?1739557861",
+      "bestMatch": null
+    },
+    {
+      "sku": "2797",
+      "name": "Zapata Multifunción SmallRig con Liberación Segura",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60257346/resize/306/306?1739822078",
+      "bestMatch": {
+        "sku": "2797",
+        "name": "SMALLRIG 2797 SOPORTE DE ZAPATA CON CLICK DE SEGURIDAD",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/2797-250x250.jpg"
+      }
+    },
+    {
+      "sku": "4634",
+      "name": "Luz LED Portátil Enfocable SmallRig RF 10C",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62555666/resize/306/306?1744817614",
+      "bestMatch": null
+    },
+    {
+      "sku": "4771",
+      "name": "Cage SmallRig HawkLock Advanced para Sony FX3 & FX30",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62556521/resize/306/306?1744819377",
+      "bestMatch": null
+    },
+    {
+      "sku": "4685",
+      "name": "Trípode de Video de Fibra de Carbono SmallRig AD-50",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62575656/resize/306/306?1744839703",
+      "bestMatch": null
+    },
+    {
+      "sku": "4851",
+      "name": "Monitor de Video Inalámbrico para Smartphone (Vlog Kit)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62576708/resize/306/306?1744840856",
+      "bestMatch": null
+    },
+    {
+      "sku": "5323",
+      "name": "Kit SmallRig Empuñadura Superior & Soporte para Monitor - Arri",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62577538/resize/306/306?1744841857",
+      "bestMatch": null
+    },
+    {
+      "sku": "3755B",
+      "name": "Clamp SmallRig Crab-Shaped",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62675427/resize/306/306?1745244658",
+      "bestMatch": {
+        "sku": "3755B",
+        "name": "SMALLRIG 3755 SUPER CLAMP DE ABRAZADERA UNIVERSAL",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3755B-250x250.jpeg"
+      }
+    },
+    {
+      "sku": "2906",
+      "name": "SMALLRIG 2906 MONITOR HOLDER SWIVEL + TILT CON SISTEMA NATO CLAMP",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30132310/resize/306/306?1670612963",
+      "bestMatch": {
+        "sku": "2906B",
+        "name": "SMALLRIG 2906 MONITOR HOLDER SWIVEL + TILT CON SISTEMA NATO CLAMP",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/2906B-250x250.jpg"
+      }
+    },
+    {
+      "sku": "3765",
+      "name": "Empuñadura Superior SmallRig con montura ARRI - Lite | 3765",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/44092873/resize/306/306?1704491782",
+      "bestMatch": {
+        "sku": "3765",
+        "name": "SMALLRIG 3765 HANDLE SUPERIOR CON ARRI 3/8\"",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3765n-250x250.jpg"
+      }
+    },
+    {
+      "sku": "828",
+      "name": "Perno de doble extremo SmallRig de 1/4\"-20 a 1/4\"-20 (2 piezas)",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60183568/resize/306/306?1739543933",
+      "bestMatch": null
+    },
+    {
+      "sku": "3757B",
+      "name": "Kit Super Clamp Crab-Shaped y magic arm con cabezal esférico SmallRig",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60198142/resize/306/306?1739564992",
+      "bestMatch": {
+        "sku": "3757B",
+        "name": "SMALLRIG 3757 SUPER CLAMP CON BRAZO MÁGICO",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3757B-250x250.jpeg"
+      }
+    },
+    {
+      "sku": "1124",
+      "name": "SMALLRIG 1124 CLAMP DE ABRAZADERA CON MICRO CABEZAL",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/30095250/resize/306/306?1670463650",
+      "bestMatch": {
+        "sku": "1124",
+        "name": "SMALLRIG 1124 CLAMP DE ABRAZADERA CON MICRO CABEZAL",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/1124-250x250.jpg"
+      }
+    },
+    {
+      "sku": "4183",
+      "name": "SMALLRIG 4183 CAGE / JAULA PARA SONY FX3 / FX30",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/34622806/resize/306/306?1682701548",
+      "bestMatch": null
+    },
+    {
+      "sku": "1872",
+      "name": "Kit de caños de fibra de carbono SmallRig de 15 mm 6\"",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/60197606/resize/306/306?1739563546",
+      "bestMatch": {
+        "sku": "1872",
+        "name": "SMALLRIG 1872 TUBOS / RODS 15MM DE 15CM LARGO FIBRA DE CARBONO 6\"",
+        "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/1872-250x250.jpg"
+      }
+    },
+    {
+      "sku": "4630",
+      "name": "Trípode de Mesa SmallRig con Placa QR tipo Arca y Mini Rótula",
+      "image": "https://cdnx.jumpseller.com/picslab-store/image/62555894/resize/306/306?1744818096",
+      "bestMatch": null
+    }
+  ],
+  "secondaryProducts": [
+    {
+      "sku": "3841",
+      "name": "SMALLRIG 3841 ADAPTADOR DE FILTRO 67MM PARA ANAMORFICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3841-250x250.jpg"
+    },
+    {
+      "sku": "3845",
+      "name": "SMALLRIG 3845 CLIP DE FILTRO MAGNÉTICO DE 52 MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3845-250x250.jpg"
+    },
+    {
+      "sku": "3851",
+      "name": "SMALLRIG 3851 EXTENSIÓN WHIP 30CM PARA FOLLOW FOCUS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3851-250x250.jpeg"
+    },
+    {
+      "sku": "3853",
+      "name": "SMALLRIG 3853 BASE PARA FOLLOW DE RODS 15MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3853-250x250.jpeg"
+    },
+    {
+      "sku": "3873",
+      "name": "SMALLRIG 3873 MAGIC ARM BRAZO 12CM PERNOS 1/4”-20",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3873-250x250.jpeg"
+    },
+    {
+      "sku": "3893",
+      "name": "SMALLRIG 3893 MANGO LATERAL GIRATORIO CON DISPARADOR REC",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3893-250x250.jpg"
+    },
+    {
+      "sku": "3902",
+      "name": "SMALLRIG 3902 CONTROL REMOTO INALÁMBRICO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3902-250x250.jpeg"
+    },
+    {
+      "sku": "3926",
+      "name": "SMALLRIG 3926 CORREA DE MANO VINTAGE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3926-250x250.jpeg"
+    },
+    {
+      "sku": "3930",
+      "name": "SMALLRIG 3930 SOFTBOX RECTANGULAR RA-R6090",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3930-250x250.jpeg"
+    },
+    {
+      "sku": "3932",
+      "name": "SMALLRIG 3932 SOFTBOX LANTERN RA-L90",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3932-250x250.jpg"
+    },
+    {
+      "sku": "3935",
+      "name": "SMALLRIG 3935 TRÍPODE DE VIAJES PARA FOTOGRAFÍA",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3935-250x250.jpeg"
+    },
+    {
+      "sku": "3959",
+      "name": "SMALLRIG 3959 BRAZO CON ANTI-TWIST ARRI 28CM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/39592-250x250.jpg"
+    },
+    {
+      "sku": "3980",
+      "name": "SMALLRIG 3980 PANEL DE CONTROL LED RC350 Y RC450",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3980-250x250.jpeg"
+    },
+    {
+      "sku": "3984",
+      "name": "SMALLRIG 3984 PLACA EN L PLEGABLE PARA SONY A7 IV, A7S III Y A7R V",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3984n-250x250.jpg"
+    },
+    {
+      "sku": "3985",
+      "name": "SMALLRIG 3985 CABEZAL DE VIDEO COMPACTO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3985-250x250.jpeg"
+    },
+    {
+      "sku": "3986",
+      "name": "SMALLRIG 3986 DOLLY UNIVERSAL PARA TRÍPODES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3986-250x250.jpeg"
+    },
+    {
+      "sku": "3989",
+      "name": "SMALLRIG 3989 TRÍPODE FREEBLAZER HEAVY-DUTY CARBON FIBER",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3989new-250x250.jpeg"
+    },
+    {
+      "sku": "3995",
+      "name": "SMALLRIG 3995 TUERCAS DE MARIPOSA Y PERNOS",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/3995-250x250.jpeg"
+    },
+    {
+      "sku": "4002",
+      "name": "SMALLRIG 4002 BASE DOVETAIL CON RODS 15MM",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4002-250x250.jpeg"
+    },
+    {
+      "sku": "4003",
+      "name": "SMALLRIG 4003 BLACK CAGE PARA CANON EOS R7",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4003-250x250.jpeg"
+    },
+    {
+      "sku": "4004",
+      "name": "SMALLRIG 4004 BLACK CAGE PARA CANON EOS R10",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4004-250x250.jpeg"
+    },
+    {
+      "sku": "4016",
+      "name": "SMALLRIG 4016 MANGO AGARRE LATERAL CON ARRI PIN",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/WASABI/4016-250x250.jpeg"
+    },
+    {
+      "sku": "4017",
+      "name": "SMALLRIG 4017 MANGO AGARRE LATERAL CON SISTEMA NATO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4017-250x250.jpeg"
+    },
+    {
+      "sku": "4022",
+      "name": "SMALLRIG 4022 CAGE DE CÁMARA PANASONIC S5 II / S5 IIX / G9II",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4022-250x250.jpeg"
+    },
+    {
+      "sku": "4023",
+      "name": "SMALLRIG 4023 CAGE PARA PANASONIC S5 II / S5 IIX / G9II",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4023-250x250.jpeg"
+    },
+    {
+      "sku": "4024",
+      "name": "SMALLRIG 4024 CAGE KIT CÁMARA PANASONIC G9II / S5 II / S5 IIX",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4024-250x250h.jpeg"
+    },
+    {
+      "sku": "4055",
+      "name": "SMALLRIG 4055 LED COMPACTA RGB P108 VIDEO LIGHT COLOR",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4055-250x250.jpeg"
+    },
+    {
+      "sku": "4063",
+      "name": "SMALLRIG 4063 MONTAJE AVANZADO COMPACT V-MOUNT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4063-250x250.jpeg"
+    },
+    {
+      "sku": "4064B",
+      "name": "SMALLRIG 4064 MONTAJE COMPACT V-MOUNT",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4064B-250x250.jpeg"
+    },
+    {
+      "sku": "4073",
+      "name": "SMALLRIG 4073 BATERÍA F970 SERIE L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4073-250x250.jpg"
+    },
+    {
+      "sku": "4074",
+      "name": "SMALLRIG 4074 BATERÍA REEMPLAZO DE NP-FZ100",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4074-250x250.jpeg"
+    },
+    {
+      "sku": "4081",
+      "name": "SMALLRIG 4081 CARGADOR DUAL USB PARA SERIE SONY FW50",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4081-250x250.jpeg"
+    },
+    {
+      "sku": "4086",
+      "name": "SMALLRIG 4086 CARGADOR USB PARA BATERÍAS SERIE L",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/40863-250x250.jpeg"
+    },
+    {
+      "sku": "4100",
+      "name": "SMALLRIG 4100 MOBILE KIT PARA IPHONE 14 PRO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4100n-250x250.jpg"
+    },
+    {
+      "sku": "4102",
+      "name": "SMALLRIG 4102 SUPER CLAMP CON MICRO CABEZAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4102-250x250.jpeg"
+    },
+    {
+      "sku": "4104",
+      "name": "SMALLRIG 4104 CABEZAL DE FLUIDO CON SISTEMA VERTICAL",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4104-250x250.jpeg"
+    },
+    {
+      "sku": "4107",
+      "name": "SMALLRIG 4107 ESTUCHE PARA MEMORIAS CFEXPRESS A & SD",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4107-250x250.jpeg"
+    },
+    {
+      "sku": "4114",
+      "name": "SMALLRIG 4114 MONTAJE DE CÁMARA CON VENTOSA DE 6″",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4114-250x250.jpeg"
+    },
+    {
+      "sku": "4117",
+      "name": "SMALLRIG 4117 ULTRA COMPACTO TRIPODE MINI 1/4\"-20",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4117-250x250.jpeg"
+    },
+    {
+      "sku": "4118",
+      "name": "SMALLRIG 4118 CORREA DE HOMBRO DJI RS3, RS3 PRO Y RS2",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4118-250x250.jpeg"
+    },
+    {
+      "sku": "4119C",
+      "name": "SMALLRIG 4119C CASE PARA OSMO ACTION DJI",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4119-250x250.jpeg"
+    },
+    {
+      "sku": "4121",
+      "name": "SMALLRIG 4121 VIDEO KIT BASICO PARA SMARTPHONES",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4121n-250x250.jpeg"
+    },
+    {
+      "sku": "4122B",
+      "name": "SMALLRIG 4122 VENTOSA DE 4\" CON RIEL NATO",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4122-250x250.jpeg"
+    },
+    {
+      "sku": "4123",
+      "name": "SMALLRIG 4123 BRAZO CON SISTEMA MODULAR DE BOLA PARA FX6",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4123-250x250.jpeg"
+    },
+    {
+      "sku": "4124",
+      "name": "SMALLRIG 4124 KIT JAULA PARA SONY PXW-FX6",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4124-250x250.jpeg"
+    },
+    {
+      "sku": "4125",
+      "name": "SMALLRIG 4125 KIT SOPORTE DE HOMBRO PARA SONY PXW-FX6",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4125-250x250.jpg"
+    },
+    {
+      "sku": "4126",
+      "name": "SMALLRIG 4126 DISCO COMPACTO MULTI PLEGABLE 22\" (56CM) 5 EN 1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/41284-250x250.jpeg"
+    },
+    {
+      "sku": "4128",
+      "name": "SMALLRIG 4128 DISCO REFLECTOR MULTI PLEGABLE 32\" (80CM) 5 EN 1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4130-250x250.jpeg"
+    },
+    {
+      "sku": "4130",
+      "name": "SMALLRIG 4130 DISCO REFLECTOR MULTI PLEGABLE 42\" (107CM) 5 EN 1",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4130-250x250.jpeg"
+    },
+    {
+      "sku": "4131",
+      "name": "SMALLRIG 4131 DISCO REFLECTOR MULTI 42\" (107CM) CON AGARRE",
+      "image": "https://davidandjoseph.cl/image/cache/catalog/SMALLRIG/4131-250x250.jpeg"
+    }
+  ]
+}

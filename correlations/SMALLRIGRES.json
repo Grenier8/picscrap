@@ -75,7 +75,7 @@
       },
       {
         "baseSKU": "3019",
-        "secondSKU": null
+        "secondSKU": "3019"
       },
       {
         "baseSKU": "2066B",
@@ -123,7 +123,7 @@
       },
       {
         "baseSKU": "2987",
-        "secondSKU": null
+        "secondSKU": "2987"
       },
       {
         "baseSKU": "4639",
@@ -155,11 +155,11 @@
       },
       {
         "baseSKU": "3157",
-        "secondSKU": null
+        "secondSKU": "3157"
       },
       {
         "baseSKU": "2989",
-        "secondSKU": null
+        "secondSKU": "2989"
       },
       {
         "baseSKU": "1598",

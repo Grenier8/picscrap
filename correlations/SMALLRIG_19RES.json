@@ -1,0 +1,206 @@
+{
+  "correlations": {
+    "correlation": [
+      {
+        "baseSKU": "2158",
+        "secondarySKU": "3238"
+      },
+      {
+        "baseSKU": "2896B",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3322",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "SAP2804",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "2795",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "2165C",
+        "secondarySKU": "2165C"
+      },
+      {
+        "baseSKU": "3164",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "MD3490",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "2957",
+        "secondarySKU": "2957"
+      },
+      {
+        "baseSKU": "3277",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "1135",
+        "secondarySKU": "1135"
+      },
+      {
+        "baseSKU": "2889",
+        "secondarySKU": "2889"
+      },
+      {
+        "baseSKU": "3498",
+        "secondarySKU": "3499"
+      },
+      {
+        "baseSKU": "2915",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3874",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "1798",
+        "secondarySKU": "1798"
+      },
+      {
+        "baseSKU": "4139",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "AAK2326",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "2059",
+        "secondarySKU": "2059"
+      },
+      {
+        "baseSKU": "4684",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "942",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4103B",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "838",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "1054",
+        "secondarySKU": "1054"
+      },
+      {
+        "baseSKU": "1053",
+        "secondarySKU": "1053"
+      },
+      {
+        "baseSKU": "1674",
+        "secondarySKU": "1674"
+      },
+      {
+        "baseSKU": "2905",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3324",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3192",
+        "secondarySKU": "3192"
+      },
+      {
+        "baseSKU": "3808",
+        "secondarySKU": "3808"
+      },
+      {
+        "baseSKU": "2903B",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3515B",
+        "secondarySKU": "3515C"
+      },
+      {
+        "baseSKU": "4015",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "3685",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4383",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "DBC2280",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4346",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4299",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "MD4150",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4124",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4779",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4638",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4637",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4324",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4348B",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4378",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4611",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4491",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4489",
+        "secondarySKU": null
+      },
+      {
+        "baseSKU": "4278",
+        "secondarySKU": null
+      }
+    ]
+  }
+}

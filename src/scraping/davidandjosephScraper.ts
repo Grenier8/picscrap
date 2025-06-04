@@ -15,7 +15,7 @@ import { upsertProducts } from "../api/products";
 import { Scraper } from "./scraper";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
 import { Browser, Page } from "puppeteer";
-import { getScrapProducts } from "../service/product";
+import { getScrapProductsJSON } from "../service/product";
 
 puppeteer.use(StealthPlugin());
 

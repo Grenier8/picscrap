@@ -54,3 +54,17 @@ export const createDir = (dir: string) => {
     fs.mkdirSync(dir);
   }
 };
+
+export const saveConversationToFile = (
+  conversation: { role: string; content: string }[],
+  filename: string
+) => {
+  const filePath = `conversations/${filename}.json`;
+  const dir = "conversations";
+
+  createDir(dir);
+
+  const jsonData = { conversation };
+  fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2), "utf-8");
+  console.log(`Conversation saved to ${filePath}`);
+};
