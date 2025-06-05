@@ -17,14 +17,14 @@ export async function scrapAllPages() {
   console.log("Webpages obtained: ", webpages.length);
 
   const scrapers: Scraper[] = [
-    new DavidAndJosephScraper(
-      webpages.find((w) => w.name === "David and Joseph")!
-    ),
+    // new DavidAndJosephScraper(
+    //   webpages.find((w) => w.name === "David and Joseph")!
+    // ),
     // new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
     // new RincónFotográficoScraper(
     //   webpages.find((w) => w.name === "Rincón Fotográfico")!
     // ),
-    // new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
+    new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
   ];
 
   const baseScrapers = scrapers.filter((s) => s.webpage.isBasePage);
@@ -62,19 +62,19 @@ export async function scrapAllPages() {
     allProducts.push(...products);
   }
 
-  // await upsertProducts(
-  //   allProducts.map(
-  //     (product) =>
-  //       ({
-  //         ...product,
-  //         Webpage: webpages.find((w) => w.url === product.webpage),
-  //         Brand: { name: product.brand },
-  //         BaseProduct: updatedBaseProducts.find(
-  //           (bp) => bp.sku === product.baseProductSku
-  //         ),
-  //       } as ProductDB)
-  //   )
-  // );
+  await upsertProducts(
+    allProducts.map(
+      (product) =>
+        ({
+          ...product,
+          Webpage: webpages.find((w) => w.url === product.webpage),
+          Brand: { name: product.brand },
+          BaseProduct: updatedBaseProducts.find(
+            (bp) => bp.sku === product.baseProductSku
+          ),
+        } as ProductDB)
+    )
+  );
 
   console.log("Ended scraping");
 }

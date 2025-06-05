@@ -24,8 +24,11 @@ export class DavidAndJosephScraper extends Scraper {
     super(webpage);
   }
 
-  async scrapeAllPages(browser: Browser, page: Page): Promise<ProductScrap[]> {
+  async scrapeAllPages(): Promise<ProductScrap[]> {
     const baseUrl = `${this.webpage.url}/index.php?route=product/search&search=&description=true&limit=100&page=`;
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    await this.setUserAgent(page);
     let currentPage = 1;
     const allProducts: ProductScrap[] = [];
     while (true) {
@@ -103,6 +106,7 @@ export class DavidAndJosephScraper extends Scraper {
             webpage: this.webpage.url,
           } as ProductScrap);
         }
+        console.log("Products obtained: ", products.length);
         if (!products || products.length === 0) {
           break;
         }
@@ -124,6 +128,8 @@ export class DavidAndJosephScraper extends Scraper {
         }
       }
     }
+    await browser.close();
+    console.log("Finished");
     return allProducts;
   }
 }

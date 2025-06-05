@@ -24,7 +24,11 @@ export class AperturaScraper extends Scraper {
     super(webpage);
   }
 
-  async scrapeAllPages(browser: Browser, page: Page): Promise<ProductScrap[]> {
+  async scrapeAllPages(): Promise<ProductScrap[]> {
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    await this.setUserAgent(page);
+
     const allProducts: ProductScrap[] = [];
     let currentPage = 1;
 
@@ -152,6 +156,7 @@ export class AperturaScraper extends Scraper {
         }
       }
     }
+    await browser.close();
     return allProducts;
   }
 }

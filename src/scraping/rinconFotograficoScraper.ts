@@ -23,8 +23,11 @@ export class RincónFotográficoScraper extends Scraper {
     super(webpage);
   }
 
-  async scrapeAllPages(browser: Browser, page: Page): Promise<ProductScrap[]> {
+  async scrapeAllPages(): Promise<ProductScrap[]> {
     const baseUrl = `${this.webpage.url}/search?q=&page=`;
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    await this.setUserAgent(page);
     let currentPage = 1;
     const allProducts: ProductScrap[] = [];
     while (true) {
@@ -132,6 +135,7 @@ export class RincónFotográficoScraper extends Scraper {
         }
       }
     }
+    await browser.close();
     return allProducts;
   }
 }

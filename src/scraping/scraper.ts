@@ -17,6 +17,7 @@ import {
 import { getScrapProductsJSON } from "../service/product";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
 import OpenAiService from "../service/openAi";
+import { getBrands } from "../api/brands";
 
 export abstract class Scraper {
   webpage: Webpage;
@@ -30,24 +31,17 @@ export abstract class Scraper {
 
   async getAllProducts(): Promise<ProductScrap[]> {
     console.log(`Started ${this.webpage.name} scraping`);
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
-    await this.setUserAgent(page);
-    const allProducts = await this.scrapeAllPages(browser, page);
+    const allProducts = await this.scrapeAllPages();
     console.log("All products obtained: ", allProducts.length);
 
     saveProductsToFile(allProducts, this.webpage.id);
-    await browser.close();
     console.log(`Ended ${this.webpage.name} scraping`);
     return allProducts;
   }
 
   async getProductsBySku(skus: string[]): Promise<ProductScrap[]> {
     console.log(`Started ${this.webpage.name} scraping`);
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
-    await this.setUserAgent(page);
-    const allProducts = await this.scrapeAllPages(browser, page);
+    const allProducts = await this.scrapeAllPages();
     console.log("All products obtained: ", allProducts.length);
 
     const filteredProducts = allProducts.filter((product: ProductScrap) =>
@@ -56,7 +50,6 @@ export abstract class Scraper {
     console.log("Filtered products: ", filteredProducts.length);
 
     saveProductsToFile(filteredProducts, this.webpage.id);
-    await browser.close();
     console.log(`Ended ${this.webpage.name} scraping`);
     return filteredProducts;
   }
@@ -65,11 +58,7 @@ export abstract class Scraper {
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
     console.log(`Started ${this.webpage.name} scraping`);
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
-    await this.setUserAgent(page);
-    // const allProducts = await this.scrapeAllPages(browser, page);
-    const allProducts = await getScrapProductsJSON(this.webpage);
+    const allProducts = await this.scrapeAllPages();
     console.log("All products obtained: ", allProducts.length);
     saveProductsToFile(allProducts, this.webpage.id);
 
@@ -95,7 +84,6 @@ export abstract class Scraper {
       filteredProducts.length
     );
 
-    await browser.close();
     console.log(`Ended ${this.webpage.name} scraping`);
     return filteredProducts;
   }
@@ -104,10 +92,8 @@ export abstract class Scraper {
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
     console.log(`Started ${this.webpage.name} scraping`);
-    // const browser = await puppeteer.launch({ headless: true });
-    // const page = await browser.newPage();
-    // await this.setUserAgent(page);
-    const allProducts = await getScrapProductsJSON(this.webpage);
+    // const allProducts = await getScrapProductsJSON(this.webpage);
+    const allProducts = await this.scrapeAllPages();
     console.log("All products obtained: ", allProducts.length);
     saveProductsToFile(allProducts, this.webpage.id);
 
@@ -115,7 +101,7 @@ export abstract class Scraper {
     const MAX_PRODUCTS = 100;
 
     // Asumimos una sola marca; puedes restaurar tu lógica original si hay varias
-    const brands = [{ name: "SMALLRIG" } as Brand];
+    const brands = await getBrands();
 
     for (const brand of brands) {
       const baseProductsByBrand = baseProducts.filter(
@@ -169,11 +155,11 @@ export abstract class Scraper {
               name: product.name,
               image: product.image || "",
             }));
-          saveAssistantProductsToFile(
-            baseProductsRequest,
-            secondaryProductsRequest,
-            brand.name + "_" + count
-          );
+          // saveAssistantProductsToFile(
+          //   baseProductsRequest,
+          //   secondaryProductsRequest,
+          //   brand.name + "_" + count
+          // );
 
           const openAiRequest = {
             baseProducts: baseProductsRequest,
@@ -193,9 +179,14 @@ export abstract class Scraper {
           const response = await this.openAiService.callAssistant(
             JSON.stringify(openAiRequest)
           );
-          console.log("openAiResponse", response);
+          console.log("AI Responded");
           // Store the assistant's response
           this.conversation.push({ role: "assistant", content: response });
+
+          if (!response) {
+            console.error("Error getting response from OpenAI");
+            continue;
+          }
           const openAiResponse = JSON.parse(response) as AssistantResponse;
           console.log(
             "openAiResponse total",
@@ -205,7 +196,7 @@ export abstract class Scraper {
             "openAiResponse BaseFound",
             openAiResponse.correlation.filter((c) => c.secondarySKU).length
           );
-          saveConversationToFile(this.conversation, `conversation_${count}`);
+          // saveConversationToFile(this.conversation, `conversation_${count}`);
 
           openAiResponse.correlation
             .filter((c) => c.secondarySKU)
@@ -247,7 +238,7 @@ export abstract class Scraper {
             }
           }
 
-          saveCorrelationsToFile(openAiResponse, brand.name + "_" + count);
+          // saveCorrelationsToFile(openAiResponse, brand.name + "_" + count);
           count++;
 
           // (Índices avanzan automáticamente en los bucles for)
@@ -270,6 +261,16 @@ export abstract class Scraper {
       }
     }
     console.log(
+      "Repeated products: ",
+      filteredProducts.filter(
+        (p, i) =>
+          filteredProducts.findIndex(
+            (p2) =>
+              p2.webpage === p.webpage && p2.baseProductSku === p.baseProductSku
+          ) !== i
+      ).length
+    );
+    console.log(
       `Filtered products: ${filteredProducts.length} of ${allProducts.length}`
     );
 
@@ -284,8 +285,5 @@ export abstract class Scraper {
     );
   }
 
-  protected abstract scrapeAllPages(
-    browser: Browser,
-    page: Page
-  ): Promise<ProductScrap[]>;
+  abstract scrapeAllPages(): Promise<ProductScrap[]>;
 }

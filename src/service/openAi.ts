@@ -19,11 +19,6 @@ export default class OpenAiService {
 
   async callAssistant(message: string): Promise<string> {
     const assistantId = process.env.OPENAI_ASSISTANT_ID || "";
-    console.log(
-      `[OpenAiService] callAssistant invoked. Assistant ID: ${
-        assistantId ? assistantId : "NOT FOUND"
-      }`
-    );
 
     if (assistantId === "") {
       console.log("[OpenAiService] Assistant ID not found");
@@ -34,14 +29,6 @@ export default class OpenAiService {
   }
 
   async sendMessage(message: string, assistantId: string) {
-    console.log(
-      `[OpenAiService] sendMessage called. Assistant ID: ${assistantId}`
-    );
-    console.log(
-      `[OpenAiService] Message: ${message.slice(0, 120)}${
-        message.length > 120 ? "..." : ""
-      }`
-    );
     // Número máximo de reintentos en caso de timeout
     const MAX_RETRIES = 3;
     // Timeout en milisegundos
@@ -53,11 +40,6 @@ export default class OpenAiService {
       options: RequestInit = {},
       timeout = TIMEOUT
     ) {
-      console.log(
-        `[OpenAiService] [fetchWithTimeout] Fetching: ${
-          typeof resource === "string" ? resource : "[Request Object]"
-        } with timeout ${timeout}ms`
-      );
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), timeout);
       try {
@@ -76,10 +58,11 @@ export default class OpenAiService {
           console.warn(
             `[OpenAiService] [fetchWithTimeout] Request timed out after ${timeout}ms`
           );
-          throw new Error("Request timed out");
+          console.error("Request timed out");
+          return null;
         }
         console.error(`[OpenAiService] [fetchWithTimeout] Error:`, error);
-        throw error;
+        return null;
       }
     }
 
@@ -111,13 +94,18 @@ export default class OpenAiService {
                   typeof resource === "string" ? resource : "[Request Object]"
                 }`
               );
-              throw error;
+              console.error("Max retries reached");
+              return null;
             }
             console.warn(
               `[OpenAiService] [retryFetchWithTimeout] Timeout, retrying (${attempt}/${MAX_RETRIES})...`
             );
           } else {
-            throw error;
+            console.error(
+              `[OpenAiService] [retryFetchWithTimeout] Error:`,
+              error
+            );
+            return null;
           }
         }
       }
@@ -126,7 +114,6 @@ export default class OpenAiService {
     // Crear un thread
     let threadRes;
     try {
-      console.log("[OpenAiService] Creating thread...");
       threadRes = await retryFetchWithTimeout(
         "https://api.openai.com/v1/threads",
         {
@@ -138,16 +125,14 @@ export default class OpenAiService {
           },
         }
       );
-      console.log("[OpenAiService] Thread created. Status:", threadRes?.status);
     } catch (error) {
       console.error("[OpenAiService] Error creating thread:", error);
-      throw error;
+      return null;
     }
     const thread = await threadRes?.json();
 
     // Añadir un mensaje al thread
     try {
-      console.log(`[OpenAiService] Adding message to thread ${thread.id}...`);
       await retryFetchWithTimeout(
         `https://api.openai.com/v1/threads/${thread.id}/messages`,
         {
@@ -163,17 +148,15 @@ export default class OpenAiService {
           }),
         }
       );
-      console.log(`[OpenAiService] Message added to thread ${thread.id}.`);
     } catch (error) {
       console.error(
         `[OpenAiService] Error sending message to thread ${thread.id}:`,
         error
       );
-      throw error;
+      return null;
     }
 
     // Ejecutar el asistente
-    console.log(`[OpenAiService] Starting run for thread ${thread.id}...`);
     const runRes = await fetch(
       `https://api.openai.com/v1/threads/${thread.id}/runs`,
       {
@@ -190,10 +173,12 @@ export default class OpenAiService {
     );
     const run = await runRes.json();
     if (!run.id) {
-      console.error("[OpenAiService] Error: run response does not contain an id.", run);
-      throw new Error(`[OpenAiService] Error starting run: ${JSON.stringify(run)}`);
+      console.error(
+        "[OpenAiService] Error: run response does not contain an id.",
+        run
+      );
+      return null;
     }
-    console.log(`[OpenAiService] Run started. Run ID: ${run.id}`);
 
     // Esperar a que termine el run
     let runStatus;
@@ -211,18 +196,22 @@ export default class OpenAiService {
       );
       runStatus = await statusRes.json();
       if (!runStatus.status) {
-        console.error("[OpenAiService] Error: run status response does not contain a status.", runStatus);
-        throw new Error(`[OpenAiService] Error fetching run status: ${JSON.stringify(runStatus)}`);
+        console.error(
+          "[OpenAiService] Error: run status response does not contain a status.",
+          runStatus
+        );
+        return null;
       }
-      console.log(`[OpenAiService] Run status: ${runStatus.status}`);
       maxStatusChecks--;
       if (maxStatusChecks <= 0) {
-        throw new Error("[OpenAiService] Max run status checks reached, aborting.");
+        console.error(
+          "[OpenAiService] Max run status checks reached, aborting."
+        );
+        return null;
       }
     } while (runStatus.status !== "completed");
 
     // Obtener los mensajes de respuesta
-    console.log(`[OpenAiService] Fetching messages for thread ${thread.id}...`);
     const messagesRes = await fetch(
       `https://api.openai.com/v1/threads/${thread.id}/messages`,
       {
@@ -233,17 +222,9 @@ export default class OpenAiService {
       }
     );
     const messages = await messagesRes.json();
-    console.log(
-      `[OpenAiService] Messages fetched. Count: ${messages.data?.length}`
-    );
 
     const respuesta = messages.data.find((m: any) => m.role === "assistant")
       ?.content[0]?.text?.value;
-    console.log(
-      `[OpenAiService] Assistant response: ${
-        respuesta ? respuesta.slice(0, 120) : "No response"
-      }${respuesta && respuesta.length > 120 ? "..." : ""}`
-    );
     return respuesta;
   }
 
