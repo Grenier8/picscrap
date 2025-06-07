@@ -147,3 +147,11 @@ dist
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+
+*.png
+
+.conversation
+.correlations
+.db
+.csv
