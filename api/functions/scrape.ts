@@ -1,4 +1,4 @@
-import { triggerScrape } from "../scraper";
+import { triggerScrape } from "../../src/api/scraper";
 
 export default async function handler(req: any, res: any) {
   try {
