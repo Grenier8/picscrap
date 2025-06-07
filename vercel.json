@@ -2,14 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/index.js",
+      "src": "api/functions/scrape.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/functions/cron.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/functions/health.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "dist/index.js"
+      "src": "/api/scrape",
+      "dest": "api/functions/scrape.ts"
+    },
+    {
+      "src": "/cron/scrape",
+      "dest": "api/functions/cron.ts"
+    },
+    {
+      "src": "/health",
+      "dest": "api/functions/health.ts"
     }
   ]
 }
