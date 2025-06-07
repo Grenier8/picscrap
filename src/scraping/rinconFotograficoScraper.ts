@@ -35,11 +35,7 @@ export class RincónFotográficoScraper extends Scraper {
       console.log(`Navigating to ${url}`);
       try {
         await page.goto(url, { waitUntil: "networkidle2" });
-        const dir = `scans/${this.webpage.name}`;
-        createDir(dir);
-        await page.screenshot({
-          path: `${dir}/page-${currentPage}.png`,
-        });
+
         const productBlocks = await page.$$(".product-block");
         const products: ProductScrap[] = [];
         for (const block of productBlocks) {
@@ -124,13 +120,11 @@ export class RincónFotográficoScraper extends Scraper {
         currentPage++;
         await delay(2);
       } catch (error: any) {
-        console.error(`Error navigating to ${url}:`, error);
+        await this.logPageScrapError(url, error.message);
         if (error.message.includes("429")) {
-          console.log("HTTP 429 encountered. Retrying with backoff...");
           await delay(5 * currentPage);
           continue;
         } else {
-          console.error(`Error navigating to ${url}:`, error);
           break;
         }
       }

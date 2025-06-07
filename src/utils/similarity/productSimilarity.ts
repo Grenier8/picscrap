@@ -5,6 +5,7 @@ import {
   getStringSimilarityDiceCoefficient,
   getStringSimilarityJaroWinkler,
 } from "./stringSimilarity";
+import { Logger } from "../../utils/logger";
 
 // Simple fast image hash similarity using base64 string length difference as a placeholder.
 // Replace this with a real image hash (pHash/dHash/aHash) for better results.
@@ -41,7 +42,7 @@ export async function getBestMatch(
       p.brand.toUpperCase().trim() === normalizedBrand
   );
 
-  if (LOG) console.log("Searching for: ", baseProduct.sku);
+  if (LOG) Logger.log(`Searching for: ${baseProduct.sku}`);
 
   // 1. Precompute name and sku similarities. Only keep those passing name threshold.
   const candidates = [] as Array<{
@@ -56,7 +57,7 @@ export async function getBestMatch(
       baseProduct.sku &&
       product.sku.toUpperCase() === baseProduct.sku.toUpperCase()
     ) {
-      if (LOG) console.log("Exact SKU match found:", product.sku);
+      if (LOG) Logger.log(`Exact SKU match found: ${product.sku}`);
       return product;
     }
 
@@ -64,7 +65,7 @@ export async function getBestMatch(
       normalizeString(baseProduct.name),
       normalizeString(product.name)
     );
-    // if (LOG) console.log(`[${product.sku}] Name similarity: ${nameSimilarity}`);
+    if (LOG) Logger.log(`[${product.sku}] Name similarity: ${nameSimilarity}`);
     if (nameSimilarity < 0.6) continue;
 
     const skuSimilarity = getStringSimilarityDiceCoefficient(
@@ -117,7 +118,7 @@ export async function getBestMatch(
       SKU_WEIGHT * adjustedSkuSim;
 
     if (LOG) {
-      console.log(
+      Logger.log(
         `[${product.sku}] NameSim: ${nameSimilarity.toFixed(
           2
         )}, ImgSim: ${imageSimilarity.toFixed(
@@ -134,17 +135,17 @@ export async function getBestMatch(
 
   if (LOG) {
     if (bestMatch && bestScore >= MIN_SCORE) {
-      console.log(
+      Logger.log(
         `Best match found: ${bestMatch.sku} with score ${bestScore.toFixed(2)}`
       );
     } else if (bestMatch) {
-      console.log(
+      Logger.log(
         `Closest match (below threshold): ${
           bestMatch.sku
         } with score ${bestScore.toFixed(2)}`
       );
     } else {
-      console.log("No match found.");
+      Logger.log("No match found.");
     }
   }
 

@@ -146,12 +146,11 @@ export class AperturaScraper extends Scraper {
         currentPage++;
         await delay(2);
       } catch (error: any) {
+        await this.logPageScrapError(menuLink, error.message);
         if (error.message.includes("429")) {
-          console.log("HTTP 429 encountered. Retrying with backoff...");
           await delay(5 * currentPage);
           continue;
         } else {
-          console.error(`Error navigating to ${menuLink}:`, error);
           break;
         }
       }

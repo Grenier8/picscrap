@@ -82,3 +82,15 @@ export interface AssistantRequest {
 export interface AssistantResponse {
   correlation: AssistantCorrelation[];
 }
+
+export interface Log {
+  id?: number;
+  executionId: string;
+  type: string;
+  webpage: string;
+  event: string;
+  message: string;
+  duration?: string;
+  url?: string;
+  data: string;
+}

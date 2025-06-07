@@ -106,7 +106,6 @@ export class DavidAndJosephScraper extends Scraper {
             webpage: this.webpage.url,
           } as ProductScrap);
         }
-        console.log("Products obtained: ", products.length);
         if (!products || products.length === 0) {
           break;
         }
@@ -118,9 +117,8 @@ export class DavidAndJosephScraper extends Scraper {
         currentPage++;
         await delay(2);
       } catch (error: any) {
-        console.error(`Error navigating to ${url}:`, error);
-        if (error.message && error.message.includes("429")) {
-          console.log("HTTP 429 encountered. Retrying with backoff...");
+        await this.logPageScrapError(url, error.message);
+        if (error.message.includes("429")) {
           await delay(5 * currentPage);
           continue;
         } else {
@@ -129,7 +127,6 @@ export class DavidAndJosephScraper extends Scraper {
       }
     }
     await browser.close();
-    console.log("Finished");
     return allProducts;
   }
 }

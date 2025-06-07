@@ -18,6 +18,7 @@ import { getScrapProductsJSON } from "../service/product";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
 import OpenAiService from "../service/openAi";
 import { getBrands } from "../api/brands";
+import { Logger } from "../utils/logger";
 
 export abstract class Scraper {
   webpage: Webpage;
@@ -30,43 +31,42 @@ export abstract class Scraper {
   }
 
   async getAllProducts(): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
     const allProducts = await this.scrapeAllPages();
-    console.log("All products obtained: ", allProducts.length);
-
     saveProductsToFile(allProducts, this.webpage.id);
-    console.log(`Ended ${this.webpage.name} scraping`);
     return allProducts;
   }
 
-  async getProductsBySku(skus: string[]): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
+  async getProductsBySku(
+    baseProducts: BaseProductDB[]
+  ): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
-    console.log("All products obtained: ", allProducts.length);
-
     const filteredProducts = allProducts.filter((product: ProductScrap) =>
-      skus.includes(product.sku)
+      baseProducts.map((bp) => bp.sku).includes(product.sku)
     );
-    console.log("Filtered products: ", filteredProducts.length);
+    Logger.filterProductsResult(
+      this.webpage.name,
+      allProducts.length,
+      filteredProducts.length,
+      "filter-by-sku",
+      "0"
+    );
 
     saveProductsToFile(filteredProducts, this.webpage.id);
-    console.log(`Ended ${this.webpage.name} scraping`);
     return filteredProducts;
   }
 
   async getProductsBySimilarity(
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
     const allProducts = await this.scrapeAllPages();
-    console.log("All products obtained: ", allProducts.length);
     saveProductsToFile(allProducts, this.webpage.id);
+
+    const start = Date.now();
 
     let count = 0;
     const filteredProducts: ProductScrap[] = [];
     for (const baseProduct of baseProducts) {
       count++;
-      console.log(`Processing product ${count}/${baseProducts.length}`);
       const bestMatch = await getBestMatch(baseProduct, allProducts, {
         imageWeight: baseProduct.image ? 0.3 : 0,
       });
@@ -78,25 +78,24 @@ export abstract class Scraper {
         });
       }
     }
-    console.log(
-      "Filtered products: ",
-      allProducts.length,
-      filteredProducts.length
-    );
 
-    console.log(`Ended ${this.webpage.name} scraping`);
+    Logger.filterProductsResult(
+      this.webpage.name,
+      allProducts.length,
+      filteredProducts.length,
+      "filter-by-similarity",
+      ((Date.now() - start) / 1000 / 60).toFixed(2) + "m"
+    );
     return filteredProducts;
   }
 
   async getProductsWithOpenAI(
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
-    console.log(`Started ${this.webpage.name} scraping`);
-    // const allProducts = await getScrapProductsJSON(this.webpage);
     const allProducts = await this.scrapeAllPages();
-    console.log("All products obtained: ", allProducts.length);
     saveProductsToFile(allProducts, this.webpage.id);
 
+    const start = Date.now();
     const filteredProducts: ProductScrap[] = [];
     const MAX_PRODUCTS = 100;
 
@@ -109,12 +108,6 @@ export abstract class Scraper {
       );
       let secondaryProductsByBrand = allProducts.filter(
         (product) => product.brand === brand.name
-      );
-      console.log(
-        "Products by brand: ",
-        brand.name,
-        baseProductsByBrand.length,
-        secondaryProductsByBrand.length
       );
 
       // Nuevo: Por cada batch de base, recorre todos los secondary en batches
@@ -165,11 +158,6 @@ export abstract class Scraper {
             baseProducts: baseProductsRequest,
             secondaryProducts: secondaryProductsRequest,
           } as AssistantRequest;
-          console.log("openAiRequest Base", openAiRequest.baseProducts.length);
-          console.log(
-            "openAiRequest Products",
-            openAiRequest.secondaryProducts.length
-          );
 
           // Store the outgoing user message
           this.conversation.push({
@@ -179,7 +167,6 @@ export abstract class Scraper {
           const response = await this.openAiService.callAssistant(
             JSON.stringify(openAiRequest)
           );
-          console.log("AI Responded");
           // Store the assistant's response
           this.conversation.push({ role: "assistant", content: response });
 
@@ -188,15 +175,6 @@ export abstract class Scraper {
             continue;
           }
           const openAiResponse = JSON.parse(response) as AssistantResponse;
-          console.log(
-            "openAiResponse total",
-            openAiResponse.correlation.length
-          );
-          console.log(
-            "openAiResponse BaseFound",
-            openAiResponse.correlation.filter((c) => c.secondarySKU).length
-          );
-          // saveConversationToFile(this.conversation, `conversation_${count}`);
 
           openAiResponse.correlation
             .filter((c) => c.secondarySKU)
@@ -238,10 +216,7 @@ export abstract class Scraper {
             }
           }
 
-          // saveCorrelationsToFile(openAiResponse, brand.name + "_" + count);
           count++;
-
-          // (Índices avanzan automáticamente en los bucles for)
         }
         baseProductsRequest.forEach((product) => {
           if (product.bestMatch) {
@@ -260,22 +235,23 @@ export abstract class Scraper {
         });
       }
     }
-    console.log(
-      "Repeated products: ",
-      filteredProducts.filter(
-        (p, i) =>
-          filteredProducts.findIndex(
-            (p2) =>
-              p2.webpage === p.webpage && p2.baseProductSku === p.baseProductSku
-          ) !== i
-      ).length
+    // console.log(
+    //   "Repeated products: ",
+    //   filteredProducts.filter(
+    //     (p, i) =>
+    //       filteredProducts.findIndex(
+    //         (p2) =>
+    //           p2.webpage === p.webpage && p2.baseProductSku === p.baseProductSku
+    //       ) !== i
+    //   ).length
+    // );
+    Logger.filterProductsResult(
+      this.webpage.name,
+      allProducts.length,
+      filteredProducts.length,
+      "filter-by-openai",
+      ((Date.now() - start) / 1000 / 60).toFixed(2) + "m"
     );
-    console.log(
-      `Filtered products: ${filteredProducts.length} of ${allProducts.length}`
-    );
-
-    // await browser.close();
-    console.log(`Ended ${this.webpage.name} scraping`);
     return filteredProducts;
   }
 
@@ -283,6 +259,18 @@ export abstract class Scraper {
     await page.setUserAgent(
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
     );
+  }
+
+  protected async logPageScrapError(url: string, error: string) {
+    Logger.pageScrapError(this.webpage.name, url, error);
+  }
+
+  protected async logProductScrapError(url: string, error: string) {
+    Logger.productScrapError(this.webpage.name, url, error);
+  }
+
+  protected async logInfo(message: string) {
+    Logger.info(message);
   }
 
   abstract scrapeAllPages(): Promise<ProductScrap[]>;

@@ -23,15 +23,30 @@ export class PicslabScraper extends Scraper {
     super(webpage);
   }
 
-  async scrapeAllPages(browser: Browser, page: Page): Promise<ProductScrap[]> {
+  async scrapeAllPages(): Promise<ProductScrap[]> {
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    await this.setUserAgent(page);
+
     const baseUrl = `${this.webpage.url}/search?q=&page=`;
     let currentPage = 1;
     const allProducts: ProductScrap[] = [];
     while (true) {
       const url = `${baseUrl}${currentPage}`;
-      console.log(`Navigating to ${url}`);
+      this.logInfo(`Navigating to ${url}`);
       try {
-        await page.goto(url, { waitUntil: "networkidle2" });
+        try {
+          await page.goto(url, {
+            waitUntil: "networkidle2",
+            timeout: 60000,
+          });
+        } catch (error: any) {
+          this.logPageScrapError(url, error.message);
+          await page.goto(url, {
+            waitUntil: "domcontentloaded",
+            timeout: 30000,
+          });
+        }
         const dir = `scans/${this.webpage.name}`;
         createDir(dir);
         await page.screenshot({ path: `${dir}/page-${currentPage}.png` });
@@ -40,7 +55,6 @@ export class PicslabScraper extends Scraper {
         const products: ProductScrap[] = [];
 
         for (const block of productBlocks) {
-          // Helper to get innerText
           const getText = async (selector: string): Promise<string | null> => {
             const el = await block.$(selector);
             if (!el) return null;
@@ -49,7 +63,6 @@ export class PicslabScraper extends Scraper {
             );
             return text || null;
           };
-          // Helper to get href
           const getHref = async (selector: string): Promise<string | null> => {
             const el = await block.$(selector);
             if (!el) return null;
@@ -58,7 +71,6 @@ export class PicslabScraper extends Scraper {
             );
             return href || null;
           };
-          // Helper to get src
           const getSrc = async (selector: string): Promise<string | null> => {
             const el = await block.$(selector);
             if (!el) return null;
@@ -77,13 +89,24 @@ export class PicslabScraper extends Scraper {
           if (link && !priceRaw) {
             const productPage = await browser.newPage();
             try {
-              await productPage.goto(link, { waitUntil: "networkidle2" });
+              try {
+                await productPage.goto(link, {
+                  waitUntil: "networkidle2",
+                  timeout: 60000,
+                });
+              } catch (error: any) {
+                this.logProductScrapError(link, error.message);
+                await productPage.goto(link, {
+                  waitUntil: "domcontentloaded",
+                  timeout: 30000,
+                });
+              }
               const priceEl = await productPage.$(".product_price");
               priceRaw = priceEl
                 ? await priceEl.evaluate((e) => (e as HTMLElement).innerText)
                 : null;
-            } catch (error) {
-              console.error(`❌ Error en ${link}:`, error);
+            } catch (error: any) {
+              this.logProductScrapError(link, error.message);
             } finally {
               await productPage.close();
             }
@@ -122,17 +145,15 @@ export class PicslabScraper extends Scraper {
         currentPage++;
         await delay(2);
       } catch (error: any) {
-        if (error.message && error.message.includes("429")) {
-          console.log("HTTP 429 encountered. Retrying with backoff...");
+        await this.logPageScrapError(url, error.message);
+        if (error.message.includes("429")) {
           await delay(5 * currentPage);
           continue;
         } else {
-          console.error(`Error navigating to ${url}:`, error);
           break;
         }
       }
     }
-    console.log("All products obtained: ", allProducts.length);
     return allProducts;
   }
 }

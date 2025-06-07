@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import { Logger } from "../utils/logger";
 
 export default class OpenAiService {
   apiKey: string;
@@ -7,9 +8,9 @@ export default class OpenAiService {
   constructor() {
     this.apiKey = process.env.OPENAI_API_KEY || "";
     if (this.apiKey) {
-      console.log("[OpenAiService] API key loaded.");
+      Logger.log("[OpenAiService] API key loaded.");
     } else {
-      console.warn("[OpenAiService] API key is missing!");
+      Logger.log("[OpenAiService] API key is missing!");
     }
     this.openAi = new OpenAI({
       apiKey: this.apiKey,
@@ -21,7 +22,7 @@ export default class OpenAiService {
     const assistantId = process.env.OPENAI_ASSISTANT_ID || "";
 
     if (assistantId === "") {
-      console.log("[OpenAiService] Assistant ID not found");
+      Logger.log("[OpenAiService] Assistant ID not found");
       throw new Error("Error: Id asistente no encontrado");
     } else {
       return await this.sendMessage(message, assistantId);
@@ -48,20 +49,25 @@ export default class OpenAiService {
           signal: controller.signal,
         });
         clearTimeout(id);
-        console.log(
+        Logger.log(
           `[OpenAiService] [fetchWithTimeout] Response status: ${response.status}`
         );
         return response;
       } catch (error) {
         clearTimeout(id);
         if (error instanceof Error && error.name === "AbortError") {
-          console.warn(
+          Logger.warn(
             `[OpenAiService] [fetchWithTimeout] Request timed out after ${timeout}ms`
           );
-          console.error("Request timed out");
+          Logger.error("Request timed out");
           return null;
         }
-        console.error(`[OpenAiService] [fetchWithTimeout] Error:`, error);
+        Logger.openAiError(
+          "OpenAI",
+          "",
+          "Error: " +
+            (typeof resource === "string" ? resource : "[Request Object]")
+        );
         return null;
       }
     }
@@ -76,7 +82,7 @@ export default class OpenAiService {
       while (attempt < MAX_RETRIES) {
         try {
           if (attempt > 0) {
-            console.log(
+            Logger.log(
               `[OpenAiService] [retryFetchWithTimeout] Retry attempt ${
                 attempt + 1
               } for: ${
@@ -89,21 +95,19 @@ export default class OpenAiService {
           if (error instanceof Error && error.message === "Request timed out") {
             attempt++;
             if (attempt >= MAX_RETRIES) {
-              console.error(
-                `[OpenAiService] [retryFetchWithTimeout] Max retries reached for: ${
-                  typeof resource === "string" ? resource : "[Request Object]"
-                }`
+              Logger.openAiError(
+                "OpenAI",
+                "",
+                "Max retries reached for: " +
+                  (typeof resource === "string" ? resource : "[Request Object]")
               );
-              console.error("Max retries reached");
-              return null;
             }
-            console.warn(
-              `[OpenAiService] [retryFetchWithTimeout] Timeout, retrying (${attempt}/${MAX_RETRIES})...`
-            );
           } else {
-            console.error(
-              `[OpenAiService] [retryFetchWithTimeout] Error:`,
-              error
+            Logger.openAiError(
+              "OpenAI",
+              "",
+              "Error: " +
+                (typeof resource === "string" ? resource : "[Request Object]")
             );
             return null;
           }
@@ -126,7 +130,7 @@ export default class OpenAiService {
         }
       );
     } catch (error) {
-      console.error("[OpenAiService] Error creating thread:", error);
+      Logger.openAiError("OpenAI", "", "Error creating thread: " + error);
       return null;
     }
     const thread = await threadRes?.json();
@@ -149,9 +153,10 @@ export default class OpenAiService {
         }
       );
     } catch (error) {
-      console.error(
-        `[OpenAiService] Error sending message to thread ${thread.id}:`,
-        error
+      Logger.openAiError(
+        "OpenAI",
+        "",
+        "Error sending message to thread ${thread.id}: " + error
       );
       return null;
     }
@@ -173,9 +178,10 @@ export default class OpenAiService {
     );
     const run = await runRes.json();
     if (!run.id) {
-      console.error(
-        "[OpenAiService] Error: run response does not contain an id.",
-        run
+      Logger.openAiError(
+        "OpenAI",
+        "",
+        "Error: run response does not contain an id. " + run
       );
       return null;
     }
@@ -196,16 +202,19 @@ export default class OpenAiService {
       );
       runStatus = await statusRes.json();
       if (!runStatus.status) {
-        console.error(
-          "[OpenAiService] Error: run status response does not contain a status.",
-          runStatus
+        Logger.openAiError(
+          "OpenAI",
+          "",
+          "Error: run status response does not contain a status. " + runStatus
         );
         return null;
       }
       maxStatusChecks--;
       if (maxStatusChecks <= 0) {
-        console.error(
-          "[OpenAiService] Max run status checks reached, aborting."
+        Logger.openAiError(
+          "OpenAI",
+          "",
+          "Max run status checks reached, aborting."
         );
         return null;
       }
@@ -236,7 +245,11 @@ export default class OpenAiService {
       });
       return response.choices[0].message.content;
     } catch (error) {
-      console.error("Error fetching OpenAI response:", error);
+      Logger.openAiError(
+        "OpenAI",
+        "",
+        "Error fetching OpenAI response: " + error
+      );
       return "Error al obtener respuesta de OpenAI";
     }
   }
