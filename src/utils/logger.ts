@@ -92,8 +92,6 @@ export class Logger {
     });
   }
 
-
-
   static async productScrapError(webpage: string, url: string, error: string) {
     this.error(`Scraping error for webpage: ${webpage}`);
     await createLog({
@@ -145,28 +143,16 @@ export class Logger {
     });
   }
 
-  static async scrapingError(error: string | Error) {
-    const errorMessage = typeof error === 'string' ? error : error.message;
-    const stackTrace = typeof error === 'object' && error.stack ? error.stack : '';
-    
-    console.error('Scraping error:', errorMessage);
-    
-    if (this.executionId) {
-      try {
-        await createLog({
-          executionId: this.executionId,
-          type: "ERROR",
-          webpage: "-",
-          event: "scraping-error",
-          message: `Scraping error: ${errorMessage}`,
-          data: stackTrace,
-        });
-      } catch (logError) {
-        console.error('Failed to log scraping error:', logError);
-      }
-    } else {
-      console.error('No executionId available for error logging');
-    }
+  static async scrapingError(error: string) {
+    this.error(`Scraping error`);
+    await createLog({
+      executionId: this.executionId,
+      type: "ERROR",
+      webpage: "-",
+      event: "scraping-error",
+      message: `Scraping error`,
+      data: error,
+    });
   }
 
   static log(message: string) {
