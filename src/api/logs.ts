@@ -9,22 +9,48 @@ export async function createLog(log: Log) {
     await prisma.$connect();
     console.log('Successfully connected to Prisma');
     
-    console.log('Creating log in database...');
-    const createdLog = await prisma.log.create({
-      data: {
-        executionId: log.executionId,
-        type: log.type,
-        event: log.event,
-        webpage: log.webpage,
-        message: log.message,
-        duration: log.duration || "",
-        url: log.url || "",
-        data: log.data || "",
-      },
+    console.log('Creating log in database with data:', {
+      executionId: log.executionId,
+      type: log.type,
+      event: log.event,
+      webpage: log.webpage,
+      message: log.message.substring(0, 100), // First 100 chars to avoid huge logs
+      hasDuration: !!log.duration,
+      hasUrl: !!log.url,
+      dataLength: log.data ? log.data.length : 0
     });
     
-    console.log('Successfully created log:', createdLog.id);
-    return createdLog;
+    try {
+      const createdLog = await prisma.log.create({
+        data: {
+          executionId: log.executionId,
+          type: log.type,
+          event: log.event,
+          webpage: log.webpage,
+          message: log.message,
+          duration: log.duration || "",
+          url: log.url || "",
+          data: log.data || "",
+        },
+      });
+      
+      console.log('Successfully created log with ID:', createdLog.id);
+      return createdLog;
+    } catch (error: unknown) {
+      const createError = error as Error & {
+        code?: string;
+        meta?: any;
+      };
+      
+      console.error('Error in prisma.log.create:', {
+        name: createError.name,
+        message: createError.message,
+        code: createError.code,
+        meta: createError.meta,
+        stack: createError.stack
+      });
+      throw createError;
+    }
   } catch (error: unknown) {
     console.error('Error in createLog:');
     
