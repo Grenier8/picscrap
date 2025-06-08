@@ -18,31 +18,31 @@ export function getScrapingState(): ScrapingState {
 
 async function handleScraping(): Promise<void> {
   const startTime = Date.now();
-  
+
   try {
     isScrapingInProgress = true;
-    console.log('Starting scraping process...');
-    
+    console.log("Starting scraping process...");
+
     await scrapAllPages(FilteringType.SIMILARITY);
-    
+
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
     console.log(`Scraping completed successfully in ${duration}s`);
     await Logger.scrapEnd(duration);
   } catch (error: any) {
-    const errorMessage = error.message || 'Unknown error during scraping';
-    console.error('Error during scraping:', error);
-    
+    const errorMessage = error.message || "Unknown error during scraping";
+    console.error("Error during scraping:", error);
+
     try {
       await Logger.scrapingError(error);
     } catch (logError) {
-      console.error('Failed to log scraping error:', logError);
+      console.error("Failed to log scraping error:", logError);
     }
-    
+
     throw new Error(`Scraping failed: ${errorMessage}`);
   } finally {
     isScrapingInProgress = false;
     scrapingPromise = null;
-    console.log('Scraping process completed');
+    console.log("Scraping process completed");
   }
 }
 
@@ -62,7 +62,7 @@ export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
       };
     }
 
-    scrapingPromise = handleScraping();
+    await handleScraping();
 
     return {
       result: "success",
