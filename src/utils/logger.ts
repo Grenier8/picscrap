@@ -8,6 +8,7 @@ export class Logger {
   static async scrapStart(executionId: string) {
     this.executionId = executionId;
     this.info("Scraping started");
+    this.info("Test log");
     await createLog({
       executionId,
       type: "INFO",
