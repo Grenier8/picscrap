@@ -17,14 +17,32 @@ export function getScrapingState(): ScrapingState {
 }
 
 async function handleScraping(): Promise<void> {
+  const startTime = Date.now();
+  
   try {
     isScrapingInProgress = true;
+    console.log('Starting scraping process...');
+    
     await scrapAllPages(FilteringType.SIMILARITY);
-    isScrapingInProgress = false;
+    
+    const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+    console.log(`Scraping completed successfully in ${duration}s`);
+    await Logger.scrapEnd(duration);
   } catch (error: any) {
-    Logger.scrapingError(error.message);
+    const errorMessage = error.message || 'Unknown error during scraping';
+    console.error('Error during scraping:', error);
+    
+    try {
+      await Logger.scrapingError(error);
+    } catch (logError) {
+      console.error('Failed to log scraping error:', logError);
+    }
+    
+    throw new Error(`Scraping failed: ${errorMessage}`);
+  } finally {
     isScrapingInProgress = false;
-    throw error;
+    scrapingPromise = null;
+    console.log('Scraping process completed');
   }
 }
 
