@@ -26,6 +26,7 @@ export class PicslabScraper extends Scraper {
       try {
         await page.goto(url, {
           waitUntil: "networkidle2",
+          timeout: 300000,
         });
 
         if (process.env.NODE_ENV === "development") {
@@ -74,6 +75,7 @@ export class PicslabScraper extends Scraper {
             try {
               await productPage.goto(link, {
                 waitUntil: "networkidle2",
+                timeout: 300000,
               });
 
               const priceEl = await productPage.$(".product_price");

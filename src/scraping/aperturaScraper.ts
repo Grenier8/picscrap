@@ -21,7 +21,10 @@ export class AperturaScraper extends Scraper {
     const allProducts: ProductScrap[] = [];
     let currentPage = 1;
 
-    await page.goto(this.webpage.url, { waitUntil: "networkidle2" });
+    await page.goto(this.webpage.url, {
+      waitUntil: "networkidle2",
+      timeout: 300000,
+    });
 
     const dir = `scans/${this.webpage.name}`;
     if (process.env.NODE_ENV === "development") {
@@ -39,6 +42,7 @@ export class AperturaScraper extends Scraper {
       try {
         await page.goto(`${menuLink}?resultsPerPage=120`, {
           waitUntil: "networkidle2",
+          timeout: 300000,
         });
 
         if (process.env.NODE_ENV === "development") {
@@ -93,7 +97,10 @@ export class AperturaScraper extends Scraper {
                 if (link) {
                   const productPage = await browser.newPage();
                   try {
-                    await productPage.goto(link, { waitUntil: "networkidle2" });
+                    await productPage.goto(link, {
+                      waitUntil: "networkidle2",
+                      timeout: 300000,
+                    });
                     sku = await productPage
                       .$eval('section#main meta[itemprop="sku"]', (el) =>
                         el.getAttribute("content")

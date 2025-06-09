@@ -23,7 +23,7 @@ export class DavidAndJosephScraper extends Scraper {
       const url = `${baseUrl}${currentPage}`;
       console.log(`Navigating to ${url}`);
       try {
-        await page.goto(url, { waitUntil: "networkidle2" });
+        await page.goto(url, { waitUntil: "networkidle2", timeout: 300000 });
 
         if (process.env.NODE_ENV === "development") {
           const dir = `scans/${this.webpage.name}`;
