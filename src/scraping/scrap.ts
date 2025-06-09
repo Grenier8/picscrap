@@ -1,4 +1,4 @@
-import { getBaseProducts, upsertBaseProducts } from "../api/base-products";
+import { getBaseProducts } from "../api/base-products";
 import {
   fullUpsertProducts,
   getProductsByWebpage,
@@ -81,7 +81,7 @@ export async function scrapAllPages(
     );
   }
 
-  await upsertBaseProducts(newBaseProducts);
+  // await upsertBaseProducts(newBaseProducts);
 
   const baseProducts = await getBaseProducts();
   // const updatedBaseProducts: BaseProductDB[] = baseProducts.map(

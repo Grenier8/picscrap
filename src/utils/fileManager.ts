@@ -67,8 +67,6 @@ export const saveConversationToFile = (
   conversation: { role: string; content: string }[],
   filename: string
 ) => {
-  Logger.info(`Saving conversation to file for ${filename}`);
-
   const filePath = `conversations/${filename}.json`;
   const dir = "conversations";
 
