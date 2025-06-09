@@ -27,13 +27,13 @@ export class PicslabScraper extends Scraper {
         try {
           await page.goto(url, {
             waitUntil: "networkidle2",
-            timeout: 60000,
+            timeout: 100000,
           });
         } catch (error: any) {
           await this.logPageScrapError(url, error.message);
           await page.goto(url, {
             waitUntil: "domcontentloaded",
-            timeout: 30000,
+            timeout: 100000,
           });
         }
 
@@ -84,13 +84,13 @@ export class PicslabScraper extends Scraper {
               try {
                 await productPage.goto(link, {
                   waitUntil: "networkidle2",
-                  timeout: 60000,
+                  timeout: 100000,
                 });
               } catch (error: any) {
                 await this.logProductScrapError(link, error.message);
                 await productPage.goto(link, {
                   waitUntil: "domcontentloaded",
-                  timeout: 30000,
+                  timeout: 100000,
                 });
               }
               const priceEl = await productPage.$(".product_price");
