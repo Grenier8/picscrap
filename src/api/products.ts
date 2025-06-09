@@ -1,34 +1,88 @@
 import { Brand, ProductDB, Webpage } from "../interfaces";
 import prisma from "../utils/prisma";
 
-export async function getProducts() {
-  const products = await prisma.product.findMany();
-  return products;
+export async function getProducts(): Promise<ProductDB[]> {
+  const products = await prisma.product.findMany({
+    include: {
+      BaseProduct: true,
+      Webpage: true,
+      Brand: true,
+    },
+  });
+  return products.map((p) => ({
+    ...p,
+    link: p.link || "",
+    image: p.image || "",
+    BaseProduct: {
+      name: p.BaseProduct?.name || "",
+      link: p.BaseProduct?.link || "",
+      image: p.BaseProduct?.image || "",
+      Brand: p.Brand,
+      sku: p.BaseProduct?.sku || "",
+      price: p.BaseProduct?.price || 0,
+      outOfStock: p.BaseProduct?.outOfStock || false,
+    },
+  }));
 }
 
-export async function getProductsByWebpage(webpage: Webpage) {
+export async function getProductsByWebpage(
+  webpage: Webpage
+): Promise<ProductDB[]> {
   const products = await prisma.product.findMany({
     where: {
       webpageId: webpage.id,
     },
     include: {
       BaseProduct: true,
+      Webpage: true,
+      Brand: true,
     },
   });
-  return products;
+  return products.map((p) => ({
+    ...p,
+    link: p.link || "",
+    image: p.image || "",
+    BaseProduct: {
+      name: p.BaseProduct?.name || "",
+      link: p.BaseProduct?.link || "",
+      image: p.BaseProduct?.image || "",
+      Brand: p.Brand,
+      sku: p.BaseProduct?.sku || "",
+      price: p.BaseProduct?.price || 0,
+      outOfStock: p.BaseProduct?.outOfStock || false,
+    },
+  }));
 }
 
 export async function getProductsByWebpageAndBrand(
   webpage: Webpage,
   brand: Brand
-) {
+): Promise<ProductDB[]> {
   const products = await prisma.product.findMany({
     where: {
       webpageId: webpage.id,
       brandId: brand.id,
     },
+    include: {
+      BaseProduct: true,
+      Webpage: true,
+      Brand: true,
+    },
   });
-  return products;
+  return products.map((p) => ({
+    ...p,
+    link: p.link || "",
+    image: p.image || "",
+    BaseProduct: {
+      name: p.BaseProduct?.name || "",
+      link: p.BaseProduct?.link || "",
+      image: p.BaseProduct?.image || "",
+      Brand: p.Brand,
+      sku: p.BaseProduct?.sku || "",
+      price: p.BaseProduct?.price || 0,
+      outOfStock: p.BaseProduct?.outOfStock || false,
+    },
+  }));
 }
 
 export async function deleteAndUpsertProducts(products: ProductDB[]) {
