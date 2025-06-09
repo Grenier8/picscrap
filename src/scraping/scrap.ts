@@ -1,20 +1,28 @@
+import { getBaseProducts, upsertBaseProducts } from "../api/base-products";
+import {
+  fullUpsertProducts,
+  getProductsByWebpage,
+  upsertProducts,
+} from "../api/products";
 import { getWebpages } from "../api/webpages";
-import { Webpage, ProductScrap, BaseProductDB, ProductDB } from "../interfaces";
-import { upsertBaseProducts } from "../api/base-products";
-import { deleteAndUpsertProducts, upsertProducts } from "../api/products";
-import { getBaseProducts } from "../api/base-products";
+import { BaseProductDB, ProductDB, ProductScrap } from "../interfaces";
 // import { getBaseProducts } from "../service/product";
-import { Scraper } from "./scraper";
-import { PicslabScraper } from "./picslabScraper";
-import { AperturaScraper } from "./aperturaScraper";
-import { RincónFotográficoScraper } from "./rinconFotograficoScraper";
-import { DavidAndJosephScraper } from "./davidandjosephScraper";
 import { Logger } from "../utils/logger";
+import { AperturaScraper } from "./aperturaScraper";
+import { DavidAndJosephScraper } from "./davidandjosephScraper";
+import { PicslabScraper } from "./picslabScraper";
+import { RincónFotográficoScraper } from "./rinconFotograficoScraper";
+import { Scraper } from "./scraper";
 
 export enum FilteringType {
-  SKU,
-  SIMILARITY,
-  OPENAI,
+  SKU = "SKU",
+  SIMILARITY = "SIMILARITY",
+  OPENAI = "OPENAI",
+}
+
+export enum EScrapType {
+  FULL = "FULL",
+  LITE = "LITE",
 }
 
 export interface ScrapResult {
@@ -24,10 +32,11 @@ export interface ScrapResult {
 }
 
 export async function scrapAllPages(
-  filteringType: FilteringType
+  filteringType: FilteringType,
+  scrapType: EScrapType
 ): Promise<ScrapResult> {
   const uuid = crypto.randomUUID();
-  await Logger.scrapStart(uuid);
+  await Logger.scrapStart(uuid, scrapType, filteringType);
   const scrapStart = Date.now();
 
   const webpages = await getWebpages();
@@ -51,11 +60,10 @@ export async function scrapAllPages(
   const newBaseProducts: BaseProductDB[] = [];
   for (const scraper of baseScrapers) {
     const start = Date.now();
-    Logger.webpageScrapStart(scraper.webpage.name);
+    await Logger.webpageScrapStart(scraper.webpage.name);
     const products = await scraper.getAllProducts();
     const elapsed = ((Date.now() - start) / 1000 / 60).toFixed(2);
     Logger.log(`Base scraper ${scraper.webpage.name} finished in ${elapsed}m`);
-    // allProducts.push(...products);
 
     newBaseProducts.push(
       ...products.map(
@@ -71,11 +79,22 @@ export async function scrapAllPages(
   // const updatedBaseProducts: BaseProductDB[] = baseProducts.map(
   //   (bp) => ({ ...bp, Brand: { name: bp.brand } } as BaseProductDB)
   // );
-  const updatedBaseProducts = baseProducts;
+
+  let updatedBaseProducts: BaseProductDB[] = [];
   for (const scraper of nonBaseScrapers) {
     const start = Date.now();
 
-    Logger.webpageScrapStart(scraper.webpage.name);
+    await Logger.webpageScrapStart(scraper.webpage.name);
+
+    const webpageProducts = await getProductsByWebpage(scraper.webpage);
+
+    if (scrapType === EScrapType.FULL) {
+      updatedBaseProducts = baseProducts;
+    } else {
+      updatedBaseProducts = baseProducts.filter(
+        (bp) => !webpageProducts.some((wp) => wp.BaseProduct?.sku === bp.sku)
+      );
+    }
 
     let products: ProductScrap[] = [];
     switch (filteringType) {
@@ -91,28 +110,35 @@ export async function scrapAllPages(
     }
     const elapsed = ((Date.now() - start) / 1000 / 60).toFixed(2);
 
-    Logger.webpageScrapEnd(scraper.webpage.name, products.length, elapsed);
+    await Logger.webpageScrapEnd(
+      scraper.webpage.name,
+      products.length,
+      elapsed
+    );
     Logger.log(`Scraper ${scraper.webpage.name} finished in ${elapsed}m`);
 
     allProducts.push(...products);
   }
 
-  // await upsertProducts(
-  //   allProducts.map(
-  //     (product) =>
-  //       ({
-  //         ...product,
-  //         Webpage: webpages.find((w) => w.url === product.webpage),
-  //         Brand: { name: product.brand },
-  //         BaseProduct: updatedBaseProducts.find(
-  //           (bp) => bp.sku === product.baseProductSku
-  //         ),
-  //       } as ProductDB)
-  //   )
-  // );
+  const productsToDB = allProducts.map(
+    (product) =>
+      ({
+        ...product,
+        Webpage: webpages.find((w) => w.url === product.webpage),
+        Brand: { name: product.brand },
+        BaseProduct: updatedBaseProducts.find(
+          (bp) => bp.sku === product.baseProductSku
+        ),
+      } as ProductDB)
+  );
+  if (scrapType === EScrapType.FULL) {
+    await fullUpsertProducts(productsToDB);
+  } else {
+    await upsertProducts(productsToDB);
+  }
 
   const scrapEnd = ((Date.now() - scrapStart) / 1000 / 60).toFixed(2);
-  Logger.scrapEnd(scrapEnd + "m");
+  await Logger.scrapEnd(scrapEnd + "m");
   return {
     baseProductsScraped: baseProducts.length,
     productsFiltered: allProducts.length,

@@ -137,15 +137,12 @@ export class AperturaScraper extends Scraper {
         }
 
         currentPage++;
-        await delay(2);
       } catch (error: any) {
         await this.logPageScrapError(menuLink, error.message);
         if (error.message.includes("429")) {
-          await delay(5 * currentPage);
-          continue;
-        } else {
-          break;
+          await delay(5);
         }
+        continue;
       }
     }
     await browser.close();

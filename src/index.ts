@@ -1,5 +1,9 @@
 import fastify, { FastifyReply, FastifyRequest } from "fastify";
-import { ScrapeTriggerResponse, triggerScrape } from "./api/scraper";
+import {
+  ScrapeTriggerResponse,
+  triggerScrape,
+  triggerScrapeFull,
+} from "./api/scraper";
 
 const app = fastify({ logger: true });
 
@@ -16,6 +20,23 @@ app.post<{ Reply: ScrapeTriggerResponse }>(
   async (request: FastifyRequest, reply: FastifyReply) => {
     try {
       const result = await triggerScrape();
+      reply.code(result.status).send(result);
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : "An unknown error occurred";
+      reply.code(500).send({
+        status: "error",
+        error: errorMessage,
+      });
+    }
+  }
+);
+
+app.post<{ Reply: ScrapeTriggerResponse }>(
+  "/api/scrape-full",
+  async (request: FastifyRequest, reply: FastifyReply) => {
+    try {
+      const result = await triggerScrapeFull();
       reply.code(result.status).send(result);
     } catch (error: unknown) {
       const errorMessage =

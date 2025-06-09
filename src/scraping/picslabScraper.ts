@@ -30,7 +30,7 @@ export class PicslabScraper extends Scraper {
             timeout: 60000,
           });
         } catch (error: any) {
-          this.logPageScrapError(url, error.message);
+          await this.logPageScrapError(url, error.message);
           await page.goto(url, {
             waitUntil: "domcontentloaded",
             timeout: 30000,
@@ -87,7 +87,7 @@ export class PicslabScraper extends Scraper {
                   timeout: 60000,
                 });
               } catch (error: any) {
-                this.logProductScrapError(link, error.message);
+                await this.logProductScrapError(link, error.message);
                 await productPage.goto(link, {
                   waitUntil: "domcontentloaded",
                   timeout: 30000,
@@ -98,7 +98,7 @@ export class PicslabScraper extends Scraper {
                 ? await priceEl.evaluate((e) => (e as HTMLElement).innerText)
                 : null;
             } catch (error: any) {
-              this.logProductScrapError(link, error.message);
+              await this.logProductScrapError(link, error.message);
             } finally {
               await productPage.close();
             }
@@ -135,15 +135,12 @@ export class PicslabScraper extends Scraper {
         }));
         allProducts.push(...productsWithWebpage);
         currentPage++;
-        await delay(2);
       } catch (error: any) {
         await this.logPageScrapError(url, error.message);
         if (error.message.includes("429")) {
-          await delay(5 * currentPage);
-          continue;
-        } else {
-          break;
+          await delay(5);
         }
+        continue;
       }
     }
     return allProducts;

@@ -26,9 +26,9 @@ export abstract class Scraper {
   async createBrowser(): Promise<Browser> {
     return await puppeteer.launch({
       headless: true,
-      defaultViewport: null,
-      executablePath: process.env.CHROME_PATH || "/usr/bin/google-chrome",
-      args: ["--no-sandbox"],
+      ...(process.env.CHROME_PATH && {
+        executablePath: process.env.CHROME_PATH,
+      }),
     });
   }
 
@@ -49,7 +49,7 @@ export abstract class Scraper {
     const filteredProducts = allProducts.filter((product: ProductScrap) =>
       baseProducts.map((bp) => bp.sku).includes(product.sku)
     );
-    Logger.filterProductsResult(
+    await Logger.filterProductsResult(
       this.webpage.name,
       allProducts.length,
       filteredProducts.length,
@@ -90,7 +90,7 @@ export abstract class Scraper {
       }
     }
 
-    Logger.filterProductsResult(
+    await Logger.filterProductsResult(
       this.webpage.name,
       allProducts.length,
       filteredProducts.length,

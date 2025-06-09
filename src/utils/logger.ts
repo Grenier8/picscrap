@@ -1,11 +1,16 @@
 import { createLog } from "../api/logs";
+import { EScrapType, FilteringType } from "../scraping/scrap";
 
 export class Logger {
   static executionId: string;
 
   static async init() {}
 
-  static async scrapStart(executionId: string) {
+  static async scrapStart(
+    executionId: string,
+    scrapType: EScrapType,
+    filteringType: FilteringType
+  ) {
     this.executionId = executionId;
     this.info("Scraping started");
     await createLog({
@@ -14,7 +19,7 @@ export class Logger {
       webpage: "-",
       event: "scrap-start",
       message: "Scraping started",
-      data: "",
+      data: JSON.stringify({ scrapType, filteringType }),
     });
   }
 

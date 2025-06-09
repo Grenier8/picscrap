@@ -1,10 +1,20 @@
-import { BaseProductDB, Brand, ProductDB, Webpage } from "../interfaces";
+import { Brand, ProductDB, Webpage } from "../interfaces";
 import prisma from "../utils/prisma";
-import { getBaseProductBySku } from "./base-products";
-import { getBrandById, getBrandByName } from "./brands";
 
 export async function getProducts() {
   const products = await prisma.product.findMany();
+  return products;
+}
+
+export async function getProductsByWebpage(webpage: Webpage) {
+  const products = await prisma.product.findMany({
+    where: {
+      webpageId: webpage.id,
+    },
+    include: {
+      BaseProduct: true,
+    },
+  });
   return products;
 }
 
@@ -71,4 +81,43 @@ export async function upsertProducts(products: ProductDB[]) {
     });
   }
   console.log("Products upserted");
+}
+
+export async function fullUpsertProducts(products: ProductDB[]) {
+  for (const product of products) {
+    await prisma.product.upsert({
+      where: {
+        sku_webpageId: { sku: product.sku, webpageId: product.Webpage.id },
+      },
+      update: {
+        name: product.name,
+        sku: product.sku,
+        link: product.link,
+        price: product.price,
+        outOfStock: product.outOfStock,
+        image: product.image,
+      },
+      create: {
+        name: product.name,
+        sku: product.sku,
+        link: product.link,
+        price: product.price,
+        outOfStock: product.outOfStock,
+        image: product.image,
+        Brand: {
+          connectOrCreate: {
+            where: { name: product.Brand.name },
+            create: { name: product.Brand.name },
+          },
+        },
+        Webpage: {
+          connect: { url: product.Webpage.url },
+        },
+        BaseProduct: {
+          connect: { sku: product.BaseProduct?.sku },
+        },
+      },
+    });
+  }
+  console.log("Products fullUpserted");
 }

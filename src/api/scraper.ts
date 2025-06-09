@@ -1,4 +1,4 @@
-import { scrapAllPages, FilteringType } from "../scraping/scrap";
+import { EScrapType, FilteringType, scrapAllPages } from "../scraping/scrap";
 import { Logger } from "../utils/logger";
 
 let isScrapingInProgress = false;
@@ -15,10 +15,14 @@ export function getScrapingState(): ScrapingState {
   };
 }
 
-async function handleScraping(): Promise<void> {
+async function handleScraping(scrapType: EScrapType): Promise<void> {
   try {
     isScrapingInProgress = true;
-    await scrapAllPages(FilteringType.SIMILARITY);
+    if (scrapType === EScrapType.LITE) {
+      await scrapAllPages(FilteringType.SIMILARITY, scrapType);
+    } else if (scrapType === EScrapType.FULL) {
+      await scrapAllPages(FilteringType.OPENAI, scrapType);
+    }
     isScrapingInProgress = false;
   } catch (error: any) {
     Logger.scrapingError(error.message);
@@ -43,7 +47,34 @@ export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
       };
     }
 
-    await handleScraping();
+    await handleScraping(EScrapType.LITE);
+
+    return {
+      result: "success",
+      status: 200,
+      message: "Scraping started successfully",
+    };
+  } catch (error: any) {
+    Logger.scrapingError(error.message);
+    return {
+      result: "error",
+      status: 500,
+      message: "Failed to start scraping",
+    };
+  }
+}
+
+export async function triggerScrapeFull(): Promise<ScrapeTriggerResponse> {
+  try {
+    if (isScrapingInProgress) {
+      return {
+        result: "error",
+        status: 204,
+        message: "Scraping already in progress",
+      };
+    }
+
+    await handleScraping(EScrapType.FULL);
 
     return {
       result: "success",
