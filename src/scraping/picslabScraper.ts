@@ -1,20 +1,9 @@
 import puppeteer from "puppeteer-extra";
-import fs from "fs";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import {
-  Webpage,
-  ProductScrap,
-  Brand,
-  ProductDB,
-  BaseProductDB,
-} from "../interfaces";
+import { ProductScrap, Webpage } from "../interfaces";
 import delay from "../utils/delay";
-import { createDir, saveProductsToFile } from "../utils/fileManager";
-import { getWebpageById } from "../api/webpages";
-import { upsertProducts } from "../api/products";
+import { createDir } from "../utils/fileManager";
 import { Scraper } from "./scraper";
-import { isSameProduct } from "../utils/similarity/stringSimilarity";
-import { Browser, Page } from "puppeteer";
 
 puppeteer.use(StealthPlugin());
 
@@ -24,7 +13,7 @@ export class PicslabScraper extends Scraper {
   }
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await this.createBrowser();
     const page = await browser.newPage();
     await this.setUserAgent(page);
 
@@ -47,9 +36,12 @@ export class PicslabScraper extends Scraper {
             timeout: 30000,
           });
         }
-        const dir = `scans/${this.webpage.name}`;
-        createDir(dir);
-        await page.screenshot({ path: `${dir}/page-${currentPage}.png` });
+
+        if (process.env.NODE_ENV === "development") {
+          const dir = `scans/${this.webpage.name}`;
+          createDir(dir);
+          await page.screenshot({ path: `${dir}/page-${currentPage}.png` });
+        }
 
         const productBlocks = await page.$$("article.product-block");
         const products: ProductScrap[] = [];

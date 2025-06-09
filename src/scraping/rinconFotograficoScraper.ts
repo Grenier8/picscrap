@@ -1,20 +1,8 @@
 import puppeteer from "puppeteer-extra";
-import fs from "fs";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import {
-  Webpage,
-  ProductScrap,
-  Brand,
-  ProductDB,
-  BaseProductDB,
-} from "../interfaces";
+import { ProductScrap, Webpage } from "../interfaces";
 import delay from "../utils/delay";
-import { createDir, saveProductsToFile } from "../utils/fileManager";
-import { getWebpageById } from "../api/webpages";
-import { upsertProducts } from "../api/products";
 import { Scraper } from "./scraper";
-import { Browser, Page } from "puppeteer";
-import { getBestMatch } from "../utils/similarity/productSimilarity";
 
 puppeteer.use(StealthPlugin());
 
@@ -25,7 +13,7 @@ export class RincónFotográficoScraper extends Scraper {
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
     const baseUrl = `${this.webpage.url}/search?q=&page=`;
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await this.createBrowser();
     const page = await browser.newPage();
     await this.setUserAgent(page);
     let currentPage = 1;

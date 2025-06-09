@@ -6,7 +6,9 @@ import { saveProductsToFile } from "../utils/fileManager";
 export async function loadBaseProducts() {
   const baseProducts = await csvToJson("./csv/picslab-products.csv");
 
-  saveProductsToFile(baseProducts, 0);
+  if (process.env.NODE_ENV === "development") {
+    saveProductsToFile(baseProducts, 0);
+  }
 
   await upsertBaseProducts(
     baseProducts.map(

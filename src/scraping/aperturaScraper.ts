@@ -1,21 +1,10 @@
 import puppeteer from "puppeteer-extra";
-import fs from "fs";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import {
-  Webpage,
-  ProductScrap,
-  Brand,
-  ProductDB,
-  BaseProductDB,
-} from "../interfaces";
+import { ProductScrap, Webpage } from "../interfaces";
 import delay from "../utils/delay";
-import { createDir, saveProductsToFile } from "../utils/fileManager";
-import { getWebpageById } from "../api/webpages";
-import { upsertProducts } from "../api/products";
-import { Scraper } from "./scraper";
+import { createDir } from "../utils/fileManager";
 import { createLimiter } from "../utils/limiter";
-import { getBestMatch } from "../utils/similarity/productSimilarity";
-import { Browser, Page } from "puppeteer";
+import { Scraper } from "./scraper";
 
 puppeteer.use(StealthPlugin());
 
@@ -25,7 +14,7 @@ export class AperturaScraper extends Scraper {
   }
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await this.createBrowser();
     const page = await browser.newPage();
     await this.setUserAgent(page);
 
@@ -35,8 +24,10 @@ export class AperturaScraper extends Scraper {
     await page.goto(this.webpage.url, { waitUntil: "networkidle2" });
 
     const dir = `scans/${this.webpage.name}`;
-    createDir(dir);
-    await page.screenshot({ path: `${dir}/page-0.png` });
+    if (process.env.NODE_ENV === "development") {
+      createDir(dir);
+      await page.screenshot({ path: `${dir}/page-0.png` });
+    }
 
     const links = await page.$$eval("#top-menu a", (anchors) =>
       anchors.map((a) => a.href)
@@ -50,9 +41,11 @@ export class AperturaScraper extends Scraper {
           waitUntil: "networkidle2",
         });
 
-        await page.screenshot({
-          path: `${dir}/page-${currentPage}.png`,
-        });
+        if (process.env.NODE_ENV === "development") {
+          await page.screenshot({
+            path: `${dir}/page-${currentPage}.png`,
+          });
+        }
 
         const productsFather = await page.$("#js-product-list");
         if (productsFather) {

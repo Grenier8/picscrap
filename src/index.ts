@@ -1,23 +1,5 @@
-import { FilteringType, scrapAllPages } from "./scraping/scrap";
-import { loadBaseProducts } from "./scraping/base";
-import {
-  getStringSimilarity,
-  getStringSimilarityJaroWinkler,
-  getStringSimilarityDiceCoefficient,
-} from "./utils/similarity/stringSimilarity";
-import { getImageSimilarity } from "./utils/similarity/imageSimilarity";
-import { getBaseProducts, getBaseProductsByBrand } from "./api/base-products";
-import {
-  saveAssistantProductsToFile,
-  saveProductsToFile,
-} from "./utils/fileManager";
-import { AssistantProduct, BaseProductScrap } from "./interfaces";
-import { getWebpages } from "./api/webpages";
-import { getBrands } from "./api/brands";
-import { getProductsByWebpageAndBrand } from "./api/products";
-import { triggerScrape, ScrapeTriggerResponse } from "./api/scraper";
-import fastify from "fastify";
-import { FastifyReply, FastifyRequest } from "fastify";
+import fastify, { FastifyReply, FastifyRequest } from "fastify";
+import { ScrapeTriggerResponse, triggerScrape } from "./api/scraper";
 
 const app = fastify({ logger: true });
 

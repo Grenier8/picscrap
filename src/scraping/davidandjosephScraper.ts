@@ -1,21 +1,9 @@
 import puppeteer from "puppeteer-extra";
-import fs from "fs";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import {
-  Webpage,
-  ProductScrap,
-  Brand,
-  ProductDB,
-  BaseProductDB,
-} from "../interfaces";
+import { ProductScrap, Webpage } from "../interfaces";
 import delay from "../utils/delay";
-import { createDir, saveProductsToFile } from "../utils/fileManager";
-import { getWebpageById } from "../api/webpages";
-import { upsertProducts } from "../api/products";
+import { createDir } from "../utils/fileManager";
 import { Scraper } from "./scraper";
-import { getBestMatch } from "../utils/similarity/productSimilarity";
-import { Browser, Page } from "puppeteer";
-import { getScrapProductsJSON } from "../service/product";
 
 puppeteer.use(StealthPlugin());
 
@@ -26,7 +14,7 @@ export class DavidAndJosephScraper extends Scraper {
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
     const baseUrl = `${this.webpage.url}/index.php?route=product/search&search=&description=true&limit=100&page=`;
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await this.createBrowser();
     const page = await browser.newPage();
     await this.setUserAgent(page);
     let currentPage = 1;
@@ -36,11 +24,14 @@ export class DavidAndJosephScraper extends Scraper {
       console.log(`Navigating to ${url}`);
       try {
         await page.goto(url, { waitUntil: "networkidle2" });
-        const dir = `scans/${this.webpage.name}`;
-        createDir(dir);
-        await page.screenshot({
-          path: `${dir}/page-${currentPage}.png`,
-        });
+
+        if (process.env.NODE_ENV === "development") {
+          const dir = `scans/${this.webpage.name}`;
+          createDir(dir);
+          await page.screenshot({
+            path: `${dir}/page-${currentPage}.png`,
+          });
+        }
         const productBlocks = await page.$$(".product-layout");
         const products: ProductScrap[] = [];
         for (const block of productBlocks) {

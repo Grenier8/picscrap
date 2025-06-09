@@ -1,11 +1,10 @@
 import { BaseProductDB, BaseProductScrap } from "../../interfaces";
-import { getFastImageSimilarity, getImageSimilarity } from "./imageSimilarity";
+import { Logger } from "../../utils/logger";
+import { getImageSimilarity } from "./imageSimilarity";
 import {
-  getStringSimilarity,
   getStringSimilarityDiceCoefficient,
   getStringSimilarityJaroWinkler,
 } from "./stringSimilarity";
-import { Logger } from "../../utils/logger";
 
 // Simple fast image hash similarity using base64 string length difference as a placeholder.
 // Replace this with a real image hash (pHash/dHash/aHash) for better results.
