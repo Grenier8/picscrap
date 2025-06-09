@@ -7,7 +7,8 @@
     "build": "tsc",
     "start": "node dist/src/index.js",
     "render-build": "npm install && npm run build",
-    "render-start": "npx prisma generate --no-engine && npm run start"
+    "render-start": "npx prisma generate --no-engine && npm run start",
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "keywords": [],
   "author": "",

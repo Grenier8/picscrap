@@ -1,47 +1,48 @@
-# Use Node.js LTS with Debian Buster for better compatibility with Puppeteer
-FROM node:20-bullseye-slim
+# Usa una imagen oficial de Node.js (puedes elegir la versión que prefieras)
+FROM node:20-slim
 
-# Set working directory
-WORKDIR /usr/src/app
-
-# Install system dependencies required for Puppeteer and other tools
+# Instala dependencias necesarias para Chromium
 RUN apt-get update && apt-get install -y \
     wget \
-    gnupg \
     ca-certificates \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+    fonts-liberation \
+    libappindicator3-1 \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libcups2 \
+    libdbus-1-3 \
+    libdrm2 \
+    libgbm1 \
+    libnspr4 \
+    libnss3 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxrandr2 \
+    xdg-utils \
+    --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
 
-# Install Chrome for Puppeteer
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && sh -c 'echo "deb [arch=amd64] http://dl.pool.sks-keyservers.net/debian/ bullseye main" >> /etc/apt/sources.list.d/google.list' \
-    && apt-get update \
-    && apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 \
-    --no-install-recommends \
-    && rm -rf /var/lib/apt/lists/*
+# Crea y usa la carpeta de la app
+WORKDIR /app
 
-# Set environment variables for Puppeteer
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
-
-# Copy package files
+# Copia package.json y package-lock.json primero (aprovecha el cache de Docker)
 COPY package*.json ./
-COPY prisma ./prisma/
 
-# Install Node.js dependencies
+# Instala dependencias (esto también ejecutará el postinstall si existe)
 RUN npm install
 
-# Copy the rest of the application
+# Copia el resto del código
 COPY . .
 
-# Build the TypeScript application
+# Build tu app (opcional si usas TypeScript o build step)
 RUN npm run build
 
-# Generate Prisma client
+# Genera Prisma (opcional si usas Prisma)
 RUN npx prisma generate --no-engine
 
-# Expose the port the app runs on (make sure this matches your Fastify port)
+# Expón el puerto (ajústalo si tu app usa otro puerto)
 EXPOSE 3010
 
-# Command to run the application
+# Comando de inicio (ajusta según tu start script)
 CMD ["npm", "run", "start"]
