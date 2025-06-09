@@ -24,18 +24,9 @@ export class PicslabScraper extends Scraper {
       const url = `${baseUrl}${currentPage}`;
       this.logInfo(`Navigating to ${url}`);
       try {
-        try {
-          await page.goto(url, {
-            waitUntil: "networkidle2",
-            timeout: 100000,
-          });
-        } catch (error: any) {
-          await this.logPageScrapError(url, error.message);
-          await page.goto(url, {
-            waitUntil: "domcontentloaded",
-            timeout: 100000,
-          });
-        }
+        await page.goto(url, {
+          waitUntil: "networkidle2",
+        });
 
         if (process.env.NODE_ENV === "development") {
           const dir = `scans/${this.webpage.name}`;
@@ -81,18 +72,10 @@ export class PicslabScraper extends Scraper {
           if (link && !priceRaw) {
             const productPage = await browser.newPage();
             try {
-              try {
-                await productPage.goto(link, {
-                  waitUntil: "networkidle2",
-                  timeout: 100000,
-                });
-              } catch (error: any) {
-                await this.logProductScrapError(link, error.message);
-                await productPage.goto(link, {
-                  waitUntil: "domcontentloaded",
-                  timeout: 100000,
-                });
-              }
+              await productPage.goto(link, {
+                waitUntil: "networkidle2",
+              });
+
               const priceEl = await productPage.$(".product_price");
               priceRaw = priceEl
                 ? await priceEl.evaluate((e) => (e as HTMLElement).innerText)
