@@ -9,19 +9,21 @@ export async function getProducts(): Promise<ProductDB[]> {
       Brand: true,
     },
   });
-  return products.map((p) => ({
+  return products.map((p: any) => ({
     ...p,
     link: p.link || "",
     image: p.image || "",
-    BaseProduct: {
-      name: p.BaseProduct?.name || "",
-      link: p.BaseProduct?.link || "",
-      image: p.BaseProduct?.image || "",
-      Brand: p.Brand,
-      sku: p.BaseProduct?.sku || "",
-      price: p.BaseProduct?.price || 0,
-      outOfStock: p.BaseProduct?.outOfStock || false,
-    },
+    BaseProduct: p.BaseProduct
+      ? {
+          name: p.BaseProduct?.name || "",
+          link: p.BaseProduct?.link || "",
+          image: p.BaseProduct?.image || "",
+          Brand: p.Brand,
+          sku: p.BaseProduct?.sku || "",
+          price: p.BaseProduct?.price || 0,
+          outOfStock: p.BaseProduct?.outOfStock || false,
+        }
+      : undefined,
   }));
 }
 
@@ -38,19 +40,21 @@ export async function getProductsByWebpage(
       Brand: true,
     },
   });
-  return products.map((p) => ({
+  return products.map((p: any) => ({
     ...p,
     link: p.link || "",
     image: p.image || "",
-    BaseProduct: {
-      name: p.BaseProduct?.name || "",
-      link: p.BaseProduct?.link || "",
-      image: p.BaseProduct?.image || "",
-      Brand: p.Brand,
-      sku: p.BaseProduct?.sku || "",
-      price: p.BaseProduct?.price || 0,
-      outOfStock: p.BaseProduct?.outOfStock || false,
-    },
+    BaseProduct: p.BaseProduct
+      ? {
+          name: p.BaseProduct?.name || "",
+          link: p.BaseProduct?.link || "",
+          image: p.BaseProduct?.image || "",
+          Brand: p.Brand,
+          sku: p.BaseProduct?.sku || "",
+          price: p.BaseProduct?.price || 0,
+          outOfStock: p.BaseProduct?.outOfStock || false,
+        }
+      : undefined,
   }));
 }
 
@@ -69,19 +73,21 @@ export async function getProductsByWebpageAndBrand(
       Brand: true,
     },
   });
-  return products.map((p) => ({
+  return products.map((p: any) => ({
     ...p,
     link: p.link || "",
     image: p.image || "",
-    BaseProduct: {
-      name: p.BaseProduct?.name || "",
-      link: p.BaseProduct?.link || "",
-      image: p.BaseProduct?.image || "",
-      Brand: p.Brand,
-      sku: p.BaseProduct?.sku || "",
-      price: p.BaseProduct?.price || 0,
-      outOfStock: p.BaseProduct?.outOfStock || false,
-    },
+    BaseProduct: p.BaseProduct
+      ? {
+          name: p.BaseProduct?.name || "",
+          link: p.BaseProduct?.link || "",
+          image: p.BaseProduct?.image || "",
+          Brand: p.Brand,
+          sku: p.BaseProduct?.sku || "",
+          price: p.BaseProduct?.price || 0,
+          outOfStock: p.BaseProduct?.outOfStock || false,
+        }
+      : undefined,
   }));
 }
 
@@ -89,10 +95,10 @@ export async function deleteAndUpsertProducts(products: ProductDB[]) {
   await prisma.product.deleteMany({
     where: {
       webpageId: {
-        in: products.map((p) => p.Webpage.id),
+        in: products.map((p: any) => p.Webpage.id),
       },
       sku: {
-        notIn: products.map((p) => p.sku),
+        notIn: products.map((p: any) => p.sku),
       },
     },
   });

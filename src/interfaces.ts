@@ -1,11 +1,11 @@
 export interface ProductDB {
   name: string;
   sku: string;
-  link: string;
+  link: string | null;
   price: number;
   Webpage: Webpage;
   outOfStock: boolean | null;
-  image: string;
+  image: string | null;
   Brand: Brand;
   BaseProduct?: BaseProductDB;
 }
