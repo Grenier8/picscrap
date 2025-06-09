@@ -27,7 +27,7 @@ export abstract class Scraper {
     return await puppeteer.launch({
       headless: true,
       defaultViewport: null,
-      executablePath: process.env.CHROME_PATH || "",
+      executablePath: process.env.CHROME_PATH || "/usr/bin/google-chrome",
       args: ["--no-sandbox"],
     });
   }
