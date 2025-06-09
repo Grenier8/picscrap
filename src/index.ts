@@ -69,8 +69,15 @@ app.get<{ Reply: any }>(
 
 const start = async () => {
   try {
-    await app.listen({ port: 3001 });
-    app.log.info("Server listening on port 3001");
+    const port = parseInt(process.env.PORT || "3010", 10);
+    const host = "0.0.0.0"; // Important for Render
+
+    await app.listen({
+      port,
+      host,
+    });
+
+    app.log.info(`Server listening on port ${port}`);
   } catch (err: unknown) {
     app.log.error(
       err instanceof Error ? err.message : "An unknown error occurred"
