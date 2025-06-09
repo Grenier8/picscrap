@@ -33,25 +33,33 @@ export interface ScrapResult {
 
 export async function scrapAllPages(
   filteringType: FilteringType,
-  scrapType: EScrapType
+  scrapType: EScrapType,
+  webpagesIds: number[]
 ): Promise<ScrapResult> {
   const uuid = crypto.randomUUID();
   await Logger.scrapStart(uuid, scrapType, filteringType);
   const scrapStart = Date.now();
 
-  const webpages = await getWebpages();
+  const allWebpages = await getWebpages();
+  const webpages = allWebpages.filter((w) => webpagesIds.includes(w.id));
   Logger.log(`Webpages obtained: ${webpages.length}`);
 
-  const scrapers: Scraper[] = [
-    new DavidAndJosephScraper(
-      webpages.find((w) => w.name === "David and Joseph")!
-    ),
-    new PicslabScraper(webpages.find((w) => w.name === "Picslab")!),
-    new RincónFotográficoScraper(
-      webpages.find((w) => w.name === "Rincón Fotográfico")!
-    ),
-    new AperturaScraper(webpages.find((w) => w.name === "Apertura")!),
-  ];
+  const scrapers: Scraper[] = webpages
+    .map((w) => {
+      switch (w.name) {
+        case "David and Joseph":
+          return new DavidAndJosephScraper(w);
+        case "Picslab":
+          return new PicslabScraper(w);
+        case "Rincón Fotográfico":
+          return new RincónFotográficoScraper(w);
+        case "Apertura":
+          return new AperturaScraper(w);
+        default:
+          return null;
+      }
+    })
+    .filter((s) => s !== null) as Scraper[];
 
   const baseScrapers = scrapers.filter((s) => s.webpage.isBasePage);
   const nonBaseScrapers = scrapers.filter((s) => !s.webpage.isBasePage);

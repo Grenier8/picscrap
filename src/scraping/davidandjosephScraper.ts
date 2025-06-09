@@ -98,6 +98,7 @@ export class DavidAndJosephScraper extends Scraper {
           } as ProductScrap);
         }
         if (!products || products.length === 0) {
+          console.log("Comooo");
           break;
         }
         const productsWithWebpage = products.map((product: any) => ({
@@ -114,6 +115,7 @@ export class DavidAndJosephScraper extends Scraper {
         continue;
       }
     }
+    console.log("Epaa");
     await browser.close();
     return allProducts;
   }

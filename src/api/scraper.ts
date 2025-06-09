@@ -15,13 +15,16 @@ export function getScrapingState(): ScrapingState {
   };
 }
 
-async function handleScraping(scrapType: EScrapType): Promise<void> {
+async function handleScraping(
+  scrapType: EScrapType,
+  webpagesIds: number[]
+): Promise<void> {
   try {
     isScrapingInProgress = true;
     if (scrapType === EScrapType.LITE) {
-      await scrapAllPages(FilteringType.SIMILARITY, scrapType);
+      await scrapAllPages(FilteringType.SIMILARITY, scrapType, webpagesIds);
     } else if (scrapType === EScrapType.FULL) {
-      await scrapAllPages(FilteringType.OPENAI, scrapType);
+      await scrapAllPages(FilteringType.OPENAI, scrapType, webpagesIds);
     }
     isScrapingInProgress = false;
   } catch (error: any) {
@@ -37,7 +40,9 @@ export interface ScrapeTriggerResponse {
   message: string;
 }
 
-export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
+export async function triggerScrape(
+  webpagesIds: number[]
+): Promise<ScrapeTriggerResponse> {
   try {
     if (isScrapingInProgress) {
       return {
@@ -47,7 +52,7 @@ export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
       };
     }
 
-    await handleScraping(EScrapType.LITE);
+    handleScraping(EScrapType.LITE, webpagesIds);
 
     return {
       result: "success",
@@ -64,7 +69,9 @@ export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
   }
 }
 
-export async function triggerScrapeFull(): Promise<ScrapeTriggerResponse> {
+export async function triggerScrapeFull(
+  webpagesIds: number[]
+): Promise<ScrapeTriggerResponse> {
   try {
     if (isScrapingInProgress) {
       return {
@@ -74,7 +81,7 @@ export async function triggerScrapeFull(): Promise<ScrapeTriggerResponse> {
       };
     }
 
-    await handleScraping(EScrapType.FULL);
+    await handleScraping(EScrapType.FULL, webpagesIds);
 
     return {
       result: "success",

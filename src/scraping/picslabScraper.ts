@@ -126,6 +126,7 @@ export class PicslabScraper extends Scraper {
         continue;
       }
     }
+    await browser.close();
     return allProducts;
   }
 }

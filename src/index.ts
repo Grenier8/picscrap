@@ -15,11 +15,14 @@ app.register(require("@fastify/cors"), {
 });
 
 // // Add API endpoints
-app.post<{ Reply: ScrapeTriggerResponse }>(
+app.post<{ Body: { webpagesIds: number[] }; Reply: ScrapeTriggerResponse }>(
   "/api/scrape",
-  async (request: FastifyRequest, reply: FastifyReply) => {
+  async (
+    request: FastifyRequest<{ Body: { webpagesIds: number[] } }>,
+    reply: FastifyReply
+  ) => {
     try {
-      const result = await triggerScrape();
+      const result = await triggerScrape(request.body.webpagesIds);
       reply.code(result.status).send(result);
     } catch (error: unknown) {
       const errorMessage =
@@ -32,11 +35,14 @@ app.post<{ Reply: ScrapeTriggerResponse }>(
   }
 );
 
-app.post<{ Reply: ScrapeTriggerResponse }>(
+app.post<{ Body: { webpagesIds: number[] }; Reply: ScrapeTriggerResponse }>(
   "/api/scrape-full",
-  async (request: FastifyRequest, reply: FastifyReply) => {
+  async (
+    request: FastifyRequest<{ Body: { webpagesIds: number[] } }>,
+    reply: FastifyReply
+  ) => {
     try {
-      const result = await triggerScrapeFull();
+      const result = await triggerScrapeFull(request.body.webpagesIds);
       reply.code(result.status).send(result);
     } catch (error: unknown) {
       const errorMessage =

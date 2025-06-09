@@ -1,4 +1,6 @@
-import puppeteer, { Browser, Page } from "puppeteer";
+import { Browser, Page } from "puppeteer";
+import puppeteer from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import { getBrands } from "../api/brands";
 import {
   AssistantProduct,
@@ -12,6 +14,8 @@ import OpenAiService from "../service/openAi";
 import { saveProductsToFile } from "../utils/fileManager";
 import { Logger } from "../utils/logger";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
+
+puppeteer.use(StealthPlugin());
 
 export abstract class Scraper {
   webpage: Webpage;
