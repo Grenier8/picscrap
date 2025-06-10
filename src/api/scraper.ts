@@ -81,7 +81,7 @@ export async function triggerScrapeFull(
       };
     }
 
-    await handleScraping(EScrapType.FULL, webpagesIds);
+    handleScraping(EScrapType.FULL, webpagesIds);
 
     return {
       result: "success",
