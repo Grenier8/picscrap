@@ -29,16 +29,29 @@ export abstract class Scraper {
 
   async createBrowser(): Promise<Browser> {
     return await puppeteer.launch({
-      headless: "shell",
+      headless: true,
       ...(process.env.CHROME_PATH && {
         executablePath: process.env.CHROME_PATH,
       }),
       args: [
         "--no-sandbox",
-        "--disable-gpu",
         "--disable-setuid-sandbox",
         "--disable-dev-shm-usage",
+        "--disable-accelerated-2d-canvas",
+        "--no-zygote",
+        "--disable-gpu",
+        "--disable-software-rasterizer",
+        "--disable-features=IsolateOrigins,site-per-process",
+        "--single-process",
+        "--no-first-run",
+        "--disable-notifications",
+        "--disable-extensions",
+        "--disable-web-security",
+        "--disable-features=site-per-process",
+        "--disable-features=AudioServiceOutOfProcess",
+        "--window-size=1920,1080",
       ],
+      protocolTimeout: 60000,
     });
   }
 
