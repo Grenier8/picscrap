@@ -132,23 +132,23 @@ export async function scrapAllPages(
     Logger.log(`Scraper ${scraper.webpage.name} finished in ${elapsed}m`);
 
     allProducts.push(...products);
-  }
 
-  const productsToDB = allProducts.map(
-    (product) =>
-      ({
-        ...product,
-        Webpage: webpages.find((w) => w.url === product.webpage),
-        Brand: { name: product.brand },
-        BaseProduct: updatedBaseProducts.find(
-          (bp) => bp.sku === product.baseProductSku
-        ),
-      } as ProductDB)
-  );
-  if (scrapType === EScrapType.FULL) {
-    await fullUpsertProducts(productsToDB);
-  } else if (scrapType === EScrapType.LITE) {
-    await upsertProducts(productsToDB);
+    const productsToDB = products.map(
+      (product) =>
+        ({
+          ...product,
+          Webpage: webpages.find((w) => w.url === product.webpage),
+          Brand: { name: product.brand },
+          BaseProduct: updatedBaseProducts.find(
+            (bp) => bp.sku === product.baseProductSku
+          ),
+        } as ProductDB)
+    );
+    if (scrapType === EScrapType.FULL) {
+      await fullUpsertProducts(productsToDB);
+    } else if (scrapType === EScrapType.LITE) {
+      await upsertProducts(productsToDB);
+    }
   }
 
   const scrapEnd = ((Date.now() - scrapStart) / 1000 / 60).toFixed(2);

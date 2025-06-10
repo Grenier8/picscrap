@@ -1,3 +1,4 @@
+import { Page } from "puppeteer";
 import puppeteer from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import { ProductScrap, Webpage } from "../interfaces";
@@ -10,6 +11,28 @@ puppeteer.use(StealthPlugin());
 export class EbestScraper extends Scraper {
   constructor(webpage: Webpage) {
     super(webpage);
+  }
+
+  private async isLastPage(page: Page): Promise<boolean> {
+    try {
+      const paginationText = await page.$eval(
+        "#toolbar-amount",
+        (el: Element) => (el as HTMLElement).textContent?.trim() || ""
+      );
+
+      if (!paginationText) return true; // If no pagination element, assume it's the last page
+
+      // Extract numbers using regex
+      const matches = paginationText.match(/\d+/g);
+      if (!matches || matches.length < 3) return true;
+
+      const currentLast = parseInt(matches[1], 10);
+      const total = parseInt(matches[2], 10);
+      return currentLast >= total;
+    } catch (error) {
+      console.error("Error checking last page:", error);
+      return true; // If there's an error, assume it's the last page to be safe
+    }
   }
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
@@ -129,33 +152,17 @@ export class EbestScraper extends Scraper {
                 };
 
                 const name = await getText(".product.name.product-item-name a");
-                console.log("name", name);
                 const link = await getHref(".product.name.product-item-name a");
-                console.log("link", link);
                 const priceRaw = await getText(
                   ".price-final_price .price-wrapper .price"
                 );
-                console.log("priceRaw", priceRaw);
                 const outOfStock = await getText(".unavailable");
-                console.log("outOfStock", outOfStock);
                 const image = await getSrc(".product-image-photo");
-                console.log("image", image);
                 const brand = await getTitle(".amshopby-option-link a");
-                console.log("brand", brand);
                 const sku =
                   (await block.$eval('form[data-role="tocart-form"]', (form) =>
                     form.getAttribute("data-product-sku")
                   )) || "unknown";
-                console.log("sku", sku);
-
-                if (
-                  allProducts.some(
-                    (product) => product.sku === sku?.toUpperCase()
-                  )
-                ) {
-                  hasMorePages = false;
-                  break;
-                }
 
                 if (name && link) {
                   allProducts.push({
@@ -185,7 +192,11 @@ export class EbestScraper extends Scraper {
               }
             }
 
-            productsCurrentPage++;
+            if (await this.isLastPage(page)) {
+              hasMorePages = false;
+            } else {
+              productsCurrentPage++;
+            }
             currentPage++;
           } catch (error: any) {
             await this.logPageScrapError(menuLink, error.message);

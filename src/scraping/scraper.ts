@@ -11,7 +11,11 @@ import {
   Webpage,
 } from "../interfaces";
 import OpenAiService from "../service/openAi";
-import { saveProductsToFile } from "../utils/fileManager";
+import {
+  saveAssistantProductsToFile,
+  saveConversationToFile,
+  saveProductsToFile,
+} from "../utils/fileManager";
 import { Logger } from "../utils/logger";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
 
@@ -128,6 +132,7 @@ export abstract class Scraper {
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
+    Logger.info(`Scraped ${allProducts.length} products`);
 
     if (process.env.NODE_ENV === "development") {
       saveProductsToFile(allProducts, this.webpage.id);
@@ -190,12 +195,23 @@ export abstract class Scraper {
             secondaryProducts: secondaryProductsRequest,
           } as AssistantRequest;
 
+          if (process.env.NODE_ENV === "development") {
+            saveAssistantProductsToFile(
+              baseProductsRequest,
+              secondaryProductsRequest,
+              brand.name + "_" + count
+            );
+          }
           this.conversation.push({
             role: "user",
             content: JSON.stringify(openAiRequest),
           });
           Logger.info(
-            `[OpenAI request]: base - ${baseIndex}/${baseProductsByBrand.length}, secondary - ${secondaryIndex}/${secondaryProductsByBrand.length}`
+            `[OpenAI request]: base - ${baseIndex + BASE_BATCH_SIZE}/${
+              baseProductsByBrand.length
+            }, secondary - ${secondaryIndex + SECONDARY_BATCH_SIZE}/${
+              secondaryProductsByBrand.length
+            }`
           );
           const response = await this.openAiService.callAssistant(
             JSON.stringify(openAiRequest)
@@ -207,6 +223,10 @@ export abstract class Scraper {
             continue;
           }
           const openAiResponse = JSON.parse(response) as AssistantResponse;
+
+          if (process.env.NODE_ENV === "development") {
+            saveConversationToFile(this.conversation, `conversation_${count}`);
+          }
 
           openAiResponse.correlation
             .filter((c) => c.secondarySKU)
