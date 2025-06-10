@@ -29,7 +29,7 @@ export abstract class Scraper {
 
   async createBrowser(): Promise<Browser> {
     return await puppeteer.launch({
-      headless: true,
+      headless: "shell",
       ...(process.env.CHROME_PATH && {
         executablePath: process.env.CHROME_PATH,
       }),
