@@ -194,6 +194,9 @@ export abstract class Scraper {
             role: "user",
             content: JSON.stringify(openAiRequest),
           });
+          Logger.info(
+            `[OpenAI request]: base - ${baseIndex}/${baseProductsByBrand.length}, secondary - ${secondaryIndex}/${secondaryProductsByBrand.length}`
+          );
           const response = await this.openAiService.callAssistant(
             JSON.stringify(openAiRequest)
           );

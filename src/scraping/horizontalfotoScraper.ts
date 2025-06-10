@@ -121,12 +121,12 @@ export class HorizontalFotoScraper extends Scraper {
                       .replace(/\$/g, "")
                       .trim()
                   )
-                : null;
+                : 0;
 
               return {
                 name: name ?? "",
                 link: link ?? "",
-                price: price ?? NaN,
+                price: price ?? 0,
                 outOfStock,
                 image: image ?? "",
                 brand: brand?.toUpperCase() ?? "UNKNOWN",

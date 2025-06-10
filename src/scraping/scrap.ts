@@ -10,6 +10,7 @@ import { BaseProductDB, ProductDB, ProductScrap } from "../interfaces";
 import { Logger } from "../utils/logger";
 import { AperturaScraper } from "./aperturaScraper";
 import { DavidAndJosephScraper } from "./davidandjosephScraper";
+import { EbestScraper } from "./ebestScraper";
 import { HorizontalFotoScraper } from "./horizontalfotoScraper";
 import { PicslabScraper } from "./picslabScraper";
 import { RincónFotográficoScraper } from "./rinconFotograficoScraper";
@@ -58,6 +59,8 @@ export async function scrapAllPages(
           return new AperturaScraper(w);
         case "Horizontal Foto":
           return new HorizontalFotoScraper(w);
+        case "Ebest":
+          return new EbestScraper(w);
         default:
           return null;
       }
@@ -144,7 +147,7 @@ export async function scrapAllPages(
   );
   if (scrapType === EScrapType.FULL) {
     await fullUpsertProducts(productsToDB);
-  } else {
+  } else if (scrapType === EScrapType.LITE) {
     await upsertProducts(productsToDB);
   }
 

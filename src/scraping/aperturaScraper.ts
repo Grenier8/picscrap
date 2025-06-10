@@ -21,10 +21,14 @@ export class AperturaScraper extends Scraper {
     const allProducts: ProductScrap[] = [];
     let currentPage = 1;
 
-    await page.goto(this.webpage.url, {
-      waitUntil: "networkidle2",
-      timeout: 300000,
-    });
+    try {
+      await page.goto(this.webpage.url, {
+        waitUntil: "networkidle2",
+        timeout: 300000,
+      });
+    } catch (error: any) {
+      await this.logPageScrapError(this.webpage.url, error.message);
+    }
 
     const dir = `scans/${this.webpage.name}`;
     if (process.env.NODE_ENV === "development") {
