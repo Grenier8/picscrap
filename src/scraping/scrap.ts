@@ -1,4 +1,4 @@
-import { getBaseProducts } from "../api/base-products";
+import { getBaseProducts, upsertBaseProducts } from "../api/base-products";
 import {
   fullUpsertProducts,
   getProductsByWebpage,
@@ -84,7 +84,7 @@ export async function scrapAllPages(
     );
   }
 
-  // await upsertBaseProducts(newBaseProducts);
+  await upsertBaseProducts(newBaseProducts);
 
   const baseProducts = await getBaseProducts();
   // const updatedBaseProducts: BaseProductDB[] = baseProducts.map(
@@ -101,7 +101,7 @@ export async function scrapAllPages(
 
     if (scrapType === EScrapType.FULL) {
       updatedBaseProducts = baseProducts;
-    } else {
+    } else if (scrapType === EScrapType.LITE) {
       updatedBaseProducts = baseProducts.filter(
         (bp) => !webpageProducts.some((wp) => wp.BaseProduct?.sku === bp.sku)
       );
