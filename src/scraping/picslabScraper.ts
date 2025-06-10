@@ -19,7 +19,7 @@ export class PicslabScraper extends Scraper {
     await this.setUserAgent(page);
 
     const baseUrl = `${this.webpage.url}/search?q=&page=`;
-    let currentPage = 37;
+    let currentPage = 1;
     const allProducts: ProductScrap[] = [];
     while (true) {
       const url = `${baseUrl}${currentPage}`;
@@ -154,6 +154,7 @@ export class PicslabScraper extends Scraper {
         continue;
       }
     }
+    await page.close();
     await browser.close();
     return allProducts;
   }

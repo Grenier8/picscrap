@@ -152,6 +152,7 @@ export class AperturaScraper extends Scraper {
         continue;
       }
     }
+    await page.close();
     await browser.close();
     return allProducts;
   }
