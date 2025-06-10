@@ -10,6 +10,7 @@ import { BaseProductDB, ProductDB, ProductScrap } from "../interfaces";
 import { Logger } from "../utils/logger";
 import { AperturaScraper } from "./aperturaScraper";
 import { DavidAndJosephScraper } from "./davidandjosephScraper";
+import { HorizontalFotoScraper } from "./horizontalfotoScraper";
 import { PicslabScraper } from "./picslabScraper";
 import { RincónFotográficoScraper } from "./rinconFotograficoScraper";
 import { Scraper } from "./scraper";
@@ -55,6 +56,8 @@ export async function scrapAllPages(
           return new RincónFotográficoScraper(w);
         case "Apertura":
           return new AperturaScraper(w);
+        case "Horizontal Foto":
+          return new HorizontalFotoScraper(w);
         default:
           return null;
       }
