@@ -14,8 +14,8 @@ export class PicslabScraper extends Scraper {
   }
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
-    const browser = await this.createBrowser();
-    const page = await browser.newPage();
+    let browser = await this.createBrowser();
+    let page = await browser.newPage();
     await this.setUserAgent(page);
 
     const baseUrl = `${this.webpage.url}/search?q=&page=`;
@@ -151,6 +151,12 @@ export class PicslabScraper extends Scraper {
         if (error.message.includes("429")) {
           await delay(5);
         }
+        await page.close();
+        await browser.close();
+
+        browser = await this.createBrowser();
+        page = await browser.newPage();
+        await this.setUserAgent(page);
         continue;
       }
     }
