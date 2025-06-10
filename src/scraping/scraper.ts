@@ -33,7 +33,12 @@ export abstract class Scraper {
       ...(process.env.CHROME_PATH && {
         executablePath: process.env.CHROME_PATH,
       }),
-      args: ["--no-sandbox", "--disable-gpu", "--disable-setuid-sandbox"],
+      args: [
+        "--no-sandbox",
+        "--disable-gpu",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+      ],
     });
   }
 

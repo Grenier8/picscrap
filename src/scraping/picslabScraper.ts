@@ -151,12 +151,6 @@ export class PicslabScraper extends Scraper {
         if (error.message.includes("429")) {
           await delay(5);
         }
-        await page.close();
-        await browser.close();
-
-        browser = await this.createBrowser();
-        page = await browser.newPage();
-        await this.setUserAgent(page);
         continue;
       }
     }
