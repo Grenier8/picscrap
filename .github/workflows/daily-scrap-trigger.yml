@@ -9,8 +9,8 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-    - name: Make API Request
-      uses: fjogeleit/http-request-action@v1
+    - name: HTTP Request Action
+      uses: fjogeleit/http-request-action@v1.16.4
       with:
         url: ${{ secrets.API_URL }}
         method: 'GET'
