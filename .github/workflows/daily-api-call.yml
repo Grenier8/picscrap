@@ -1,0 +1,15 @@
+name: Daily API Call
+
+on:
+  schedule:
+    - cron: "*/2 * * * *"
+  workflow_dispatch:
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call the API
+        run: |
+          curl -X GET "https://picscrap-4lse.onrender.com/api/health"
