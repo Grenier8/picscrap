@@ -1,0 +1,28 @@
+name: Daily Scrap Trigger
+
+on:
+  schedule:
+    - cron: "50 3 * * *"
+  workflow_dispatch:
+
+
+jobs:
+  make-api-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Make API Request
+        id: api-request
+        uses: muhfaris/request-action@v1
+        with:
+          url: ${{ secrets.API_URL }}
+          headers: ${{ secrets.API_HEADERS }}
+          method: GET
+
+      - name: Show API Response Status
+        run: |
+          echo "Response Status: ${{ steps.api-request.outputs.response-status }}"
+
+      - name: Show API Response Data
+        run: |
+          echo "Response Data: ${{ steps.api-request.outputs.response-data }}"
