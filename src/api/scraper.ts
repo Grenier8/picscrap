@@ -1,8 +1,7 @@
-import { scrapAllPages, FilteringType } from "../scraping/scrap";
+import { EScrapType, FilteringType, scrapAllPages } from "../scraping/scrap";
 import { Logger } from "../utils/logger";
 
 let isScrapingInProgress = false;
-let scrapingPromise: Promise<void> | null = null;
 
 export interface ScrapingState {
   isScraping: boolean;
@@ -16,10 +15,17 @@ export function getScrapingState(): ScrapingState {
   };
 }
 
-async function handleScraping(): Promise<void> {
+async function handleScraping(
+  scrapType: EScrapType,
+  webpagesIds: number[]
+): Promise<void> {
   try {
     isScrapingInProgress = true;
-    await scrapAllPages(FilteringType.SIMILARITY);
+    if (scrapType === EScrapType.LITE) {
+      await scrapAllPages(FilteringType.SIMILARITY, scrapType, webpagesIds);
+    } else if (scrapType === EScrapType.FULL) {
+      await scrapAllPages(FilteringType.OPENAI, scrapType, webpagesIds);
+    }
     isScrapingInProgress = false;
   } catch (error: any) {
     Logger.scrapingError(error.message);
@@ -34,9 +40,11 @@ export interface ScrapeTriggerResponse {
   message: string;
 }
 
-export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
+export async function triggerScrape(
+  webpagesIds: number[]
+): Promise<ScrapeTriggerResponse> {
   try {
-    if (scrapingPromise) {
+    if (isScrapingInProgress) {
       return {
         result: "error",
         status: 204,
@@ -44,7 +52,7 @@ export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
       };
     }
 
-    scrapingPromise = handleScraping();
+    handleScraping(EScrapType.LITE, webpagesIds);
 
     return {
       result: "success",
@@ -58,11 +66,34 @@ export async function triggerScrape(): Promise<ScrapeTriggerResponse> {
       status: 500,
       message: "Failed to start scraping",
     };
-  } finally {
-    if (scrapingPromise && scrapingPromise.catch) {
-      scrapingPromise.catch(() => {
-        scrapingPromise = null;
-      });
+  }
+}
+
+export async function triggerScrapeFull(
+  webpagesIds: number[]
+): Promise<ScrapeTriggerResponse> {
+  try {
+    if (isScrapingInProgress) {
+      return {
+        result: "error",
+        status: 204,
+        message: "Scraping already in progress",
+      };
     }
+
+    handleScraping(EScrapType.FULL, webpagesIds);
+
+    return {
+      result: "success",
+      status: 200,
+      message: "Scraping started successfully",
+    };
+  } catch (error: any) {
+    Logger.scrapingError(error.message);
+    return {
+      result: "error",
+      status: 500,
+      message: "Failed to start scraping",
+    };
   }
 }

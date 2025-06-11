@@ -1,15 +1,18 @@
 import fs from "fs";
 import {
-  ProductScrap,
-  BaseProductScrap,
   AssistantProduct,
   AssistantResponse,
+  BaseProductScrap,
+  ProductScrap,
 } from "../interfaces";
+import { Logger } from "./logger";
 
 export const saveProductsToFile = (
   products: ProductScrap[] | BaseProductScrap[],
   pageId: number
 ) => {
+  Logger.info(`Saving products to file for page ${pageId}`);
+
   const filePath = `db/db_${pageId}.json`;
   const dir = "db";
 
@@ -25,6 +28,8 @@ export const saveAssistantProductsToFile = (
   secondaryProducts: AssistantProduct[],
   filename: string
 ) => {
+  Logger.info(`Saving assistant products to file for ${filename}`);
+
   const filePath = `correlations/${filename}.json`;
   const dir = "correlations";
 
@@ -39,6 +44,8 @@ export const saveCorrelationsToFile = (
   correlations: AssistantResponse,
   filename: string
 ) => {
+  Logger.info(`Saving correlations to file for ${filename}`);
+
   const filePath = `correlations/${filename}RES.json`;
   const dir = "correlations";
 
@@ -50,6 +57,7 @@ export const saveCorrelationsToFile = (
 };
 
 export const createDir = (dir: string) => {
+  Logger.info(`Creating directory ${dir}`);
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
   }

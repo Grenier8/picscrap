@@ -8,14 +8,14 @@ import { Scraper } from "./scraper";
 
 puppeteer.use(StealthPlugin());
 
-export class PicslabScraper extends Scraper {
+export class HorizontalFotoScraper extends Scraper {
   constructor(webpage: Webpage) {
     super(webpage);
   }
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
-    let browser = await this.createBrowser();
-    let page = await browser.newPage();
+    const browser = await this.createBrowser();
+    const page = await browser.newPage();
     await this.setUserAgent(page);
 
     const baseUrl = `${this.webpage.url}/search?q=&page=`;
@@ -36,7 +36,7 @@ export class PicslabScraper extends Scraper {
           await page.screenshot({ path: `${dir}/page-${currentPage}.png` });
         }
 
-        const productBlocks = await page.$$("article.product-block");
+        const productBlocks = await page.$$(".product-block");
 
         const limit = createLimiter(5);
 
@@ -74,15 +74,18 @@ export class PicslabScraper extends Scraper {
                 return src || null;
               };
 
-              const name = await getText(".product-block__name");
-              const link = await getHref(".product-block__anchor");
-              let priceRaw = await getText(".product-block__price");
+              const name = await getText(".brand-name h3 a");
+              const link = await getHref(".brand-name h3 a");
+              let priceRaw = await getText(".product-price");
+              if (!priceRaw) {
+                priceRaw = await getText(".product-price-discount");
+              }
               const outOfStock = null;
-              const image = await getSrc("img.product-block__image");
-              const brand = await getText(".product-block__brand");
-              let sku = await getText(".product-block__sku");
+              const image = await getSrc("a img.w-100.trsn.d-block");
+              const brand = await getText(".brand-name .brand");
+              let sku = null;
 
-              if (link && !priceRaw) {
+              if (link) {
                 const productPage = await browser.newPage();
                 try {
                   await productPage.goto(link, {
@@ -90,20 +93,18 @@ export class PicslabScraper extends Scraper {
                     timeout: 300000,
                   });
 
-                  if (process.env.NODE_ENV === "development") {
-                    const dir = `scans/${this.webpage.name}/${sku}`;
-                    createDir(dir);
-                    await productPage.screenshot({
-                      path: `${dir}/product.png`,
-                    });
-                  }
+                  // if (process.env.NODE_ENV === "development") {
+                  //   const dir = `scans/${this.webpage.name}/${sku}`;
+                  //   createDir(dir);
+                  //   await productPage.screenshot({
+                  //     path: `${dir}/product.png`,
+                  //   });
+                  // }
 
-                  const priceEl = await productPage.$(".product_price");
-                  priceRaw = priceEl
-                    ? await priceEl.evaluate(
-                        (e) => (e as HTMLElement).innerText
-                      )
-                    : null;
+                  await productPage.waitForSelector(".sku_elem");
+                  sku = await productPage.$eval(".sku_elem", (el) =>
+                    el?.textContent?.trim()
+                  );
                 } catch (error: any) {
                   await this.logProductScrapError(link, error.message);
                 } finally {
@@ -120,12 +121,12 @@ export class PicslabScraper extends Scraper {
                       .replace(/\$/g, "")
                       .trim()
                   )
-                : null;
+                : 0;
 
               return {
                 name: name ?? "",
                 link: link ?? "",
-                price: price ?? NaN,
+                price: price ?? 0,
                 outOfStock,
                 image: image ?? "",
                 brand: brand?.toUpperCase() ?? "UNKNOWN",

@@ -1,24 +1,25 @@
-import puppeteer, { Browser, Page } from "puppeteer";
+import { Browser, Page } from "puppeteer";
+import puppeteer from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+import { getBrands } from "../api/brands";
 import {
   AssistantProduct,
   AssistantRequest,
   AssistantResponse,
   BaseProductDB,
-  Brand,
   ProductScrap,
   Webpage,
 } from "../interfaces";
+import OpenAiService from "../service/openAi";
 import {
   saveAssistantProductsToFile,
   saveConversationToFile,
-  saveCorrelationsToFile,
   saveProductsToFile,
 } from "../utils/fileManager";
-import { getScrapProductsJSON } from "../service/product";
-import { getBestMatch } from "../utils/similarity/productSimilarity";
-import OpenAiService from "../service/openAi";
-import { getBrands } from "../api/brands";
 import { Logger } from "../utils/logger";
+import { getBestMatch } from "../utils/similarity/productSimilarity";
+
+puppeteer.use(StealthPlugin());
 
 export abstract class Scraper {
   webpage: Webpage;
@@ -30,9 +31,38 @@ export abstract class Scraper {
     this.openAiService = new OpenAiService();
   }
 
+  async createBrowser(): Promise<Browser> {
+    return await puppeteer.launch({
+      headless: true,
+      ...(process.env.CHROME_PATH && {
+        executablePath: process.env.CHROME_PATH,
+      }),
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--no-zygote",
+        "--disable-gpu",
+        "--disable-accelerated-2d-canvas",
+        "--disable-software-rasterizer",
+        "--disable-features=IsolateOrigins,site-per-process",
+        "--no-first-run",
+        "--disable-notifications",
+        "--disable-extensions",
+        "--disable-web-security",
+        "--disable-features=AudioServiceOutOfProcess",
+      ],
+      protocolTimeout: 60000,
+    });
+  }
+
   async getAllProducts(): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
-    saveProductsToFile(allProducts, this.webpage.id);
+
+    if (process.env.NODE_ENV === "development") {
+      saveProductsToFile(allProducts, this.webpage.id);
+    }
+
     return allProducts;
   }
 
@@ -43,7 +73,7 @@ export abstract class Scraper {
     const filteredProducts = allProducts.filter((product: ProductScrap) =>
       baseProducts.map((bp) => bp.sku).includes(product.sku)
     );
-    Logger.filterProductsResult(
+    await Logger.filterProductsResult(
       this.webpage.name,
       allProducts.length,
       filteredProducts.length,
@@ -51,7 +81,9 @@ export abstract class Scraper {
       "0"
     );
 
-    saveProductsToFile(filteredProducts, this.webpage.id);
+    if (process.env.NODE_ENV === "development") {
+      saveProductsToFile(filteredProducts, this.webpage.id);
+    }
     return filteredProducts;
   }
 
@@ -59,7 +91,10 @@ export abstract class Scraper {
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
-    saveProductsToFile(allProducts, this.webpage.id);
+
+    if (process.env.NODE_ENV === "development") {
+      saveProductsToFile(allProducts, this.webpage.id);
+    }
 
     const start = Date.now();
 
@@ -79,13 +114,17 @@ export abstract class Scraper {
       }
     }
 
-    Logger.filterProductsResult(
+    await Logger.filterProductsResult(
       this.webpage.name,
       allProducts.length,
       filteredProducts.length,
       "filter-by-similarity",
       ((Date.now() - start) / 1000 / 60).toFixed(2) + "m"
     );
+
+    if (process.env.NODE_ENV === "development") {
+      saveProductsToFile(filteredProducts, this.webpage.id);
+    }
     return filteredProducts;
   }
 
@@ -93,13 +132,16 @@ export abstract class Scraper {
     baseProducts: BaseProductDB[]
   ): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
-    saveProductsToFile(allProducts, this.webpage.id);
+    Logger.info(`Scraped ${allProducts.length} products`);
+
+    if (process.env.NODE_ENV === "development") {
+      saveProductsToFile(allProducts, this.webpage.id);
+    }
 
     const start = Date.now();
     const filteredProducts: ProductScrap[] = [];
     const MAX_PRODUCTS = 100;
 
-    // Asumimos una sola marca; puedes restaurar tu lógica original si hay varias
     const brands = await getBrands();
 
     for (const brand of brands) {
@@ -110,7 +152,6 @@ export abstract class Scraper {
         (product) => product.brand === brand.name
       );
 
-      // Nuevo: Por cada batch de base, recorre todos los secondary en batches
       let count = 1;
       const BASE_BATCH_SIZE = Math.floor(MAX_PRODUCTS / 2);
       const SECONDARY_BATCH_SIZE = MAX_PRODUCTS - BASE_BATCH_SIZE;
@@ -148,26 +189,33 @@ export abstract class Scraper {
               name: product.name,
               image: product.image || "",
             }));
-          // saveAssistantProductsToFile(
-          //   baseProductsRequest,
-          //   secondaryProductsRequest,
-          //   brand.name + "_" + count
-          // );
 
           const openAiRequest = {
             baseProducts: baseProductsRequest,
             secondaryProducts: secondaryProductsRequest,
           } as AssistantRequest;
 
-          // Store the outgoing user message
+          if (process.env.NODE_ENV === "development") {
+            saveAssistantProductsToFile(
+              baseProductsRequest,
+              secondaryProductsRequest,
+              brand.name + "_" + count
+            );
+          }
           this.conversation.push({
             role: "user",
             content: JSON.stringify(openAiRequest),
           });
+          Logger.info(
+            `[OpenAI request]: base - ${baseIndex + BASE_BATCH_SIZE}/${
+              baseProductsByBrand.length
+            }, secondary - ${secondaryIndex + SECONDARY_BATCH_SIZE}/${
+              secondaryProductsByBrand.length
+            }`
+          );
           const response = await this.openAiService.callAssistant(
             JSON.stringify(openAiRequest)
           );
-          // Store the assistant's response
           this.conversation.push({ role: "assistant", content: response });
 
           if (!response) {
@@ -175,6 +223,10 @@ export abstract class Scraper {
             continue;
           }
           const openAiResponse = JSON.parse(response) as AssistantResponse;
+
+          if (process.env.NODE_ENV === "development") {
+            saveConversationToFile(this.conversation, `conversation_${count}`);
+          }
 
           openAiResponse.correlation
             .filter((c) => c.secondarySKU)

@@ -1,66 +1,101 @@
-import { FilteringType, scrapAllPages } from "./scraping/scrap";
-import { loadBaseProducts } from "./scraping/base";
+import fastify, { FastifyReply, FastifyRequest } from "fastify";
 import {
-  getStringSimilarity,
-  getStringSimilarityJaroWinkler,
-  getStringSimilarityDiceCoefficient,
-} from "./utils/similarity/stringSimilarity";
-import { getImageSimilarity } from "./utils/similarity/imageSimilarity";
-import { getBaseProducts, getBaseProductsByBrand } from "./api/base-products";
-import {
-  saveAssistantProductsToFile,
-  saveProductsToFile,
-} from "./utils/fileManager";
-import { AssistantProduct, BaseProductScrap } from "./interfaces";
-import { getWebpages } from "./api/webpages";
-import { getBrands } from "./api/brands";
-import { getProductsByWebpageAndBrand } from "./api/products";
-import { triggerScrape, ScrapeTriggerResponse } from "./api/scraper";
+  ScrapeTriggerResponse,
+  triggerScrape,
+  triggerScrapeFull,
+} from "./api/scraper";
 
-// const app = fastify({ logger: true });
+const app = fastify({ logger: true });
 
 // // Enable CORS
-// app.register(require("@fastify/cors"), {
-//   origin: true, // or specify your allowed origins
-//   methods: ["GET", "POST", "OPTIONS"],
-//   allowedHeaders: ["Content-Type", "Authorization"],
-// });
-
-// // Register cron route
-// app.register(cronRoute);
+app.register(require("@fastify/cors"), {
+  origin: true, // or specify your allowed origins
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+});
 
 // // Add API endpoints
-// app.post<{ Reply: ScrapeTriggerResponse }>(
-//   "/api/scrape",
-//   async (request: FastifyRequest, reply: FastifyReply) => {
-//     try {
-//       const result = await triggerScrape();
-//       reply.code(result.status).send(result);
-//     } catch (error: unknown) {
-//       const errorMessage =
-//         error instanceof Error ? error.message : "An unknown error occurred";
-//       reply.code(500).send({
-//         result: "error",
-//         status: 500,
-//         message: errorMessage,
-//       });
-//     }
-//   }
-// );
+app.post<{ Body: { webpagesIds: number[] }; Reply: ScrapeTriggerResponse }>(
+  "/api/scrape",
+  async (
+    request: FastifyRequest<{ Body: { webpagesIds: number[] } }>,
+    reply: FastifyReply
+  ) => {
+    try {
+      const result = await triggerScrape(request.body.webpagesIds);
+      reply.code(result.status).send(result);
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : "An unknown error occurred";
+      reply.code(500).send({
+        status: "error",
+        error: errorMessage,
+      });
+    }
+  }
+);
 
-// const start = async () => {
-//   try {
-//     await app.listen({ port: 3001 });
-//     app.log.info("Server listening on port 3001");
-//   } catch (err: unknown) {
-//     app.log.error(
-//       err instanceof Error ? err.message : "An unknown error occurred"
-//     );
-//     process.exit(1);
-//   }
-// };
+app.post<{ Body: { webpagesIds: number[] }; Reply: ScrapeTriggerResponse }>(
+  "/api/scrape-full",
+  async (
+    request: FastifyRequest<{ Body: { webpagesIds: number[] } }>,
+    reply: FastifyReply
+  ) => {
+    try {
+      const result = await triggerScrapeFull(request.body.webpagesIds);
+      reply.code(result.status).send(result);
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : "An unknown error occurred";
+      reply.code(500).send({
+        status: "error",
+        error: errorMessage,
+      });
+    }
+  }
+);
 
-// start();
+app.get<{ Reply: any }>(
+  "/api/health",
+  async (request: FastifyRequest, reply: FastifyReply) => {
+    try {
+      reply.code(200).send({
+        status: "healthy",
+        timestamp: new Date().toISOString(),
+        environment: process.env.NODE_ENV || "development",
+        version: process.env.VERCEL_GITHUB_COMMIT_SHA || "local",
+      });
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : "An unknown error occurred";
+      reply.code(500).send({
+        status: "error",
+        error: errorMessage,
+      });
+    }
+  }
+);
+
+const start = async () => {
+  try {
+    const port = parseInt(process.env.PORT || "3010", 10);
+    const host = "0.0.0.0"; // Important for Render
+
+    await app.listen({
+      port,
+      host,
+    });
+
+    app.log.info(`Server listening on port ${port}`);
+  } catch (err: unknown) {
+    app.log.error(
+      err instanceof Error ? err.message : "An unknown error occurred"
+    );
+    process.exit(1);
+  }
+};
+
+start();
 
 // console.log(
 //   "SS Dice: ",

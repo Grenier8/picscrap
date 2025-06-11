@@ -1,21 +1,10 @@
 import puppeteer from "puppeteer-extra";
-import fs from "fs";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import {
-  Webpage,
-  ProductScrap,
-  Brand,
-  ProductDB,
-  BaseProductDB,
-} from "../interfaces";
+import { ProductScrap, Webpage } from "../interfaces";
 import delay from "../utils/delay";
-import { createDir, saveProductsToFile } from "../utils/fileManager";
-import { getWebpageById } from "../api/webpages";
-import { upsertProducts } from "../api/products";
-import { Scraper } from "./scraper";
+import { createDir } from "../utils/fileManager";
 import { createLimiter } from "../utils/limiter";
-import { getBestMatch } from "../utils/similarity/productSimilarity";
-import { Browser, Page } from "puppeteer";
+import { Scraper } from "./scraper";
 
 puppeteer.use(StealthPlugin());
 
@@ -25,18 +14,27 @@ export class AperturaScraper extends Scraper {
   }
 
   async scrapeAllPages(): Promise<ProductScrap[]> {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await this.createBrowser();
     const page = await browser.newPage();
     await this.setUserAgent(page);
 
     const allProducts: ProductScrap[] = [];
     let currentPage = 1;
 
-    await page.goto(this.webpage.url, { waitUntil: "networkidle2" });
+    try {
+      await page.goto(this.webpage.url, {
+        waitUntil: "networkidle2",
+        timeout: 300000,
+      });
+    } catch (error: any) {
+      await this.logPageScrapError(this.webpage.url, error.message);
+    }
 
     const dir = `scans/${this.webpage.name}`;
-    createDir(dir);
-    await page.screenshot({ path: `${dir}/page-0.png` });
+    if (process.env.NODE_ENV === "development") {
+      createDir(dir);
+      await page.screenshot({ path: `${dir}/page-0.png` });
+    }
 
     const links = await page.$$eval("#top-menu a", (anchors) =>
       anchors.map((a) => a.href)
@@ -48,11 +46,14 @@ export class AperturaScraper extends Scraper {
       try {
         await page.goto(`${menuLink}?resultsPerPage=120`, {
           waitUntil: "networkidle2",
+          timeout: 300000,
         });
 
-        await page.screenshot({
-          path: `${dir}/page-${currentPage}.png`,
-        });
+        if (process.env.NODE_ENV === "development") {
+          await page.screenshot({
+            path: `${dir}/page-${currentPage}.png`,
+          });
+        }
 
         const productsFather = await page.$("#js-product-list");
         if (productsFather) {
@@ -100,7 +101,10 @@ export class AperturaScraper extends Scraper {
                 if (link) {
                   const productPage = await browser.newPage();
                   try {
-                    await productPage.goto(link, { waitUntil: "networkidle2" });
+                    await productPage.goto(link, {
+                      waitUntil: "networkidle2",
+                      timeout: 300000,
+                    });
                     sku = await productPage
                       .$eval('section#main meta[itemprop="sku"]', (el) =>
                         el.getAttribute("content")
@@ -144,17 +148,15 @@ export class AperturaScraper extends Scraper {
         }
 
         currentPage++;
-        await delay(2);
       } catch (error: any) {
         await this.logPageScrapError(menuLink, error.message);
         if (error.message.includes("429")) {
-          await delay(5 * currentPage);
-          continue;
-        } else {
-          break;
+          await delay(5);
         }
+        continue;
       }
     }
+    await page.close();
     await browser.close();
     return allProducts;
   }

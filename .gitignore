@@ -151,7 +151,8 @@ dist
 
 *.png
 
-.conversation
-.correlations
-.db
-.csv
+conversations/
+correlations/
+db/
+csv/
+scans/
