@@ -1,15 +1,16 @@
 name: Daily API Call
 
 on:
-  schedule:
-    - cron: "*/2 * * * *"
   workflow_dispatch:
-
+  schedule:
+    - cron: "*/5 * * * *"
+  
 jobs:
-  call-api:
+  demo:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Call the API
+      - name: Log time
         run: |
-          curl -X GET "https://picscrap-4lse.onrender.com/api/health"
+          current_date_time=$(date)
+          echo "Current date and time: $current_date_time"
