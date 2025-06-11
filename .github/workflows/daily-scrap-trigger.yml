@@ -2,27 +2,22 @@ name: Daily Scrap Trigger
 
 on:
   schedule:
-    - cron: "50 3 * * *"
+    - cron: "10 4 * * *"
   workflow_dispatch:
 
-
 jobs:
-  make-api-request:
+  deployment:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Make API Request
-        id: api-request
-        uses: muhfaris/request-action@v1
-        with:
-          url: ${{ secrets.API_URL }}
-          headers: ${{ secrets.API_HEADERS }}
-          method: GET
+    - name: Make API Request
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: ${{ secrets.API_URL }}
+        method: 'GET'
+    - name: Show Response
+      run: |
+        echo ${{ steps.myRequest.outputs.response }}
+        echo ${{ steps.myRequest.outputs.headers }}
+        echo ${{ steps.myRequest.outputs.status }}
+        echo ${{ fromJson(steps.myRequest.outputs.response).field_you_want_to_access }}
 
-      - name: Show API Response Status
-        run: |
-          echo "Response Status: ${{ steps.api-request.outputs.response-status }}"
-
-      - name: Show API Response Data
-        run: |
-          echo "Response Data: ${{ steps.api-request.outputs.response-data }}"
