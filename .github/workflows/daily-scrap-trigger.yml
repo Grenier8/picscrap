@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: HTTP Request Action
+      id: myRequest
       uses: fjogeleit/http-request-action@v1.16.4
       with:
         url: ${{ secrets.API_URL }}
