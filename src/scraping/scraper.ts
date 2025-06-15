@@ -18,6 +18,7 @@ import {
 } from "../utils/fileManager";
 import { Logger } from "../utils/logger";
 import { getBestMatch } from "../utils/similarity/productSimilarity";
+import { EScrapType } from "./scrap";
 
 puppeteer.use(StealthPlugin());
 
@@ -78,7 +79,7 @@ export abstract class Scraper {
       allProducts.length,
       filteredProducts.length,
       "filter-by-sku",
-      "0"
+      0
     );
 
     if (process.env.NODE_ENV === "development") {
@@ -88,7 +89,8 @@ export abstract class Scraper {
   }
 
   async getProductsBySimilarity(
-    baseProducts: BaseProductDB[]
+    baseProducts: BaseProductDB[],
+    scrapType: EScrapType
   ): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
 
@@ -102,9 +104,35 @@ export abstract class Scraper {
     const filteredProducts: ProductScrap[] = [];
     for (const baseProduct of baseProducts) {
       count++;
-      const bestMatch = await getBestMatch(baseProduct, allProducts, {
-        imageWeight: baseProduct.image ? 0.3 : 0,
-      });
+
+      if (scrapType === EScrapType.LITE) {
+        const correspondingProduct = baseProduct.Products?.find(
+          (p) => p.Webpage.id === this.webpage.id
+        );
+        if (correspondingProduct) {
+          const product = allProducts.find(
+            (p) => p.sku === correspondingProduct.sku
+          );
+          if (product) {
+            filteredProducts.push({
+              ...product,
+              webpage: this.webpage.url,
+              baseProductSku: baseProduct.sku,
+            });
+            continue;
+          }
+        }
+      }
+
+      const bestMatch = await getBestMatch(
+        baseProduct,
+        allProducts.filter((p) =>
+          filteredProducts.every((fp) => fp.sku !== p.sku)
+        ),
+        {
+          imageWeight: baseProduct.image ? 0.3 : 0,
+        }
+      );
       if (bestMatch) {
         filteredProducts.push({
           ...bestMatch,
@@ -119,7 +147,7 @@ export abstract class Scraper {
       allProducts.length,
       filteredProducts.length,
       "filter-by-similarity",
-      ((Date.now() - start) / 1000 / 60).toFixed(2) + "m"
+      (Date.now() - start) / 1000 / 60
     );
 
     if (process.env.NODE_ENV === "development") {
@@ -129,7 +157,8 @@ export abstract class Scraper {
   }
 
   async getProductsWithOpenAI(
-    baseProducts: BaseProductDB[]
+    baseProducts: BaseProductDB[],
+    scrapType: EScrapType
   ): Promise<ProductScrap[]> {
     const allProducts = await this.scrapeAllPages();
     Logger.info(`Scraped ${allProducts.length} products`);
@@ -140,16 +169,49 @@ export abstract class Scraper {
 
     const start = Date.now();
     const filteredProducts: ProductScrap[] = [];
-    const MAX_PRODUCTS = 100;
 
+    if (scrapType === EScrapType.LITE) {
+      const baseProductsWithCorrespondingProduct = baseProducts.filter(
+        (baseProduct) =>
+          baseProduct.Products?.some((p) => p.Webpage.id === this.webpage.id)
+      );
+      for (const baseProduct of baseProductsWithCorrespondingProduct) {
+        const product = allProducts.find(
+          (p) =>
+            p.sku ===
+            baseProduct.Products?.find((p) => p.Webpage.id === this.webpage.id)
+              ?.sku
+        );
+        if (product) {
+          filteredProducts.push({
+            ...product,
+            webpage: this.webpage.url,
+            baseProductSku: baseProduct.sku,
+          });
+        }
+      }
+    }
+
+    const baseProductsToCheck =
+      scrapType === EScrapType.FULL
+        ? baseProducts
+        : baseProducts.filter(
+            (baseProduct) =>
+              !baseProduct.Products?.some(
+                (p) => p.Webpage.id === this.webpage.id
+              )
+          );
+    const MAX_PRODUCTS = 100;
     const brands = await getBrands();
 
     for (const brand of brands) {
-      const baseProductsByBrand = baseProducts.filter(
+      const baseProductsByBrand = baseProductsToCheck.filter(
         (product) => product.Brand.name === brand.name
       );
       let secondaryProductsByBrand = allProducts.filter(
-        (product) => product.brand === brand.name
+        (product) =>
+          product.brand === brand.name &&
+          !filteredProducts.some((fp) => fp.sku === product.sku)
       );
 
       let count = 1;
@@ -287,22 +349,13 @@ export abstract class Scraper {
         });
       }
     }
-    // console.log(
-    //   "Repeated products: ",
-    //   filteredProducts.filter(
-    //     (p, i) =>
-    //       filteredProducts.findIndex(
-    //         (p2) =>
-    //           p2.webpage === p.webpage && p2.baseProductSku === p.baseProductSku
-    //       ) !== i
-    //   ).length
-    // );
+
     Logger.filterProductsResult(
       this.webpage.name,
       allProducts.length,
       filteredProducts.length,
       "filter-by-openai",
-      ((Date.now() - start) / 1000 / 60).toFixed(2) + "m"
+      (Date.now() - start) / 1000 / 60
     );
     return filteredProducts;
   }

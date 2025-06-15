@@ -1,9 +1,5 @@
 import { getBaseProducts, upsertBaseProducts } from "../api/base-products";
-import {
-  fullUpsertProducts,
-  getProductsByWebpage,
-  upsertProducts,
-} from "../api/products";
+import { fullUpsertProducts, upsertProducts } from "../api/products";
 import { getWebpages } from "../api/webpages";
 import { BaseProductDB, ProductDB, ProductScrap } from "../interfaces";
 // import { getBaseProducts } from "../service/product";
@@ -16,7 +12,7 @@ import { PicslabScraper } from "./picslabScraper";
 import { RincónFotográficoScraper } from "./rinconFotograficoScraper";
 import { Scraper } from "./scraper";
 
-export enum FilteringType {
+export enum EFilteringType {
   SKU = "SKU",
   SIMILARITY = "SIMILARITY",
   OPENAI = "OPENAI",
@@ -34,17 +30,23 @@ export interface ScrapResult {
 }
 
 export async function scrapAllPages(
-  filteringType: FilteringType,
+  webpagesIds: number[],
   scrapType: EScrapType,
-  webpagesIds: number[]
+  filteringType: EFilteringType
 ): Promise<ScrapResult> {
   const uuid = crypto.randomUUID();
-  await Logger.scrapStart(uuid, scrapType, filteringType);
-  const scrapStart = Date.now();
-
   const allWebpages = await getWebpages();
+  console.log("allWebpages", webpagesIds);
   const webpages = allWebpages.filter((w) => webpagesIds.includes(w.id));
   Logger.log(`Webpages obtained: ${webpages.length}`);
+
+  await Logger.scrapStart(
+    uuid,
+    webpages.map((w) => w.name),
+    scrapType,
+    filteringType
+  );
+  const scrapStart = Date.now();
 
   const scrapers: Scraper[] = webpages
     .map((w) => {
@@ -94,35 +96,27 @@ export async function scrapAllPages(
   //   (bp) => ({ ...bp, Brand: { name: bp.brand } } as BaseProductDB)
   // );
 
-  let updatedBaseProducts: BaseProductDB[] = [];
   for (const scraper of nonBaseScrapers) {
     const start = Date.now();
 
     await Logger.webpageScrapStart(scraper.webpage.name);
 
-    const webpageProducts = await getProductsByWebpage(scraper.webpage);
-
-    if (scrapType === EScrapType.FULL) {
-      updatedBaseProducts = baseProducts;
-    } else if (scrapType === EScrapType.LITE) {
-      updatedBaseProducts = baseProducts.filter(
-        (bp) => !webpageProducts.some((wp) => wp.BaseProduct?.sku === bp.sku)
-      );
-    }
-
     let products: ProductScrap[] = [];
     switch (filteringType) {
-      case FilteringType.SKU:
-        products = await scraper.getProductsBySku(updatedBaseProducts);
+      case EFilteringType.SKU:
+        products = await scraper.getProductsBySku(baseProducts);
         break;
-      case FilteringType.SIMILARITY:
-        products = await scraper.getProductsBySimilarity(updatedBaseProducts);
+      case EFilteringType.SIMILARITY:
+        products = await scraper.getProductsBySimilarity(
+          baseProducts,
+          scrapType
+        );
         break;
-      case FilteringType.OPENAI:
-        products = await scraper.getProductsWithOpenAI(updatedBaseProducts);
+      case EFilteringType.OPENAI:
+        products = await scraper.getProductsWithOpenAI(baseProducts, scrapType);
         break;
     }
-    const elapsed = ((Date.now() - start) / 1000 / 60).toFixed(2);
+    const elapsed = (Date.now() - start) / 1000 / 60;
 
     await Logger.webpageScrapEnd(
       scraper.webpage.name,
@@ -139,7 +133,7 @@ export async function scrapAllPages(
           ...product,
           Webpage: webpages.find((w) => w.url === product.webpage),
           Brand: { name: product.brand },
-          BaseProduct: updatedBaseProducts.find(
+          BaseProduct: baseProducts.find(
             (bp) => bp.sku === product.baseProductSku
           ),
         } as ProductDB)
@@ -151,8 +145,12 @@ export async function scrapAllPages(
     }
   }
 
-  const scrapEnd = ((Date.now() - scrapStart) / 1000 / 60).toFixed(2);
-  await Logger.scrapEnd(scrapEnd + "m");
+  const scrapEnd = (Date.now() - scrapStart) / 1000 / 60;
+  await Logger.scrapEnd(
+    scrapEnd,
+    webpages.map((w) => w.name),
+    allProducts.length
+  );
   return {
     baseProductsScraped: baseProducts.length,
     productsFiltered: allProducts.length,

@@ -1,9 +1,6 @@
 import fastify, { FastifyReply, FastifyRequest } from "fastify";
-import {
-  ScrapeTriggerResponse,
-  triggerScrape,
-  triggerScrapeFull,
-} from "./api/scraper";
+import { ScrapeTriggerResponse, triggerScrape } from "./api/scraper";
+import { EFilteringType, EScrapType } from "./scraping/scrap";
 
 const app = fastify({ logger: true });
 
@@ -15,34 +12,42 @@ app.register(require("@fastify/cors"), {
 });
 
 // // Add API endpoints
-app.post<{ Body: { webpagesIds: number[] }; Reply: ScrapeTriggerResponse }>(
+app.post<{
+  Body: {
+    webpageIds: number[];
+    scrapType: string;
+    filteringType: string;
+  };
+  Reply: ScrapeTriggerResponse;
+}>(
   "/api/scrape",
   async (
-    request: FastifyRequest<{ Body: { webpagesIds: number[] } }>,
+    request: FastifyRequest<{
+      Body: {
+        webpageIds: number[];
+        scrapType: string;
+        filteringType: string;
+      };
+    }>,
     reply: FastifyReply
   ) => {
     try {
-      const result = await triggerScrape(request.body.webpagesIds);
-      reply.code(result.status).send(result);
-    } catch (error: unknown) {
-      const errorMessage =
-        error instanceof Error ? error.message : "An unknown error occurred";
-      reply.code(500).send({
-        status: "error",
-        error: errorMessage,
-      });
-    }
-  }
-);
+      console.log("request.body", request.body);
+      console.log("request.body.webpageIds", request.body.webpageIds);
+      const scrapTypeEnum =
+        request.body.scrapType === "FULL" ? EScrapType.FULL : EScrapType.LITE;
+      const filteringTypeEnum =
+        request.body.filteringType === "SIMILARITY"
+          ? EFilteringType.SIMILARITY
+          : request.body.filteringType === "OPENAI"
+          ? EFilteringType.OPENAI
+          : EFilteringType.SKU;
 
-app.post<{ Body: { webpagesIds: number[] }; Reply: ScrapeTriggerResponse }>(
-  "/api/scrape-full",
-  async (
-    request: FastifyRequest<{ Body: { webpagesIds: number[] } }>,
-    reply: FastifyReply
-  ) => {
-    try {
-      const result = await triggerScrapeFull(request.body.webpagesIds);
+      const result = await triggerScrape(
+        request.body.webpageIds,
+        scrapTypeEnum,
+        filteringTypeEnum
+      );
       reply.code(result.status).send(result);
     } catch (error: unknown) {
       const errorMessage =
