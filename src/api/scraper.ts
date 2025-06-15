@@ -1,4 +1,4 @@
-import { EScrapType, FilteringType, scrapAllPages } from "../scraping/scrap";
+import { EFilteringType, EScrapType, scrapAllPages } from "../scraping/scrap";
 import { Logger } from "../utils/logger";
 
 let isScrapingInProgress = false;
@@ -16,15 +16,16 @@ export function getScrapingState(): ScrapingState {
 }
 
 async function handleScraping(
+  webpagesIds: number[],
   scrapType: EScrapType,
-  webpagesIds: number[]
+  filteringType: EFilteringType
 ): Promise<void> {
   try {
     isScrapingInProgress = true;
     if (scrapType === EScrapType.LITE) {
-      await scrapAllPages(FilteringType.SIMILARITY, scrapType, webpagesIds);
+      await scrapAllPages(webpagesIds, scrapType, filteringType);
     } else if (scrapType === EScrapType.FULL) {
-      await scrapAllPages(FilteringType.OPENAI, scrapType, webpagesIds);
+      await scrapAllPages(webpagesIds, scrapType, filteringType);
     }
     isScrapingInProgress = false;
   } catch (error: any) {
@@ -41,7 +42,9 @@ export interface ScrapeTriggerResponse {
 }
 
 export async function triggerScrape(
-  webpagesIds: number[]
+  webpagesIds: number[],
+  scrapType: EScrapType,
+  filteringType: EFilteringType
 ): Promise<ScrapeTriggerResponse> {
   try {
     if (isScrapingInProgress) {
@@ -52,36 +55,7 @@ export async function triggerScrape(
       };
     }
 
-    handleScraping(EScrapType.LITE, webpagesIds);
-
-    return {
-      result: "success",
-      status: 200,
-      message: "Scraping started successfully",
-    };
-  } catch (error: any) {
-    Logger.scrapingError(error.message);
-    return {
-      result: "error",
-      status: 500,
-      message: "Failed to start scraping",
-    };
-  }
-}
-
-export async function triggerScrapeFull(
-  webpagesIds: number[]
-): Promise<ScrapeTriggerResponse> {
-  try {
-    if (isScrapingInProgress) {
-      return {
-        result: "error",
-        status: 204,
-        message: "Scraping already in progress",
-      };
-    }
-
-    handleScraping(EScrapType.FULL, webpagesIds);
+    handleScraping(webpagesIds, scrapType, filteringType);
 
     return {
       result: "success",

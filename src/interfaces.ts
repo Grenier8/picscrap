@@ -7,7 +7,7 @@ export interface ProductDB {
   outOfStock: boolean | null;
   image: string | null;
   Brand: Brand;
-  BaseProduct?: BaseProductDB;
+  BaseProduct: BaseProductDB;
 }
 
 export interface ProductScrap {
@@ -35,12 +35,14 @@ export interface Webpage {
 }
 
 export interface BaseProductDB {
+  id?: number;
   name: string;
   link: string | null;
   price: number;
   outOfStock: boolean | null;
   image: string | null;
   Brand: Brand;
+  Products?: ProductDB[];
   sku: string;
 }
 
@@ -90,7 +92,7 @@ export interface Log {
   webpage: string;
   event: string;
   message: string;
-  duration?: string;
+  duration?: number;
   url?: string;
   data: string;
 }

@@ -6,9 +6,6 @@ import {
   getStringSimilarityJaroWinkler,
 } from "./stringSimilarity";
 
-// Simple fast image hash similarity using base64 string length difference as a placeholder.
-// Replace this with a real image hash (pHash/dHash/aHash) for better results.
-
 export async function getBestMatch(
   baseProduct: BaseProductDB,
   products: BaseProductScrap[],
@@ -32,7 +29,6 @@ export async function getBestMatch(
 
   const normalizedBrand = baseProduct.Brand.name?.toUpperCase().trim();
 
-  // Filter by brand first for efficiency
   const filtered = products.filter(
     (p) =>
       p.brand &&
@@ -41,9 +37,6 @@ export async function getBestMatch(
       p.brand.toUpperCase().trim() === normalizedBrand
   );
 
-  if (LOG) Logger.log(`Searching for: ${baseProduct.sku}`);
-
-  // 1. Precompute name and sku similarities. Only keep those passing name threshold.
   const candidates = [] as Array<{
     product: BaseProductScrap;
     nameSimilarity: number;
@@ -64,7 +57,6 @@ export async function getBestMatch(
       normalizeString(baseProduct.name),
       normalizeString(product.name)
     );
-    if (LOG) Logger.log(`[${product.sku}] Name similarity: ${nameSimilarity}`);
     if (nameSimilarity < 0.6) continue;
 
     const skuSimilarity = getStringSimilarityDiceCoefficient(
@@ -116,39 +108,26 @@ export async function getBestMatch(
       IMAGE_WEIGHT * adjustedImageSim +
       SKU_WEIGHT * adjustedSkuSim;
 
-    if (LOG) {
-      Logger.log(
-        `[${product.sku}] NameSim: ${nameSimilarity.toFixed(
-          2
-        )}, ImgSim: ${imageSimilarity.toFixed(
-          2
-        )}, SkuSim: ${skuSimilarity.toFixed(2)}, Score: ${score.toFixed(2)}`
-      );
-    }
-
     if (score > bestScore) {
       bestScore = score;
       bestMatch = product;
     }
   }
 
-  if (LOG) {
-    if (bestMatch && bestScore >= MIN_SCORE) {
-      Logger.log(
-        `Best match found: ${bestMatch.sku} with score ${bestScore.toFixed(2)}`
-      );
-    } else if (bestMatch) {
-      Logger.log(
-        `Closest match (below threshold): ${
-          bestMatch.sku
-        } with score ${bestScore.toFixed(2)}`
-      );
-    } else {
-      Logger.log("No match found.");
-    }
+  if (bestMatch && bestScore >= MIN_SCORE) {
+    Logger.log(
+      `Best match found: ${bestMatch.sku} with score ${bestScore.toFixed(2)}`
+    );
+  } else if (bestMatch) {
+    Logger.log(
+      `Closest match (below threshold): ${
+        bestMatch.sku
+      } with score ${bestScore.toFixed(2)}`
+    );
+  } else {
+    Logger.log("No match found.");
   }
 
-  // Only return if above threshold, otherwise null
   return bestScore >= MIN_SCORE ? bestMatch : null;
 }
 

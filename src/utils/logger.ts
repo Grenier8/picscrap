@@ -1,5 +1,5 @@
 import { createLog } from "../api/logs";
-import { EScrapType, FilteringType } from "../scraping/scrap";
+import { EFilteringType, EScrapType } from "../scraping/scrap";
 
 export class Logger {
   static executionId: string;
@@ -8,31 +8,38 @@ export class Logger {
 
   static async scrapStart(
     executionId: string,
+    webpages: string[],
     scrapType: EScrapType,
-    filteringType: FilteringType
+    filteringType: EFilteringType
   ) {
     this.executionId = executionId;
     this.info("Scraping started");
     await createLog({
       executionId,
       type: "INFO",
-      webpage: "-",
+      webpage: webpages.join(", "),
       event: "scrap-start",
-      message: "Scraping started",
+      message: this.getMessageForScrapingType(scrapType),
       data: JSON.stringify({ scrapType, filteringType }),
     });
   }
 
-  static async scrapEnd(duration: string) {
+  static async scrapEnd(
+    duration: number,
+    webpages: string[],
+    productsAmount: number
+  ) {
     this.info(`Scraping ended in ${duration}s`);
     await createLog({
       executionId: this.executionId,
       type: "INFO",
-      webpage: "-",
+      webpage: webpages.join(", "),
       event: "scrap-end",
       message: `Scraping ended in ${duration}s`,
       duration,
-      data: "",
+      data: JSON.stringify({
+        "Cantidad de productos": productsAmount,
+      }),
     });
   }
 
@@ -53,7 +60,7 @@ export class Logger {
     baseProducts: number,
     filteredProducts: number,
     filterType: string,
-    duration: string
+    duration: number
   ) {
     this.info(`Filtered products: ${duration}s`);
     await createLog({
@@ -70,7 +77,7 @@ export class Logger {
   static async webpageScrapEnd(
     webpage: string,
     products: number,
-    duration: string
+    duration: number
   ) {
     this.info(`Scraping ended for webpage: ${webpage}`);
     await createLog({
@@ -135,7 +142,7 @@ export class Logger {
     });
   }
 
-  static async resolvedScrapRequest(duration: string) {
+  static async resolvedScrapRequest(duration: number) {
     this.info(`Resolved scrap request`);
     await createLog({
       executionId: this.executionId,
@@ -160,6 +167,18 @@ export class Logger {
     });
   }
 
+  static async databaseError(error: string) {
+    this.error(`Database error`);
+    await createLog({
+      executionId: this.executionId,
+      type: "ERROR",
+      webpage: "-",
+      event: "database-error",
+      message: `Database error`,
+      data: error,
+    });
+  }
+
   static log(message: string) {
     console.log(message);
   }
@@ -178,5 +197,14 @@ export class Logger {
 
   static debug(message: string) {
     console.debug(message);
+  }
+
+  private static getMessageForScrapingType(scrapType: EScrapType) {
+    switch (scrapType) {
+      case EScrapType.FULL:
+        return "Escaneo completo: se sustituyen los productos existentes";
+      case EScrapType.LITE:
+        return "Escaneo ligero: se actualizan los productos existentes";
+    }
   }
 }

@@ -5,6 +5,7 @@ export async function getBaseProducts(): Promise<BaseProductDB[]> {
   const baseProducts = await prisma.baseProduct.findMany({
     include: {
       Brand: true,
+      Product: true,
     },
   });
   return baseProducts;

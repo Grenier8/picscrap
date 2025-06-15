@@ -20,7 +20,7 @@ model BaseProduct {
   outOfStock  Boolean?
   brandId     Int
   Brand       Brand     @relation(fields: [brandId], references: [id])
-  Product     Product[]
+  Products    Product[]
 }
 
 model Brand {
@@ -34,7 +34,7 @@ model Brand {
 }
 
 model Product {
-  id            Int          @id @default(autoincrement())
+  id            Int         @id @default(autoincrement())
   name          String
   sku           String
   brandId       Int
@@ -43,15 +43,15 @@ model Product {
   link          String?
   image         String?
   webpageId     Int
-  baseProductId Int?
-  createdAt     DateTime     @default(now())
-  updatedAt     DateTime     @updatedAt
+  baseProductId Int
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
   outOfStock    Boolean?
-  BaseProduct   BaseProduct? @relation(fields: [baseProductId], references: [id])
-  Brand         Brand        @relation(fields: [brandId], references: [id])
-  Webpage       Webpage      @relation(fields: [webpageId], references: [id])
+  BaseProduct   BaseProduct @relation(fields: [baseProductId], references: [id])
+  Brand         Brand       @relation(fields: [brandId], references: [id])
+  Webpage       Webpage     @relation(fields: [webpageId], references: [id])
 
-  @@unique([sku, webpageId])
+  @@unique([sku, webpageId, baseProductId])
 }
 
 model Role {
@@ -93,10 +93,10 @@ model Log {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   data        String
-  duration    String
   event       String
   executionId String
   type        String
   url         String
   webpage     String
+  duration    Int
 }
