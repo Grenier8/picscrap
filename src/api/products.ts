@@ -172,7 +172,7 @@ export async function upsertProducts(products: ProductDB[]) {
 }
 
 export async function fullUpsertProducts(products: ProductDB[]) {
-  await deleteProducts(products);
+  await deleteProductsByWebpage(products[0].Webpage.id);
 
   try {
     for (const product of products) {
@@ -222,18 +222,14 @@ export async function fullUpsertProducts(products: ProductDB[]) {
   }
 }
 
-export async function deleteProducts(products: ProductDB[]) {
+export async function deleteProductsByWebpage(webpageId: number) {
   try {
     await prisma.product.deleteMany({
       where: {
-        webpageId: {
-          in: products.map((p) => p.Webpage.id),
-        },
-        sku: {
-          notIn: products.map((p) => p.sku),
-        },
+        webpageId: webpageId,
       },
     });
+    Logger.info(`Products for webpage ${webpageId} deleted`);
   } catch (error: any) {
     await Logger.databaseError(error);
   }

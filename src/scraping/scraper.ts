@@ -107,7 +107,7 @@ export abstract class Scraper {
 
       if (scrapType === EScrapType.LITE) {
         const correspondingProduct = baseProduct.Products?.find(
-          (p) => p.Webpage.id === this.webpage.id
+          (p) => p?.Webpage?.id === this.webpage.id
         );
         if (correspondingProduct) {
           const product = allProducts.find(
@@ -173,14 +173,15 @@ export abstract class Scraper {
     if (scrapType === EScrapType.LITE) {
       const baseProductsWithCorrespondingProduct = baseProducts.filter(
         (baseProduct) =>
-          baseProduct.Products?.some((p) => p.Webpage.id === this.webpage.id)
+          baseProduct.Products?.some((p) => p?.Webpage?.id === this.webpage.id)
       );
       for (const baseProduct of baseProductsWithCorrespondingProduct) {
         const product = allProducts.find(
           (p) =>
             p.sku ===
-            baseProduct.Products?.find((p) => p.Webpage.id === this.webpage.id)
-              ?.sku
+            baseProduct.Products?.find(
+              (p) => p?.Webpage?.id === this.webpage.id
+            )?.sku
         );
         if (product) {
           filteredProducts.push({
@@ -198,7 +199,7 @@ export abstract class Scraper {
         : baseProducts.filter(
             (baseProduct) =>
               !baseProduct.Products?.some(
-                (p) => p.Webpage.id === this.webpage.id
+                (p) => p?.Webpage?.id === this.webpage.id
               )
           );
     const MAX_PRODUCTS = 100;
