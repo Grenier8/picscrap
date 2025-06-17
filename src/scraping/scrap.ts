@@ -1,5 +1,9 @@
 import { getBaseProducts, upsertBaseProducts } from "../api/base-products";
-import { fullUpsertProducts, upsertProducts } from "../api/products";
+import {
+  fullUpsertProducts,
+  updatePrices,
+  upsertProducts,
+} from "../api/products";
 import { getWebpages } from "../api/webpages";
 import { BaseProductDB, ProductDB, ProductScrap } from "../interfaces";
 // import { getBaseProducts } from "../service/product";
@@ -16,11 +20,13 @@ export enum EFilteringType {
   SKU = "SKU",
   SIMILARITY = "SIMILARITY",
   OPENAI = "OPENAI",
+  NONE = "NONE",
 }
 
 export enum EScrapType {
   FULL = "FULL",
   LITE = "LITE",
+  PRICE = "PRICE",
 }
 
 export interface ScrapResult {
@@ -115,6 +121,9 @@ export async function scrapAllPages(
       case EFilteringType.OPENAI:
         products = await scraper.getProductsWithOpenAI(baseProducts, scrapType);
         break;
+      case EFilteringType.NONE:
+        products = await scraper.getProductsWithoutFilter(baseProducts);
+        break;
     }
     const elapsed = (Date.now() - start) / 1000 / 60;
 
@@ -142,6 +151,8 @@ export async function scrapAllPages(
       await fullUpsertProducts(productsToDB);
     } else if (scrapType === EScrapType.LITE) {
       await upsertProducts(productsToDB);
+    } else if (scrapType === EScrapType.PRICE) {
+      await updatePrices(productsToDB);
     }
   }
 

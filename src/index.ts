@@ -4,6 +4,25 @@ import { EFilteringType, EScrapType } from "./scraping/scrap";
 
 const app = fastify({ logger: true });
 
+// Clave API (en producción, usa una variable de entorno)
+const API_KEY = process.env.API_KEY || "";
+
+// Middleware para verificar la API key
+const verifyApiKey = async (
+  request: FastifyRequest,
+  reply: FastifyReply,
+  done: () => void
+) => {
+  const apiKey = request.headers["x-api-key"];
+
+  if (!apiKey || apiKey !== API_KEY) {
+    reply.status(401).send({ error: "API key inválida o faltante" });
+    return;
+  }
+
+  done();
+};
+
 // // Enable CORS
 app.register(require("@fastify/cors"), {
   origin: true, // or specify your allowed origins
@@ -21,6 +40,8 @@ app.post<{
   Reply: ScrapeTriggerResponse;
 }>(
   "/api/scrape",
+  { preHandler: verifyApiKey },
+
   async (
     request: FastifyRequest<{
       Body: {
@@ -41,6 +62,8 @@ app.post<{
           ? EFilteringType.SIMILARITY
           : request.body.filteringType === "OPENAI"
           ? EFilteringType.OPENAI
+          : request.body.filteringType === "NONE"
+          ? EFilteringType.NONE
           : EFilteringType.SKU;
 
       const result = await triggerScrape(
@@ -60,6 +83,7 @@ app.post<{
   }
 );
 
+// Endpoint público sin autenticación
 app.get<{ Reply: any }>(
   "/api/health",
   async (request: FastifyRequest, reply: FastifyReply) => {

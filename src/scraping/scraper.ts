@@ -88,6 +88,45 @@ export abstract class Scraper {
     return filteredProducts;
   }
 
+  async getProductsWithoutFilter(
+    baseProducts: BaseProductDB[]
+  ): Promise<ProductScrap[]> {
+    const allProducts = await this.scrapeAllPages();
+
+    const filteredProducts: ProductScrap[] = [];
+    for (const baseProduct of baseProducts) {
+      const correspondingProduct = baseProduct.Products?.find(
+        (p) => p?.Webpage?.id === this.webpage.id
+      );
+      if (correspondingProduct) {
+        const product = allProducts.find(
+          (p) => p.sku === correspondingProduct.sku
+        );
+        if (product) {
+          filteredProducts.push({
+            ...product,
+            webpage: this.webpage.url,
+            baseProductSku: baseProduct.sku,
+          });
+          continue;
+        }
+      }
+    }
+
+    await Logger.filterProductsResult(
+      this.webpage.name,
+      allProducts.length,
+      filteredProducts.length,
+      "filter-none",
+      0
+    );
+
+    if (process.env.NODE_ENV === "development") {
+      saveProductsToFile(filteredProducts, this.webpage.id);
+    }
+    return filteredProducts;
+  }
+
   async getProductsBySimilarity(
     baseProducts: BaseProductDB[],
     scrapType: EScrapType

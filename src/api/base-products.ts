@@ -5,16 +5,22 @@ export async function getBaseProducts(): Promise<BaseProductDB[]> {
   const baseProducts = await prisma.baseProduct.findMany({
     include: {
       Brand: true,
-      Products: true,
+      Products: {
+        include: {
+          Webpage: true,
+          Brand: true,
+          BaseProduct: true,
+        },
+      },
     },
   });
-  return baseProducts.map((p: any) => ({
-    ...p,
-    Products: p.Products.map((p: any) => ({
+  return baseProducts.map((bp: any) => ({
+    ...bp,
+    Products: bp.Products.map((p: any) => ({
       ...p,
       Webpage: p.Webpage,
       Brand: p.Brand,
-      BaseProduct: p.BaseProduct,
+      BaseProduct: bp,
     })),
   }));
 }

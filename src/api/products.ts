@@ -234,3 +234,23 @@ export async function deleteProductsByWebpage(webpageId: number) {
     await Logger.databaseError(error);
   }
 }
+
+export async function updatePrices(products: ProductDB[]) {
+  try {
+    for (const product of products) {
+      await prisma.product.update({
+        where: {
+          sku_webpageId_baseProductId: {
+            sku: product.sku,
+            webpageId: product.Webpage.id,
+            baseProductId: product.BaseProduct?.id || 0,
+          },
+        },
+        data: product.price ? { price: product.price } : {},
+      });
+    }
+    Logger.info("Products prices updated");
+  } catch (error: any) {
+    await Logger.databaseError(error);
+  }
+}

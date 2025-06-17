@@ -19,7 +19,7 @@ export class Logger {
       type: "INFO",
       webpage: webpages.join(", "),
       event: "scrap-start",
-      message: this.getMessageForScrapingType(scrapType),
+      message: this.getMessageForScrapingType(scrapType) || "",
       data: JSON.stringify({ scrapType, filteringType }),
     });
   }
