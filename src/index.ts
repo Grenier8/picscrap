@@ -27,7 +27,7 @@ const verifyApiKey = async (
 app.register(require("@fastify/cors"), {
   origin: true, // or specify your allowed origins
   methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  allowedHeaders: ["Content-Type", "Authorization", "x-api-key"],
 });
 
 // // Add API endpoints
